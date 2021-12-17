@@ -1,0 +1,81 @@
+%SGs
+\newcommand{\valstra}{\mathsf{\val}_{\straa ,\strab}}
+\newcommand{\valSolo}{\mathsf{\val}}
+\newcommand{\reachProb}{p_{s}^{\straa, \strab}} %this could probably also be a big delta
+\newcommand{\zeroSinks}{\mathit{O}}
+\newcommand{\zeroSink}{\mathrm{o}}
+\newcommand{\sinks}{\zeroSinks}
+\newcommand{\minStates}{\states_{\Circ}}
+\newcommand{\maxStates}{\states_{\Box}}
+\newcommand{\twoSucc}{\mathrm{\textbf{2Act}}}
+\newcommand{\twoTrans}{\mathrm{\textbf{2Trans}}}
+\newcommand{\halfProbss}{\mathrm{\textbf{2Trans}}}
+\newcommand{\halfProbs}{\mathrm{\pmb{\frac{1}{2}}\textbf{Probs}}}
+\newcommand{\stopping}{\mathrm{\textbf{Stopping game}}}
+\newcommand{\noOneSucc}{\mathrm{\textbf{No1Act}}}
+\newcommand{\s}{\state}
+\newcommand{\cnf}{Condon's normal form}
+\newcommand{\conQP}{Condon's quadratic program}
+\newcommand{\actionb}{\mathsf{b}}
+\newcommand{\valSum}{\sum\limits_{\mathsf{s_i} \in \post(\state, \action)} \trans(\state, \action, \mathsf{s_i}) \cdot \val(\mathsf{s_i})}
+
+\newcommand{\Circ}{\scalebox{1}{$\circ$}}
+
+%Markov Chains
+\newcommand{\indSubGraph}{\mathsf{G}_{T}^{\straa, \strab}}
+\newcommand{\probMat}{\mathrm{M}}
+\newcommand{\probMatEntry}{m_{i, j}}
+\newcommand{\resultMat}{\mathrm{P}^{\straa, \strab}}
+\newcommand{\resultMatEntry}{p_{i, j}^{\straa, \strab}}
+
+\newcommand{\terminals}{E}
+\newcommand{\terminalState}{e}
+\newcommand{\restStates}{U}
+\newcommand{\restState}{u}
+
+%SG names
+\newcommand{\SGinstance}{\mathbf{G}}
+\newcommand{\Tinstance}{\mathbf{T}}
+
+\newcommand{\exits}{E^T}
+
+%Complexity classes
+\newcommand{\exptime}{\mathbf{EXPTIME}}
+\newcommand{\nptime}{\mathbf{NP}}
+\newcommand{\ptime}{\mathbf{P}}
+\newcommand{\straaT}{\straa _T}
+\newcommand{\strabT}{\strab _T}
+\newcommand{\straaST}{\straa _{\states \setminus T}}
+\newcommand{\strabST}{\strab _{\states \setminus T}}
+
+%Terminals
+\newcommand{\terminalSet}{\mathrm{T}}
+\newcommand{\terminalSetColored}{\textcolor{TerminalGreen}{\mathrm{T}}}
+\newcommand{\terminalOutSet}{\mathcal{T}}
+\newcommand{\minTerminalSet}{\min{\{|\terminalOutSet_A|, |\terminalOutSet_B|\}}}
+\newcommand{\cutAB}{|E(A,B)|}
+\newcommand{\weakLinked}{\Omega \bigg( \frac{1}{log^{\frac{3}{2}}k} \bigg)}
+\newcommand{\flowCutGap}{\Theta(log(k))}
+\newcommand{\targets}{\terminalSet}
+
+%Number-sets
+\newcommand{\Rationals}{\mathbb{Q}}
+
+%Sets of SGs
+\newcommand{\randomRandomOutcome}{\mathcal{SG}_{Algo}}
+\newcommand{\connectedSG}{\mathcal{SG}}
+\newcommand{\unknownStates}{\states^?}
+
+%Algorithms
+\newcommand{\LPSI}{\mathbf{SI_{LP}}}
+\newcommand{\TLPSI}{\mathbf{\LPSI^T}}
+\newcommand{\VI}{\mathbf{VI}}
+\newcommand{\OVI}{\mathbf{OVI}}
+\newcommand{\BVI}{\mathbf{BVI}}
+\newcommand{\WP}{\mathbf{WP}}
+\newcommand{\TOPAlg}{\mathbf{TOPAlg}}
+
+%Operators
+\newcommand{\Bop}{\mathcal{B}}
+\newcommand{\lb}{\mathsf{L}}
+\newcommand{\ub}{\mathsf{U}}

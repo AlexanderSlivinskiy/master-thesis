@@ -1,0 +1,40 @@
+\begin{figure}
+
+
+\centering
+\begin{tikzpicture}[scale=0.7, every node/.style={font=\large, transform shape}]
+%little BCEC with loop
+\drawdummy (init) at (-2,0) {};
+\drawcirc (p) at (0,0) {$\mathsf{s_0}$};
+\drawbox (q) at (4,0) {$\mathsf{s_1}$};
+\drawcirc (v) at (4,-3) {$\mathsf{s_2}$};
+\drawdummy (vHelp1) at (4,-4) {};
+\drawdummy (vHelp2) at (10,-4) {};
+\drawdummy (vHelp3) at (10,2) {};
+\drawdummy (mid) at (6,0) {};
+\drawbox (1) at (8,2) {$\target$ };
+\drawcirc (0) at (8,-2)  {$\mathrm{\zeroSink}$};
+
+\draw[->] (init) to (p);
+\draw[->] (p) to node [midway,anchor=south] {$\mathsf{a}$}(q) ;
+\draw[->] (p) to [bend right] node [text width = 0.5cm, below, midway] {$\mathsf{b}$} (v);
+\draw[->] (q) to node [text width = 0.75cm, below, midway] {$\mathsf{a}$} (v);
+\draw[->] (v) to [bend right] node [text width = 0.5cm, above, midway] {$\mathsf{a}$} (0);
+\draw[-] (v) to (vHelp1);
+\draw[-] (vHelp1) to node [below, midway] {$\mathsf{b}$} (vHelp2);
+\draw[-] (vHelp2) to (vHelp3);
+\draw[->] (vHelp3) to (1);
+\draw[-] (q) to node [midway,anchor=south] {$\mathsf{b}$} (mid) ;
+%\draw (mid) -- (0);% node [midway,anchor=north east] {0.5};
+%\draw (mid) -- (1);% node [midway,anchor=south east] {0.5};
+\draw[->] (mid) to [bend right] node [text width =3.0cm, align=left, midway, below] {$\trans(\mathsf{s_1}, b, \mathrm{\zeroSink})$} (0);
+\draw[->] (mid) to [bend left] node [text width =3.0cm, near end, above] {$\trans(\mathsf{s_1}, b, \target)$} (1);
+%\draw (mid) to [bend left,out=270,in=270] (q) ;
+\draw[->]  (0) to[loop above]  node [midway,anchor=south] {$\mathsf{a}$} (0);
+\draw[->]  (1) to [loop above] node [midway,anchor=south] {$\mathsf{a}$} (1) ;
+
+
+\end{tikzpicture}
+\caption[Example of a simple stochastic game]{An example of a simple stochastic game. $s_0, s_1, s_2, \target, \mathrm{\zeroSink}$ are states. $a,b$ are actions. $s_1$ and $\target$ are Maximizer-states, while the rest of the states belongs to the Minimizer. $\target$ is a target and $\mathrm{\zeroSink}$ is a sink. $\trans(\mathsf{s_1}, b, \target)$ and $\trans(\mathsf{s_1}, b, \mathrm{\zeroSink})$ are the transition probabilities that a token in $s_1$ moved through action $b$ would either be moved to $\target$ or $\mathrm{\zeroSink}$}
+\label{ex:exampleSG}
+\end{figure}

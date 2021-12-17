@@ -1,0 +1,36 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'main.blg'
+[102] biber:340> INFO - === Fr Dez 17, 2021, 13:15:15
+[118] Biber.pm:415> INFO - Reading 'main.bcf'
+[222] Biber.pm:952> INFO - Found 36 citekeys in bib section 0
+[243] Biber.pm:4340> INFO - Processing section 0
+[254] Biber.pm:4531> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[256] bibtex.pm:1689> INFO - LaTeX decoding ...
+[303] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
+[453] Utils.pm:395> WARN - legacy year field '\noop{2020} accepted' in entry 'cav20' is not an integer - this will probably not sort properly.
+[474] Utils.pm:395> WARN - I didn't find a database entry for 'Gandalf' (section 0)
+[475] Utils.pm:395> WARN - I didn't find a database entry for 'https://pubsonline.informs.org/doi/abs/10.1287/mnsc.12.5.359 - Strategy Iteration for MDPs' (section 0)
+[475] Utils.pm:395> WARN - I didn't find a database entry for 'GANDALF' (section 0)
+[475] Utils.pm:395> WARN - I didn't find a database entry for 'visurvey' (section 0)
+[475] Utils.pm:395> WARN - I didn't find a database entry for 'bvi' (section 0)
+[475] Utils.pm:395> WARN - I didn't find a database entry for 'atva' (section 0)
+[475] Utils.pm:395> WARN - I didn't find a database entry for 'KKKW18' (section 0)
+[475] Utils.pm:395> WARN - I didn't find a database entry for 'Citation to any LP-solving explanation for MDPs. Maybe Puterman?' (section 0)
+[475] Utils.pm:395> WARN - I didn't find a database entry for 'GANDALFpaper' (section 0)
+[475] Utils.pm:395> WARN - I didn't find a database entry for 'WidestPath' (section 0)
+[475] Utils.pm:395> WARN - I didn't find a database entry for 'ANY BOOK' (section 0)
+[475] Utils.pm:395> WARN - I didn't find a database entry for 'prismgames3' (section 0)
+[475] Utils.pm:395> WARN - I didn't find a database entry for 'gandalf20' (section 0)
+[476] Utils.pm:395> WARN - I didn't find a database entry for 'What?' (section 0)
+[476] Utils.pm:395> WARN - I didn't find a database entry for 'widestPath' (section 0)
+[476] Utils.pm:395> WARN - I didn't find a database entry for 'PRISMben' (section 0)
+[476] Utils.pm:395> WARN - I didn't find a database entry for 'gandalf' (section 0)
+[476] Utils.pm:395> WARN - I didn't find a database entry for 'ANYTHING?' (section 0)
+[476] Utils.pm:395> WARN - I didn't find a database entry for 'QComps' (section 0)
+[516] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[517] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[517] Biber.pm:4168> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
+[517] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[543] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[557] bbl.pm:757> INFO - Output to main.bbl
+[557] Biber.pm:128> INFO - WARNINGS: 20

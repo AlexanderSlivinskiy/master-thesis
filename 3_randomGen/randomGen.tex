@@ -1,0 +1,229 @@
+\chapter{Randomly Generated Models} \label{ch:randomGen}
+\section{Why Use Randomly Generated Models}
+Using randomly generated problems is a classic approach to test algorithms.
+A key benefit of randomly generated models is that by not being to a real problem, their structure can deviate from currently available case studies 
+and thus express other structural features. 
+This can lead to difference in algorihtm performance and may get relevant if new case studies emerge.
+Also, randomly generated models are can be created both automatically and in large numbers.
+
+To make a quantitative assertion about the performance of the algorithms, we need first a broad spectrum of models we can test the algorithms on.
+At the moment we are aware of 12 case studies.
+These case studies have often parameters that can be adjusted, resulting in infinetely many stochastic games.
+However, stochastic games derived from the same problem will have similar graph structures and can thus still cover only a certain portion
+of all possible graph structures that may occur.
+
+Clearly, we need more distinct models to provide a solid algorithm comparison.
+Creating handcrafted reachability problems is useful to make comparisons on edge-case situations and 
+show off the weaknesses of categories of algorithms (like the haddad-monmege model does for value iteration), 
+but contributes only very little to the overall coverage of possible reachability-problems for stochastic games.
+
+To tackle this issue we introduce randomly generated models.
+
+%\subsection{Sampling the Model-Probability Space}
+%One way of generating random models is to consider the space of all possible models and sample uniformly from this space. However, we constrain the model space for two reasons:
+%First, there are some properties like connectedness that we always want to have in the models we generate.
+%Secondly, algorithm-performance is easier to contextualize if the models differ in only few properties. If model A has more states, more and bigger MECs than model B, it is hard to relate the performance difference of an algorithm on model A and B to a specific property.
+
+%The problem with sampling the model space is that depending on the constraints it is infinite \textcolor{purple}{and at this moment I have no real idea how to do this. This is why we take an iterative model-generation process.}
+
+\section{Constraining the Random-Generation Process}
+While it is possible to completely randomize every property of a model, this procedure would yield graphs with undesirable properties. 
+We are only interested in model in which the inital state is connected to every state of the underlying graph of a stochastic game. 
+This is because all the states that can never be reached by the initial state could by simplified by introducing a single sink, and thus add unnecessary complexity.
+We refer to the set of stochastic games where the inital state is connected to every other state in the game by $\connectedSG$.
+
+Ideally, we would like sample uniformly from $\connectedSG$ to minimize the number of structural biases in our models. 
+However, since it was not clear for us how to achieve this, 
+we use instead an iterative generation approach. While not samling $\connectedSG$ space uniformly, it is easy to implement and modify.
+\textcolor{purple}{Also, since $\connectedSG$ is infinite, as far as I understand there is no way to sample the space at uniform.
+This is at least what this random 'Mathematician' in this post says https://www.askamathematician.com/2010/01/q-is-it-possible-to-choose-an-item-from-an-infinite-set-of-items-such-that-each-one-has-an-equal-chance-of-being-selected/ 
+But it makes sense to me.}
+
+\section{Our take on creating models as random as possible} \label{sec:randomGenAlgo}
+When generating a model, answers to the following questions define a unique stochastic game:
+\begin{itemize}
+    \item How many states does the model have?
+    \item Which states belong to which player?
+    \item How many and which actions does each state have?
+    \item How many transitions does an action have, where do they lead and how probable is the transition?
+    \item What is the initial state?
+\end{itemize}
+
+We use Algorithm \ref{algo:randomRandom} to create any random stochastic game that is connected from the inital state.
+In the forward procedure, we iterate over every state $\state \in \states$ and make sure that a previous state $\state'$ is connected to it by providing an action with positive transition probability to $\state$ from $\state'$.
+This guarantees that the initial state is connected to every state in the stochastic game.
+The backward procedure then adds arbitrary actions to arbitrary states to enable generating every possible $\SG \in \connectedSG$.
+
+To generate the actions of a state, we use Algorithm \ref{algo:FillActions}. 
+It receives a state-action pair to which the underlying transition probability distribution sums up to less then 1.
+It then adds transitions to not yet reached states by increasing their transition probabilities at random. This is repeated until the state-action pair has a valid transition probability distribution.
+
+\begin{algorithm}[ht]
+    \label{algo:randomRandom}
+    \caption{Generating random models connected from initial state}
+    \begin{algorithmic}[1]
+    \Ensure Stochastic game $\SG$ where the initial state is connected to any $\state \in \states$
+    \State Create $\states$ with a random $n \in \Naturals$
+    \State Partition $\states$ uniformly at random into $\states<\Box>$ and $\states<\circ>$
+    \State Enumerate $\state \in \states$ in any random order from 0 to n-1
+    \State Set $\initstate$ to the state with index 0
+    \For{$\state = 1 \rightarrow n-1$} \Comment{Forward Procedure}
+        \If{$\state$ does have an incoming transition} 
+            Continue (Skip iteration)
+        \Else
+            \State Pick any state $\state'$ with index smaller than $\state$
+            \State Create an action $\action$ that starts at $\state'$ \textcolor{purple}{Need to handle correct action indexing}
+            \State Assign to ($\state$, $\action$) a positive probability of reaching $\state$
+            \State Create a valid probability distribution for ($\state$, $\action$) by applying FillAction($\state'$, $\action$)
+            \State Add $\action$ to $\Av(\state')$
+            \State Add $\action$ to $\actions$
+        \EndIf
+    \EndFor
+    \For{$\state = n - 1 \rightarrow 0$} \Comment{Backward Procedure}
+        \State Pick a random number $m \in [M - |\Av(\state)]$ \Comment{Add as many actions as possible}
+        \If{$|\Av(\state)| = 0$} $m \gets \max{\{m, 1\}}$ \Comment{Every state needs to have at least one action} \EndIf 
+        \For{$i = 1 \rightarrow m$}
+            \State $(\state, \action<i>)$ = FillAction($\state$, $\action<i>$)
+            \State Add $\action<i>$ to $\Av(\state)$
+            \State Add $\action$ to $\actions$
+        \EndFor
+    \EndFor
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[ht]
+    \label{algo:FillActions}
+    \caption{FillAction($\state<out>$, $\action$)}
+    \begin{algorithmic}[1]
+        \Require outgoing state $\state<out>$, action $\action$
+        \Ensure action $\action$ that has a valid underlying transition probability distribution
+        \Repeat
+            \State Pick a random state $\state<in>$ where $\trans(\state<out>, \action, \state<in>) = 0$
+            \State Increase $\trans(\state<out>, \action, \state<in>)$ by a random number $\in (0, 1]$
+            \Until{$\forall \state<out> \in \states: \trans(\state<out>, \action, \state<in>) > 0$ or $\sum_{\state<out> \in \states} \trans(\state<out>, \action, \state<in>) \geq 1$}
+        \If{$\sum_{\state<out> \in \states} \trans(\state<out>, \action, \state<in>) > 1$}
+            \State Decrease the most recently modified $\trans(\state<out>, \action, \state<in>)$ so $\sum_{\state<out> \in \states} \trans(\state<out>, \action, \state<in>) = 1$
+        \ElsIf {$\sum_{\state<out> \in \states} \trans(\state<out>, \action, \state<in>) < 1$}
+            \State Increase the most recently modified $\trans(\state<out>, \action, \state<in>)$ so $\sum_{\state<out> \in \states} \trans(\state<out>, \action, \state<in>) = 1$
+        \EndIf
+    \Return ($\state<out>$, $\action$)
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{lemma}
+    Algorithm \ref{algo:randomRandom} creates formally correct stochastic games.
+\end{lemma}
+\begin{proof}
+    $\states$ is finite since its size is determined by a random number $n \in \Naturals$. Thus, we only need to argue that $\Av$ is truly a mapping of
+    $\states \rightarrow 2^{\actions}$ and that the transition function yields a probability distribution.
+    Whenever we introduce state-action pairs, we introduce a new action that we add to $\actions$. Also we add the state-action pair to $\Av$.
+    Thus any $\Av$ is function of $\states \rightarrow 2^{\actions}$.
+
+    Next we need to prove that for every $\state \in \states$ and every action $\action \in \Av(\state)$ the transition function $\trans(\state, \action)$ yields a probability distribution.
+    In other words we need to validate that for every $\state' \in \states$ it holds that $\trans(\state, \action, \state') \in [0, 1]$. 
+
+    Whenever we introduce an action $\action$ to the set of enabled actions $\Av(\state)$ of a state $\state \in \states$, we have $\trans(\state, \action, \state') = 0$ for all $\state' \in \states$.
+    We then pick targets of $(\state, \action)$ and increase their transition probability.
+    Whenever we increase a transition probability, we increase it by a number $\in (0,1]$. Furthermore, we never increase any transition more than once, 
+    except for Line 8 in Algorithm \ref{algo:FillActions}. 
+    However, there we only increase the transition probability until for given state $\state$ and action $\action$ it holds that $\sum_{\state' \in \states} \trans(\state, \action, \state') = 1$.
+    Thus, no $\trans(\state, \action, \state')$ can be above 1. 
+
+    In Line 6 of Algorithm \ref{algo:FillActions} we may also decrease $\trans(\state, \action, \state')$. However, this decrease can never yield a $\trans(\state, \action, \state') < 0$.
+    This is because per definition of the loop in Algorithm \ref{algo:FillActions}, $\sum_{\state<in> \in \states \setminus \{\state'\}} \trans(\state, \action, \state<in>) < 1$ and $\sum_{\state<in> \in \states} \trans(\state, \action, \state<in>) > 1$.
+    Thus, if $\trans(\state, \action, \state')$ is decreased by $\Delta$ to guarantee equality of the sum to 1, it must hold that $\trans(\state, \action, \state') - \Delta \geq 0$.
+
+    In conclusion, Algorithm \ref{algo:randomRandom} generates formally correct stochastic games.
+\end{proof}
+
+To show that this procedure can truly create any $\SG \in \connectedSG$, we consider the following lemma:
+\begin{lemma}
+Let $\randomRandomOutcome$ be the set of stochastic games that Procedure \ref{procedure:randomRandom} can produce. Then $\randomRandomOutcome = \connectedSG$.
+\end{lemma}
+\begin{proof}
+
+$\textbf{Show } \randomRandomOutcome \subseteq \connectedSG$:
+
+For this statement to hold, any $\SG \in \randomRandomOutcome$ must be connected from the initial state.
+Proof by induction over the indices $i$ of the states along their enumeration assigned during Algorithm $\ref{algo:randomRandom}$:
+
+$\mathbf{Basis}:$ $i = 1$:
+The only state with a smaller index than $\state<1>$ is $\initstate$. Since there must be a state with a smaller index that has an action
+with a positive transition probability to $\state<1>$, $\trans(\initstate, \action, \state<1>) > 0$ and so the initial state is connected to $\state<1>$.
+
+$\mathbf{Step}:$ $i \gets i$:
+Again, due to the forward procedure it holds that 
+\[
+    \exists \state<j> \in \states, j < i, \action \in \Av(\state<j>): \trans(\state<j>, \action, \state<i>) > 0
+\]
+However, according to our hypothesis $\initstate$ is connected to $\state<j>$ and thus also to $\state<i>$.
+
+$\textbf{Show } \connectedSG \subset \randomRandomOutcome$:
+
+Pick an arbitrary but fixed stochastic game $\SG \in \connectedSG$.
+Next, we show that there is a run of our procedure that will return a stochastic game $\SG' \in \randomRandomOutcome$ where $\SG' = \SG$.
+
+For this, we need several statements to hold at once:
+\begin{enumerate}
+    \item The number of states in $\SG$ and $\SG'$ is equal.
+    \item The partition of $\states$ to $\states<\Box>$ and $\states<\circ>$ is the same for $\SG$ and $\SG'$.
+    \item $\SG$ and $\SG'$ have the same initial state.
+    \item All state-action pairs in $\SG$ and $\SG'$ yield the same probability distributions in $\trans$.
+    \item Every state in $\SG$ and $\SG'$ have the same actions.
+\end{enumerate}
+
+$\SG$ and $\SG'$ being the same means that there is an automorphism where $\SG$ can be mapped to $\SG'$.
+
+Since we decide randomly on the number of states, the initial state and the partitioning of $\states$ into $\states<\Box>$ and $\states<\circ>$, 
+there is trivially a run where statements 1, 2 and 3 hold.
+
+When using Algorithm \ref{algo:FillActions} to create a probability distribution for a state-action pair $(\state, \action)$, 
+we increase transition probabilities until they sum up to 1. Thus, any summation $\sum_{\state' \in \states} \trans(\state, \action, \state') = 1$ is possible.
+In consequence, an action may lead into arbitrary states, have an arbitrary number of positive transition probabilities between 1 and $|\states|$, and may have arbitrary
+probability distributions on the transitions as long as they sum up to 1. So out of all runs where statement 1, 2 and 3 hold, there also must be at least one run where statement 4 holds too.
+
+To show that statement 5 holds, note that each $\SG \in \connectedSG$ has a minimal set of state-action tuples such that the initial state is connected to every state.
+Taking this set, we can perform a breadth-first-search from the initial state to provide an enumeration on the states.
+If we iterate over the states along this enumeration, we can reproduce each of the actions in the minimal set during the forward process.
+Due to the enumeration, to each state $\state$ except for the initial state there is a state with a smaller index $\state'$ such that $\state'$ has an action $\action$ with a positive transition
+probability of reaching $\state$. Since every other transition of ($\state'$, $\action$) can lead into arbitrary states and the probability distribution of ($\state'$, $\action$) can be arbitrary, 
+we can recreate the minimal set of state-action tuples in $\SG'$.
+
+The remaining state-action pairs of $\SG$ can be added to $\SG'$ during the backwards process, where every state may add arbitrarily many actions with arbitrary transition distributions.
+\end{proof}
+
+Note that although $\randomRandomOutcome = \connectedSG$, in general Algorithm \ref{algo:randomRandom} does not sample $\connectedSG$ uniformly at random.
+Due to the forward procedure, states with smaller indices tend to have more actions than states with higher indices.
+Additionally, creating the transition distributions as described in Algorithm \ref{algo:FillActions} favours state-action pairs to have few transitions.
+If we pick the transition probabilities between $(0, 1]$ uniformly at random, around $83,33\%$ of all actions have two or three transitions with positive probability and 
+none with one transition.
+
+\section{Adding Prefix-Graphs / Configurations}
+Since the purpose of random generated models is to sample from a space as big a possible, we have few insights on the structure of the model.
+Thus, this method is not very well suited if one wants to analyse behaviour of an algorithm on very specialized models. 
+Traditionally, this is where one would build handcrafted models. 
+However, handcrafting parameterizable prism files allows only for very restricted structural changes in the models. 
+Therefor, we have added the option to create models via code. On one hand this allows for more influental parameters.
+On the other hand, we can prepend models to other models. 
+Thus, we can for example prefend a model to every case study and see how much the added component influences algorithm performance.
+The prepended model contains the new initial state and instead of reaching a target it reaches the loaded model.
+Since the loaded model never reaches the prepended model, the runtime of any topological variant of an algorithm is the sum of the runtime to solve both models.
+
+%While randomly generated graphs can be useful to get a broad overview of how algorithms perform against each other, it may be hard to pinpoint the exact reasons why one algorithm performs better than another one since the random nature of these graphs comes at the cost of knowledge about the structure of the generated graphs.\textcolor{purple}{[ Even narrowing down the graph structure by the randomTree-procedure leaves too much room for varience to make structural analysis trivial.]} However, often one has already either an intuition or a proof on special cases where one algorithm is better than another one. While handcrafting PRISM-models for such adversary examples is possible, the customizable parameters of prism models are very limited. Furthermore, one problem that comes with handcrafting is that we cannot asses how much impact a structure that is adversarial for a certain algorithm has if it appears in a bigger model. \textcolor{purple}{[IS IT TRULY LIKE THIS? CANNOT WE AT LEAST SAY THAT IT'S THE SUM?]} 
+
+%This procedure is only able to generate a subset of all models that are connected. For example it cannot generate a model \textcolor{purple}{[WHICH ONE???]}, and in general it has more forward actions than backwards actions \textcolor{purple}{[backwards action: action where every state' has index smaller than state. Forward action: Action where at least one state' has an index greater than state]}. Nevertheless, it is suffienciently random \textcolor{purple}{[Maybe here a distribution over several properties would be cool - in comparison to real models and also a general assessment. Ideally, we would like to have an almost uniform distribution over some properties? However, other properties like MEC-size are unlikely to be distributed randomly]} 
+
+%\textcolor{purple}{[Should I even talk about RandomTree? It was just there to create manyAction Models for that one reviewer of GandALF. Mostly all of the models are strict subset of models RandomRandom can generate. But maybe it is cool to later say 'the random-generation procedure greatly affects the benchmarks. For example we have implemented RandomTrees and the algorithms perform differently due to a more fixed structure. If someone finds a better approach to create models that are as random as possible, stuff may look differently. OR if someone finds a way to create random models that resemble real case-studies]}
+
+%To minimize the number of trivial models, we take several steps:
+%\begin{itemize}
+%\item We add a new target $\target'$ to the model. Every previous target $\target \in \targets$ has only one action that leads with 90\% probability to $\target'$ and with 10\% probability to a sink. Thus, the usual precomputation steps are not sufficient to recognize that the maximizer can always force a 0.9 value. \textcolor{purple}{[IS THIS A TRULY PLAUSIBLE APPROACH? IF THE GRAPH IS ONLY NON-TRIVIAL BECAUSE OF THE 0.9 VALUE, IS IT THEN STILL HARD TO SOLVE FOR THE ALGORITHMS?]}
+%\item ???
+%\end{itemize}
+
+
+%\subsubsection{Limitations of our random-generation procedure}
+%It is worth noting that our procedure for random graph-generation cannot ensure a uniform over all properties. For example uniform distributions of the decisions whether an action should have only one successor and whether the action is a backwards action yield non-uniform distributions on the biggest MEC size in the graph. Having this in mind, it would be necessary to create other sets of guidelines to create random models that distribute uniformly over specific properties. We distribute almost uniformly on the following properties:
+%- how many actions a state has between [min, max]
+%- who are possible successors of a state-action-Pair
+%- whether an action should have more than one successor

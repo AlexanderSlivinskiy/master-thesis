@@ -1,0 +1,32 @@
+\begin{figure}[h]
+
+\centering
+\begin{tikzpicture}
+%BRTDPworks
+\drawdummy (init) at (-2,0) {};
+\drawbox (p) at (0,0) {$\mathsf{p}$};
+
+\drawbox (q) at (0,4) {$\mathsf{q}$};
+\drawdummy (mid) at (2,0) {};
+
+\drawbox (1) at (4,4) {$\target$ };
+\drawcirc (0) at (4,0)  {$\bot$};
+
+\node[draw,ellipse,minimum size=1.5cm] (st) at (4,-3) {\large{Large number of states}};
+
+
+\draw[->] (init) to (p);
+\draw[->]  (p) to node [midway,anchor=east] {$\mathsf{a}$}(q) ;
+\draw[->] (q) to node [midway,anchor=south] {$\mathsf{c}$} (1) ;
+\draw[-] (p) to node [midway,anchor=south] {$\mathsf{b}$} (mid) ;
+
+\draw (mid) -- (0);
+\draw (mid) -- (st);
+
+\draw[->]  (0) to[loop above]  node [midway,anchor=south] {$\mathsf{e}$} (0);
+\draw[->]  (1) to [loop above] node [midway,anchor=south] {$\mathsf{d}$} (1) ;
+
+\end{tikzpicture}
+\caption{An $\SG$ with a short path from the initial state to $\target$, but a large state space. The ellipse labeled as ``Large number of states'' can contain an arbitrarily large sub-game, e.g. with billions of states.}
+\label{ex:BRTDPworks}
+\end{figure}

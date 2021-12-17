@@ -1,0 +1,39 @@
+%TODO: caption, rename states, make action names
+
+\begin{figure}
+
+\centering
+\begin{tikzpicture}
+%VI-fail
+\drawdummy (init) at (-1,0) {};
+\drawcirc (A) at (1,0) {$\mathsf{p}$};
+\drawbox (B) at (4,0) {$\mathsf{r}$};
+\drawdummy (mid) at (4,2) {};
+\drawbox (C) at (7,0) {$\mathsf{q}$};
+\drawdummy (last) at (9,0) {};
+\drawbox (1) at (11,2) {$\target$};
+\drawcirc (0) at (11,-2)  {$\bot$};
+%\node  at (5,1.3) {0.34};
+
+\draw[->] (init) to (A);
+\draw[->]  (A) to node [midway,anchor=south] {$\mathsf{a}$} (B) ;
+\draw[-] (B) to node [midway,anchor=west] {$\mathsf{b}$} (mid);
+\draw[->] (mid) to [bend left,out=270,in=250] (A) ;
+\draw[->,red] (mid) to [bend right,out=90,in=110] (C) ;
+\draw[-] (C) to node [midway,anchor=south] {$\mathsf{c}$} (last);
+\draw (last) -- (0);% node [midway,anchor=north east] {0.5};
+\draw (last) -- (1);%node [midway,anchor=south east] {0.5};
+
+
+\draw[->]  (0) to[loop above]   node [midway,anchor=south] {$\mathsf{e}$}  (0) ;
+\draw[->]  (1) to [loop above]  node [midway,anchor=south] {$\mathsf{d}$} (1) ;
+
+
+\end{tikzpicture}
+\caption{An example of an $\SG$ where the value iteration implemented in PRISM produces a result that is far off. The probabilities on action $\mathsf{b}$ are not uniform, but as follows: \\
+$\trans(\mathsf{r},\mathsf{b})(\mathsf{p}) = 1 - 10^{-14}$ and $\trans(\mathsf{r},\mathsf{b})(\mathsf{q}) = 10^{-14}$, so the red part has a very small probability.}
+\label{ex:VI_fail}
+
+\end{figure}
+
+ 

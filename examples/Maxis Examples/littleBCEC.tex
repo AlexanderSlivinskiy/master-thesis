@@ -1,0 +1,41 @@
+\begin{figure}[h]
+
+\centering
+\begin{tikzpicture}
+%littleBCEC
+\drawdummy (init) at (-2,0) {};
+\drawcirc (p) at (0,0) {$\mathsf{p}$};
+\drawbox (q) at (4,0) {$\mathsf{q}$};
+\drawdummy (mid) at (6,0) {};
+\drawbox (1) at (8,2) {$\target$ };
+\drawcirc (0) at (8,-2)  {$\bot$};
+
+\draw[->] (init) to (p);
+\draw[->]  (p) to[bend left] node [midway,anchor=south] {a}(q) ;
+\draw[->]  (q) to [bend left] node [midway,anchor=north] {b} (p);
+\draw[-] (q) to node [midway,anchor=south] {c} (mid) ;
+\draw (mid) -- (0);% node [midway,anchor=north east] {0.5};
+\draw (mid) -- (1);%node [midway,anchor=south east] {0.5};
+\draw[->]  (0) to[loop above]  node [midway,anchor=south] {e} (0);
+\draw[->]  (1) to [loop above] node [midway,anchor=south] {d} (1) ;
+
+
+\end{tikzpicture}
+\caption{An example of an $\SG~\G$ with $\states = \set{\mathsf{p},\mathsf{q},\bot,\target}$, $\states<\Box> = \set{\mathsf{q},\target}$, $\states<\circ> = \set{\mathsf{p},\bot}$, the initial state $\mathsf{p}$ and the set of actions $\actions = \set{\mathsf{a},\mathsf{b},\mathsf{c},\mathsf{d},\mathsf{e}}$. $\Av(\mathsf{p})=\set{\mathsf{a}}$, and $\trans(\mathsf{p},\mathsf{a})(\mathsf{q})=1$. $\Av(\mathsf{q})=\set{\mathsf{b},\mathsf{c}}$, with $\trans(\mathsf{p},\mathsf{b})(\mathsf{q})=1$ and $\trans(\mathsf{p},\mathsf{c})(\target)=0.5$ as well as $\trans(\mathsf{p},\mathsf{c})(\bot)=0.5$. $\target$ and $\bot$ each have one available action that surely leads back to themselves.}
+\label{ex:littleBCEC}
+\end{figure}
+
+
+
+\iffalse
+
+VI from below in two steps
+BVI fails, Illusion
+BRTDP below in one simulation if we go to 0, could also never go to 0 and never terminate from below; but this a.s. does not happen; also fails from above
+
+More examples: 
+	- VI off by 1 CHECK (red edge smaller than two times epsilon (depends on how term crit is implemented); then two iterations (one to propagate 0.5 to C, one to propagate a very small number to q) => ``no'' change => result 0)
+	- littleqCEC with selfloop (takes forever to converge) CHECK
+	- Converging EC (Prelim and BVIwo) CHECK
+	- Complex BCEC (5 States, without starting state, with a b c d on the exits; also for the things are equal case) CHECK
+\fi

@@ -1,0 +1,28 @@
+\begin{figure}
+
+
+\centering
+\begin{tikzpicture}
+%little BCEC with loop
+\drawdummy (init) at (-2,0) {};
+\drawcirc (p) at (0,0) {$\mathsf{p}$};
+\drawbox (q) at (4,0) {$\mathsf{q}$};
+\drawdummy (mid) at (6,0) {};
+\drawbox (1) at (8,2) {$\target$ };
+\drawcirc (0) at (8,-2)  {$\bot$};
+
+\draw[->] (init) to (p);
+\draw[->]  (p) to[bend left] node [midway,anchor=south] {$\mathsf{a}$}(q) ;
+\draw[->]  (q) to [bend left] node [midway,anchor=north] {$\mathsf{b}$} (p);
+\draw[-] (q) to node [midway,anchor=south] {$\mathsf{c}$} (mid) ;
+\draw (mid) -- (0);% node [midway,anchor=north east] {0.5};
+\draw (mid) -- (1);%node [midway,anchor=south east] {0.5};
+\draw (mid) to [bend left,out=270,in=270] (q) ;
+\draw[->]  (0) to[loop above]  node [midway,anchor=south] {$\mathsf{e}$} (0);
+\draw[->]  (1) to [loop above] node [midway,anchor=south] {$\mathsf{d}$} (1) ;
+
+
+\end{tikzpicture}
+\caption{An extension of the example $\SG$ in Figure \ref{ex:littleBCEC}, where the action $\mathsf{c}$ has been changed. In this example $\trans(\mathsf{q},\mathsf{c})(\mathsf{q}) = \trans(\mathsf{q},\mathsf{c})(\target) = \trans(\mathsf{q},\mathsf{c})(\bot) = \frac{1}{3}$.}
+\label{ex:littleBCECloop}
+\end{figure}

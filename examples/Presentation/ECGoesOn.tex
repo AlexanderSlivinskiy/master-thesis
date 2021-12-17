@@ -1,0 +1,36 @@
+\documentclass[convert={png,size=630,density=600}]{standalone}
+\usepackage{tikz}
+
+% == Tikz
+\input{commands}
+
+\begin{document}
+\begin{tikzpicture}[scale=1.0, every node/.style={transform shape}]
+%little BCEC with loop
+\drawdummy (init) at (0,-2) {};
+\drawdummy (space1) at (0,5.5){};
+\drawdummy (space2) at (0,-1.5){};
+\drawbox (q) at (0,0) {$\mathsf{s_0}$};
+\drawcirc (p) at (0,4) {$\mathsf{s_1}$};
+\drawdummy (mid) at (2,2) {};
+\drawbox (1) at (4,4) {$\mathsf{s_2}$};
+\drawcirc (0) at (4,0)  {$\mathsf{s_3}$};
+\drawdummy (11) at (4,6) {};
+\drawdummy (12) at (6,4) {};
+\drawdummy (21) at (6,0) {};
+\drawdummy (22) at (4,-2) {};
+
+\draw[->] (init) to (q);
+\arr  (q) to [bend right] node [left ,midway] {$\mathsf{a}$}(p);
+\arrblue  (p) to [bend right] node [right, midway] {$\mathsf{a}$}(q);
+\arr  (p) to node [midway,anchor=south] {$\mathsf{b}$}(1) ;
+\midlinered (q) to node [midway,anchor=south] {$\mathsf{b}$} (mid) ;
+\arrred (mid) to node [text width =1.0cm, midway, below] {$\frac{1}{2}$} (0);
+\arrred (mid) to node [text width =1.0cm, near end, above] {$\frac{1}{2}$} (1);
+%\draw (mid) to [bend left,out=270,in=270] (q) ;
+\draw[->]  (0) to node [midway,right] {$\mathsf{a}$} (22);
+\draw[->]  (0) to node [midway,below] {$\mathsf{b}$} (21);
+\draw[->]  (1) to node [midway,right] {$\mathsf{a}$} (11);
+\draw[->]  (1) to node [midway,below] {$\mathsf{b}$} (12);
+\end{tikzpicture}
+\end{document}

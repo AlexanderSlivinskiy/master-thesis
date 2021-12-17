@@ -1,0 +1,34 @@
+\documentclass{standalone}
+\usepackage{tikz}
+
+% == Tikz
+\newcommand{\drawcirc}{\node[draw,circle,minimum size=1.5cm]}
+\newcommand{\drawcircred}{\node[red, draw,circle,minimum size=1.5cm]}
+\newcommand{\drawbox}{\node[draw,rectangle,minimum size=1.5cm]}
+\newcommand{\drawboxred}{\node[red, draw,rectangle,minimum size=1.5cm]}
+\newcommand{\drawdummy}{\node[minimum size=0,inner sep=0]}
+\newcommand{\zeroSink}{\mathsf{o}}
+\newcommand{\target}{\mathsf{f}}
+
+\begin{document}
+\begin{tikzpicture}[scale=0.6, every node/.style={transform shape}]
+%little BCEC with loop
+\drawdummy (init) at (-2,0) {};
+\drawdummy (space1) at (0,3.5) {};
+\drawdummy (space2) at (0,-3.5) {};
+\drawbox (s0) at (0,0) {$\mathsf{s_0}$};
+\drawdummy (s0Mid) at (2,0) {};
+\drawbox (s1) at (4,-2) {$\target$};
+\drawcirc (0) at (4,2)  {$\mathrm{\zeroSink}$};
+
+%\drawbox (1) at (4,4) {$\target$ };
+
+\draw[->] (init) to (s0);
+\draw[-] (s0) to node [midway,above] {$\mathsf{a}$} (s0Mid);
+\draw[->] (s0Mid) to node [text width=0.5cm, midway, above] {$\epsilon$} (0);
+\draw[->] (s0Mid) to node [text width=1.5cm, midway, below] {$1-\epsilon$} (s1);
+
+\draw[->]  (s1) to [loop right] node [midway,right] {$\mathsf{a}$} (s1);
+\draw[->]  (0) to [loop right] node [midway,right] {$\mathsf{a}$} (0);
+\end{tikzpicture}
+\end{document}

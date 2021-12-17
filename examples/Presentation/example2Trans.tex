@@ -1,0 +1,64 @@
+\begin{figure}
+
+\centering
+\begin{tikzpicture}[thick,scale=0.6, every node/.style={font=\large, transform shape}]
+%little BCEC with loop
+\drawdummy (init) at (0,2) {};
+\drawbox (q) at (0,0) {$\mathsf{s_0}$};
+\drawcirc (p) at (4,0) {$\mathsf{s_1}$};
+\drawdummy (mid) at (4,-2) {};
+\drawbox (11) at (8,-4) {$\mathsf{f_1}$};
+\drawbox (12) at (4,-4) {$\mathsf{f_2}$};
+\drawcirc (0) at (0,-4)  {$\mathrm{\zeroSink}$};
+
+\drawdummy (l) at (9, -2) {};
+\drawdummy (r) at (11, -2) {};
+
+\draw[->] (init) to (q);
+\draw[->]  (q) to node [above ,midway] {$\mathsf{a}$}(p);
+
+\draw[-] (p) to node [text width =1.0cm, above, midway] {$\mathsf{a}$}(mid);
+
+\draw[->] (mid) to node [midway, above] {$0.2$} (0);
+\draw[->] (mid) to node [midway, above] {$0.4$} (11);
+\draw[->] (mid) to node [midway, left] {$0.4$} (12);
+
+\draw[->]  (0) to[loop below]  node [midway,below] {$\mathsf{a}$} (0);
+\draw[->]  (11) to [loop below] node [midway,below] {$\mathsf{a}$} (11);
+\draw[->]  (12) to [loop below] node [midway,below] {$\mathsf{a}$} (12);
+
+\draw[->] (l) to (r);
+\end{tikzpicture}
+\begin{tikzpicture}[thick,scale=0.6, every node/.style={font=\large, transform shape}]
+%little BCEC with loop
+\drawdummy (init) at (0,2) {};
+\drawbox (q) at (0,0) {$\mathsf{s_0}$};
+\drawcirc (p) at (4,0) {$\mathsf{s_1}$};
+\drawdummy (mid) at (4,-2) {};
+\drawbox (11) at (8,-8) {$\mathsf{f_1}$};
+\drawbox (12) at (4,-8) {$\mathsf{f_2}$};
+\drawcirc (0) at (0,-8)  {$\mathrm{\zeroSink}$};
+
+\draw[->] (init) to (q);
+\draw[->] (q) to node [above, midway] {$\mathsf{a}$}(p);
+\draw[->] (q) to [bend right] node [left, midway] {$\mathsf{b}$}(0);
+
+\draw[->] (0) to[loop below]  node [midway,below] {$\mathsf{a}$} (0);
+\draw[->] (11) to [loop below] node [midway,below] {$\mathsf{a}$} (11);
+\draw[->] (12) to [bend right] node [midway,below] {$\mathsf{a}$} (11);
+
+
+\drawcirc (s2) at (2,-4) {$\mathsf{s_2'}$};
+\drawdummy (s2Mid) at (2, -6) {};
+
+\draw[-] (p) to node [text width =1.0cm, above, midway] {$\mathsf{a}$}(mid);
+\draw[->] (mid) to node [midway, left] {$0.6$} (s2);
+\draw[->] (mid) to node [midway, right] {$0.4$} (11);
+
+\draw[-] (s2) to node [text width =1.0cm, above, midway] {$\mathsf{a}$}(s2Mid);
+\draw[->] (s2Mid) to node [font = \Large, text width = 2.75cm, very near start, left] {$\frac{0.2}{0.2+0.4} = \frac{1}{3}$} (12);
+\draw[->] (s2Mid) to node [font = \Large, text width =-3.0cm, near start, right] {$\frac{0.4}{0.2+0.4} = \frac{2}{3}$} (0);
+\end{tikzpicture}
+\caption[Example of an $\SG$ being transformed into one fulfilling the $\twoTrans$-constraint]{An example of transforming an $\SG$ into one fulfilling the $\twoTrans$-constraint. $\post(s_0, a)$ has more than two successors, so a binary subtree is built up. The transition-probabilities have to be adjusted proportionally to maintain the original values of all states.}
+\label{ex:example2Trans}
+\end{figure}

@@ -1,0 +1,25 @@
+\begin{figure}
+\centering
+\begin{equation*}
+\resizebox{0.6\hsize}{!}{
+$
+\begin{array}{ll@{}ll}
+\text{minimize}  &
+(\val(s_0) - \val(s_1)) \cdot (\val(s_0) - \frac{1}{2}) +&&\\
+&(\val(s_1) - \val(s_0)) \cdot (\val(s_1) - 1)&&\\
+
+\text{subject to}& 
+\displaystyle\val(s_0) \geq \val(s_1)&&\\
+&\displaystyle\val(s_0) \geq \frac{1}{2} \cdot \val(\zeroSink) + \frac{1}{2} \cdot \val(\target)&&\\
+&\displaystyle\val(s_1) \leq \val(s_0)&&\\
+&\displaystyle\val(s_1) \leq \val(\target)&&\\
+& \displaystyle\val(\mathsf{f}) = 1  &\forall \mathsf{f} \in \fstates &\\
+& \displaystyle\val(\mathsf{\zeroSink}) = 0  &\forall \mathsf{\zeroSink} \in \zeroSinks &\\
+& \displaystyle\val(\state) \in [0,1] \subset \mathbb{Q}  &\forall \state \in \states &\\ 
+\end{array}
+$
+}
+\end{equation*}
+\caption[Condons quadratic program cannot handle non-stopping games]{Figure \ref{ex:exampleEC} written down in \conQP{} illustrates, that the $\SG$s given to QP must be stopping. Besides being non-stopping this QP is in \cnf{}. If $s_0$ and $s_1$ decide to pick $\val(s_0) = 1, \val(s_1) = 1$ these strategies are considered optimal by the QP as they fulfill all the constraints and the objective function is 0. However, the Minimizer does not play optimal in $s_1$ as he can enforce $\val(s_0) \leq 0.5$.}
+\label{ex:exampleECConstInsuff}
+\end{figure}

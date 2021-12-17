@@ -1,0 +1,73 @@
+\chapter{Algorithm Analysis} \label{ch:analysis}
+
+To facilitate the algorithm performance-analysis, we track statistics about the models we use and the algorithms that solve them. 
+We refer to every category of data that we track as \emph{features}.
+The algorithm-features we track are the time it requires to solve the problem, the iterations needed in case we use a value-iteration-based algorithm and the value it has computed for correctness checks.
+The model-features we track are:
+
+$\mathbf{State-related:}$
+\begin{itemize}
+\item Number of states
+\item Number of targets*
+\item Number of sinks*
+\item Number of unknown states*
+\item Number of Maximizer states*
+\item Number of Minimizer states*
+\end{itemize}
+
+$\mathbf{Actions-related:}$
+\begin{itemize}
+\item Number of maximum actions per state
+\item Number of maximum transitions per action
+\item Number of actions with probabilistic actions*
+\item Average number of actions per state
+\end{itemize}
+
+$\mathbf{Transitions-related:}$
+\begin{itemize}
+\item Smallest occuring positive transition probability in the model
+\item Average number of transitions per action
+\end{itemize} 
+
+$\mathbf{MEC-related:}$
+\begin{itemize}
+\item Number of MECs
+\item Size of biggest and smallest MEC
+\item Average MEC-size and Median MEC-size
+\end{itemize}
+
+$\mathbf{SCC-related:}$
+\begin{itemize}
+\item Number of SCCs
+\item Size of biggest and smallest SCC
+\item Average SCC-size and Median SCC-size
+\item Longest chain of SCCs from the initial-state SCC
+\end{itemize}
+
+The features marked with a * can be represented as relative values in relation to the number of states or actions respectively.
+Relative values are value useful since they are independent of the model size and thus make comparison easier.
+Furthermore, we analyse the shortest paths of the attractor \textcolor{purple}{[This would force me to introduce attractors only for this section...]} from the initial state to any target.
+
+\section{Visualization}
+
+Tracking all these features requires tools to visualize and summarize the collected data, since otherwise the raw data is overwhelming.
+We have implemented a bare-bones toolset to facilitate the analysis. 
+
+\subsubsection{Data Visualization Script - Data Loading}
+First, we load the tracked data and select the features we are interested in. We allow here to include filters to remove uninteresting data based on feature-values.
+We also check for errors and wrong values in the dataloading phase. To assert whether a value is correct, we need a reference value whose result we believe to be true.
+We usually use OVI or $\TLPSI$ as references since they tend to have the least timeouts and thus provide a good reference.
+
+\subsubsection{Data Visualization Script - Handling Missing Data}
+Next we need to handle data that does not contain numerical values - for example the algorithms that got timeouts on certain models.
+For model-features we usually use 0 as replacement value. 
+If an algorithm cannot provide the correct value in time, we set its time and iterations-count to a penalty-value.
+These penalty values should be higher than any truly occuring value to easily calculate and visualize which algorithms performed best.
+For time we usually use the time limit as penalty, and for iterations we use 10 million iterations.
+
+The problem of introducing these penalty values is that they influence the data distribution.
+For visualization, the graphs can end up skewed because most non-penalty data-points are significantly smaller than the penalty, 
+and so it becomes harder to observe trends in graphs. Also, many visualization methods like heatmaps or statistical tests perform operations on the
+data. Thus, untrue values can falsify the correlation between features.
+
+To handle this problem, in addition to the analysis of the whole data with penalty-values, we only consider data where we have a value for every feature.

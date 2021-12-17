@@ -1,0 +1,58 @@
+\documentclass{standalone}
+\usepackage{tikz}
+
+% == Tikz
+\newcommand{\drawcirc}{\node[draw,circle,minimum size=1.5cm]}
+\newcommand{\drawbox}{\node[draw,rectangle,minimum size=1.5cm]}
+\newcommand{\drawdummy}{\node[minimum size=0,inner sep=0]}
+\newcommand{\zeroSink}{\mathsf{o}}
+\newcommand{\target}{\mathsf{f}}
+
+\begin{document}
+\begin{tikzpicture}[scale=0.6, every node/.style={transform shape}]
+\drawdummy (init) at (4,2) {};
+\drawbox (q) at (4,0) {$\mathsf{s_0}$};
+\drawdummy (mid) at (4,-2) {};
+\drawbox (11) at (8,-4) {$\mathsf{f_1}$};
+\drawbox (12) at (4,-4) {$\mathsf{f_2}$};
+\drawcirc (0) at (0,-4)  {$\mathrm{\zeroSink}$};
+
+\drawdummy (l) at (9, -2) {};
+\drawdummy (r) at (11, -2) {};
+
+\draw[->] (init) to (q);
+\draw[red, -]  (q) to node [left ,midway] {$\mathsf{b}$}(mid);
+\draw[red, ->] (mid) to node [midway, above] {$\frac{1}{2}$} (0);
+\draw[red, ->] (mid) to node [midway, right] {$\frac{1}{2}$} (12);
+\draw[red, ->]  (q) to node [left ,midway] {$\mathsf{a}$}(0);
+\draw[->]  (q) to node [above ,midway] {$\mathsf{c}$}(11);
+
+\draw[->]  (0) to[loop below]  node [midway,below] {$\mathsf{a}$} (0);
+\draw[->]  (11) to [loop below] node [midway,below] {$\mathsf{a}$} (11);
+\draw[->]  (12) to [loop below] node [midway,below] {$\mathsf{a}$} (12);
+
+\draw[->] (l) to (r);
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.6, every node/.style={transform shape}]
+%little BCEC with loop
+\drawdummy (init) at (4,2) {};
+\drawbox (q) at (4,0) {$\mathsf{s_0}$};
+\node[red,draw,rectangle,minimum size=1.5cm] (p) at (2,-4){$\mathsf{s_1'}$}; 
+\drawdummy (mid) at (2,-6) {};
+\drawbox (11) at (8,-8) {$\mathsf{f_1}$};
+\drawbox (12) at (4,-8) {$\mathsf{f_2}$};
+\drawcirc (0) at (0,-8)  {$\mathrm{\zeroSink}$};
+
+\draw[->] (init) to (q);
+\draw[red, -]  (p) to node [left ,midway] {$\mathsf{b}$}(mid);
+\draw[red, ->] (mid) to node [midway, above] {$\frac{1}{2}$} (0);
+\draw[red, ->] (mid) to node [midway, above] {$\frac{1}{2}$} (12);
+\draw[red, ->]  (p) to node [left ,midway] {$\mathsf{a}$}(0);
+\draw[->]  (q) to node [right ,midway] {$\mathsf{b}$}(11);
+\draw[red, ->]  (q) to node [left ,midway] {$\mathsf{a}$}(p);
+
+\draw[->]  (0) to[loop below]  node [midway,below] {$\mathsf{a}$} (0);
+\draw[->]  (11) to [loop below] node [midway,below] {$\mathsf{a}$} (11);
+\draw[->]  (12) to [loop below] node [midway,below] {$\mathsf{a}$} (12);
+\end{tikzpicture}
+\end{document}

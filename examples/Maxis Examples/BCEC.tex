@@ -1,0 +1,30 @@
+\begin{figure}[h]
+
+\centering
+\begin{tikzpicture}
+%BCEC
+\drawdummy (init) at (-2,0) {};
+\drawcirc (p) at (0,0) {$\mathsf{p}$};
+\drawbox (q) at (4,0) {$\mathsf{q}$};
+
+
+\node (Ao) at (0,-3) {0.8};
+\node (Bo) at (4,-3) {0.4};
+
+
+\draw[->] (init) to (p);
+
+\draw[->]  (p) to[bend left] node [midway,anchor=south] {$\mathsf{a}$}(q) ;
+\draw[->]  (q) to [bend left] node [midway,anchor=north] {$\mathsf{c}$} (p);
+
+\draw[->] (p) to node [midway,anchor=east] {$\mathsf{b}$} (Ao);
+\draw[->] (q) to node [midway,anchor=east] {$\mathsf{d}$} (Bo);
+
+\node[draw=red,rectangle,minimum width=6.2cm,minimum height=2.8cm,line width=1mm] (cbox) at (2,0) {};
+
+
+\end{tikzpicture}
+\caption{An $\SG$ with an example of a maxmizer-controlled end component in the red box. This example shows why we need the second condition in Definition \ref{def:BCEC}. The numbers on the leaving actions (i.e. $\mathsf{b}$ and $\mathsf{d}$) indicate the value of that action.}
+\label{ex:BCEC}
+\end{figure}
+

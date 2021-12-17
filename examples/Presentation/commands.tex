@@ -1,0 +1,30 @@
+\usepackage{xcolor}
+
+\definecolor{purp}{RGB}{142,124,195}
+% == Tikz
+\newcommand{\drawcirc}{\node[draw,circle,minimum size=1.5cm]}
+\newcommand{\drawbox}{\node[draw,rectangle,minimum size=1.5cm]}
+\newcommand{\drawcircred}{\node[thick, red, draw,circle,minimum size=1.5cm]}
+\newcommand{\drawcircpurp}{\node[thick, purp, draw,circle,minimum size=1.5cm]}
+\newcommand{\drawcircblue}{\node[thick, blue, draw,circle,minimum size=1.5cm]}
+\newcommand{\drawboxred}{\node[thick, red, draw,rectangle,minimum size=1.5cm]}
+\newcommand{\drawboxpurp}{\node[thick, color=purp, draw,rectangle,minimum size=1.5cm]}
+\newcommand{\drawdummy}{\node[minimum size=0,inner sep=0]}
+\newcommand{\redarr}{\draw[thick, red, ->]}
+\newcommand{\arr}{\draw[->]}
+\newcommand{\midline}{\draw[-]}
+\newcommand{\redmid}{\draw[thick, red, -]}
+\newcommand{\bluearr}{\draw[thick, blue, ->]}
+\newcommand{\bluemid}{\draw[thick, blue, -]}
+\newcommand{\midlinered}{\redmid}
+\newcommand{\midlineblue}{\bluemid}
+\newcommand{\arrblue}{\bluearr}
+\newcommand{\arrred}{\redarr}
+\newcommand{\arrpurp}{\draw[thick, color=purp, ->]}
+\newcommand{\midlinepurp}{\draw[thick, color=purp, -]}
+\newcommand{\arrpurpultra}{\draw[ultra thick, color=purp, ->]}
+
+% == Game
+\newcommand{\zeroSink}{\mathsf{o}}
+\newcommand{\target}{\mathsf{f}}
+\newcommand{\val}{\mathsf{V}}

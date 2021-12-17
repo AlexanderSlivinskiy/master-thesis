@@ -1,0 +1,32 @@
+\begin{figure}[h]
+
+\centering
+\begin{tikzpicture}
+%CCEC
+\drawdummy (init) at (-2,0) {};
+\drawcirc (p) at (0,0) {$\mathsf{p}$};
+\drawdummy (mid) at (2,0) {};
+\drawbox (q) at (4,2) {$\mathsf{q}$};
+\drawcirc (r) at (4,-2) {$\mathsf{r}$};
+
+\drawbox (1) at (7,-2) {$\target$ };
+
+
+\draw[->] (init) to (p);
+\draw[-] (p) to node [midway,anchor=south] {$\mathsf{a}$} (mid) ;
+\draw (mid) -- (q);
+\draw (mid) -- (r);
+\draw[->]  (q) to[bend right] node [midway,anchor=north] {$\mathsf{b}$} (p);
+\draw[->]  (r) to node [midway,anchor=east] {$\mathsf{c}$} (q);
+\draw[->]  (r) to node [midway,anchor=north] {$\mathsf{d}$} (1);
+
+\draw[->]  (1) to [loop above] node [midway,anchor=south] {e} (1) ;
+
+\node[draw=red,rectangle,minimum width=6.2cm,minimum height=6cm,line width=1mm] (cbox) at (2,0) {};
+
+
+\end{tikzpicture}
+\caption{An $\SG$ with an example of a minimizer-controlled end component in the red box.}
+\label{ex:CCEC}
+\end{figure}
+

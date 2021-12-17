@@ -1,0 +1,73 @@
+\RequirePackage[l2tabu,orthodox]{nag}
+
+% TODO: decide if one-sided/two-sided
+%\documentclass[headsepline,footsepline,footinclude=false,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc,BCOR=12mm,DIV=12]{scrbook} % two-sided
+\documentclass[headsepline,footsepline,footinclude=false,oneside,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc]{scrbook} % one-sided
+
+% TODO: change citation style in settings
+\input{settings}
+%\input{format/packages}
+\input{format/macros}
+\input{format/sashasmacros}
+
+% TODO: change thesis information
+\newcommand*{\getUniversity}{Technische Universität München}
+\newcommand*{\getFaculty}{Department of Informatics}
+\newcommand*{\getTitle}{Facilitating Experimental Analysis of Algorithms for Stochastic Games: Random Model Generation and Mining the Results}
+\newcommand*{\getTitleGer}{Unterst{\"u}tzen der experimentellen Analyse von Algorithmen für das L{\"o}sen stochastischer Spiele: Erzeugung von Zufallsmodellen und Auswertung der Ergebnisse}
+\newcommand*{\getAuthor}{Alexander Slivinskiy}
+\newcommand*{\getDoctype}{Master's Thesis in Informatics}
+\newcommand*{\getSupervisor}{Prof. Dr. Jan K\v{r}et\'{i}nsk\'{y}}
+\newcommand*{\getAdvisor}{Maximilian Weininger, Muqsit Azeem}
+\newcommand*{\getSubmissionDate}{28.01.2022}
+\newcommand*{\getSubmissionLocation}{Munich}
+
+\begin{document}
+
+% Set page numbering to avoid "destination with the same identifier has been already used" warning for cover page.
+% (see https://en.wikibooks.org/wiki/LaTeX/Hyperlinks#Problems_with_Links_and_Pages).
+\pagenumbering{alph}
+\input{pages/cover}
+\input{pages/title}
+\input{pages/disclaimer}
+%\input{pages/acknowledgments}
+\input{pages/abstract}
+\microtypesetup{protrusion=false}
+\tableofcontents{}
+\microtypesetup{protrusion=true}
+
+\mainmatter{}
+
+%\input{1_intro/01_introduction}
+%\newpage
+%\chapterSpace
+\input{1_intro/intro}
+\chapterSpace
+\input{2_prelims/prelims}
+\chapterSpace
+\input{implemented_algos/implemented_algos.tex}
+\chapterSpace
+\input{3_randomGen/randomGen}
+\chapterSpace
+\input{3_randomGen/implementation.tex}
+\chapterSpace
+\input{4_analysis/analysis}
+\chapterSpace
+\input{5_results/results}
+\chapterSpace
+\input{6_conclusion/conclusion}
+%\input{3_qp/qp_main}
+%\chapterSpace
+%\input{5_conc/conclusion}
+
+%\microtypesetup{protrusion=false}
+%\listoffigures{}
+%\listoftables{}
+\microtypesetup{protrusion=true}
+\printglossaries
+%\printbibliography{}
+
+\appendix{}
+\input{pages/appendix}
+
+\end{document}

@@ -1,0 +1,138 @@
+\chapter{Randomly Generated Models} \label{ch:randomGen}
+\section{Why Use Randomly Generated Models}
+\textcolor{purple}{I actually dont know if there is any benefit to this more than the ones Ive named.}
+
+\section{Why Use Randomly Generated Models for SGs}
+To make a quantitative assertion about the performance of the algorithms, we need first a broad spectrum of models we can test the algorithms on. At the moment we are aware of 12 case studies, giving rise to 17 distinct reachability problems for stochastic games. These problems have often parameters that can be adjusted, resulting in infinetely many graphs. However, graphs derived from the same problem will have similar graph structures.
+
+Clearly, we need more distinct models to provide a solid algorithm comparison. Creating handcrafted reachability problems is useful to make comparisons on edge-case situations and show off the weaknesses of categories of algorithms (like the haddad-monmege model does for value iteration), but contributes only very little to the overall coverage of possible reachability-problems for stochastic games.
+
+To tackle this issue we introduce randomly generated models.
+
+%\subsection{Sampling the Model-Probability Space}
+%One way of generating random models is to consider the space of all possible models and sample uniformly from this space. However, we constrain the model space for two reasons:
+%First, there are some properties like connectedness that we always want to have in the models we generate.
+%Secondly, algorithm-performance is easier to contextualize if the models differ in only few properties. If model A has more states, more and bigger MECs than model B, it is hard to relate the performance difference of an algorithm on model A and B to a specific property.
+
+%The problem with sampling the model space is that depending on the constraints it is infinite \textcolor{purple}{and at this moment I have no real idea how to do this. This is why we take an iterative model-generation process.}
+
+\section{Constraining the Random-Generation Process}
+First, we consider which parameters there are that 
+While it is possible to completely randomize every property of a model, this procedure would yield graphs with undesirable properties. A model is $\mathbf{undesirable}$ if there are states to which there is no path from the initial state since these states are just overly complex sinks. To this end we create easily modifiable constraints that guide the random-generation process into creating desirable models. The constraints are fed to a generator that uses guidelines on how to create the models aswell as simple parameters like the maximum number of actions a state may have.
+Ideally, we would like to have guidelines that allow us to sample uniformly from the space of all possible models fulfilling our constraints. Note that this requires a natural upper bound on the number of states and a finite set of transition probabilities, since otherwise the model space becomes infinite. \textcolor{purple}{Additionally, at this moment I have no real idea how to do this.}
+We use instead an iterative generation process with more specific guidelines. While the approach we use cannot sample the whole probability space uniformly, it is easy to implement and modify.
+
+\section{Our take on creating models as random as possible}
+To generate random, desirable models we use the following procedure \label{procedure:randomRandom}
+\begin{enumerate}
+ \item Add a new state $\state'$ to the graph
+ \item Pick m states created before $\state'$, where m is picked uniformly at random from the natural numbers. Each one gets a transition probability between 0 and 1 assigned.
+ \item A: Normalize the transition probabilities by dividing by the transition sum? [This results in most of the transitions simply having a more or less even probability distribution]
+ \item B: the first n-1 pick at random and are than divided by 1/(n). The last one gets the rest [Problem: the interval of the last is $[\frac{n-1}{n}, 1]$
+ \item C: Successive picking: Results most likely in 2-3 actions
+ 
+\end{enumerate}
+This ensures that the graph is connected and there are no states to which there is no path from the initial state. Note that since $\state$ is created before $\state'$ there are no end components. To provide an option of generating end components, we iterate from the last state to the first and randomly decide on whether they should have additional actions leading to randomly selected states. Thus, end components may appear but are not guaranteed to exist.
+
+To show that this procedure can create every model in the desirable model space, we consider the following lemma:
+\begin{lemma}
+Let $\randomRandomOutcome$ be the set of stochastic games that Procedure \ref{procedure:randomRandom} can produce. $\randomRandomOutcome$ contains every desirable stochastic game.
+\end{lemma}
+\begin{proof}
+To prove the lemma, we need to show that the procedure is able to create every tuple that is desirable.
+
+For this we need to show that the following statements all hold independently of each other for a stochastic game $\SG$ created by Procedure \ref{procedure:randomRandom}:
+\begin{enumerate}
+\item There may be an arbitrary number of states in $\SG$.
+\item Any distribution of $\states$ between $\states<\Box>$ and $\states<\Circ>$ is possible.
+\item Any state may be the initial state.
+\item For% an arbitrary $\act$, $\Av$ is able to perform any mapping $\states \rightarrow 2^{\act}$.
+\item Any action in $\SG$ may have arbitrary many transitions. The probability distribution among the transitions may be arbitrary. Any state can be the target of any transition.
+\item The $\SG$ is desirable
+\end{enumerate}
+
+
+Since we create a random number of states and assign them uniformly to either $\states<\Box>$ or $\states<\Circ>$, every number of states and every distribution of them between Maximizer and Minimizer is possible. Thus, statements 1. and 2. hold. Since there is no enumartion happening in Procedure \ref{procedure:randomRandom}, it is safe to assume that statement 3. also holds since we could declare any state our initial state.
+
+For statement 4. consider any $\action$ and any $\Av$. 
+There is a $\SG \in \randomRandomOutcome$ containing exactly $\action$ and $\Av$, since anything between a state having zero outgoing actions and a state having all the actions there are in the game [only possible for initial state] is possible. $\actions$ is for any state  For every state $\state \in \states$.
+\textcolor{purple}{Here I need some work}
+Take any state and any number k of actions. If the state is $\initstate$, then the number of actions is at least one. However, if this was not the case $\SG$ would not be desirable. Besides this constraint every state may have an arbitrary number of actions. k is the sum of forward and backwards actions. The forward actions alone cannot be any k, but together with the backward actions any is possible. 
+
+The number of states involved in an action is decided randomly, so arbitrary many transitions are possible. Next, pick an arbitrary transition probability distribution for the action. Since we draw as long possibilities randomly until we sum up to one, any summation of 1 with positive summands is possible. Thus, the ordering of the states does not matter and is freely assignable. Also the transition probability distribution can be represented by a summation of non-negative coefficients.
+However, the target state has always a non-zero value. So we also have to show that every target-state is possible from every source-state. This is true because we have the backwards actions. Since the probability of their appearance is random there exists every possible (source,target)-action.
+Statement 5 thus holds.
+
+Statement 6 holds by design: Since every state is connected to a previous state, the initial state is connected to every state.
+
+Thus, all statements hold and we are fine
+\end{proof}
+
+This procedure can create every model in the desirable model space since states may have arbitrary many actions with arbitrary transition probabilities to every state. \textcolor{purple}{ <- Maybe this is worth a proof? I feel like this is true, but Im not 100\% sure yet.} However, generating models this way does not sample the space uniformly, since the number of transitions per action is sampled non-uniformly. Thus, actions tend to have rather few transitions. Also, states with smaller indices tend to have more actions than states with higher indices.
+
+\subsubsection{Fixing Properties}
+In some cases, it is interesting to compare algorithms on models that have several properties in common. By fixing a property we have more insight on the structure of the model and can easier analyse why one algorithm is superior to another in the given scenario. If for example model A has more states, more and bigger MECs than model B, it is hard to relate the performance difference of an algorithm on model A and B to a specific property. \textcolor{purple}{[What I want to say: Fixing more feature-dimensions leaves fewer feature dimensions that can vary -> ideally leaving only one feature-dimension with variance. This way we can precisely oberserve how changes in that feature-dimension affect performance of the algorithms]} 
+
+While we can fix properties like the number of states in our generation-procedure there are others we cannot control like the number or size of MECs \textcolor{purple}{or at least not in an easy way}.
+
+If we are interested in fixing such properties, we use other procedures that restrict the desirable model space further but provide control over certain parameters. Procedures we have come up with are:
+\begin{itemize}
+\item $\textbf{RandomTree}$ A treelike graph-structure where the initial-state is the root. In this procedure we can easily set the number of actions every state has.
+\item $\textbf{RandomMEC}$ Create m subgraphs of desired size randomly. Force them to be MECs by inserting actions accordingly. Sort them, assign to each MEC a representative. Now we have m representatives which we can connect similar to our random-procedure. Can handle size and number of MECs
+\item $\textbf{RandomSEC}$ Create m subgraphs by our random-procedure of desired size randomly. Per subgraph find each SEC and connect them, resulting in one SEC per subgraph. Sort the subgraphs, assign to each a representative. Now we have m representatives which we can connect similar to our random-procedure. Can handle size and number of SECs
+\end{itemize}
+
+\textcolor{purple}{The different guidelines are helpful because we will see in the experimental section that their structural differences have a huge impact on the performance of our algorithms. With just a purely random procedure this claim is harder to visualize.}
+
+\section{Adding Prefix-Graphs / Configurations}
+\textcolor{purple}{This is rather an implementation thing than an abstract thing, so maybe I should not put it into this section?}
+Since the purpose of random generated models is to sample from a space as big a possible, we have per se few insights on the structure of the model, even after fixing properties. Thus, this method is not very well suited if one wants to analyse behaviour of an algorithm on very specialized models. Traditionally, this is where one would build handcrafted models. However, handcrafting parameterizable prism files allows only for very restrictive structural changes in the models. Therefor, we have implemented the option to create models at runtime. These models can also be prepended to other models to evaluate how much impact a certain structure has if added to a model.
+
+%While randomly generated graphs can be useful to get a broad overview of how algorithms perform against each other, it may be hard to pinpoint the exact reasons why one algorithm performs better than another one since the random nature of these graphs comes at the cost of knowledge about the structure of the generated graphs.\textcolor{purple}{[ Even narrowing down the graph structure by the randomTree-procedure leaves too much room for varience to make structural analysis trivial.]} However, often one has already either an intuition or a proof on special cases where one algorithm is better than another one. While handcrafting PRISM-models for such adversary examples is possible, the customizable parameters of prism models are very limited. Furthermore, one problem that comes with handcrafting is that we cannot asses how much impact a structure that is adversarial for a certain algorithm has if it appears in a bigger model. \textcolor{purple}{[IS IT TRULY LIKE THIS? CANNOT WE AT LEAST SAY THAT IT'S THE SUM?]} 
+
+%This procedure is only able to generate a subset of all models that are connected. For example it cannot generate a model \textcolor{purple}{[WHICH ONE???]}, and in general it has more forward actions than backwards actions \textcolor{purple}{[backwards action: action where every state' has index smaller than state. Forward action: Action where at least one state' has an index greater than state]}. Nevertheless, it is suffienciently random \textcolor{purple}{[Maybe here a distribution over several properties would be cool - in comparison to real models and also a general assessment. Ideally, we would like to have an almost uniform distribution over some properties? However, other properties like MEC-size are unlikely to be distributed randomly]} 
+
+%\textcolor{purple}{[Should I even talk about RandomTree? It was just there to create manyAction Models for that one reviewer of GandALF. Mostly all of the models are strict subset of models RandomRandom can generate. But maybe it is cool to later say 'the random-generation procedure greatly affects the benchmarks. For example we have implemented RandomTrees and the algorithms perform differently due to a more fixed structure. If someone finds a better approach to create models that are as random as possible, stuff may look differently. OR if someone finds a way to create random models that resemble real case-studies]}
+
+%To minimize the number of trivial models, we take several steps:
+%\begin{itemize}
+%\item We add a new target $\target'$ to the model. Every previous target $\target \in \targets$ has only one action that leads with 90\% probability to $\target'$ and with 10\% probability to a sink. Thus, the usual precomputation steps are not sufficient to recognize that the maximizer can always force a 0.9 value. \textcolor{purple}{[IS THIS A TRULY PLAUSIBLE APPROACH? IF THE GRAPH IS ONLY NON-TRIVIAL BECAUSE OF THE 0.9 VALUE, IS IT THEN STILL HARD TO SOLVE FOR THE ALGORITHMS?]}
+%\item ???
+%\end{itemize}
+
+
+%\subsubsection{Limitations of our random-generation procedure}
+%It is worth noting that our procedure for random graph-generation cannot ensure a uniform over all properties. For example uniform distributions of the decisions whether an action should have only one successor and whether the action is a backwards action yield non-uniform distributions on the biggest MEC size in the graph. Having this in mind, it would be necessary to create other sets of guidelines to create random models that distribute uniformly over specific properties. We distribute almost uniformly on the following properties:
+%- how many actions a state has between [min, max]
+%- who are possible successors of a state-action-Pair
+%- whether an action should have more than one successor
+
+\chapter{Algorithm Analysis}
+
+To facilitate the algorithm performance-analysis, we track statistics about the algorithm like the time it requires to solve the problem, the iterations needed in case we use a value-iteration-based algorithm and the value it has computed for correctness checks. Furthermore, we track features of the model to relate algorithm-performance to model properties. The features we track are \textcolor{purple}{[...]}.
+
+Lastly, we use various data mining tools to visualize, simplify and analyse the collected data.
+
+\textcolor{purple}{[HOW MANY IMPLEMENTATION DETAILS SHOULD THERE BE?]}
+
+\chapter{Implementing Random-Generated Graphs}
+\section{Implementation vs Theory}
+Here we say how our implemention works and what the differences are in comparison to the theoretical graph generation we introduced in Chapter \ref{ch:randomGen}.
+
+\section{A manual on how to use our implementation}
+About one page long. Mainly a documentation page.
+
+\chapter{Conducting the Analysis / Results}
+Regarding runtime a lot of stuff may change. Iterations wont change as long as we use the same deterministic algorithms, so its a more stable metric.
+
+Various studies we have made, knit into a nice purple string and story. Here might appear:
+\begin{itemize}
+\item TOP was not as good as we have hoped
+\item SI with Linear Programming for MDPs is good and we dont know why
+\item Hopefully some rules of thumb on when to use which algorithm that could be a precursor to portfolio solving
+\end{itemize}
+
+Maybe it would also be cool to show preformance differences in real case studies in comparison to the random generated models and make conclusions Ideally: \textcolor{purple}{We did previously not have enough models to see behaviour XYZ but now we can.}
+
+\chapter{Conclusion}
+We have created an arbitrarily big or small benchmarking-suite for stochastic games that could be profitable for the whole stochastic game community. With the random models and our analysis tool we cool derive some interesting property of algorithm X and found out Y about algorithm Z.

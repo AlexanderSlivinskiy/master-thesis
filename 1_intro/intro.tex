@@ -1,0 +1,85 @@
+\chapter{Introduction} \label{ch:intro}
+
+We as a society live in a time in which technology and computer systems are all around us and are a crucial part of our daily life. 
+Our dependency on these systems is increasing. 
+No matter if we consider sending an email, paying online with our smartphone, being driven by an autonomously driving car or a factory where machines have to perform tasks: 
+we as consumers and also as developers want to be sure that the system and the program is doing exactly what it should and we expect it to.
+
+Verification is a field of computer science dealing with this question. 
+One widely used approach to do so is \emph{model checking} where a certain real system is simplified to a theoretical model. 
+The model is then checked for correctness of certain behavior and the result can then be applied to the real world.
+
+However, in the real world some events only happen occasionally, like bad weather while driving somewhere or that a part in factory breaks. 
+Thus, we need to quantify how often these realistic events occur and make our theoretical model probabilistic. 
+Through \emph{probabilistic model checking} it is then possible to guarantee with a probability that the model is going to behave as it should. 
+One prominent way to express various probabilistic systems is to model them as \emph{simple stochastic games (SGs)} which are two-player zero-sum games that are played on graphs. 
+The vertices of the graph belong to either one player or the other and in every state there is a set of actions that lead in a probabilistic manner into other states. 
+One player tries to achieve his goal and the other tries to prevent him from this. This is a natural way to model, for example, a system in an unknown environment.
+The goal we consider is reachability, i.e. the first player has to reach a certain set of states to win, while the other player has to prevent this. 
+We call these types of games \emph{reachability games}.
+
+A practically relevant problem is to compute how high the probability is that the first player reaches one of these states. 
+Through this, we can derive what we wanted to in the first place: 
+the probabilistic guarantee that the real-world system behaves as we expect it to.
+
+The three common solution techniques to solve reachability problems for stochastic games are quadratic programming, strategy (or policy) iteration and value iteration.
+In practive value iteration is considered the fastest of the three solution techniques.
+However, there is an adversary example \cite{haddadmonmege} proving that value iteration may need exponentially many steps to solve a problem.
+
+
+To all of the three techniques for solving reachability games there are many optimizations and changes available that affect their performance.
+However, at the moment there is very few data that allows for a solid quantative assertion of the performance of the solution techniques and their extensions.
+In fact, there are only around 12 real-world case studies for stochastic reachability games in total.
+Since every algorithms performance depends on the underlying structural properties of the stochastic game at hand, 
+an algorithm that performs well on the available case studies could still overall be a bad choice since the the dataset might contain not enough
+structural varience to enable an adequate evaluation of the algorithm performance.
+
+The contributions in this thesis are the following:
+\begin{itemize}
+    \item Extend the set of stochastic games by generating models randomly
+    \item Introduce analysis tools that are fit for a growing number of stochastic games and solution techniques
+    \item An analysis of whether the real case-studies are biased towards certain graph structures
+    \item A comparison of currently prominent solution techniques for stochastic games
+    \item An evaluation of how several structural properties in stochastic games affect the performance of available solution techniques
+\end{itemize}
+
+Note that we will only focus on value iteration, strategy iteration and their extensions since it was already shown in \cite{Gandalf} that at the moment
+Quadratic Programming is in general not a recommended approach to tackle reachability problems in stochastic games.
+
+%To tackle this issue, we create a broad set of randomly generated stochastic games and test the existing solution techniques on them.
+%The growing number of reachability games and solution technique extensions makes analysis tools necessary that are scalable.
+%We use these tools to both assess whether the real-world case studies are biased towards any structural properties, 
+%aswell as to correlate structural properties of stochastic games to the performance of the solution techniques.
+%Lastly, we use the aquired knowledge to help users that want to model problems as stochastic reachability games make an informed decision on which circumstances benefit which solution algorithm.  
+
+Chapter \ref{ch:prelim} introduces the necessary preliminaries for this thesis.
+In Chapter \ref{ch:implementedAlgos} we describe the extensions we have implemented in the PRISM model checker for strategy iteration and value iteration.
+While Chapter \ref{ch:randomGen} provides the benefits aswell as the theoretical aspects to random generation of stochastic games,
+Chapter \ref{ch:implementedRandomGen} contains implementation details and a manual on how to use our implementation.
+In Chapter \ref{ch:analysis} we head into the analysis of stochastic games and solution technique performance.
+Chapter \ref{ch:results} presents benchmarks of the algorithms on the reachability games, aswell as results of the model and algorithm analysis.
+Lastly, Chapter \ref{ch:conclusion} draws conclusions about our work and the resutls. Also we consider future work in this are of the thesis.
+
+\subsubsection{Related work}
+$\SG$s are a generalization of Markov Decision Processes, which were the first to be introduced. 
+Markov Decision Processes are a generalization of Markov Chains \cite{Puterman} \cite[Ch.~11]{introProb}.
+
+The first to introduce the concept of stochastic games aswell as value iteration as solution algorithm was Shapley in \cite{shapley}.
+Condon has shown that solving simple stochastic games has a complexity in $\nptime$ $\cap$ co-$\nptime$ \cite{condonComplexity}.
+Condon has also introduces both Quadratic Programming and Strategy Iteration as algorithms for stochastic reachability games in \cite{condonQP}. 
+
+Both value iteration and strategy iteration are also solution methods for MDPs \cite{Puterman}\cite{https://pubsonline.informs.org/doi/abs/10.1287/mnsc.12.5.359 - Strategy Iteration for MDPs}.
+However, the problem with standard value iteration in both MDPs and SGs is that it could be arbitrary imprecise \cite{haddadmonmege} and 
+could in practice run for exponentially many steps \textcolor{purple}{Citation as comment}%\cite{https://link.springer.com/chapter/10.1007%2F978-3-540-69850-0_7}
+Recently, several heuristics were introduced that provide a guarantee on how close value iteration is away from the result for MDPs\textcolor{red}{Copy from Maxi} and SGs \cite{paperMaxi}.
+\textcolor{purple}{more stuff about VI}
+
+\textcolor{purple}{more stuff about SI}
+
+\cite{GANDALF} has recently shown that at the moment Quadratic Programming is not competitive with Value Iteration and Strategy Iteration,
+so we will not consider it in this thesis.
+
+There are various model checkers for probabilistic model verification. \textcolor{purple}{Could mention others here like STORM}
+We use PRISM-games~\cite{PRISM-games} for model checking $\SG$s and for the tracking of model and algorithm features.
+PRISM-games is an extension of the PRISM~\cite{PRISM} model checking tool for games. The random models we procude are stored in the
+typical PRISM file-format for models.

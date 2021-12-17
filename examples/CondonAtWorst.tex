@@ -1,0 +1,29 @@
+\begin{figure}
+
+
+\centering
+\begin{tikzpicture}
+%little BCEC with loop
+\drawdummy (init) at (-2,0) {};
+\drawbox (q) at (0,0) {$\mathsf{s_0}$};
+\drawcirc (p) at (0,4) {$\mathsf{s_1}$};
+\drawdummy (mid) at (2,2) {};
+\drawbox (1) at (4,4) {$\target$ };
+\drawcirc (0) at (4,0)  {$\mathrm{\zeroSink}$};
+
+\draw[->] (init) to (q);
+\draw[->]  (q) to [bend right] node [left ,midway] {$\mathsf{a}$}(p);
+\draw[->]  (p) to [bend right] node [right, midway] {$\mathsf{c}$}(q);
+\draw[->]  (p) to node [midway,anchor=south] {$\mathsf{d}$}(1) ;
+\draw[-] (q) to node [midway,anchor=south] {$\mathsf{b}$} (mid) ;
+\draw[->] (mid) to node [text width =1.0cm, align=left, midway, below] {0.5} (0);
+\draw[->] (mid) to node [text width =1.0cm, near end, above] {0.5} (1);
+%\draw (mid) to [bend left,out=270,in=270] (q) ;
+\draw[->]  (0) to[loop right]  node [midway,anchor=south] {$\mathsf{f}$} (0);
+\draw[->]  (1) to [loop right] node [midway,anchor=south] {$\mathsf{e}$} (1) ;
+
+
+\end{tikzpicture}
+\caption{An example of a nonstopping $\SG$ with an end component of size 2. If in $s_0$ action $a$ and in $s_1$ action $c$ are chosen for some strategies $\straa, \strab$ the game does never stop. $\valstra (s_0)=0$ because the probability to reach any $f \in \fstates$ is 0 with these strategies.}
+\label{ex:exampleEC}
+\end{figure}

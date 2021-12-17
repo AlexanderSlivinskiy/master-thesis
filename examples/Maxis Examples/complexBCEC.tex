@@ -1,0 +1,36 @@
+\begin{figure}[h]
+
+\centering
+\begin{tikzpicture}
+%complex BCEC
+
+\drawbox (A) at (0,4) {p};
+\drawbox (B) at (4,4) {q};
+\drawcirc (C) at (2,2) {r};
+\drawbox (D) at (4,0) {s};
+\drawbox (E) at (0,0) {t};
+
+\node (Ao) at (0,6) {0.2};
+\node (Bo) at (4,6) {0.4};
+\node (Do) at (4,-2) {0.3};
+\node (Eo) at (0,-2) {0.1};
+
+\draw[->] (A) to (B);
+\draw[->] (B) to (C);
+\draw[->] (C) to (D);
+\draw[->] (C) to (A);
+\draw[->] (D) to (E);
+\draw[->] (E) to (C);
+
+\draw[->] (A) to (Ao);
+\draw[->] (B) to (Bo);
+\draw[->] (D) to (Do);
+\draw[->] (E) to (Eo);
+
+\end{tikzpicture}
+\caption{An example of a MEC that is also a $\complex~\BCEC$. The numbers on the leaving arrows denote the values of the leaving actions.
+%$a$, $b$, $c$, $d$ and $e$ denote the values on the leaving actions.
+}
+\label{ex:complexBCEC}
+
+\end{figure}

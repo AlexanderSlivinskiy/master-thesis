@@ -1,0 +1,51 @@
+\documentclass{standalone}
+\usepackage{tikz}
+
+% == Tikz
+\input{commands}
+
+\begin{document}
+\begin{tikzpicture}[scale=0.6, every node/.style={transform shape}]
+%little BCEC with loop
+\drawdummy (init) at (2,4) {};
+\drawdummy (space) at (2,5.5) {};
+\drawbox (m1) at (4,4) {$\mathsf{s_0}$};
+\drawdummy (m1Mid) at (6,4) {};
+\drawbox (m2) at (8,4) {$\mathsf{s_1}$};
+\drawdummy (m2Mid) at (10,4) {};
+\drawdummy (helper1) at (11,4) {};
+\drawdummy (helper2) at (13,4) {};
+\drawcirc (m3) at (16,4) {$\mathsf{s_k}$};
+\drawdummy (m3Mid) at (16,2) {};
+\drawcirc (0) at (10,0)  {$\mathrm{\zeroSink}$};
+\drawbox (1) at (20,4) {$\target$};
+
+\filldraw 
+(11.5,4) circle (2pt)
+(12,4) circle (2pt) 
+(12.5,4) circle (2pt);
+
+%\drawbox (1) at (4,4) {$\target$ };
+
+\draw[->] (init) to (m1);
+\draw[-] (m1) to node [above,midway] {$\mathsf{a}$}(m1Mid);
+%\draw[->] (m1Mid) to node [text width =1.0cm, midway, below] {$\frac{1}{2}$} (s0a);
+\draw[->] (m1Mid) to (m2);
+
+\draw[-] (m2) to node [above,midway] {$\mathsf{a}$}(m2Mid);
+%\draw[->] (m2Mid) to node [text width =-1.0cm, midway, right] {$\frac{1}{2}$} (s0a);
+\draw[-] (m2Mid) to (helper1);
+\draw[->] (helper2) to (m3);
+
+\draw[->] (m3) to node [left,midway] {$\mathsf{a}$}(0);
+%\draw[->] (m3Mid) to node [text width =1.0cm, midway, above] {$\frac{1}{2}$} (s0a);
+%\draw[->] (m3Mid) to (0);
+
+\arrpurp (m1) to node [text width=0.5cm,left, midway] {$\mathsf{b}$}(0);
+\arrpurp (m2) to node [left, midway] {$\mathsf{b}$}(0);
+\arrpurp (m3) to node [below, midway] {$\mathsf{b}$}(1);
+
+\draw[->]  (0) to [loop below] node [midway,below] {$\mathsf{a}$} (0);
+\draw[->]  (1) to [loop right] node [midway,right] {$\mathsf{a}$} (1);
+\end{tikzpicture}
+\end{document}

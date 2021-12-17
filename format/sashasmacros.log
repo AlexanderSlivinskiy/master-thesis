@@ -1,0 +1,21 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.6)  29 JUN 2021 16:46
+entering extended mode
+**./sashasmacros.tex
+(sashasmacros.tex
+LaTeX2e <2020-10-01> patch level 3
+L3 programming layer <2020-12-07> xparse <2020-03-03>)
+! Emergency stop.
+<*> ./sashasmacros.tex
+                      
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 68 strings out of 479624
+ 851 string characters out of 2876948
+ 267998 words of memory out of 3000000
+ 17335 multiletter control sequences out of 15000+200000
+ 403430 words of font info for 27 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 13i,0n,15p,166b,10s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

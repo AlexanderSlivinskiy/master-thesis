@@ -1,0 +1,38 @@
+\begin{figure}[h]
+\caption{The same $\SG$ as in Figure \ref{ex:littleBCEC}, but with action $b$ removed}
+\label{ex:littleNoBCEC}
+\begin{tikzpicture}
+%littleqCEC
+\drawdummy (init) at (-2,0) {};
+\drawcirc (p) at (0,0) {p};
+\drawbox (q) at (4,0) {q};
+\drawdummy (mid) at (6,0) {};
+\drawbox (1) at (8,2) {$\target$ };
+\drawcirc (0) at (8,-2)  {$\bot$};
+
+\draw[->] (init) to (p);
+\draw[->]  (p) to[bend left] node [midway,anchor=south] {a}(q) ;
+\draw[-] (q) to node [midway,anchor=south] {c} (mid) ;
+\draw (mid) -- (0);% node [midway,anchor=north east] {0.5};
+\draw (mid) -- (1);%node [midway,anchor=south east] {0.5};
+\draw[->]  (0) to[loop above]  node [midway,anchor=south] {e} (0);
+\draw[->]  (1) to [loop above] node [midway,anchor=south] {d} (1) ;
+
+
+\end{tikzpicture}
+\end{figure}
+
+
+
+\iffalse
+
+VI from below in two steps
+BVI fails, Illusion
+BRTDP below in one simulation if we go to 0, could also never go to 0 and never terminate from below; but this a.s. does not happen; also fails from above
+
+More examples: 
+	- VI off by 1 CHECK (red edge smaller than two times epsilon (depends on how term crit is implemented); then two iterations (one to propagate 0.5 to C, one to propagate a very small number to q) => ``no'' change => result 0)
+	- littleqCEC with selfloop (takes forever to converge) CHECK
+	- Converging EC (Prelim and BVIwo) CHECK
+	- Complex BCEC (5 States, without starting state, with a b c d on the exits; also for the things are equal case) CHECK
+\fi

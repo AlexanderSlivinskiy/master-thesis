@@ -1,0 +1,258 @@
+\chapter{Preliminaries} \label{ch:prelim}
+\begin{itemize}
+  \item Explain what an "incoming transition" is
+  \item What does it mean if a state can be reached? <-> it has incoming transition
+\end{itemize}
+
+In this chapter we introduce the underlying definitions necessary to have an understanding of the notation and foundation this thesis is built on. 
+To get an overview of what simple stochastic games are and how they are played we provide in Section \ref{sec:intuit} an intuition. 
+In Section \ref{sec:defSG} we introduce the formal definition of simple stochastic games, which is the stochastic model we consider. 
+We formalize the notion of players having strategies in Section \ref{sec:defStrat} and define the semantics of simple stochastic games in Section \ref{sec:defSemantics}. 
+We then consider special cases of stochastic games called end components in Section \ref{sec:defEC}. 
+Lastly we give short descriptions of the most prominent algorithms that solve simple stochastic games and some optimizations to them in Section \ref{sec:SGAlgos}.
+
+\section{Intuition} \label{sec:intuit}
+\input{examples/exampleSG}
+A \emph{simple stochastic game} is a two-player-game introduced by Shapley in \cite{shapley} played on a graph $G$ whose vertices $\states$ are partitioned into the two sets $\maxStates$ and $\minStates$. 
+Each set belongs to a player. We call the players Maximizer and Minimizer. We refer to vertices also as states.
+
+At the beginning of the game a token is placed on the initial vertex $\initstate$. 
+The Maximizer's goal is to move the token to any \emph{target} $\target \in \fstates \subseteq \states$, 
+while the Minimizer's goal is that the token never reaches any target-vertex $\target$. Stochastic games with such objectives are called \emph{reachability games}.
+To move the token every vertex $s \in S$ has a finite set of actions $\Av(\state)$ that can be taken if the token is on this vertex. 
+Each action causes the transition of the token to another vertex with a probability according to the probability distribution $\trans: S \to [0,1] \subset \mathbb{Q}$. 
+If the token is in a Maximizer-state $s \in \maxStates$ then the Maximizer decides which action to pick. 
+If the token is in a Minimizer-state $\state \in \minStates$ the Minimizer decides. Figure \ref{ex:exampleSG} provides an example of a simple stochastic game.
+
+The problem we consider in this thesis is: \emph{Given a token in the initial state $\initstate$, 
+what is the probability that the token reaches any target state $\target \in \fstates$ if both players play perfectly?}
+
+\section{Stochastic games} \label{sec:defSG}%{Basic definitions}
+%\vspace*{-0.2cm}
+We define now simple stochastic games, also referred to as stochastic games \cite{shapley}. 
+To do so, we need to introduce \emph{probability distributions}. 
+A probability distribution on a finite set $X$ is a mapping $\trans: X \to [0,1]$, such that $\sum_{x\in X} \trans(x) = 1$. 
+The set of all probability distributions on $X$ is denoted by $\Distributions(X)$. 
+\begin{definition}[\SG]
+	A \emph{stochastic game ($\SG$)} is a tuple  
+	$(\states,\maxStates,\minStates,\initstate,\actions,\Av,\delta)$
+	where $\states$ is a finite set of \emph{states} partitioned\footnote{I.e., $\maxStates \subseteq \states$, $\minStates \subseteq \states$, $\maxStates \cup \minStates = \states$, and $\maxStates \cap \minStates = \emptyset$.}\ into the sets $\maxStates$ and $\minStates$ of states of the player \emph{Maximizer} and \emph{Minimizer} respectively, 
+	$\initstate%,\target,\sink 
+	\in \states$ is the \emph{initial} state, % \emph{target} state, and \emph{sink} state, respectively, 
+	$\actions$ is a finite set of \emph{actions}, 
+	$\Av: \states \to 2^{\actions}$ assigns to every state a set of \emph{available} actions, and 
+	$\trans: \states \times \actions \to \distributions(\states)$ is a \emph{transition function} that given a state $\state$ and an action $\action\in \Av(\state)$ yields a probability distribution over \emph{successor} states.
+	
+	A \emph{Markov decision process (MDP)} is a special case of $\SG$ where $\minStates = \emptyset$, and a Markov chain (MC) is a special case of an MDP, where for all $\state \in \states: \abs{\Av(\state)} = 1$.
+\end{definition}
+
+We use a model of stochastic games similar to \cite{paperMaxi}, which is equivalent to Condon's model of $\SG$s.
+
+%Every vertex $s \in S$ has a finite set of actions $\Av(\state)$ that can be taken if the token is on this vertex. A \emph{probability distribution} on a finite set $X$ is a mapping $\trans: X \to [0,1]$, such that $\sum_{x\in X} \trans(x) = 1$. Each action causes the transition of the token to another vertex with a probability according to the probability distribution $\trans: S \to [0,1] \subset \mathbb{Q}$.
+%The set of all probability distributions on $X$ is denoted by $\Distributions(X)$.
+%Each state-action-pair has its own probability distribution.
+
+The set of successors that can be reached from a state $\state$ taking the action $\action \in \Av(\state)$ is described as 
+$\post(\state,\action) := \set{\state' \mid \trans(\state,\action,\state') > 0}$. 
+We assume that every state has at least one action it can take so that for all $\state \in \states$ it holds that  $\Av(\state) \neq \emptyset$.
+
+%If the token is in a Maximizer-state $s \in \maxStates$ then the Maximizer may decide which action to pick. If the token is in a Minimizer-state $\state \in \minStates$ the Minimizer decides.
+
+%\textcolor{purple}{Omit it if you clearly will not need it}
+%Lastly, we use $T_\Box$ and $T_{\Circ}$ for any subset of states $T \subseteq \states$ to express the states in $T$ that belong to Maximizer and Minimizer, 
+%whose states are represented in the figures as $\Box$ and $\Circ$, respectively. 
+%We say that a pair of a state $\state$ in $T$ and an action $\action$ \emph{leaves} $T$ if there exists a state $\state' \notin T$ with $\trans(\state,\action,\state')>0$. 
+%The state $\state'$ is referred to as \emph{exit}.
+
+\section{Strategies} \label{sec:defStrat}
+As mentioned in Section \ref{sec:intuit}, the Maximizer can select the action for states $\state \in \maxStates$, 
+and the Minimizer can choose the action for states $\state \in \minStates$. 
+This is formalized as \emph{strategies} with $\straa: \maxStates \to \distributions(\actions)$ being a Maximizer strategy 
+and $\strab : \minStates \to \distributions(\actions)$ being a Minimizer strategy, 
+such that $\straa(\state) \in \distributions(\Av(\state))$ for all $\state \in \maxStates$ and $\strab (\state) \in \distributions(\Av(\state))$ for all $\state \in \minStates$. 
+
+Since we deal with reachability games, we will consider only \emph{memoryless positional strategies}. 
+This means that for each state there is exactly one fixed action that is taken: 
+$\forall \state \in \maxStates : \exists \action \in \Av(\state): \straa(\state, \action) = 1$ and $\forall \state \in \minStates : \exists \action \in \Av(\state): \strab(\state, \action) = 1$. 
+For reachability games these types of strategies are optimal~\cite{condonComplexity}.
+
+%\textcolor{purple}{May also delete}
+%A pair of positional strategies $(\straa,\strab)$ induces a Markov chain $\G[\straa,\strab]$ on $\SG$ as every state has only one action, 
+%and therefore it does not matter which player the state belongs to.
+
+\section{Reachability objective} \label{sec:defSemantics}
+We have introduced now what a $\SG$ is and how to fix strategies, but it is still unclear what the objectives of the players are.
+
+As mentioned in Section \ref{sec:intuit}, at the beginning of the game a token is placed on the initial vertex $\initstate$. 
+Additionally, a subset $\fstates \subseteq \states$ is provided as input. 
+The Maximizer's goal is to maximize the probability of reaching any \emph{target} $\target \in \fstates$ while the Minimizer's goal is to minimize the probability that the token reaches any target $\target$. 
+Vertices from which the Maximizer can never reach any target are referred to as \emph{sinks} $\zeroSink \in \zeroSinks \subseteq \states$. 
+Thus, once the token reaches any sink $\zeroSink$ the Maximizer loses the game.
+%\textcolor{purple}{We refer to both targets and sinks as \emph{absorbing states}.}
+
+Since the objective of the Maximizer is to reach a target state $\target$, we call this stochastic game a \emph{reachability game}. 
+In these kinds of games, we do not care what happens after reaching any target or sink state. 
+Therefore, we assume for simplicity that each target $\target$ and each sink $\zeroSink$ has only one action which is a self-loop with transition probability~1. 
+Figure \ref{ex:exampleSG} provides an example of an $\SG$ with one target $\target$ and one sink $\zeroSink$.
+
+Intuitively, we can measure how good a strategy $\straa$ for $\state$ is by the probability that the token would get from $\state$ to any target $f$ if the Minimizer is using strategy $\strab$. 
+This is what we call the \emph{value $\val$ of $\state \in \states$ using $(\straa,\strab)$}:
+\[
+	\valstra (\state) = \sum\limits_{f \in \fstates}\reachProb (f)
+\]
+where $\reachProb (f)$ is the probability that $\state$ reaches $f$ in $\G[\straa,\strab]$ in arbitrary many steps. 
+Note that this is a high-level definition that is based on unique probability distributions over measurable sets of infinite paths that are induced by fixing strategies \cite[Ch.~10]{BaierBook}. 
+However, we do not need this level of detail for this thesis and will avoid it for easier readability. 
+We use $\val (\state,\action)$ as the value of $\state$ for a strategy in which $\state$ chooses $\action$.
+
+As we can expect that both Maximizer and Minimizer play as good as possible and pick the optimal strategies for their goal, 
+usually one is only interested in the value of states using these optimal strategies. We define this as the \emph{(optimal) value} of $\state \in \states$.
+\[
+	\val(\state) = \max\limits_{\straa}\min\limits_{\strab}\valstra(s) = \min\limits_{\strab}\max\limits_{\straa}\valstra(s)
+\]
+The second equality is due to \cite{shapley} (see also \cite{condonComplexity}). 
+Again, this is a simplified definition derived from using the supremum and infimum instead of the maximum and minimum. 
+However, as we are dealing with memoryless positional strategies, a maximum and a minimum always exist~\cite[Ch.~10]{BaierBook}.
+
+We define the \emph{value of an $\SG$} by the probability that the Maximizer wins starting in the initial state $\initstate$. 
+We are mainly interested in $\val(\initstate)$ throughout this thesis. 
+Condon has shown that the complexity of solving this problem is in $\nptime$ $\cap$ co-$\nptime$~\cite{condonComplexity}.
+
+For example in Figure \ref{ex:exampleSG} the value of the initial state $s_0$ and therefore of the $\SG$ is 0 
+because the best that the Minimizer can do is to take action $b$ which will always lead to $s_2$ and then get with action $a$ to $\mathrm{\zeroSink}$. 
+For this strategy $\strab$, the Maximizer can not win.
+
+
+\section{End components} \label{sec:defEC}
+\input{examples/exampleEC}
+Some stochastic games contain subsets $T\subseteq \states$, 
+for which the players can choose strategies such that the token remains forever in one of these subsets and therefore never reaches any target or sink state. 
+We call such a subset an \emph{end component (EC)}. 
+Figure \ref{ex:exampleEC} illustrates a simple $\SG$ with an end component. 
+If both $s_0$ and $s_1$ pick action $\action$ the token would never reach neither target $\target$ nor sink $\zeroSink$.
+
+For the definition, we need to introduce \emph{finite paths}. 
+A finite path $\path$ is a finite sequence $\path = \state<0> \action<0> \state<1> \action<1> \dots \state<k> \in (\states \times \actions)^\ast \times \states$, 
+such that for every $i \in [k-1]$, $\action<i>\in \Av(\state<i>)$ and $\state<i+1> \in \post(\state<i>,\action<i>)$.
+\footnote{$[l] = {1, 2, \dots , l}$, where $l \in \Naturals$}
+\begin{definition}[End component (EC)]\cite{paperMaxi}\label{def:EC}
+A non-empty set $T\subseteq \states$ of states is an \emph{end component (EC)} if there is a non-empty set $B \subseteq \Union_{\state \in T} \Av(s)$ of actions such that 
+	\begin{enumerate}
+		\item for each $\state \in T, \action \in B \intersection \Av(\state)$ we do \emph{not} have $(\state,\action) \leaves$ $T$,
+		\item for each $\state, \state' \in T$ there is a finite path $\fpath = \state \action<0> \dots \action<n> \state' \in (T \times B)^* \times T$, i.e. the path stays inside $T$ and only uses actions in $B$.
+	\end{enumerate}
+\end{definition}
+ 
+\vspace*{-0.1cm}
+Figure \ref{ex:exampleEC} illustrates a simple $\SG$ with an end component.
+An end component $T$ is a \emph{maximal end component (MEC)} if there is no other end component $T'$ such that $T \subseteq T'$.\
+Note that sinks and targets are maximal end components of size 1.\
+Given an $\SG$ $\G$, the set of its MECs is denoted by $\mec(\G)$ and can be computed in polynomial time~\cite{CY95}.\
+
+Computing the value of states that are part of an End Component of at least size 2 is for many algorithms a non-trivial task that requires
+additional concepts.
+%A \emph{stopping game} is a $\SG$ that contains only absorbing states. 
+%This implies that stopping games \emph{terminate} almost surely after a finite amount of steps and either a target state or a sink state is reached. 
+%As this is not the case with non-stopping games, additional concepts are necessary to handle end components correctly.
+
+\section{Algorithms for Stochastic Games} \label{sec:SGAlgos}
+Next, we consider some of the most prominent algorithms that can \emph{solve} stochastic games i.e. compute the value of any stochastic game.
+
+The three most common approaches to solve stochastic games are \emph{Value Iteration}, \emph{Strategy (or Policy) Iteration} and \emph{Quadratic Programming}.
+%In this thesis, we will focus primarily on Value Iteration and Strategy Iteration, since even state-of-the-art Quadratic Programming Solvers are not as performant as 
+%the other options at the moment \cite{GANDALF}.
+
+\subsection{Value iteration}
+To compute the value function $\val$ for an SG, the following partitioning of the state space is useful: 
+firstly the goal states $\targets$ that surely reach any target state $\target \in \fstates$, 
+secondly the set of \emph{sink states} that do not have a path to the target $\sinks$ and finally the remaining states $\unknownStates$.
+For $\targets$ and $\sinks$ (which can be easily identified by graph-search algorithms), the value is trivially 1 respectively 0. 
+Thus, the computation only has to focus on $\unknownStates$.
+
+The well-known approach of value iteration ($\VI$) leverages the fact that $\val$ is the least fixpoint of the \emph{Bellman equations}, cf.~\cite{visurvey}:
+	
+\begin{align}
+		\val(s) = \begin{cases}
+			1 & \text{if} \ s \in \targets \\
+			0 & \text{if} \ s \in \sinks \\
+			\max_{a \in \Av(s)} \Big(\sum_{s' \in \states} \trans(s,a,s') \cdot \val(s') \Big) & \text{if} \ s \in \maxStates^? \\
+			\min_{a \in \Av(s)} \Big(\sum_{s' \in \states} \trans(s,a,s') \cdot \val(s') \Big) & \text{if} \ s \in \minStates^?
+		\end{cases}   
+	\end{align}
+\label{eq:bellman}
+
+Now we define\footnote{In the definition of $\Bop$, we omit the technical detail that for goal states $s \in \targets$, the value has to remain 1. Equivalently, one can assume that all goal states are absorbing, i.e.\ only have self looping actions.} the Bellman operator $\Bop: (\states \to \Rationals) \to (\states \to \Rationals)$:% based on these equations:
+	\begin{align}
+		\mathsf{\Bop(f)(s)} = \begin{cases}
+			\max_{a \in \Av(s)} \Big(\sum_{s' \in \states} \trans(s,a,s') \cdot f(s')\Big) & \text{if} \ s \in \maxStates \\
+			\min_{a \in \Av(s)} \Big(\sum_{s' \in \states} \trans(s,a,s') \cdot f(s')\Big) & \text{if} \ s \in \minStates
+		\end{cases}   
+	\end{align}
+
+Value iteration starts with the under-approximation 
+\[\lb_0(s) = \begin{cases} 
+	1 & \text{if} \ s \in \targets\\
+	0 & \text{otherwise} \end{cases}\]
+and repeatedly applies the Bellman operator. Since the value is the least fixpoint of the Bellman equations and $\lb_0 \leq \val$ is lower than the value, this converges to the value in the limit~\cite{visurvey} (formally $\lim_{i \to \infty} \Bop^i(\lb_0) = \val$).
+
+While this approach is often fast in practice, it has the drawback that it is not possible to know the current difference between $\Bop^i(\lb_0)$ and $\val$ for any given~$i$. 
+To address this, one can employ \emph{bounded value iteration} ($\BVI$, also known as interval iteration~\cite{bvi,atva,KKKW18})
+It additionally starts from an over-approximation $\ub_0$, with $\ub_0(s) = 1$ for all $s \in \states$. 
+However, applying the Bellman operator to this upper estimate might not converge to the value, but to some greater fixpoint instead due to end compoments. 
+See~\cite[Section 3]{KKKW18} for an example.
+To fix this issue, $\BVI$ searches for the end components where all states agree on the same exit out of the end component. 
+The upper bound for these states can then be defined by the upper bound of the states outside of the end component.
+This approach is usally referred to as \emph{deflating} \cite{paperMaxi}.
+With deflating, the upper bound decreases monotonically towards the least fixpoint. Once $\forall \state \in \states: \ub(s) - \lb(s) \leq \epsilon$,
+$\BVI$ terminates and reports $\value(\initstate) = \frac{\ub_0 + \lb_0}{2}$.
+
+Optimistic Value Iteration $\OVI$ takes a similar approach, but instead of calculating the upper bound at all times along the lower bound, 
+a bound $B$ is guessed from the lower bound by adding a small $\epsilon$ to the lower bound. 
+the upper bound is guessed from the lower bound by adding a small $\epsilon$ to the lower bound. 
+If this induced bound $B$ can be verified to be an upper bound, i.e. $\forall \state \in \states: \Bop(B)(\state) \leq B(\state)$, then $\OVI$ terminates.
+The upper bound is only guessed if the lower bound would converge according to classic value iteration. 
+If the guessed bound is not an upper bound, the precision for the lower bound gets reduced and iterating continues.
+
+In practice, value iteration and its extensions are believed to be the fastest approaches to solve stochastic games.
+However, as shown in \cite{haddadmonmege}, there are counter examples where value iteration requires exponentially many steps to converge and its performance is worse than the other solution approaches like strategy iteration.
+
+There are more extensions and optimization to value iteration like \textcolor{purple}{SVI? Learning based approach?}.
+The optimizations we consider in this thesis are:
+\begin{itemize}
+	\item \textcolor{purple}{Talk about TOP, WP and T. No need to talk about G and D since these are rather implementations.}
+\end{itemize}
+
+\subsection{Strategy Iteration}
+In Strategy Iteration, each player starts out with an arbitrary strategy.
+In turns, the Maximizer and the Minimizer adjust their strategies to 
+improve their winning probability \cite{condonQP}.
+
+Whenever a player fixed a strategy, the resulting $\SG$ is simplified to an MDP. 
+From there on, any solution method for MDPs can be applied.
+We solve the MDP with linear programming \cite{Citation to any LP-solving explanation for MDPs. Maybe Puterman?}
+
+Since trying out every possible deterministic positional strategy guarantees that the optimal strategy is found,
+the trivial upper bound on the number of iterations for strategy iteration is exponential in the number of actions per state.
+
+However, so far there is no example that can confirm that there is a stochastic game where strategy iteration truly needs exponentially many iterations.
+
+\subsection{Quadratic Programming}
+In Quadratic Progamming, the stochastic game is encoded into a mathematical framework called a Quadratic Program. 
+The encoded problem is then handed to a solver which uses algorithms specific to mathematical programming in general.
+While solving an arbitrary quadratic problem is known to be $\NP$-complete, convex quadratic programs can be solved in polynomial time.
+At the moment it is open whether it is possible to encode every stochastic game into a convex quadratic program.
+In practice, \cite{Gandalf} has shown that Quadratic Programming is not competitive to Value iteration and Strategy iteration even if using 
+state-of-the-art solvers. Thus, we will not include it in our benchmarks.
+
+\subsubsection*{Algorithm Performance and Stochastic Game Structure}
+We believe that the performance of the algorithms is very dependent on the structural properties of the stochastic game.
+Structural properties are for example the number of transitions an action has, the size of the biggest $\mec$ or the number of strongly connected components in a stochastic game.
+As has been shown in \cite{GANDALFpaper} and \cite{haddadmonmege}, there are certainly some stochastic games that can be easy or very hard for certain algorithms.
+However, at the moment there are only few insights on which structural properties should be taken into account when deciding on which algorithm to take, and which should not.
+%Together with the large number of algorithms and optimizations it is a difficult task to make an informaed
+%Additionally, since the introduction of stochastic games, there has been many extensions and optimizations to all three approaches, 
+%making the analysis of which algorithm together with which extension to take even more difficult since there are too few criteria and comparisons
+%that allow for an informed decision.
+
+Thus, we analyse the impact of different structural properties on the performance of the algorithms that solve $\SG$.
+To evaluate performance, we do not only use real case studies but also randomly generated stochastic games.

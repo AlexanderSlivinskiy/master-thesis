@@ -1,0 +1,773 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\preamble{%
+\newcommand{\noop}[1]{}%
+}
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{BaierBook}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7725f3db070a985fe46a5feb0bcee960}{%
+           family={Baier},
+           familyi={B\bibinitperiod},
+           given={Christel},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=392d5825b15ef7f81f68632c7a49fdef}{%
+           family={Katoen},
+           familyi={K\bibinitperiod},
+           given={Joost{-}Pieter},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {{MIT} Press}%
+      }
+      \strng{namehash}{89a25b516e2b4c8733def01ee561abfe}
+      \strng{fullhash}{89a25b516e2b4c8733def01ee561abfe}
+      \strng{bibnamehash}{89a25b516e2b4c8733def01ee561abfe}
+      \strng{authorbibnamehash}{89a25b516e2b4c8733def01ee561abfe}
+      \strng{authornamehash}{89a25b516e2b4c8733def01ee561abfe}
+      \strng{authorfullhash}{89a25b516e2b4c8733def01ee561abfe}
+      \field{labelalpha}{BK08}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-262-02649-9}
+      \field{title}{Principles of model checking}
+      \field{year}{2008}
+    \endentry
+    \entry{CC15}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1a126fe7ca5387e01e1bebcd84f3c49b}{%
+           family={Chatterjee},
+           familyi={C\bibinitperiod},
+           given={Krishnendu},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=55fcfb1b5f27a62c17e583182c8d5b95}{%
+           family={Chmelík},
+           familyi={C\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{4d06bdbbe52ec5fad40d5d390feddeb8}
+      \strng{fullhash}{4d06bdbbe52ec5fad40d5d390feddeb8}
+      \strng{bibnamehash}{4d06bdbbe52ec5fad40d5d390feddeb8}
+      \strng{authorbibnamehash}{4d06bdbbe52ec5fad40d5d390feddeb8}
+      \strng{authornamehash}{4d06bdbbe52ec5fad40d5d390feddeb8}
+      \strng{authorfullhash}{4d06bdbbe52ec5fad40d5d390feddeb8}
+      \field{labelalpha}{CC15}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We consider partially observable Markov decision processes (POMDPs) with limit-average payoff, where a reward value in the interval [0, 1] is associated with every transition, and the payoff of an infinite path is the long-run average of the rewards. We consider two types of path constraints: (i) a quantitative constraint defines the set of paths where the payoff is at least a given threshold {$\lambda$}1 {$\in$} (0, 1]; and (ii) a qualitative constraint which is a special case of the quantitative constraint with {$\lambda$}1 = 1. We consider the computation of the almost-sure winning set, where the controller needs to ensure that the path constraint is satisfied with probability 1. Our main results for qualitative path constraints are as follows: (i) the problem of deciding the existence of a finite-memory controller is EXPTIME-complete; and (ii) the problem of deciding the existence of an infinite-memory controller is undecidable. For quantitative path constraints we show that the problem of deciding the existence of a finite-memory controller is undecidable. We also present a prototype implementation of our EXPTIME algorithm and experimental results on several examples.}
+      \field{issn}{00043702}
+      \field{journaltitle}{Artificial Intelligence}
+      \field{month}{4}
+      \field{title}{{{POMDPs}} under Probabilistic Semantics}
+      \field{volume}{221}
+      \field{year}{2015}
+      \field{pages}{46\bibrangedash 72}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1016/j.artint.2014.12.009
+      \endverb
+      \verb{file}
+      \verb /Users/tobias/Library/Mobile Documents/com~apple~CloudDocs/zotero/lexicographic-CAV20/Chatterjee_Chmelík_2015_POMDPs under probabilistic semantics.pdf
+      \endverb
+    \endentry
+    \entry{CCGK16}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=1a126fe7ca5387e01e1bebcd84f3c49b}{%
+           family={Chatterjee},
+           familyi={C\bibinitperiod},
+           given={Krishnendu},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c470cf493a51ab2b4f7ae5604fd1875}{%
+           family={Chmelik},
+           familyi={C\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b19722dc931bc3f097274211dda4784e}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Raghav},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f5fbfabdca7386319fcb760513adfe80}{%
+           family={Kanodia},
+           familyi={K\bibinitperiod},
+           given={Ayush},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d5cd19ff1fb155470e10f8aae2672d93}
+      \strng{fullhash}{d5cd19ff1fb155470e10f8aae2672d93}
+      \strng{bibnamehash}{d5cd19ff1fb155470e10f8aae2672d93}
+      \strng{authorbibnamehash}{d5cd19ff1fb155470e10f8aae2672d93}
+      \strng{authornamehash}{d5cd19ff1fb155470e10f8aae2672d93}
+      \strng{authorfullhash}{d5cd19ff1fb155470e10f8aae2672d93}
+      \field{labelalpha}{Cha+16}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Artif. Intell.}
+      \field{title}{Optimal cost almost-sure reachability in {POMDP}s}
+      \field{volume}{234}
+      \field{year}{2016}
+      \field{pages}{26\bibrangedash 48}
+      \range{pages}{23}
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.artint.2016.01.007
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.artint.2016.01.007
+      \endverb
+    \endentry
+    \entry{cav20}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=1a126fe7ca5387e01e1bebcd84f3c49b}{%
+           family={Chatterjee},
+           familyi={C\bibinitperiod},
+           given={Krishnendu},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=392d5825b15ef7f81f68632c7a49fdef}{%
+           family={Katoen},
+           familyi={K\bibinitperiod},
+           given={Joost-Pieter},
+           giveni={J\bibinithyphendelim P\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=aafb182186c9faf19232ee74fb85cb32}{%
+           family={Weininger},
+           familyi={W\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b61b4aa8e44269d3085a84ae560bf4d7}{%
+           family={Winkler},
+           familyi={W\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{27c1201805fcd816b186dff7783cef6b}
+      \strng{fullhash}{27c1201805fcd816b186dff7783cef6b}
+      \strng{bibnamehash}{27c1201805fcd816b186dff7783cef6b}
+      \strng{authorbibnamehash}{27c1201805fcd816b186dff7783cef6b}
+      \strng{authornamehash}{27c1201805fcd816b186dff7783cef6b}
+      \strng{authorfullhash}{27c1201805fcd816b186dff7783cef6b}
+      \field{labelalpha}{Cha+ed}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{CAV 2020}}
+      \field{series}{Lecture Notes in Computer Science}
+      \field{title}{Stochastic Games with Lexicographic Reachability-Safety Objectives}
+      \field{year}{\noop{2020} accepted}
+    \endentry
+    \entry{PRISM-games}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=17541c65107086b7d7dd596d7ad81405}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c21bdb8ff500b8270c8b61fc26c96c15}{%
+           family={Forejt},
+           familyi={F\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=44f96ce7a6edd0d0f29170daeee1d90f}{%
+           family={Kwiatkowska},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=8f917e59f9bcb671f7f68671bf759fe7}{%
+           family={Parker},
+           familyi={P\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eac108b33aa9537f197544778ed8067b}{%
+           family={Simaitis},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=e5f61d738a073f73e4fb10c06df86356}{%
+           family={Piterman},
+           familyi={P\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1e135edf6af030953529f063c9130c8f}{%
+           family={Smolka},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{bf6e616e8d1c2b4d4f4c70cc16e1e90e}
+      \strng{fullhash}{f382ab8e9a8c37c8925cb5fa89a03065}
+      \strng{bibnamehash}{f382ab8e9a8c37c8925cb5fa89a03065}
+      \strng{authorbibnamehash}{f382ab8e9a8c37c8925cb5fa89a03065}
+      \strng{authornamehash}{bf6e616e8d1c2b4d4f4c70cc16e1e90e}
+      \strng{authorfullhash}{f382ab8e9a8c37c8925cb5fa89a03065}
+      \strng{editorbibnamehash}{e15753e433e3c623acd9a00d862b5d0c}
+      \strng{editornamehash}{e15753e433e3c623acd9a00d862b5d0c}
+      \strng{editorfullhash}{e15753e433e3c623acd9a00d862b5d0c}
+      \field{labelalpha}{Che+13}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. 19th International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS'13)}
+      \field{series}{LNCS}
+      \field{title}{{PRISM-games}: A Model Checker for Stochastic Multi-Player Games}
+      \field{volume}{7795}
+      \field{year}{2013}
+      \field{pages}{185\bibrangedash 191}
+      \range{pages}{7}
+    \endentry
+    \entry{charlton}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=9b50ea6cd887f69e8f4cd179ec4e8b4f}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Taolue},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=347bafffd6816c888fdb1f5b697a07eb}{%
+           family={Kwiatkowska},
+           familyi={K\bibinitperiod},
+           given={Marta\bibnamedelima Z.},
+           giveni={M\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=09bfc3530ff49e6779e8bd1dd07fb860}{%
+           family={Simaitis},
+           familyi={S\bibinitperiod},
+           given={Aistis},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=86d5b27980b0f05383df2fec8c8dcf60}{%
+           family={Wiltsche},
+           familyi={W\bibinitperiod},
+           given={Clemens},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7a38d8ff5c37104e1d6594224fb625f6}
+      \strng{fullhash}{7a38d8ff5c37104e1d6594224fb625f6}
+      \strng{bibnamehash}{7a38d8ff5c37104e1d6594224fb625f6}
+      \strng{authorbibnamehash}{7a38d8ff5c37104e1d6594224fb625f6}
+      \strng{authornamehash}{7a38d8ff5c37104e1d6594224fb625f6}
+      \strng{authorfullhash}{7a38d8ff5c37104e1d6594224fb625f6}
+      \field{labelalpha}{Che+13}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{QEST}}
+      \field{title}{Synthesis for Multi-objective Stochastic Games: An Application to Autonomous Urban Driving}
+      \field{year}{2013}
+      \field{pages}{322\bibrangedash 337}
+      \range{pages}{16}
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-642-40196-1_28
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-642-40196-1_28
+      \endverb
+    \endentry
+    \entry{condonComplexity}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8c066f798710ece4dc0fa6384d6f49d2}{%
+           family={Condon},
+           familyi={C\bibinitperiod},
+           given={Anne},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8c066f798710ece4dc0fa6384d6f49d2}
+      \strng{fullhash}{8c066f798710ece4dc0fa6384d6f49d2}
+      \strng{bibnamehash}{8c066f798710ece4dc0fa6384d6f49d2}
+      \strng{authorbibnamehash}{8c066f798710ece4dc0fa6384d6f49d2}
+      \strng{authornamehash}{8c066f798710ece4dc0fa6384d6f49d2}
+      \strng{authorfullhash}{8c066f798710ece4dc0fa6384d6f49d2}
+      \field{extraname}{1}
+      \field{labelalpha}{Con92}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Inf. Comput.}
+      \field{number}{2}
+      \field{title}{The Complexity of Stochastic Games}
+      \field{volume}{96}
+      \field{year}{1992}
+      \field{pages}{203\bibrangedash 224}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1016/0890-5401(92)90048-K
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/0890-5401(92)90048-K
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/0890-5401(92)90048-K
+      \endverb
+    \endentry
+    \entry{condonQP}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8c066f798710ece4dc0fa6384d6f49d2}{%
+           family={Condon},
+           familyi={C\bibinitperiod},
+           given={Anne},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Mathematical Society}%
+      }
+      \strng{namehash}{8c066f798710ece4dc0fa6384d6f49d2}
+      \strng{fullhash}{8c066f798710ece4dc0fa6384d6f49d2}
+      \strng{bibnamehash}{8c066f798710ece4dc0fa6384d6f49d2}
+      \strng{authorbibnamehash}{8c066f798710ece4dc0fa6384d6f49d2}
+      \strng{authornamehash}{8c066f798710ece4dc0fa6384d6f49d2}
+      \strng{authorfullhash}{8c066f798710ece4dc0fa6384d6f49d2}
+      \field{extraname}{2}
+      \field{labelalpha}{Con93}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Computational Complexity Theory, volume 13 of DIMACS Series in Discrete Mathematics and Theoretical Computer Science}
+      \field{title}{On Algorithms for Simple Stochastic Games}
+      \field{year}{1993}
+      \field{pages}{51\bibrangedash 73}
+      \range{pages}{23}
+    \endentry
+    \entry{CY95}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8c27475704fc4e6daa82442eff03a8a4}{%
+           family={Courcoubetis},
+           familyi={C\bibinitperiod},
+           given={Costas},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4c46d2f3f797a5dedce8a376cb13fe3a}{%
+           family={Yannakakis},
+           familyi={Y\bibinitperiod},
+           given={Mihalis},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e3476cd882852d94eb425c1e80d333b1}
+      \strng{fullhash}{e3476cd882852d94eb425c1e80d333b1}
+      \strng{bibnamehash}{e3476cd882852d94eb425c1e80d333b1}
+      \strng{authorbibnamehash}{e3476cd882852d94eb425c1e80d333b1}
+      \strng{authornamehash}{e3476cd882852d94eb425c1e80d333b1}
+      \strng{authorfullhash}{e3476cd882852d94eb425c1e80d333b1}
+      \field{labelalpha}{CY95}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. {ACM}}
+      \field{number}{4}
+      \field{title}{The Complexity of Probabilistic Verification}
+      \field{volume}{42}
+      \field{year}{1995}
+      \field{pages}{857\bibrangedash 907}
+      \range{pages}{51}
+      \verb{doi}
+      \verb 10.1145/210332.210339
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/210332.210339
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/210332.210339
+      \endverb
+    \endentry
+    \entry{introProb}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a68809081fab5bc7c262bbee367eea8f}{%
+           family={Grinstead},
+           familyi={G\bibinitperiod},
+           given={Charles\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f64ddf8ee9b19fd9b8ea3426d553f892}{%
+           family={Snell},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi Laurie},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Mathematical Society}%
+      }
+      \strng{namehash}{417fecf0e2c769a909181584860c48f9}
+      \strng{fullhash}{417fecf0e2c769a909181584860c48f9}
+      \strng{bibnamehash}{417fecf0e2c769a909181584860c48f9}
+      \strng{authorbibnamehash}{417fecf0e2c769a909181584860c48f9}
+      \strng{authornamehash}{417fecf0e2c769a909181584860c48f9}
+      \strng{authorfullhash}{417fecf0e2c769a909181584860c48f9}
+      \field{labelalpha}{GS06}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{11}
+      \field{edition}{second revised edition}
+      \field{title}{Introduction to Probability}
+      \field{year}{2006}
+    \endentry
+    \entry{haddadmonmege}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1286d88b1156ec54ce4e1783cf83fd17}{%
+           family={Haddad},
+           familyi={H\bibinitperiod},
+           given={Serge},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=368b0bb98044000c987a49d622363d5d}{%
+           family={Monmege},
+           familyi={M\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d04dd24848574e88cecb263293fdd19c}
+      \strng{fullhash}{d04dd24848574e88cecb263293fdd19c}
+      \strng{bibnamehash}{d04dd24848574e88cecb263293fdd19c}
+      \strng{authorbibnamehash}{d04dd24848574e88cecb263293fdd19c}
+      \strng{authornamehash}{d04dd24848574e88cecb263293fdd19c}
+      \strng{authorfullhash}{d04dd24848574e88cecb263293fdd19c}
+      \field{labelalpha}{HM18}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theor. Comput. Sci.}
+      \field{title}{Interval iteration algorithm for MDPs and IMDPs}
+      \field{volume}{735}
+      \field{year}{2018}
+      \field{pages}{111\bibrangedash 131}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1016/j.tcs.2016.12.003
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.tcs.2016.12.003
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.tcs.2016.12.003
+      \endverb
+    \endentry
+    \entry{paperMaxi}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=750dd6b9c62dbb03587f763546825529}{%
+           family={Kelmendi},
+           familyi={K\bibinitperiod},
+           given={Edon},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ecf130790601f82e902c829ad7570274}{%
+           family={Krämer},
+           familyi={K\bibinitperiod},
+           given={Julia},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84e2eac2f60f901f976235d20a567a59}{%
+           family={Křetínský},
+           familyi={K\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aafb182186c9faf19232ee74fb85cb32}{%
+           family={Weininger},
+           familyi={W\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=508a1e3ce8548ca181490cc716c1736c}{%
+           family={Chockler},
+           familyi={C\bibinitperiod},
+           given={Hana},
+           giveni={H\bibinitperiod}}}%
+        {{hash=4187387ea140831bacf2873cb77d69f9}{%
+           family={Weissenbacher},
+           familyi={W\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{e01053a240332ecea26dfb6b109be5fa}
+      \strng{fullhash}{e01053a240332ecea26dfb6b109be5fa}
+      \strng{bibnamehash}{e01053a240332ecea26dfb6b109be5fa}
+      \strng{authorbibnamehash}{e01053a240332ecea26dfb6b109be5fa}
+      \strng{authornamehash}{e01053a240332ecea26dfb6b109be5fa}
+      \strng{authorfullhash}{e01053a240332ecea26dfb6b109be5fa}
+      \strng{editorbibnamehash}{9e56167f682b798d97540ebf893682d7}
+      \strng{editornamehash}{9e56167f682b798d97540ebf893682d7}
+      \strng{editorfullhash}{9e56167f682b798d97540ebf893682d7}
+      \field{labelalpha}{Kel+18}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Simple stochastic games can be solved by value iteration (VI), which yields a sequence of under-approximations of the value of the game. This sequence is guaranteed to converge to the value only in the limit. Since no stopping criterion is known, this technique does not provide any guarantees on its results. We provide the first stopping criterion for VI on simple stochastic games. It is achieved by additionally computing a convergent sequence of over-approximations of the value, relying on an analysis of the game graph. Consequently, VI becomes an anytime algorithm returning the approximation of the value and the current error bound. As another consequence, we can provide a simulation-based asynchronous VI algorithm, which yields the same guarantees, but without necessarily exploring the whole game graph.}
+      \field{booktitle}{Computer Aided Verification}
+      \field{isbn}{978-3-319-96145-3}
+      \field{title}{Value Iteration for Simple Stochastic Games: Stopping Criterion and Learning Algorithm}
+      \field{year}{2018}
+      \field{pages}{623\bibrangedash 642}
+      \range{pages}{20}
+    \endentry
+    \entry{PRISM}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=44f96ce7a6edd0d0f29170daeee1d90f}{%
+           family={Kwiatkowska},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=7b8e0ec03ceca0175c0dbf3a93fff279}{%
+           family={Norman},
+           familyi={N\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f917e59f9bcb671f7f68671bf759fe7}{%
+           family={Parker},
+           familyi={P\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{377f3d27cdd43e104070d4b5ded61ee0}
+      \strng{fullhash}{377f3d27cdd43e104070d4b5ded61ee0}
+      \strng{bibnamehash}{377f3d27cdd43e104070d4b5ded61ee0}
+      \strng{authorbibnamehash}{377f3d27cdd43e104070d4b5ded61ee0}
+      \strng{authornamehash}{377f3d27cdd43e104070d4b5ded61ee0}
+      \strng{authorfullhash}{377f3d27cdd43e104070d4b5ded61ee0}
+      \field{labelalpha}{KNP11}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{CAV}
+      \field{series}{LNCS}
+      \field{title}{{PRISM} 4.0: Verification of Probabilistic Real-time Systems}
+      \field{volume}{6806}
+      \field{year}{2011}
+      \field{pages}{585\bibrangedash 591}
+      \range{pages}{7}
+    \endentry
+    \entry{dice}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d6c321ee95d690d6a42850df470be5e0}{%
+           family={Knuth},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=10d528329e817300da528b498ea7378a}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{6ab1bec1b68a9d399c6c4ba3b9c8a7f2}
+      \strng{fullhash}{6ab1bec1b68a9d399c6c4ba3b9c8a7f2}
+      \strng{bibnamehash}{6ab1bec1b68a9d399c6c4ba3b9c8a7f2}
+      \strng{authorbibnamehash}{6ab1bec1b68a9d399c6c4ba3b9c8a7f2}
+      \strng{authornamehash}{6ab1bec1b68a9d399c6c4ba3b9c8a7f2}
+      \strng{authorfullhash}{6ab1bec1b68a9d399c6c4ba3b9c8a7f2}
+      \field{labelalpha}{KY76}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{The complexity of nonuniform random number generation}
+      \field{title}{Algorithms and Complexity: New Directions and Recent Results}
+      \field{year}{1976}
+    \endentry
+    \entry{LCK95}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=211e529e9f10ad1bfacff2284da10ea7}{%
+           family={Littman},
+           familyi={L\bibinitperiod},
+           given={Michael\bibnamedelima L.},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2206f2c6c327af01902e88ec6bef588b}{%
+           family={Cassandra},
+           familyi={C\bibinitperiod},
+           given={Anthony\bibnamedelima R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=72fdc7bf3120e1cff12e3ecf7e892b9a}{%
+           family={Kaelbling},
+           familyi={K\bibinitperiod},
+           given={Leslie\bibnamedelima Pack},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann}%
+      }
+      \strng{namehash}{5bfc60f3b40ed3e248ccb2fbaba17f8f}
+      \strng{fullhash}{5bfc60f3b40ed3e248ccb2fbaba17f8f}
+      \strng{bibnamehash}{5bfc60f3b40ed3e248ccb2fbaba17f8f}
+      \strng{authorbibnamehash}{5bfc60f3b40ed3e248ccb2fbaba17f8f}
+      \strng{authornamehash}{5bfc60f3b40ed3e248ccb2fbaba17f8f}
+      \strng{authorfullhash}{5bfc60f3b40ed3e248ccb2fbaba17f8f}
+      \field{labelalpha}{LCK95}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{ICML}}
+      \field{title}{Learning Policies for Partially Observable Environments: Scaling Up}
+      \field{year}{1995}
+      \field{pages}{362\bibrangedash 370}
+      \range{pages}{9}
+    \endentry
+    \entry{Puterman}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b4258b9291d903d97b69d703eebf790a}{%
+           family={Puterman},
+           familyi={P\bibinitperiod},
+           given={Martin\bibnamedelima L.},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{b4258b9291d903d97b69d703eebf790a}
+      \strng{fullhash}{b4258b9291d903d97b69d703eebf790a}
+      \strng{bibnamehash}{b4258b9291d903d97b69d703eebf790a}
+      \strng{authorbibnamehash}{b4258b9291d903d97b69d703eebf790a}
+      \strng{authornamehash}{b4258b9291d903d97b69d703eebf790a}
+      \strng{authorfullhash}{b4258b9291d903d97b69d703eebf790a}
+      \field{labelalpha}{Put14}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Markov decision processes: Discrete stochastic dynamic programming}
+      \field{year}{2014}
+    \endentry
+    \entry{shapley}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aa2b96ffd25f090ad898c0022f7efa12}{%
+           family={Shapley},
+           familyi={S\bibinitperiod},
+           given={Lloyd\bibnamedelima S},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {National Acad Sciences}%
+      }
+      \strng{namehash}{aa2b96ffd25f090ad898c0022f7efa12}
+      \strng{fullhash}{aa2b96ffd25f090ad898c0022f7efa12}
+      \strng{bibnamehash}{aa2b96ffd25f090ad898c0022f7efa12}
+      \strng{authorbibnamehash}{aa2b96ffd25f090ad898c0022f7efa12}
+      \strng{authornamehash}{aa2b96ffd25f090ad898c0022f7efa12}
+      \strng{authorfullhash}{aa2b96ffd25f090ad898c0022f7efa12}
+      \field{labelalpha}{Sha53}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the national academy of sciences}
+      \field{number}{10}
+      \field{title}{Stochastic games}
+      \field{volume}{39}
+      \field{year}{1953}
+      \field{pages}{1095\bibrangedash 1100}
+      \range{pages}{6}
+    \endentry
+  \enddatalist
+  \missing{ANY BOOK}
+  \missing{ANYTHING?}
+  \missing{Citation to any LP-solving explanation for MDPs. Maybe Puterman?}
+  \missing{GANDALF}
+  \missing{GANDALFpaper}
+  \missing{Gandalf}
+  \missing{KKKW18}
+  \missing{PRISMben}
+  \missing{QComps}
+  \missing{What?}
+  \missing{WidestPath}
+  \missing{atva}
+  \missing{bvi}
+  \missing{gandalf}
+  \missing{gandalf20}
+  \missing{https://pubsonline.informs.org/doi/abs/10.1287/mnsc.12.5.359 - Strategy Iteration for MDPs}
+  \missing{prismgames3}
+  \missing{visurvey}
+  \missing{widestPath}
+\endrefsection
+\endinput
+

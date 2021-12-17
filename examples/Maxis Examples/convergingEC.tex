@@ -1,0 +1,41 @@
+\begin{tikzpicture}
+%converging EC
+\drawdummy (init) at (-2,4) {};
+
+\drawbox (A) at (0,4) {A};
+\drawcirc (B) at (4,4) {B};
+\drawbox (C) at (4,0) {C};
+\drawcirc (D) at (0,0) {D};
+
+\drawdummy (AB) at (2,5) {};
+\drawdummy (BC) at (5,2) {};
+\drawdummy (CD) at (2,-1) {};
+\drawdummy (DA) at (-1,2) {};
+
+\node (ABo) at (2,6) {0.8};
+\node (BCo) at (6,2) {0.3};
+\node (CDo) at (2,-2) {0.4};
+\node (DAo) at (-2,2) {0.5};
+
+\draw[->] (init) to (A);
+
+\draw[->] (A) to (B);
+\draw[->] (B) to (C);
+\draw[->] (C) to (D);
+\draw[->] (D) to (A);
+
+\draw[-] (A) to (AB);
+\draw[-] (B) to (BC);
+\draw[-] (C) to (CD);
+\draw[-] (D) to (DA);
+
+\draw[->] (AB) to (ABo);
+\draw[->] (AB) to (B);
+\draw[->] (BC) to (BCo);
+\draw[->] (BC) to (C);
+\draw[->] (CD) to (CDo);
+\draw[->] (CD) to (D);
+\draw[->] (DA) to (DAo);
+\draw[->] (DA) to (A);
+
+\end{tikzpicture}
