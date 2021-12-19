@@ -56,7 +56,7 @@ To prove the lemma, we need to show that the procedure is able to create every t
 For this we need to show that the following statements all hold independently of each other for a stochastic game $\SG$ created by Procedure \ref{procedure:randomRandom}:
 \begin{enumerate}
 \item There may be an arbitrary number of states in $\SG$.
-\item Any distribution of $\states$ between $\states<\Box>$ and $\states<\Circ>$ is possible.
+\item Any distribution of $\states$ between $\maxStates$ and $\states<\Circ>$ is possible.
 \item Any state may be the initial state.
 \item For an arbitrary $\action$, $\Av$ is able to perform any mapping $\states \rightarrow 2^{|\action|}$.
 \item Any action in $\SG$ may have arbitrary many transitions. The probability distribution among the transitions may be arbitrary. Any state can be the target of any transition.
@@ -64,7 +64,7 @@ For this we need to show that the following statements all hold independently of
 \end{enumerate}
 
 
-Since we create a random number of states and assign them uniformly to either $\states<\Box>$ or $\states<\Circ>$, every number of states and every distribution of them between Maximizer and Minimizer is possible. Thus, statements 1. and 2. hold. Since there is no enumartion happening in Procedure \ref{procedure:randomRandom}, it is safe to assume that statement 3. also holds since we could declare any state our initial state.
+Since we create a random number of states and assign them uniformly to either $\maxStates$ or $\states<\Circ>$, every number of states and every distribution of them between Maximizer and Minimizer is possible. Thus, statements 1. and 2. hold. Since there is no enumartion happening in Procedure \ref{procedure:randomRandom}, it is safe to assume that statement 3. also holds since we could declare any state our initial state.
 
 Note that since the SGs we want to construct must be connected from the initial state, there is a spanning tree from the initial state that spans the whole graph underlying the stochastic game.
 We can create this spanning tree by design of the procedure. The spanning tree provides a topological ordering. Now our procedure can recreate this spanning tree by enumerating the states according to the
@@ -99,7 +99,7 @@ If we are interested in fixing such properties, we use other procedures that res
 
 \section{Adding Prefix-Graphs / Configurations}
 \textcolor{purple}{This is rather an implementation thing than an abstract thing, so maybe I should not put it into this section?}
-Since the purpose of random generated models is to sample from a space as big a possible, we have per se few insights on the structure of the model, 
+Since the purpose of randomly generated models is to sample from a space as big a possible, we have per se few insights on the structure of the model, 
 even after fixing properties. Thus, this method is not very well suited if one wants to analyse behaviour of an algorithm on very specialized models. 
 Traditionally, this is where one would build handcrafted models. 
 However, handcrafting parameterizable prism files allows only for very restrictive structural changes in the models. 

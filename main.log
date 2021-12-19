@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.30)  17 DEC 2021 13:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.30)  19 DEC 2021 12:17
 entering extended mode
 **/home/sasha/Documents/Masterarbeit/MasterThesis/Current/Thesis/main.tex
 (/home/sasha/Documents/Masterarbeit/MasterThesis/Current/Thesis/main.tex
@@ -1451,6 +1451,13 @@ Package biblatex Info: ... file 'main.bbl' found.
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
+(biblatex)                ???
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
 (biblatex)                ANY BOOK
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
@@ -1466,6 +1473,13 @@ Package biblatex Warning: The following entry could not be found
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
 (biblatex)                Citation to any LP-solving explanation for MDPs. Maybe Puterman?
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Cite?
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -1508,13 +1522,6 @@ Package biblatex Warning: The following entry could not be found
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
 (biblatex)                QComps
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                What?
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -1735,8 +1742,8 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 36.
  [7] (1_intro/intro.tex
 chapter 1.
 
-Overfull \hbox (13.32048pt too wide) in paragraph at lines 30--36
-[]\T1/pplx/m/n/10.95 (-20) To all of the three techniques for solving reachability games there are many optimizations
+Overfull \hbox (16.15652pt too wide) in paragraph at lines 30--36
+[]\T1/pplx/m/n/10.95 (-20) To all of the three techniques for solving reachability games, there are many optimizations
  []
 
 [1
@@ -1755,8 +1762,8 @@ Overfull \hbox (77.22783pt too wide) in paragraph at lines 71--76
 ) (2_prelims/prelims.tex [3]
 chapter 2.
 
-Overfull \hbox (22.18921pt too wide) in paragraph at lines 7--13
-[]\T1/pplx/m/n/10.95 (-20) In this chapter we introduce the underlying definitions necessary to have an understanding
+Overfull \hbox (13.26494pt too wide) in paragraph at lines 7--13
+\T1/pplx/m/n/10.95 (-20) In this chapter, we introduce the underlying definitions necessary to have an understanding
  []
 
 (examples/exampleSG.tex
@@ -1789,40 +1796,25 @@ LaTeX Font Info:    Font shape `U/msa/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 39.
  [5] [6] (examples/exampleEC.tex) [7] [8] [9]
-Overfull \hbox (0.52144pt too wide) in paragraph at lines 216--218
+Overfull \hbox (0.52144pt too wide) in paragraph at lines 222--224
 \T1/pplx/m/n/10.95 (-20) where value iteration requires exponentially many steps to converge and its performance
  []
 
 
 Overfull \hbox (2.62811pt too wide) in paragraph at lines 230--233
-\T1/pplx/m/n/10.95 (-20) programming [[]] 
- []
-
-
-Overfull \hbox (6.42407pt too wide) in paragraph at lines 240--246
-\T1/pplx/m/n/10.95 (-20) In Quadratic Progamming, the stochastic game is encoded into a mathematical framework
+\T1/pplx/m/n/10.95 (-20) programming [[]]
  []
 
 [10]) (implemented_algos/implemented_algos.tex [11]
 chapter 3.
-) (3_randomGen/randomGen.tex
-Overfull \hbox (15.42928pt too wide) in paragraph at lines 17--1
-\T1/pplx/m/n/10.95 (-20) We have implemented the approach to solve MDPs with linear program as in [[]].
- []
-
-[12
+) (3_randomGen/randomGen.tex [12
 
 
 ]
 chapter 4.
 
-Overfull \hbox (21.11383pt too wide) in paragraph at lines 35--41
-\T1/pplx/m/n/10.95 (-20) random 'Mathematician' in this post says https://www.askamathematician.com/2010/01/q-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--41
-\T1/pplx/m/n/10.95 (-19) is-it-possible-to-choose-an-item-from-an-infinite-set-of-items-such-that-each-one-has-an-
+Overfull \hbox (1.36696pt too wide) in paragraph at lines 15--19
+\T1/pplx/m/n/10.95 (-20) handcrafted reachability problems is useful to make comparisons on edge-case situations
  []
 
 [13
@@ -1830,115 +1822,125 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--41
 
 ]
 
-Package caption Warning: \label without proper reference on input line 62.
+Package caption Warning: \label without proper reference on input line 64.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `algo:randomRandom' on page 14 undefined on input line 52.
+LaTeX Warning: Reference `algo:randomRandom' on page 14 undefined on input line 54.
 
 
-Package caption Warning: \label without proper reference on input line 95.
+Package caption Warning: \label without proper reference on input line 97.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `algo:FillActions' on page 14 undefined on input line 57.
+LaTeX Warning: Reference `algo:FillActions' on page 14 undefined on input line 59.
 
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 63.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 65.
 
-Package caption Warning: \label without proper reference on input line 62.
+Package caption Warning: \label without proper reference on input line 64.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `algo:randomRandom' on page 14 undefined on input line 114.
+LaTeX Warning: Reference `algo:randomRandom' on page 14 undefined on input line 116.
+
+
+Package caption Warning: \label without proper reference on input line 97.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `algo:FillActions' on page 14 undefined on input line 130.
 
 [14]
 
-Package caption Warning: \label without proper reference on input line 95.
+Package caption Warning: \label without proper reference on input line 97.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `algo:FillActions' on page 15 undefined on input line 128.
+LaTeX Warning: Reference `algo:FillActions' on page 15 undefined on input line 134.
 
 
-Package caption Warning: \label without proper reference on input line 95.
+Package caption Warning: \label without proper reference on input line 97.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `algo:FillActions' on page 15 undefined on input line 132.
-
-
-Package caption Warning: \label without proper reference on input line 95.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `algo:FillActions' on page 15 undefined on input line 133.
+LaTeX Warning: Reference `algo:FillActions' on page 15 undefined on input line 135.
 
 [15]
 
-Package caption Warning: \label without proper reference on input line 62.
+Package caption Warning: \label without proper reference on input line 64.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `algo:randomRandom' on page 16 undefined on input line 136.
+LaTeX Warning: Reference `algo:randomRandom' on page 16 undefined on input line 138.
 
 
-LaTeX Warning: Reference `procedure:randomRandom' on page 16 undefined on input line 141.
+LaTeX Warning: Reference `procedure:randomRandom' on page 16 undefined on input line 143.
 
 
-Package caption Warning: \label without proper reference on input line 62.
+Package caption Warning: \label without proper reference on input line 64.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `algo:randomRandom' on page 16 undefined on input line 148.
+LaTeX Warning: Reference `algo:randomRandom' on page 16 undefined on input line 150.
 
 [16]
-Overfull \hbox (0.90721pt too wide) in paragraph at lines 177--179
+Overfull \hbox (0.90721pt too wide) in paragraph at lines 179--181
 []\T1/pplx/m/n/10.95 (-20) Since we decide randomly on the number of states, the initial state and the partitioning
  []
 
 
-Package caption Warning: \label without proper reference on input line 95.
+Package caption Warning: \label without proper reference on input line 97.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `algo:FillActions' on page 17 undefined on input line 180.
+LaTeX Warning: Reference `algo:FillActions' on page 17 undefined on input line 182.
 
 
-Package caption Warning: \label without proper reference on input line 62.
+Package caption Warning: \label without proper reference on input line 64.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `algo:randomRandom' on page 17 undefined on input line 195.
+LaTeX Warning: Reference `algo:randomRandom' on page 17 undefined on input line 197.
 
 
-Package caption Warning: \label without proper reference on input line 95.
+Package caption Warning: \label without proper reference on input line 97.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `algo:FillActions' on page 17 undefined on input line 197.
+LaTeX Warning: Reference `algo:FillActions' on page 17 undefined on input line 199.
 
 [17]) (3_randomGen/implementation.tex [18]
 chapter 5.
 
-Package caption Warning: \label without proper reference on input line 62.
+Package caption Warning: \label without proper reference on input line 64.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `algo:randomRandom' on page 19 undefined on input line 5.
+
+
+Overfull \hbox (2.08745pt too wide) in paragraph at lines 19--22
+\T1/pplx/m/n/10.95 (-20) Although the parameters we expose for random generation can constrain some structural
+ []
 
 [19
 
 
 ] [20]
 
-Package caption Warning: \label without proper reference on input line 62.
+Package caption Warning: \label without proper reference on input line 64.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `algo:randomRandom' on page 21 undefined on input line 65.
 
 
-Package caption Warning: \label without proper reference on input line 62.
+Overfull \hbox (4.17824pt too wide) in paragraph at lines 67--68
+[]\T1/pplx/m/n/10.95 (-20) backwardsProb: How probable is a state to have actions in the backward procedure? 
+ []
+
+
+Package caption Warning: \label without proper reference on input line 64.
 See the caption package documentation for explanation.
 
 
@@ -1949,7 +1951,12 @@ Overfull \hbox (4.59161pt too wide) in paragraph at lines 83--87
 \T1/pplx/m/n/10.95 (-20) random generation as described in Algorithm [][][] happens in module "graphGenerator.py".
  []
 
-[21]) (4_analysis/analysis.tex [22]
+[21]
+Overfull \hbox (18.55074pt too wide) in paragraph at lines 88--90
+\T1/pplx/m/n/10.95 (-20) any graph generator requires. []I should probably rewrite this such that every graphGenerator
+ []
+
+) (4_analysis/analysis.tex [22]
 chapter 6.
 [23
 
@@ -1969,58 +1976,159 @@ Overfull \hbox (17.98567pt too wide) in paragraph at lines 13--17
 \T1/pplx/m/n/10.95 (-20) Various algorithms we consider were already implemented in PRISM-games [[]].
  []
 
-<figures/Real_FeatureDistribution.png, id=370, 703.62875pt x 695.59875pt>
+
+Overfull \hbox (9.7598pt too wide) in paragraph at lines 13--17
+\T1/pplx/m/n/10.95 (-20) games before, and extended the strategy iteration (which was implemented in [[]])
+ []
+
+<figures/Real_FeatureDistribution.png, id=382, 703.62875pt x 695.59875pt>
 File: figures/Real_FeatureDistribution.png Graphic file (type png)
 <use figures/Real_FeatureDistribution.png>
-Package pdftex.def Info: figures/Real_FeatureDistribution.png  used on input line 29.
+Package pdftex.def Info: figures/Real_FeatureDistribution.png  used on input line 37.
 (pdftex.def)             Requested size: 418.25555pt x 413.47777pt.
 [26
 
 
 ]
-<figures/RandomRandom_FeatureDistribution.png, id=378, 790.955pt x 779.91376pt>
+<figures/RandomRandom_FeatureDistribution.png, id=394, 790.955pt x 779.91376pt>
 File: figures/RandomRandom_FeatureDistribution.png Graphic file (type png)
 <use figures/RandomRandom_FeatureDistribution.png>
-Package pdftex.def Info: figures/RandomRandom_FeatureDistribution.png  used on input line 64.
+Package pdftex.def Info: figures/RandomRandom_FeatureDistribution.png  used on input line 66.
 (pdftex.def)             Requested size: 418.25555pt x 412.42409pt.
- [27]
 
-Package caption Warning: \label without proper reference on input line 62.
+Overfull \hbox (26.04369pt too wide) in paragraph at lines 80--83
+[]\T1/pplx/m/n/10.95 (-20) NumMecs shows that are usually at most three MECs per model and NumNonSingleton
+ []
+
+[27]
+
+Package caption Warning: \label without proper reference on input line 64.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `algo:randomRandom' on page 28 undefined on input line 108.
+LaTeX Warning: Reference `algo:randomRandom' on page 28 undefined on input line 91.
 
-<figures/Real_AlgoPerformance.png, id=388, 873.2625pt x 611.28375pt>
+
+Package caption Warning: \label without proper reference on input line 64.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `algo:randomRandom' on page 28 undefined on input line 104.
+
+<figures/Real_AlgoPerformance.png, id=408, 873.2625pt x 611.28375pt>
 File: figures/Real_AlgoPerformance.png Graphic file (type png)
 <use figures/Real_AlgoPerformance.png>
-Package pdftex.def Info: figures/Real_AlgoPerformance.png  used on input line 118.
+Package pdftex.def Info: figures/Real_AlgoPerformance.png  used on input line 119.
 (pdftex.def)             Requested size: 334.60571pt x 234.22101pt.
-<figures/RandomRandom_AlgoPerformance.png, id=389, 865.2325pt x 712.6625pt>
+<figures/RandomRandom_AlgoPerformance.png, id=409, 865.2325pt x 712.6625pt>
 File: figures/RandomRandom_AlgoPerformance.png Graphic file (type png)
 <use figures/RandomRandom_AlgoPerformance.png>
-Package pdftex.def Info: figures/RandomRandom_AlgoPerformance.png  used on input line 120.
+Package pdftex.def Info: figures/RandomRandom_AlgoPerformance.png  used on input line 121.
 (pdftex.def)             Requested size: 334.60571pt x 275.59927pt.
 
-LaTeX Warning: Float too large for page by 21.2001pt on input line 123.
+LaTeX Warning: Float too large for page by 21.2001pt on input line 124.
 
-[28] [29] [30]) (6_conclusion/conclusion.tex [31] [32 <./figures/Real_FeatureDistribution.png>] [33 <./figures/RandomRandom_FeatureDistribution.png>] [34 <./figures/Real_AlgoPerformance.png> <./figures/RandomRandom_AlgoPerformance.png>]
+[28]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 139.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 139.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 139.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 139.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 139.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 139.
+
+<figures/WPvsBVIandOVIonAll.png, id=421, 694.595pt x 538.01pt>
+File: figures/WPvsBVIandOVIonAll.png Graphic file (type png)
+<use figures/WPvsBVIandOVIonAll.png>
+Package pdftex.def Info: figures/WPvsBVIandOVIonAll.png  used on input line 147.
+(pdftex.def)             Requested size: 418.25555pt x 323.97421pt.
+<figures/WPvsOVIon1DFeatureScatter.png, id=423, 778.91pt x 392.46625pt>
+File: figures/WPvsOVIon1DFeatureScatter.png Graphic file (type png)
+<use figures/WPvsOVIon1DFeatureScatter.png>
+Package pdftex.def Info: figures/WPvsOVIon1DFeatureScatter.png  used on input line 165.
+(pdftex.def)             Requested size: 418.25555pt x 210.74287pt.
+[29]
+<figures/WPvsBVIon1DFeatureScatter.png.png, id=432, 773.89125pt x 392.46625pt>
+File: figures/WPvsBVIon1DFeatureScatter.png.png Graphic file (type png)
+<use figures/WPvsBVIon1DFeatureScatter.png.png>
+Package pdftex.def Info: figures/WPvsBVIon1DFeatureScatter.png.png  used on input line 186.
+(pdftex.def)             Requested size: 418.25555pt x 212.11424pt.
+
+
+LaTeX Warning: Reference `fig:' on page 30 undefined on input line 231.
+
+[30]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 245.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 245.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 245.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 245.
+
+[31]) (6_conclusion/conclusion.tex [32] [33 <./figures/Real_FeatureDistribution.png>] [34 <./figures/RandomRandom_FeatureDistribution.png>] [35 <./figures/Real_AlgoPerformance.png> <./figures/RandomRandom_AlgoPerformance.png>] [36 <./figures/WPvsBVIandOVIonAll.png>] [37 <./figures/WPvsOVIon1DFeatureScatter.png>] [38 <./figures/WPvsBVIon1DFeatureScatter.png.png>]
 chapter 8.
-)
+[39
+
+
+]) [40]
+Package tocbasic Info: character protrusion at lof deactivated on input line 64.
+ (main.lof)
+\tf@lof=\write10
+\openout10 = `main.lof'.
+
+
 No file main.gls.
 No file main.acr.
-(pages/appendix.tex [35
+[41
 
 
 ]
+chapter without number
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplx/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+[42
+
+
+]
+Overfull \hbox (22.0075pt too wide) in paragraph at lines 68--68
+[]\T1/pplx/m/n/10.95 (-20) M. L. Puterman. \T1/pplx/m/it/10.95 (-20) Markov decision processes: Discrete stochastic dynamic programming\T1/pplx/m/n/10.95 (-20) .
+ []
+
+(pages/appendix.tex [43]
 chapter A.
 
-LaTeX Warning: Reference `sec:benchmarks' on page 36 undefined on input line 2.
+LaTeX Warning: Reference `sec:benchmarks' on page 44 undefined on input line 2.
 
-[36
+[44
 
 
-]) [37] [38]
+]) [45] [46]
 No complaints by nag.
 (main.aux)
 
@@ -2033,51 +2141,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59419 strings out of 480864
- 1263369 string characters out of 2904336
- 2354682 words of memory out of 3000000
- 75059 multiletter control sequences out of 15000+600000
- 513480 words of font info for 620 fonts, out of 8000000 for 9000
+ 59546 strings out of 480864
+ 1266092 string characters out of 2904336
+ 2355448 words of memory out of 3000000
+ 75135 multiletter control sequences out of 15000+600000
+ 520167 words of font info for 644 fonts, out of 8000000 for 9000
  2 hyphenation exceptions out of 8191
  115i,19n,111p,10662b,2329s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{cite.0@CC15} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@CCGK16} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@LCK95} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@cav20} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@charlton} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@dice} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@CY95} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@BaierBook} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@PRISM} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@PRISM-games} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@paperMaxi} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@condonQP} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@condonComplexity} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@shapley} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@introProb} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@Puterman} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@haddadmonmege} has been referenced but does not exist, replaced by a fixed one
-
- </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk> </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/public/wasy/dpi657/wasy10.pk> </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/public/wasy/dpi600/wasy7.pk> </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/public/wasy/dpi600/wasy8.pk>{/home/sasha/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss8.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss9.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/mathpazo/fplmbb.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/mathpazo/fplmr.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/mathpazo/fplmri.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/palatino/uplb8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/palatino/uplr8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (45 pages, 907182 bytes).
+{/home/sasha/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc} </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk> </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/public/wasy/dpi600/wasy7.pk> </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/public/wasy/dpi600/wasy8.pk></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss8.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss9.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/mathpazo/fplmbb.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/mathpazo/fplmr.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/mathpazo/fplmri.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/fpl/fplrc8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/palatino/uplb8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/palatino/uplr8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (53 pages, 1099146 bytes).
 PDF statistics:
- 714 PDF objects out of 1000 (max. 8388607)
- 150 named destinations out of 1000 (max. 500000)
- 151363 words of extra memory for PDF output out of 154059 (max. 10000000)
+ 821 PDF objects out of 1000 (max. 8388607)
+ 162 named destinations out of 1000 (max. 500000)
+ 157562 words of extra memory for PDF output out of 184870 (max. 10000000)
 

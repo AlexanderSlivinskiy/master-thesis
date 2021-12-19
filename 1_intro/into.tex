@@ -3,7 +3,7 @@
 \textcolor{purple}{I actually dont know if there is any benefit to this more than the ones Ive named.}
 
 \section{Why Use Randomly Generated Models for SGs}
-To make a quantitative assertion about the performance of the algorithms, we need first a broad spectrum of models we can test the algorithms on. At the moment we are aware of 12 case studies, giving rise to 17 distinct reachability problems for stochastic games. These problems have often parameters that can be adjusted, resulting in infinetely many graphs. However, graphs derived from the same problem will have similar graph structures.
+To make a quantitative assertion about the performance of the algorithms, we need first a broad spectrum of models we can test the algorithms on. At the moment, we are aware of 12 case studies, giving rise to 17 distinct reachability problems for stochastic games. These problems have often parameters that can be adjusted, resulting in infinetely many graphs. However, graphs derived from the same problem will have similar graph structures.
 
 Clearly, we need more distinct models to provide a solid algorithm comparison. Creating handcrafted reachability problems is useful to make comparisons on edge-case situations and show off the weaknesses of categories of algorithms (like the haddad-monmege model does for value iteration), but contributes only very little to the overall coverage of possible reachability-problems for stochastic games.
 
@@ -44,7 +44,7 @@ To prove the lemma, we need to show that the procedure is able to create every t
 For this we need to show that the following statements all hold independently of each other for a stochastic game $\SG$ created by Procedure \ref{procedure:randomRandom}:
 \begin{enumerate}
 \item There may be an arbitrary number of states in $\SG$.
-\item Any distribution of $\states$ between $\states<\Box>$ and $\states<\Circ>$ is possible.
+\item Any distribution of $\states$ between $\maxStates$ and $\states<\Circ>$ is possible.
 \item Any state may be the initial state.
 \item For% an arbitrary $\act$, $\Av$ is able to perform any mapping $\states \rightarrow 2^{\act}$.
 \item Any action in $\SG$ may have arbitrary many transitions. The probability distribution among the transitions may be arbitrary. Any state can be the target of any transition.
@@ -52,7 +52,7 @@ For this we need to show that the following statements all hold independently of
 \end{enumerate}
 
 
-Since we create a random number of states and assign them uniformly to either $\states<\Box>$ or $\states<\Circ>$, every number of states and every distribution of them between Maximizer and Minimizer is possible. Thus, statements 1. and 2. hold. Since there is no enumartion happening in Procedure \ref{procedure:randomRandom}, it is safe to assume that statement 3. also holds since we could declare any state our initial state.
+Since we create a random number of states and assign them uniformly to either $\maxStates$ or $\states<\Circ>$, every number of states and every distribution of them between Maximizer and Minimizer is possible. Thus, statements 1. and 2. hold. Since there is no enumartion happening in Procedure \ref{procedure:randomRandom}, it is safe to assume that statement 3. also holds since we could declare any state our initial state.
 
 For statement 4. consider any $\action$ and any $\Av$. 
 There is a $\SG \in \randomRandomOutcome$ containing exactly $\action$ and $\Av$, since anything between a state having zero outgoing actions and a state having all the actions there are in the game [only possible for initial state] is possible. $\actions$ is for any state  For every state $\state \in \states$.
@@ -86,7 +86,7 @@ If we are interested in fixing such properties, we use other procedures that res
 
 \section{Adding Prefix-Graphs / Configurations}
 \textcolor{purple}{This is rather an implementation thing than an abstract thing, so maybe I should not put it into this section?}
-Since the purpose of random generated models is to sample from a space as big a possible, we have per se few insights on the structure of the model, even after fixing properties. Thus, this method is not very well suited if one wants to analyse behaviour of an algorithm on very specialized models. Traditionally, this is where one would build handcrafted models. However, handcrafting parameterizable prism files allows only for very restrictive structural changes in the models. Therefor, we have implemented the option to create models at runtime. These models can also be prepended to other models to evaluate how much impact a certain structure has if added to a model.
+Since the purpose of randomly generated models is to sample from a space as big a possible, we have per se few insights on the structure of the model, even after fixing properties. Thus, this method is not very well suited if one wants to analyse behaviour of an algorithm on very specialized models. Traditionally, this is where one would build handcrafted models. However, handcrafting parameterizable prism files allows only for very restrictive structural changes in the models. Therefor, we have implemented the option to create models at runtime. These models can also be prepended to other models to evaluate how much impact a certain structure has if added to a model.
 
 %While randomly generated graphs can be useful to get a broad overview of how algorithms perform against each other, it may be hard to pinpoint the exact reasons why one algorithm performs better than another one since the random nature of these graphs comes at the cost of knowledge about the structure of the generated graphs.\textcolor{purple}{[ Even narrowing down the graph structure by the randomTree-procedure leaves too much room for varience to make structural analysis trivial.]} However, often one has already either an intuition or a proof on special cases where one algorithm is better than another one. While handcrafting PRISM-models for such adversary examples is possible, the customizable parameters of prism models are very limited. Furthermore, one problem that comes with handcrafting is that we cannot asses how much impact a structure that is adversarial for a certain algorithm has if it appears in a bigger model. \textcolor{purple}{[IS IT TRULY LIKE THIS? CANNOT WE AT LEAST SAY THAT IT'S THE SUM?]} 
 
@@ -132,7 +132,7 @@ Various studies we have made, knit into a nice purple string and story. Here mig
 \item Hopefully some rules of thumb on when to use which algorithm that could be a precursor to portfolio solving
 \end{itemize}
 
-Maybe it would also be cool to show preformance differences in real case studies in comparison to the random generated models and make conclusions Ideally: \textcolor{purple}{We did previously not have enough models to see behaviour XYZ but now we can.}
+Maybe it would also be cool to show preformance differences in real case studies in comparison to the randomly generated models and make conclusions Ideally: \textcolor{purple}{We did previously not have enough models to see behaviour XYZ but now we can.}
 
 \chapter{Conclusion}
 We have created an arbitrarily big or small benchmarking-suite for stochastic games that could be profitable for the whole stochastic game community. With the random models and our analysis tool we cool derive some interesting property of algorithm X and found out Y about algorithm Z.

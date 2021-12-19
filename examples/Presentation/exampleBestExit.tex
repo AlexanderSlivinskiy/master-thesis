@@ -50,6 +50,6 @@
 \draw[->]  (0) to[loop right]  node [midway, right] {$\mathsf{a}$} (0);
 \draw[->]  (1) to [loop right] node [midway, right] {$\mathsf{a}$} (1);
 \end{tikzpicture}
-\caption[Example of a redistribution of probabilities for bestExit]{An example of a MEC $T = \{s_0, s_1\}$ where $s_0, s_1 \in \states<\Box>$. ($\state, \actionb$) leads to exits $\zeroSink$, $\target$, but also back to $s_0$. However, as the Maximizer can always get from $s_0$ back to $s_1$ this transition is not relevant for $\val(s_1)$. We adjust the probabilities of ($\state, \actionb$) and get an equivalent $\SG$, where $\val(s_1)$ depends only on $\target$ and $\zeroSink$ without changing the value of any state.}
+\caption[Example of a redistribution of probabilities for bestExit]{An example of a MEC $T = \{s_0, s_1\}$ where $s_0, s_1 \in \maxStates$. ($\state, \actionb$) leads to exits $\zeroSink$, $\target$, but also back to $s_0$. However, as the Maximizer can always get from $s_0$ back to $s_1$ this transition is not relevant for $\val(s_1)$. We adjust the probabilities of ($\state, \actionb$) and get an equivalent $\SG$, where $\val(s_1)$ depends only on $\target$ and $\zeroSink$ without changing the value of any state.}
 \label{ex:exampleBestExit}
 \end{figure}

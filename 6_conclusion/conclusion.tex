@@ -1,24 +1,34 @@
 \chapter{Conclusion And Future Work} \label{ch:conclusion}
+General outline: We have found some cool stuff, and we have guided a so far unexplored way of analyzing Data.
 
-General outline: We have found some stuff that is cool and we have guided a so far unexplored way of analysing Data
+A huge benefit of including data analysis is that we could simply prototype an algorithm idea and assess very fast where on the spectrum of performance it lies.
+Also, we can simply add more algorithms and still have a good overview, maybe an even more solid overview. This is not the case with the tables.
+Probably we would not even have tried $\TLPSI$ if we did not have the visualization tools.
 
-A huge benefit of including data analysis is that we could simply protoype an algorithm idea and assess very fast where on the spectrum of performance it lies.
-Also we can simply add more algorithms and still have a good overview, maybe an even more solid overview. This is not the case with the tables.
-Probably we would not even have tried $\TLPSI$ is we didnt have the visualization tools.
+We have shown again that structure is very important for Algorithm performance.
 
-We have shown again that structure is very important for algo performance.
+We have created an arbitrarily big or small benchmarking suite for stochastic games that could be profitable for the whole stochastic game community.
+With the random models and our analysis tool, we derived some interesting properties of algorithm X and found out Y about algorithm Z.
 
-We have created an arbitrarily big or small benchmarking-suite for stochastic games that could be profitable for the whole stochastic game community. 
-With the random models and our analysis tool we cool derive some interesting property of algorithm X and found out Y about algorithm Z.
+
+Most important stuff in short
+\begin{itemize}
+    \item Use WP. If WP is bad, try $\TLPSI$. Especially if the SCC size is fitting.
+    \item We have found a nice way of creating random models - but they can only be small
+    \item Random models we create resemble some structural properties of real models
+    \item Without precomp, we can create big models with configs. Maybe even a good workaround
+    \item Structure is important. Scalability is too. Just because an algorithm is good on one scale, does not mean it is on the others too.
+\end{itemize}
 
 \section{Future Work}
-The features we track are all very basic, but it is a good step forward. However, we still cannot explain a lot of what is going on. 
-For that we may need new structural concepts and features we track.
+The features we track are all very basic, but it is a good step forward. However, we still cannot explain a lot of what is going on.
+For that, we may need new structural concepts and features we track.
 
 I believe that if someone would go further down this direction, a portfolio solver is definitely possible and maybe the best solution for users.
+Combinations of OVI and WP would be possible to pay a small overhead for computing them at the same time but taking the best of both.
 
 PRISM cannot handle explicit big files.
-A next step would be to create an optimization system to create random files that hold chunks of the data in implicit blocks to make the files easier parseable.
+The next step would be to create an optimization system to create random files that hold chunks of the data in implicit blocks to make the files easier parseable.
 
-The analysis techniques could be improved by including stochastic tests and artificial intelligence algos to cluster features and find correlations.
+The analysis techniques could be improved by including stochastic tests and artificial intelligence algorithms to cluster features and find correlations.
 This could then even allow for a portfolio solver which decides based on machine learning which algorithm to apply based on the graph structure.

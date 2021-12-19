@@ -1,22 +1,22 @@
 \chapter{Preliminaries} \label{ch:prelim}
-\begin{itemize}
-  \item Explain what an "incoming transition" is
-  \item What does it mean if a state can be reached? <-> it has incoming transition
-\end{itemize}
+%\begin{itemize}
+%  \item \textcolor{purple}{Explain what an "incoming transition" is}
+%  \item \textcolor{purple}{What does it mean if a state can be reached? <-> it has incoming transition}
+%\end{itemize}
 
-In this chapter we introduce the underlying definitions necessary to have an understanding of the notation and foundation this thesis is built on. 
+In this chapter, we introduce the underlying definitions necessary to have an understanding of the notation and foundation on which this thesis is built on. 
 To get an overview of what simple stochastic games are and how they are played we provide in Section \ref{sec:intuit} an intuition. 
 In Section \ref{sec:defSG} we introduce the formal definition of simple stochastic games, which is the stochastic model we consider. 
 We formalize the notion of players having strategies in Section \ref{sec:defStrat} and define the semantics of simple stochastic games in Section \ref{sec:defSemantics}. 
 We then consider special cases of stochastic games called end components in Section \ref{sec:defEC}. 
-Lastly we give short descriptions of the most prominent algorithms that solve simple stochastic games and some optimizations to them in Section \ref{sec:SGAlgos}.
+Lastly, we give short descriptions of the most prominent algorithms that solve simple stochastic games and some optimizations to them in Section \ref{sec:SGAlgos}.
 
 \section{Intuition} \label{sec:intuit}
 \input{examples/exampleSG}
 A \emph{simple stochastic game} is a two-player-game introduced by Shapley in \cite{shapley} played on a graph $G$ whose vertices $\states$ are partitioned into the two sets $\maxStates$ and $\minStates$. 
 Each set belongs to a player. We call the players Maximizer and Minimizer. We refer to vertices also as states.
 
-At the beginning of the game a token is placed on the initial vertex $\initstate$. 
+At the beginning of the game, a token is placed on the initial vertex $\initstate$. 
 The Maximizer's goal is to move the token to any \emph{target} $\target \in \fstates \subseteq \states$, 
 while the Minimizer's goal is that the token never reaches any target-vertex $\target$. Stochastic games with such objectives are called \emph{reachability games}.
 To move the token every vertex $s \in S$ has a finite set of actions $\Av(\state)$ that can be taken if the token is on this vertex. 
@@ -46,7 +46,7 @@ The set of all probability distributions on $X$ is denoted by $\Distributions(X)
 	A \emph{Markov decision process (MDP)} is a special case of $\SG$ where $\minStates = \emptyset$, and a Markov chain (MC) is a special case of an MDP, where for all $\state \in \states: \abs{\Av(\state)} = 1$.
 \end{definition}
 
-We use a model of stochastic games similar to \cite{paperMaxi}, which is equivalent to Condon's model of $\SG$s.
+We use a model of stochastic games similar to \cite{paperMaxi}.
 
 %Every vertex $s \in S$ has a finite set of actions $\Av(\state)$ that can be taken if the token is on this vertex. A \emph{probability distribution} on a finite set $X$ is a mapping $\trans: X \to [0,1]$, such that $\sum_{x\in X} \trans(x) = 1$. Each action causes the transition of the token to another vertex with a probability according to the probability distribution $\trans: S \to [0,1] \subset \mathbb{Q}$.
 %The set of all probability distributions on $X$ is denoted by $\Distributions(X)$.
@@ -74,7 +74,7 @@ such that $\straa(\state) \in \distributions(\Av(\state))$ for all $\state \in \
 Since we deal with reachability games, we will consider only \emph{memoryless positional strategies}. 
 This means that for each state there is exactly one fixed action that is taken: 
 $\forall \state \in \maxStates : \exists \action \in \Av(\state): \straa(\state, \action) = 1$ and $\forall \state \in \minStates : \exists \action \in \Av(\state): \strab(\state, \action) = 1$. 
-For reachability games these types of strategies are optimal~\cite{condonComplexity}.
+For reachability games, these types of strategies are optimal~\cite{condonComplexity}.
 
 %\textcolor{purple}{May also delete}
 %A pair of positional strategies $(\straa,\strab)$ induces a Markov chain $\G[\straa,\strab]$ on $\SG$ as every state has only one action, 
@@ -114,7 +114,7 @@ The second equality is due to \cite{shapley} (see also \cite{condonComplexity}).
 Again, this is a simplified definition derived from using the supremum and infimum instead of the maximum and minimum. 
 However, as we are dealing with memoryless positional strategies, a maximum and a minimum always exist~\cite[Ch.~10]{BaierBook}.
 
-We define the \emph{value of an $\SG$} by the probability that the Maximizer wins starting in the initial state $\initstate$. 
+We define the \emph{value of a $\SG$} by the probability that the Maximizer wins starting in the initial state $\initstate$. 
 We are mainly interested in $\val(\initstate)$ throughout this thesis. 
 Condon has shown that the complexity of solving this problem is in $\nptime$ $\cap$ co-$\nptime$~\cite{condonComplexity}.
 
@@ -147,7 +147,7 @@ A non-empty set $T\subseteq \states$ of states is an \emph{end component (EC)} i
 Figure \ref{ex:exampleEC} illustrates a simple $\SG$ with an end component.
 An end component $T$ is a \emph{maximal end component (MEC)} if there is no other end component $T'$ such that $T \subseteq T'$.\
 Note that sinks and targets are maximal end components of size 1.\
-Given an $\SG$ $\G$, the set of its MECs is denoted by $\mec(\G)$ and can be computed in polynomial time~\cite{CY95}.\
+Given a $\SG$ $\G$, the set of its MECs is denoted by $\mec(\G)$ and can be computed in polynomial time~\cite{CY95}.\
 
 Computing the value of states that are part of an End Component of at least size 2 is for many algorithms a non-trivial task that requires
 additional concepts.
@@ -158,7 +158,7 @@ additional concepts.
 \section{Algorithms for Stochastic Games} \label{sec:SGAlgos}
 Next, we consider some of the most prominent algorithms that can \emph{solve} stochastic games i.e. compute the value of any stochastic game.
 
-The three most common approaches to solve stochastic games are \emph{Value Iteration}, \emph{Strategy (or Policy) Iteration} and \emph{Quadratic Programming}.
+The three most common approaches to solving stochastic games are \emph{Value Iteration}, \emph{Strategy (or Policy) Iteration} and \emph{Quadratic Programming}.
 %In this thesis, we will focus primarily on Value Iteration and Strategy Iteration, since even state-of-the-art Quadratic Programming Solvers are not as performant as 
 %the other options at the moment \cite{GANDALF}.
 
@@ -195,64 +195,83 @@ Value iteration starts with the under-approximation
 	0 & \text{otherwise} \end{cases}\]
 and repeatedly applies the Bellman operator. Since the value is the least fixpoint of the Bellman equations and $\lb_0 \leq \val$ is lower than the value, this converges to the value in the limit~\cite{visurvey} (formally $\lim_{i \to \infty} \Bop^i(\lb_0) = \val$).
 
+\subsubsection*{Bounded Value Iteration}
 While this approach is often fast in practice, it has the drawback that it is not possible to know the current difference between $\Bop^i(\lb_0)$ and $\val$ for any given~$i$. 
 To address this, one can employ \emph{bounded value iteration} ($\BVI$, also known as interval iteration~\cite{bvi,atva,KKKW18})
 It additionally starts from an over-approximation $\ub_0$, with $\ub_0(s) = 1$ for all $s \in \states$. 
-However, applying the Bellman operator to this upper estimate might not converge to the value, but to some greater fixpoint instead due to end compoments. 
+However, applying the Bellman operator to this upper estimate might not converge to the value, but some greater fixpoint instead due to end components. 
 See~\cite[Section 3]{KKKW18} for an example.
 To fix this issue, $\BVI$ searches for the end components where all states agree on the same exit out of the end component. 
 The upper bound for these states can then be defined by the upper bound of the states outside of the end component.
-This approach is usally referred to as \emph{deflating} \cite{paperMaxi}.
+This approach is usually referred to as \emph{deflating} \cite{paperMaxi}.
 With deflating, the upper bound decreases monotonically towards the least fixpoint. Once $\forall \state \in \states: \ub(s) - \lb(s) \leq \epsilon$,
 $\BVI$ terminates and reports $\value(\initstate) = \frac{\ub_0 + \lb_0}{2}$.
+In addition to $\BVI$, we will consider an optimization the widest path optimization $\WP$ introduced in \cite{widestPath} that offers an alternative to deflating for the correct handling of end components.
 
+\subsubsection*{Optimistic Value Iteration}
 Optimistic Value Iteration $\OVI$ takes a similar approach, but instead of calculating the upper bound at all times along the lower bound, 
-a bound $B$ is guessed from the lower bound by adding a small $\epsilon$ to the lower bound. 
-the upper bound is guessed from the lower bound by adding a small $\epsilon$ to the lower bound. 
+an upper bound $B$ is guessed from the lower bound by adding a small $\epsilon$ to the lower bound. 
 If this induced bound $B$ can be verified to be an upper bound, i.e. $\forall \state \in \states: \Bop(B)(\state) \leq B(\state)$, then $\OVI$ terminates.
 The upper bound is only guessed if the lower bound would converge according to classic value iteration. 
-If the guessed bound is not an upper bound, the precision for the lower bound gets reduced and iterating continues.
+If the guessed bound is not an upper bound, the precision for the lower bound gets reduced, and iterating continues.
+
+
+There are more extensions to value iteration like Sound Value Iteration \cite{Cite?} or the Learning-Based approach introduced in \cite{???},
+but we will not use them because \textcolor{red}{...?}.
 
 In practice, value iteration and its extensions are believed to be the fastest approaches to solve stochastic games.
-However, as shown in \cite{haddadmonmege}, there are counter examples where value iteration requires exponentially many steps to converge and its performance is worse than the other solution approaches like strategy iteration.
-
-There are more extensions and optimization to value iteration like \textcolor{purple}{SVI? Learning based approach?}.
-The optimizations we consider in this thesis are:
-\begin{itemize}
-	\item \textcolor{purple}{Talk about TOP, WP and T. No need to talk about G and D since these are rather implementations.}
-\end{itemize}
+However, as shown in \cite{haddadmonmege}, there are counterexamples where value iteration requires exponentially many steps to converge and its performance is worse than the other solution approaches like strategy iteration.
 
 \subsection{Strategy Iteration}
 In Strategy Iteration, each player starts out with an arbitrary strategy.
-In turns, the Maximizer and the Minimizer adjust their strategies to 
+Successively, the Maximizer and the Minimizer adjust their strategies to 
 improve their winning probability \cite{condonQP}.
 
 Whenever a player fixed a strategy, the resulting $\SG$ is simplified to an MDP. 
 From there on, any solution method for MDPs can be applied.
-We solve the MDP with linear programming \cite{Citation to any LP-solving explanation for MDPs. Maybe Puterman?}
+We solve the MDP with linear programming \cite{Citation to any LP-solving explanation for MDPs. Maybe Puterman?} and refer to this algorithm by $\LPSI$.
 
 Since trying out every possible deterministic positional strategy guarantees that the optimal strategy is found,
 the trivial upper bound on the number of iterations for strategy iteration is exponential in the number of actions per state.
 
-However, so far there is no example that can confirm that there is a stochastic game where strategy iteration truly needs exponentially many iterations.
+However, so far no example can confirm that there is a stochastic game where strategy iteration truly needs exponentially many iterations.
 
 \subsection{Quadratic Programming}
-In Quadratic Progamming, the stochastic game is encoded into a mathematical framework called a Quadratic Program. 
-The encoded problem is then handed to a solver which uses algorithms specific to mathematical programming in general.
+In Quadratic Programming, the stochastic game is encoded into a mathematical framework called a Quadratic Program. 
+The encoded problem is then handed to a solver, which uses algorithms specific to mathematical programming in general.
 While solving an arbitrary quadratic problem is known to be $\NP$-complete, convex quadratic programs can be solved in polynomial time.
-At the moment it is open whether it is possible to encode every stochastic game into a convex quadratic program.
+At the moment, it is open whether it is possible to encode every stochastic game into a convex quadratic program.
 In practice, \cite{Gandalf} has shown that Quadratic Programming is not competitive to Value iteration and Strategy iteration even if using 
 state-of-the-art solvers. Thus, we will not include it in our benchmarks.
 
+\subsection{Optimizations} \label{subsec:optimizations}
+In addition to the algorithms and their extensions, there are various optimizations that we will consider in this thesis:
+
+$\mathbf{G}$: The Gau{\ss}-Seidel variant of value iteration for $\BVI$ and $\OVI$. 
+Bellman updated happen in-place and state by state. Thus, states updated later can use already the updated values of previous states. 
+
+$\mathbf{D}$: The idea from~\cite{KKKW18} to only deflate every 100 steps for $\BVI$. 
+By deflating only every 100 steps, there is less time spent on searching for the end components that need to be deflated.
+
+$\mathbf{T}$: A topological decomposition of $\SG$ into its strongly connected components (SCCs) for $\BVI$, $\OVI$ and $\LPSI$.
+The stochastic game is decomposed into its SCCs, then the values of SCCs are computed along their topological order.
+This allows the algorithms to solve smaller sub-problems before instead of solving the whole $\SG$ at once.
+
+$\TOPAlg$: A variant of the topological optimization for value iteration. 
+To ensure that each SCC passes the correct value onto the next SCC, we use the computed value to infer strategies for the states and 
+verify the correctness of the strategies by fixing them separately. This induces two MDPs. 
+If passing the strategy of the opponent to policy iteration for MDPs and after one iteration the algorithm terminates for both MDPs,
+we know that this must be the correct algorithm.
+
 \subsubsection*{Algorithm Performance and Stochastic Game Structure}
 We believe that the performance of the algorithms is very dependent on the structural properties of the stochastic game.
-Structural properties are for example the number of transitions an action has, the size of the biggest $\mec$ or the number of strongly connected components in a stochastic game.
+Structural properties are for example the number of transitions an action has, the size of the biggest $\mec$, or the number of strongly connected components in a stochastic game.
 As has been shown in \cite{GANDALFpaper} and \cite{haddadmonmege}, there are certainly some stochastic games that can be easy or very hard for certain algorithms.
-However, at the moment there are only few insights on which structural properties should be taken into account when deciding on which algorithm to take, and which should not.
+However, at the moment, there are only a few insights on which structural properties should be taken into account when deciding on which algorithm to take and which should not.
 %Together with the large number of algorithms and optimizations it is a difficult task to make an informaed
 %Additionally, since the introduction of stochastic games, there has been many extensions and optimizations to all three approaches, 
 %making the analysis of which algorithm together with which extension to take even more difficult since there are too few criteria and comparisons
 %that allow for an informed decision.
 
-Thus, we analyse the impact of different structural properties on the performance of the algorithms that solve $\SG$.
+Thus, we analyze the impact of different structural properties on the performance of the algorithms that solve $\SG$.
 To evaluate performance, we do not only use real case studies but also randomly generated stochastic games.

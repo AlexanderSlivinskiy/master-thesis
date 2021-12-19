@@ -2376,23 +2376,23 @@
     <bcf:citekey order="28">KKKW18</bcf:citekey>
     <bcf:citekey order="29">KKKW18</bcf:citekey>
     <bcf:citekey order="30">paperMaxi</bcf:citekey>
-    <bcf:citekey order="31">haddadmonmege</bcf:citekey>
-    <bcf:citekey order="32">condonQP</bcf:citekey>
-    <bcf:citekey order="33">Citation to any LP-solving explanation for MDPs. Maybe Puterman?</bcf:citekey>
-    <bcf:citekey order="34">Gandalf</bcf:citekey>
-    <bcf:citekey order="35">GANDALFpaper</bcf:citekey>
-    <bcf:citekey order="36">haddadmonmege</bcf:citekey>
+    <bcf:citekey order="31">widestPath</bcf:citekey>
+    <bcf:citekey order="32">Cite?</bcf:citekey>
+    <bcf:citekey order="33">???</bcf:citekey>
+    <bcf:citekey order="34">haddadmonmege</bcf:citekey>
+    <bcf:citekey order="35">condonQP</bcf:citekey>
+    <bcf:citekey order="36">Citation to any LP-solving explanation for MDPs. Maybe Puterman?</bcf:citekey>
     <bcf:citekey order="37">Gandalf</bcf:citekey>
-    <bcf:citekey order="38">BaierBook</bcf:citekey>
-    <bcf:citekey order="39">WidestPath</bcf:citekey>
-    <bcf:citekey order="40">ANY BOOK</bcf:citekey>
-    <bcf:citekey order="41">GANDALF</bcf:citekey>
-    <bcf:citekey order="42">prismgames3</bcf:citekey>
-    <bcf:citekey order="43">gandalf20</bcf:citekey>
-    <bcf:citekey order="44">paperMaxi</bcf:citekey>
-    <bcf:citekey order="45">What?</bcf:citekey>
-    <bcf:citekey order="46">widestPath</bcf:citekey>
-    <bcf:citekey order="47">KKKW18</bcf:citekey>
+    <bcf:citekey order="38">KKKW18</bcf:citekey>
+    <bcf:citekey order="39">GANDALFpaper</bcf:citekey>
+    <bcf:citekey order="40">haddadmonmege</bcf:citekey>
+    <bcf:citekey order="41">Gandalf</bcf:citekey>
+    <bcf:citekey order="42">BaierBook</bcf:citekey>
+    <bcf:citekey order="43">WidestPath</bcf:citekey>
+    <bcf:citekey order="44">ANY BOOK</bcf:citekey>
+    <bcf:citekey order="45">GANDALF</bcf:citekey>
+    <bcf:citekey order="46">prismgames3</bcf:citekey>
+    <bcf:citekey order="47">gandalf20</bcf:citekey>
     <bcf:citekey order="48">gandalf20</bcf:citekey>
     <bcf:citekey order="49">PRISMben</bcf:citekey>
     <bcf:citekey order="50">haddadmonmege</bcf:citekey>
@@ -2445,4 +2445,13 @@
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="anyt/global//global/global"
+                type="entry"
+                sortingtemplatename="anyt"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
 </bcf:controlfile>

@@ -27,7 +27,7 @@ Whenever you add an action with a transition distribution that sums up to one, e
   \begin{algorithmic}[1]
   \Ensure Stochastic game $\SG$ where the initial state is connected to any $\state \in \states$
   \State Create $\states$ with a random $n \in \Naturals$
-  \State Partition $\states$ uniformly at random into $\states<\Box>$ and $\states<\circ>$
+  \State Partition $\states$ uniformly at random into $\maxStates$ and $\minStates$
   \State Enumerate $\state \in \states$ in any random order from 0 to n-1
   \State Set $\initstate$ to the state with index 0
   \State $\trans = \emptyset$
