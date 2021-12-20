@@ -1,7 +1,7 @@
-\chapter{Implementing Random-Generated Graphs} \label{ch:implementedRandomGen}
+\chapter{Implementing randomly generated stochastic games} \label{ch:implementedRandomGen}
 In this chapter, we discuss how our implementation of random generation differs from the theory described in \ref{ch:randomGen} as well as how to use and extend our implementation. 
 
-\section{Parameters and Guidelines for Model Construction} \label{sec:guidelines}
+\section{Parameters and guidelines for model construction} \label{sec:guidelines}
 We have implemented a constrained version of Algorithm \ref{algo:randomRandom} from Section \ref{sec:randomGenAlgo} to randomly generate models.
 The real-world implementation has to be constrained on one hand due to the natural restriction that a computer cannot generate arbitrarily big stochastic games due and 
 arbitrarily small transitions due to finite memory.
@@ -15,7 +15,7 @@ Thus, we provide several parameters which we do not randomize. Instead, we give 
 The parameters in Subsection \ref{list:params} provide an overview that we do not randomize in our implementation.
 Of course, it is possible to wrap a script around our generation implementation that randomizes the parameters to avoid too deterministic models.
 
-\subsection{Limits and Additional Guideline-Options}
+\subsection{Limits and additional guideline options}
 Although the parameters we expose for random generation can constrain some structural properties of the resulting models, 
 there are many structural properties we can only barely influence. For example, there is no obvious way how to influence the size and number of SCCs that a model has or to guarantee
 that every state in a model has a certain number of actions.
@@ -51,7 +51,7 @@ The random generation is split into multiple python modules to maximize extendab
 All relevant python modules for this are located in the folder "random-generated-models".
 We provide a description on how to use the modules and how to extend in case the reader wants to.
 
-\subsubsection*{Generating Models}
+\subsubsection*{Generating models}
 If you want to generate a model, you can run the "modelGenerator.py"-script.
 This script can receive a number of parameters to guide the generation process and constrain which models can be created.
 
@@ -74,7 +74,7 @@ The generated model will be named after the parameter settings and will be store
 
 To generate multiple models with different parameter settings, we have used the simple script "massModelGenerator.py" which calls modelGenerator various times with the different sets of parameters.
 
-\subsubsection*{Module Explanation}
+\subsubsection*{Module explanation}
 Here we describe what every module does.
 
 The module "modelgenerator.py" is responsible for calling the module that generates the stochastic game and translating it into a .prism file. 
@@ -96,7 +96,7 @@ Each generator receives two randomPickers as part of their input parameters: One
 and another one which decides to which states the branching transitions of an action should connect.
 \textcolor{red}{Should rename them to randomPicker and make them truly more random.}
 
-\subsubsection*{Module Extension}
+\subsubsection*{Module extension}
 If you are interested in implementing a new way of generating random models by providing new guidelines, all you have to do is create a new
 module that inherits from GraphGenerator and implement the functionality. The generateGraph() call must receive a GraphGenParams object and return nothing.
 During the generateGraph call. After generateGraph(), the GraphGenerator instance should hold all the information about the game in its class variables.

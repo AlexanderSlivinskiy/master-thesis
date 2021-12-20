@@ -159,7 +159,7 @@ additional concepts.
 Next, we consider some of the most prominent algorithms that can \emph{solve} stochastic games i.e. compute the value of any stochastic game.
 
 The three most common approaches to solving stochastic games are \emph{Value Iteration}, \emph{Strategy (or Policy) Iteration} and \emph{Quadratic Programming}.
-%In this thesis, we will focus primarily on Value Iteration and Strategy Iteration, since even state-of-the-art Quadratic Programming Solvers are not as performant as 
+%In this thesis, we will focus primarily on Value iteration and Strategy iteration, since even state-of-the-art Quadratic Programming Solvers are not as performant as 
 %the other options at the moment \cite{GANDALF}.
 
 \subsection{Value iteration}
@@ -195,7 +195,7 @@ Value iteration starts with the under-approximation
 	0 & \text{otherwise} \end{cases}\]
 and repeatedly applies the Bellman operator. Since the value is the least fixpoint of the Bellman equations and $\lb_0 \leq \val$ is lower than the value, this converges to the value in the limit~\cite{visurvey} (formally $\lim_{i \to \infty} \Bop^i(\lb_0) = \val$).
 
-\subsubsection*{Bounded Value Iteration}
+\subsubsection*{Bounded value iteration}
 While this approach is often fast in practice, it has the drawback that it is not possible to know the current difference between $\Bop^i(\lb_0)$ and $\val$ for any given~$i$. 
 To address this, one can employ \emph{bounded value iteration} ($\BVI$, also known as interval iteration~\cite{bvi,atva,KKKW18})
 It additionally starts from an over-approximation $\ub_0$, with $\ub_0(s) = 1$ for all $s \in \states$. 
@@ -208,22 +208,22 @@ With deflating, the upper bound decreases monotonically towards the least fixpoi
 $\BVI$ terminates and reports $\value(\initstate) = \frac{\ub_0 + \lb_0}{2}$.
 In addition to $\BVI$, we will consider an optimization the widest path optimization $\WP$ introduced in \cite{widestPath} that offers an alternative to deflating for the correct handling of end components.
 
-\subsubsection*{Optimistic Value Iteration}
-Optimistic Value Iteration $\OVI$ takes a similar approach, but instead of calculating the upper bound at all times along the lower bound, 
+\subsubsection*{Optimistic value iteration}
+Optimistic value iteration $\OVI$ takes a similar approach, but instead of calculating the upper bound at all times along the lower bound, 
 an upper bound $B$ is guessed from the lower bound by adding a small $\epsilon$ to the lower bound. 
 If this induced bound $B$ can be verified to be an upper bound, i.e. $\forall \state \in \states: \Bop(B)(\state) \leq B(\state)$, then $\OVI$ terminates.
 The upper bound is only guessed if the lower bound would converge according to classic value iteration. 
 If the guessed bound is not an upper bound, the precision for the lower bound gets reduced, and iterating continues.
 
 
-There are more extensions to value iteration like Sound Value Iteration \cite{Cite?} or the Learning-Based approach introduced in \cite{???},
+There are more extensions to value iteration like sound value iteration \cite{Cite?} or the learning-based approach introduced in \cite{???},
 but we will not use them because \textcolor{red}{...?}.
 
 In practice, value iteration and its extensions are believed to be the fastest approaches to solve stochastic games.
 However, as shown in \cite{haddadmonmege}, there are counterexamples where value iteration requires exponentially many steps to converge and its performance is worse than the other solution approaches like strategy iteration.
 
-\subsection{Strategy Iteration}
-In Strategy Iteration, each player starts out with an arbitrary strategy.
+\subsection{Strategy iteration}
+In Strategy iteration, each player starts out with an arbitrary strategy.
 Successively, the Maximizer and the Minimizer adjust their strategies to 
 improve their winning probability \cite{condonQP}.
 
@@ -236,7 +236,7 @@ the trivial upper bound on the number of iterations for strategy iteration is ex
 
 However, so far no example can confirm that there is a stochastic game where strategy iteration truly needs exponentially many iterations.
 
-\subsection{Quadratic Programming}
+\subsection{Quadratic programming}
 In Quadratic Programming, the stochastic game is encoded into a mathematical framework called a Quadratic Program. 
 The encoded problem is then handed to a solver, which uses algorithms specific to mathematical programming in general.
 While solving an arbitrary quadratic problem is known to be $\NP$-complete, convex quadratic programs can be solved in polynomial time.

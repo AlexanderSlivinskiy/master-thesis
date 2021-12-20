@@ -1,5 +1,5 @@
-\chapter{Randomly Generated Models} \label{ch:randomGen}
-\section{Why Use Randomly Generated Models}
+\chapter{Randomly generated models} \label{ch:randomGen}
+\section{Why use randomly generated models}
 Using randomly generated problems is a classic approach to test algorithms.
 A key benefit of randomly generated models is that by not being to a real problem, their structure can deviate from currently available case studies 
 and thus express other structural features. 
@@ -26,7 +26,7 @@ To tackle this issue, we introduce randomly generated models.
 
 %The problem with sampling the model space is that depending on the constraints it is infinite \textcolor{purple}{and at this moment I have no real idea how to do this. This is why we take an iterative model-generation process.}
 
-\section{Constraining the Random-Generation Process}
+\section{Constraining the random generation process}
 While it is possible to completely randomize every property of a model, this procedure would yield graphs with undesirable properties. 
 We are only interested in models in which the initial state is connected to every state of the underlying graph of a stochastic game. 
 This is because all the states that can never be reached by the initial state could be simplified by introducing a single sink, and thus add unnecessary complexity.
@@ -200,7 +200,7 @@ Additionally, creating the transition distributions as described in Algorithm \r
 If we pick the transition probabilities between $(0, 1]$ uniformly at random, around $83,33\%$ of all actions have two or three transitions with positive probability and 
 none with one transition.
 
-\section{Adding Prefix-Graphs / Configurations}
+\section{Adding prefix-graphs / configurations}
 Since the purpose of randomly generated models is to sample from a space as big a possible, we have few insights into the structure of the model.
 Thus, this method is not very well suited if one wants to analyze the behavior of an algorithm on very specialized models. 
 Traditionally, this is where one would build handcrafted models. 

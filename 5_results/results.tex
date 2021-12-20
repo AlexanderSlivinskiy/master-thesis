@@ -1,7 +1,7 @@
 \chapter{Results} \label{ch:results}
 
 In this chapter, we analyze models regarding their feature distribution and algorithms regarding their performance.
-Furthermore, we investigate which model features influence on the performance of the algorithms.
+Furthermore, we investigate which model features influence the performance of the algorithms.
 
 %Regarding runtime a lot of stuff may change. Iterations wont change as long as we use the same deterministic algorithms, so its a more stable metric.
 
@@ -9,10 +9,10 @@ Furthermore, we investigate which model features influence on the performance of
 %Maybe it would also be cool to show preformance differences in real case studies in comparison to the randomly generated models and make conclusions Ideally:
 %\textcolor{purple}{We did previously not have enough models to see behaviour XYZ but now we can.}
 
-\section{Experimental Setup}
+\section{Experimental setup}
 Various algorithms we consider were already implemented in PRISM-games~\cite{prismgames3}.
 We needed to extend PRISM-games by the algorithms $\LPSI$, $\TLPSI$, and $\TOPAlg$.
-Moreover, for $\TOPAlg$ we added precise Markov chain solving, which was not present in PRISM-games before, and extended the strategy iteration (which was implemented in~\cite{gandalf20}) to use this precise solving.
+Moreover, for $\TOPAlg$ we added precise Markov chain solving, which was not present in PRISM before, and extended the strategy iteration (which was implemented in~\cite{gandalf20}) to use this precise solving.
 Our code is available in the GitHub repository \url{https://github.com/ga67vib/Algorithms-For-Stochastic-Games}.
 
 \subsubsection*{Technical details}
@@ -20,16 +20,16 @@ We conducted the experiments on a server with 64 GB of RAM and a 3.60GHz Intel C
 We always use a precision of $\varepsilon=10^{-6}$. The timeout was set to 15 minutes for all models. 
 The memory limit for every experiment was 6 GB.
 
-\section{Model Analysis Results}
+\section{Model analysis results}
 
 First, we want to learn about the feature distribution of the real case studies we have. 
-For this we use in Figure \ref{fig:Real_FeatureDistribution} a box plot for each feature.
+For this we use a box plot for each feature in Figure \ref{fig:Real_FeatureDistribution}.
 In each graph, the distribution of the values of one separate feature in all real case studies is visualized. 
 The orange line marks the median of a feature in all models and the green triangle marks the average.
 The bounds of the boxes mark the 25 and 75 percentile, and the lines extended by the whiskers mark the 10 and 90 percentile.
 %\textcolor{red}{Not sure about the 10 and 90 percentiles}
 Dots outside of whiskers represent outliers.
-The relative number of probabilistic actions for example is between around $15\%$ and $45\%$ in half of the models.
+For example, the relative number of probabilistic actions is between around $15\%$ and $45\%$ in half of the models.
 In half of the models, more than $20\%$ of actions are probabilistic.
 \textcolor{purple}{Most likely I may move all the features into the appendix and only highlight 5-10 cool features.}
 \begin{figure}[t]
@@ -42,11 +42,11 @@ In half of the models, more than $20\%$ of actions are probabilistic.
 \end{figure}
 What we can read from the box plot is this:
 \begin{itemize}
-    \item Models have around 2 actions per state and 1.5 Transitions per action
-    \item On average, 80\% of the states of the models are trivial, and their value can be computed with simple graph algorithms 
+    \item According to AvgNumActionsPerState and AvgNumTransPerAction, models have on average 2 actions per state and 1.5 transitions per action
+    \item According to NumUnknown, on average 80\% of the states of the models are trivial, and their value can be computed with simple graph algorithms 
     \item Generally, the number of states is evenly split to Maximizer and Minimizer
-    \item Usually, around 70 to 85\% of all actions are deterministic
-    \item Most models do not contain end components
+    \item According to NumProbActions, usually around 70 to 85\% of all actions are deterministic
+    \item According to NumMECs, most models do not contain end components
 \end{itemize}
 
 By furthermore printing the maximal and minimal occurring values of each feature we obtain that the smallest occurring positive transition probability is 0.001.
@@ -77,7 +77,7 @@ The biases we read from this plot are:
             However, there can be multiple sinks because of end components containing only minimizer states. 
             In this case, once the token is inside the end component the Minimizer can pick a strategy such that the token never leaves and thus can never reach the target.
     \item As mentioned in Chapter \ref{ch:randomGen}, our procedure generates models with a tendency to have few actions per state and few transitions per action.
-    \item NumMecs shows that are usually at most three MECs per model
+    \item NumMecs shows that there are usually at most three MECs per model
     and NumNonSingleton shows that in almost all cases there is only one strongly connected component.
         This is because we uniformly randomize where the transition may lead. Thus, it is likely that big MECs and SCCs are formed. 
     \item \textcolor{purple}{The rest of the current image is very dependent on the parameters we set, so it is pointless talking about it.
@@ -85,14 +85,15 @@ The biases we read from this plot are:
           \textcolor{red}{However, I should create 100 models with the same parameters and then see their feature distribution of non-set features. Do this once I have reimplemented random generation}
 \end{itemize}
 
-Our random generation procedure introduces a bias towards various properties like for example, the number of SCCs or the average number of transitions per Action. 
+Our random generation procedure introduces a bias towards various properties like for example, the number of SCCs or the average number of transitions per action. 
 To regain control over these properties, we can use other guidelines as described in Section \ref{sec:guidelines}.
 \textcolor{red}{Show the Figure of SCC FeatureDistribution for RandomSCC benches.}
 However, when comparing the feature distributions of the real case studies and the distributions of the models generated by Algorithm \ref{algo:randomRandom},
-they have similar biases for many features. Both Benchmarks tend to have few big SCCs, few actions per state, and few transitions per action.
+they have similar biases for many features. Both benchmarks tend to have few big SCCs, few actions per state, and few transitions per action.
 Thus, our procedure is capable of recreating models that have in various regards a similar structure to the currently available real case studies. 
+\textcolor{purple}{Actually, we might use one box plot for both models}
 
-\section{Algorithm Comparison Results}
+\section{Algorithm comparison results}
 
 In this section, we compare the Algorithms introduced in Section \ref{sec:SGAlgos} on real case studies, handcrafted examples, and our randomly generated models to both evaluate the 
 performance of the algorithms relative to each other and find correlations between model feature values and algorithm performance.
@@ -102,10 +103,7 @@ We consider case studies from three different sources:
 (i) all real case studies that were already used in~\cite{gandalf20}, which are mainly from the PRISM benchmark suite~\cite{PRISMben}. We omit models that are already solved by pre-computations.
 (ii) several handcrafted corner case models: haddad-monmege (an adversarial for value iteration from~\cite{haddadmonmege}), BigMec (a single big MEC), and MulMec (a long chain of many small MECs), the latter two both being from~\cite{gandalf}.
 (iii) randomly generated models generated by Algorithm \ref{algo:randomRandom} and our additional guidelines from Subsection \ref{sec:guidelines}.
-\textcolor{red}{Here we should state the exact parameters we have used for our models. States are 1000 to 10000.}
-
-
-\textcolor{red}{Another way to write this section is to start out with the star-graph, take each clue and build a string from there.}
+\textcolor{red}{Here we should state the exact parameters we have used for our models. States are 1000 to 10000, transition probabilities between 0.1 and 0.01 etc.}
 
 First, we provide a general overview of the performance of all algorithms on our benchmarking set in Figure \ref{fig:AlgoPerformance}.
 The plots depict the number of solved benchmarks (x-axis) and the time it took to solve them (y-axis). 
@@ -200,7 +198,7 @@ Thus, we provide an analogous scatter plot in Figure \textcolor{red}{ITERATION S
 \textcolor{red}{Next, add big models to confirm that the thesis you set up also holds for big models. 
 There you can also say that although $\OVI$ looks promising in the small models, in the big models it may fall behind $\BVI$.}
 
-\subsection{Analyzing the Optimizations}
+\subsection{Analyzing the optimizations}
 
 $\mathbf{Gauss-Seidel} \ \BVI$:
 
@@ -262,7 +260,7 @@ Also, the topological improvement allows solving models with huge numbers of sma
 LP could likely be improved. At the moment, we do not even deflate but use MIP to encode the maximum-best-exit constraints. But this should maybe go into future work}
 
 
-\section{Searching Correlations between Algorithms and Features}
+\section{Searching correlations between algorithms and features}
 Next, we are interested in correlations between algorithm performance and values of features.
 Ideally, we would like to find cases where one algorithm scales better with certain features than others.
 This would allow us to analyze the graph structure and decide based on the features we get which algorithm is most likely the best one to use in this case.
@@ -276,7 +274,7 @@ a correlation between two features is. On the diagonal of the matrix, the correl
 a feature and itself. Ideally, we would like to get clues from the heatmap which features or correlations we should investigate.
 However, for the most part, we could not gather any non-trivial information from heatmaps.
 
-\subparagraph*{Scatter Plots}
+\subparagraph*{Feature-performace scatter plots}
 We plot algorithm runtime / iterations against feature values. Each point corresponds to the feature-value and runtime of a model.
 
 What is there to find in these graphs?
@@ -285,7 +283,7 @@ What is there to find in these graphs?
     \item All scale with number of unknowns, which is no surprise but might be mentioned.
 \end{itemize}
 
-\subparagraph*{One Dimensional Graphs}
+\subparagraph*{One dimensional scatter plots for features}
 We can get models where proposition A is fulfilled and compare them to models where A is not fulfilled.
 We can plot the models where A is true against models where A is false to see whether they hold structural differences.
 This did not seem to be the case in general.

@@ -1,67 +1,75 @@
-\chapter{Algorithm Analysis} \label{ch:analysis}
+\chapter{Algorithm analysis} \label{ch:analysis}
 
 To facilitate the algorithm performance analysis, we track statistics about the models we use and the algorithms that solve them. 
 We refer to every category of data that we track as \emph{features}.
 The algorithm features we track are the time it requires to solve the problem, the iterations needed in case we use a value-iteration-based algorithm, 
 and the value it has computed for correctness checks.
-The model features we track are:
+\textcolor{red}{Should maybe put this in a table to make it easier to reference, find and read.}
+The model features we track along with their names we use in the experimental section are:
 
 $\mathbf{State-related:}$
 \begin{itemize}
-\item Number of states
-\item Number of targets
-\item Number of sinks
-\item Number of unknown states
-\item Number of Maximizer states
-\item Number of Minimizer states
+\item (NumStates) Number of states
+\item (NumTargets) Number of targets*
+\item (NumSinks) Number of sinks*
+\item (NumUnknown) Number of unknown states*
+\item (NumMaxStates) Number of Maximizer states*
+\item (NumMaxStates) Number of Minimizer states*
 \end{itemize}
 
 $\mathbf{Actions-related:}$
 \begin{itemize}
-\item Number of maximum actions per state
-\item Number of maximum transitions per action
-\item Number of actions with probabilistic actions
-\item Average number of actions per state
+\item (NumMaxActions) Number of maximum actions per state
+\item (NumMaxTransitions) Number of maximum transitions per action
+\item (NumProbActions) Number of actions with probabilistic actions*
+\item (AvgNumActionsPerState) Average number of actions per state
 \end{itemize}
 
 $\mathbf{Transitions-related:}$
 \begin{itemize}
-\item Smallest occurring positive transition probability in the model
-\item Average number of transitions per action
+\item (SmallestTransProb) Smallest occurring positive transition probability in the model
+\item (AvgNumTransPerAction) Average number of transitions per action
 \end{itemize} 
 
 $\mathbf{MEC-related:}$
 \begin{itemize}
-\item Number of MECs
-\item Size of biggest and smallest MEC
-\item Average MEC-size and Median MEC-size
+\item (NumMECs) Number of MECs
+\item (BiggestMEC, SmallestMEC) Size of biggest and smallest MEC
+\item (AvgMEC, MedianMEC) Average MEC-size and Median MEC-size
 \end{itemize}
 
 $\mathbf{SCC-related:}$
 \begin{itemize}
-\item Number of SCCs
-\item Size of biggest and smallest SCC
-\item Average SCC-size and Median SCC-size
-\item Longest chain of SCCs from the initial-state SCC
+\item (NumSCCs) Number of SCCs
+\item (BiggestSCC, SmallestSCC) Size of biggest and smallest SCC
+\item (AvgSCC, MedianSCC) Average SCC-size and Median SCC-size
+\item (MaxSCCDepth) Longest chain of SCCs from the initial-state SCC
+\item (NumSCCNonSingleton) Number of SCCs with cardinality bigger than 1
+\item (SmallestSCCNonSingleton) Smallest SCC with cardinality bigger than 1
+\item (AvgSCCNonSingleton) Average SCC size with cardinality bigger than 1
 \end{itemize}
 
 $\mathbf{Path-related}:$
 \begin{itemize}
-    \item Shortest Path from initial state to the nearest target
-    \item Shortest Path from initial state to the furthest target
+    \item (NearestTarget) Shortest Path from initial state to the nearest target
+    \item (FurthestTarget) Shortest Path from initial state to the furthest target
 \end{itemize}
+
+The values of features with a star are measured absolutely, but displayed relative to a fitting measure.
+All relative measures that are related to states like number of unknown states are displayed relative to $|\states|$ (NumStates).
+We found it easier to extract knowledge from relatively displayed features due to their independence of the model size. 
 
 \section{Visualization}
 
 Tracking all these features requires tools to visualize and summarize the collected data, since otherwise the raw data is overwhelming.
 We have implemented a bare-bones toolset to facilitate the analysis. 
 
-\subsubsection{Data Visualization Script - Data Loading}
+\subsubsection{Data visualization script - data loading}
 First, we load the tracked data and select the features we are interested in. We allow here to include filters to remove uninteresting data based on feature values.
 We also check for errors and wrong values in the data loading phase. To assert whether a value is correct, we need a reference value whose result we believe to be true.
 We usually use $\OVI$ or $\TLPSI$ as references since they tend to have the least timeouts and thus provide a good reference.
 
-\subsubsection{Data Visualization Script - Handling Missing Data}
+\subsubsection{Data visualization script - handling missing data}
 Next, we need to handle data that does not contain numerical values - for example, the algorithms that got timeouts on certain models.
 For model features, we usually use 0 as a replacement value. 
 If an algorithm cannot provide the correct value in time, we set its time and iterations count to a penalty value.
