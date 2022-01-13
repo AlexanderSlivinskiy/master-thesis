@@ -1,15 +1,15 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {american}{}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{Acknowledgments}{d}{Doc-Start}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Related work}{2}{subsubsection*.4}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Preliminaries}{4}{chapter.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Intuition}{4}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Stochastic games}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Stochastic games}{4}{section.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Strategies}{6}{section.2.3}%
 \defcounter {refsection}{0}\relax 
@@ -17,72 +17,60 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}End components}{7}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Algorithms for Stochastic Games}{8}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Strongly connected components}{8}{section.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.1}Value iteration}{8}{subsection.2.6.1}%
+\contentsline {section}{\numberline {2.7}Algorithms for stochastic games}{8}{section.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.2}Strategy Iteration}{10}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.7.1}Value iteration}{9}{subsection.2.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.3}Quadratic Programming}{10}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.7.2}Strategy iteration}{10}{subsection.2.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.4}Optimizations}{11}{subsection.2.6.4}%
+\contentsline {subsection}{\numberline {2.7.3}Quadratic programming}{11}{subsection.2.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Implemented Algorithm Extensions}{12}{chapter.3}%
+\contentsline {subsection}{\numberline {2.7.4}Optimizations}{11}{subsection.2.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Randomly Generated Models}{13}{chapter.4}%
+\contentsline {chapter}{\numberline {3}Implemented algorithm extensions}{13}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Why Use Randomly Generated Models}{13}{section.4.1}%
+\contentsline {chapter}{\numberline {4}Randomly generated models}{14}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Constraining the Random-Generation Process}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.1}Why to use randomly generated models}{14}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Our take on creating models as random as possible}{14}{section.4.3}%
+\contentsline {section}{\numberline {4.2}Constraining the random generation process}{14}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Adding Prefix-Graphs / Configurations}{18}{section.4.4}%
+\contentsline {section}{\numberline {4.3}Our algorithm for random model generation}{15}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Implementing Random-Generated Graphs}{19}{chapter.5}%
+\contentsline {section}{\numberline {4.4}An alternative to handcrafted models}{19}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Parameters and Guidelines for Model Construction}{19}{section.5.1}%
+\contentsline {chapter}{\numberline {5}Implementing randomly generated stochastic games}{20}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Limits and Additional Guideline-Options}{19}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.1}Parameters and guidelines for model construction}{20}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}A manual on how to use our implementation}{20}{section.5.2}%
+\contentsline {section}{\numberline {5.2}A manual on how to use our implementation}{21}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Algorithm Analysis}{23}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Tools for algorithm analysis}{24}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Visualization}{24}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Results}{27}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Data Visualization Script - Data Loading}{24}{subsubsection*.17}%
+\contentsline {section}{\numberline {7.1}Experimental setup}{27}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Data Visualization Script - Handling Missing Data}{24}{subsubsection*.19}%
+\contentsline {section}{\numberline {7.2}Model analysis results}{27}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Results}{26}{chapter.7}%
+\contentsline {section}{\numberline {7.3}Algorithm comparison results}{31}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Experimental Setup}{26}{section.7.1}%
+\contentsline {subsection}{\numberline {7.3.1}$\mathbf {BVI}$ vs $\mathbf {OVI}$ vs $\mathbf {WP}$}{33}{subsection.7.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Model Analysis Results}{26}{section.7.2}%
+\contentsline {subsection}{\numberline {7.3.2}Analyzing the optimizations}{35}{subsection.7.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Algorithm Comparison Results}{28}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.3}$\mathbf {\mathbf {SI_{LP}}^T}$}{36}{subsection.7.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.1}$\mathbf {BVI}$ vs $\mathbf {OVI}$ vs $\mathbf {WP}$}{29}{subsection.7.3.1}%
+\contentsline {section}{\numberline {7.4}Searching correlations between algorithms and features}{36}{section.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.2}Analyzing the Optimizations}{30}{subsection.7.3.2}%
+\contentsline {chapter}{\numberline {8}Conclusion and future work}{38}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.3}$\mathbf {\mathbf {SI_{LP}}^T}$}{31}{subsection.7.3.3}%
+\contentsline {chapter}{\nonumberline List of Figures}{40}{chapter*.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Searching Correlations between Algorithms and Features}{31}{section.7.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Conclusion And Future Work}{39}{chapter.8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Future Work}{39}{section.8.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{41}{chapter*.31}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{42}{chapter*.32}%
+\contentsline {chapter}{\nonumberline Bibliography}{41}{chapter*.33}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Appendix: Additional benchmarks}{44}{appendix.A}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Models}{44}{section.A.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}More Formal Random Generation Algorithm}{45}{section.A.2}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

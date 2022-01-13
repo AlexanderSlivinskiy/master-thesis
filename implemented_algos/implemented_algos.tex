@@ -1,8 +1,8 @@
 \chapter{Implemented algorithm extensions} \label{ch:implementedAlgos}
 As part of the thesis, we have implemented the following extensions to Value Iteration and Strategy Iteration:
 
-\subsubsection*{$\TOPAlg$} $\TOPAlg$ as in \emph{topological and precise} is an extension to Value-Iteration-based algorithms that builds on top of the idea of topological sorting of \cite{Gandalf}.
-We analyze the graph underlying the stochastic game, detect the strongly connected components (SCCs), and create a topological sorting based on the SCCs.
+\subsubsection*{$\TOPAlg$} $\TOPAlg$ as in \emph{topological and precise} is an extension to Value-Iteration-based algorithms that builds on top of the idea of topological sorting of \cite{gandalf}.
+We analyze the graph underlying the stochastic game, detect the strongly connected components, and create a topological sorting based on the SCCs.
 To ensure that every SCC provides an exact result to the next one, we take the $\epsilon$-precise values of the states of the finished SCC and compute all the
 strategies that correspond to the given bounds of the states.
 We can then fix each strategy separately, yielding two MDPs. We then perform one strategy iteration step on both MDPs. This step suggests to both MDPs the strategy
@@ -10,10 +10,11 @@ of the opponent and fixes it, yielding two Discrete-Time Markov Chains (DTMCs). 
 If the values of both DTMCs are equal, we have a guarantee that the strategies we would take are optimal, and we obtain the exact values of the states in the SCC.
 
 \subsubsection*{Widest path for PRISM 3}
-Widest Path was introduced as an alternative to solving maximal end components for bounded value iteration \cite*{WidestPath}.
-We reimplemented it in the version of PRISM.
+Widest Path was introduced as an alternative to solving maximal end components for bounded value iteration \cite{widestPath}.
+We reimplemented it in version 3 of PRISM.
 
 \subsubsection*{Linear programming for MDPs}
-We have implemented the approach to solve MDPs with linear programming as in \cite{ANY BOOK}. 
+Although linear programming is a well-known approach to solve MDPs, it is believed to perform worse than value iteration or strategy iteration
+and was not implemented in PRISM. We have implemented the approach to solve MDPs with linear programming as in \cite{Puterman}. 
 This allows for a combination of strategy iteration to fix one player's strategy, and linear programming to solve the induced MDP.
-Together with the topological option from \cite{GANDALF}, this yielded one of the most performant algorithms we present in this thesis.
+Together with the topological option from \cite{gandalf}, this yielded one of the most performant algorithms we present in this thesis.

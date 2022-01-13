@@ -1,0 +1,2 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QCreating handcrafted reachability problems is useful to make comparisons on edge-case situations and show off the weaknesses of categories of algorithms (like the Haddad-Monmege model does for value iteration), but contributes only very little to the overall coverage of possible reachability-problems for stochastic games.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThe random generation is split into multiple python modules to maximize extendability and readability.\\E$"}

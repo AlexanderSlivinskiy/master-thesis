@@ -1,0 +1,11 @@
+memoryless
+fixpoint
+MDPs
+Gauß-Seidel
+SCCs
+DTMCs
+subgames
+Tarjan
+subgame
+toolset
+automorph

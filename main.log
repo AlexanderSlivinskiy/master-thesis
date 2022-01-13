@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.30)  19 DEC 2021 12:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.30)  13 JAN 2022 12:53
 entering extended mode
 **/home/sasha/Documents/Masterarbeit/MasterThesis/Current/Thesis/main.tex
 (/home/sasha/Documents/Masterarbeit/MasterThesis/Current/Thesis/main.tex
@@ -752,7 +752,9 @@ Package tocbasic Info: setting babel extension for `lol' on input line 143.
 Package scrhack Info: redefining \lstlistoflistings on input line 143.
 )
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (/home/sasha/.miktex/texmfs/install/tex/latex/tools/afterpage.sty
+ (/home/sasha/.miktex/texmfs/install/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+) (/home/sasha/.miktex/texmfs/install/tex/latex/tools/afterpage.sty
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@output=\toks50
 \AP@partial=\box85
@@ -1105,7 +1107,7 @@ File: microtype.cfg 2021/03/14 v2.8c microtype main configuration file (RS)
 ))
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 84.
+(scrhack)             need that hack, on input line 85.
  (/home/sasha/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
  (/home/sasha/.miktex/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
@@ -1232,10 +1234,10 @@ Package: fp-snap 1995/04/05
 Package: fp-exp 1995/04/03
 ) (/home/sasha/.miktex/texmfs/install/tex/latex/fp/fp-trigo.sty
 Package: fp-trigo 1995/04/14
-) (/home/sasha/.miktex/texmfs/install/tex/latex/fp/fp-pas.sty
-Package: fp-pas 1994/08/29
 )
-(/home/sasha/.miktex/texmfs/install/tex/latex/fp/fp-random.sty
+(/home/sasha/.miktex/texmfs/install/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+) (/home/sasha/.miktex/texmfs/install/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
 \FPseed=\count506
 ) (/home/sasha/.miktex/texmfs/install/tex/latex/fp/fp-eqn.sty
@@ -1328,50 +1330,97 @@ Package: glossary-tree 2021/11/01 v4.49 (NLCT)
 \glo@main@file=\write6
 \openout6 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 126.
+Package glossaries Info: Writing glossary file main.glo on input line 127.
 \glo@acronym@file=\write7
 \openout7 = `main.acn'.
 
-Package glossaries Info: Writing glossary file main.acn on input line 126.
+Package glossaries Info: Writing glossary file main.acn on input line 127.
  (pages/glossary.tex)) (format/macros.tex
 \c@theorem=\count521
 \c@corollary=\count522
 \c@definition=\count523
  (/home/sasha/.miktex/texmfs/install/tex/latex/marvosym/marvosym.sty
 Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
-)) (format/sashasmacros.tex)
+)) (format/sashasmacros.tex) (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/pplx/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/pplx/b/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/zplm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/zplm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/zplm/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/zplm/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/zplm/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/zplm/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup9
+\symitalic=\mathgroup10
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/zplm/b/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/zplm/b/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/pplx/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/pplx/b/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \upGamma on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \upDelta on input line 94.
+LaTeX Font Info:    Redeclaring math symbol \upTheta on input line 95.
+LaTeX Font Info:    Redeclaring math symbol \upLambda on input line 96.
+LaTeX Font Info:    Redeclaring math symbol \upXi on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \upPi on input line 98.
+LaTeX Font Info:    Redeclaring math symbol \upSigma on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \upUpsilon on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \upPhi on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \upPsi on input line 102.
+LaTeX Font Info:    Redeclaring math symbol \upOmega on input line 103.
+)
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 14.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-LaTeX Font Info:    Trying to load font information for T1+pplx on input line 25.
- (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/t1pplx.fd
-File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 28.
+ (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 Package nag Info: Attempting subfig hack.
 Package nag Info: OK, equivalent to subfig 1.3, redefining \sf@@@subfloat.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 25.
-Package scrbase Info: activating american \contentsname on input line 25.
-Package scrbase Info: activating american \listfigurename on input line 25.
-Package scrbase Info: activating american \listtablename on input line 25.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 28.
+Package scrbase Info: activating american \contentsname on input line 28.
+Package scrbase Info: activating american \listfigurename on input line 28.
+Package scrbase Info: activating american \listtablename on input line 28.
  (/home/sasha/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count524
@@ -1391,7 +1440,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/home/sasha/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \dots on input line 25.
+LaTeX Info: Redefining \dots on input line 28.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
@@ -1403,7 +1452,7 @@ Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count530
-Package scrhack Info: undefining \float@addtolists on input line 25.
+Package scrhack Info: undefining \float@addtolists on input line 28.
 Package biblatex Info: Trying to load language 'american'...
 Package biblatex Info: ... file 'american.lbx' found.
  (/home/sasha/.miktex/texmfs/install/tex/latex/biblatex/lbx/american.lbx
@@ -1447,168 +1496,27 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (main.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                ???
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                ANY BOOK
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                ANYTHING?
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Citation to any LP-solving explanation for MDPs. Maybe Puterman?
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Cite?
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                GANDALF
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                GANDALFpaper
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Gandalf
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                KKKW18
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                PRISMben
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                QComps
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                WidestPath
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                atva
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                bvi
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                gandalf
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                gandalf20
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                https://pubsonline.informs.org/doi/abs/10.1287/mnsc.12.5.359 - Strategy Iteration for MDPs
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                prismgames3
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                visurvey
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                widestPath
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
-Package biblatex Info: Reference section=0 on input line 25.
-Package biblatex Info: Reference segment=0 on input line 25.
+ (main.bbl)
+Package biblatex Info: Reference section=0 on input line 28.
+Package biblatex Info: Reference segment=0 on input line 28.
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-LaTeX Info: Redefining \microtypecontext on input line 25.
+LaTeX Info: Redefining \microtypecontext on input line 28.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 25.
+LaTeX Info: Redefining \showhyphens on input line 28.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-(/home/sasha/.miktex/texmfs/install/tex/latex/microtype/mt-ppl.cfg
-File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
+(/home/sasha/.miktex/texmfs/install/tex/latex/microtype/mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
-Package hyperref Info: Link coloring OFF on input line 25.
+Package hyperref Info: Link coloring OFF on input line 28.
  (/home/sasha/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/home/sasha/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
@@ -1618,9 +1526,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count531
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
  (main.out) (main.out)
 \@outlinefile=\write8
 \openout8 = `main.out'.
@@ -1632,14 +1540,14 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 25.
+(scrbook)           before \begin{document} on input line 28.
  (/home/sasha/.miktex/texmfs/install/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (/home/sasha/.miktex/texmfs/install/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 \BKM@id=\count532
 ))
-Package nag Info: Command \hc@caption not defined, skipping amendment on input line 25.
+Package nag Info: Command \hc@caption not defined, skipping amendment on input line 28.
  (pages/cover.tex
 <logos/tum.pdf, id=6, 54.02504pt x 28.452pt>
 File: logos/tum.pdf Graphic file (type pdf)
@@ -1665,40 +1573,30 @@ File: logos/tum.pdf Graphic file (type pdf)
 <use logos/tum.pdf>
 Package pdftex.def Info: logos/tum.pdf  used on input line 8.
 (pdftex.def)             Requested size: 108.06296pt x 56.9055pt.
-LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 26.
- (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/ot1pplx.fd
-File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 26.
+ (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 26.
- (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/omlzplm.fd
-File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `ztmcm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 26.
+ (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 26.
- (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/omszplm.fd
-File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 26.
+ (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 26.
- (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/omxzplm.fd
-File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
-)
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 26.
- (/home/sasha/.miktex/texmfs/install/tex/latex/microtype/mt-msa.cfg
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 26.
+ (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+) (/home/sasha/.miktex/texmfs/install/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 26.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 26.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 26.
- (/home/sasha/.miktex/texmfs/install/tex/latex/microtype/mt-msb.cfg
+) (/home/sasha/.miktex/texmfs/install/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 26.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 26.
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 26.
  (/home/sasha/.miktex/texmfs/install/tex/latex/stmaryrd/Ustmry.fd)
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 26.
@@ -1713,6 +1611,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 26.
+ (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
 File: logos/faculty.pdf Graphic file (type pdf)
 <use logos/faculty.pdf>
 Package pdftex.def Info: logos/faculty.pdf  used on input line 36.
@@ -1720,16 +1628,20 @@ Package pdftex.def Info: logos/faculty.pdf  used on input line 36.
  [2
 
 
-]
-LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/pplx/m/it' tried instead on input line 37.
- [3]) (pages/disclaimer.tex [4]) (pages/abstract.tex) [5
+]) (pages/disclaimer.tex [3]) (pages/acknowledgments.tex
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 13.
+ (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [4
+
+
+]) (pages/abstract.tex) [5
 
 
 
 
 ]
-Package tocbasic Info: character protrusion at toc deactivated on input line 36.
+Package tocbasic Info: character protrusion at toc deactivated on input line 39.
  (main.toc [6
 
 
@@ -1741,44 +1653,19 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 36.
 
  [7] (1_intro/intro.tex
 chapter 1.
-
-Overfull \hbox (16.15652pt too wide) in paragraph at lines 30--36
-[]\T1/pplx/m/n/10.95 (-20) To all of the three techniques for solving reachability games, there are many optimizations
- []
-
 [1
 
 
 
-]
-LaTeX Font Info:    Trying to load font information for TS1+pplx on input line 39.
- (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/ts1pplx.fd
-File: ts1pplx.fd 2004/09/06 font definitions for TS1/pplx.
-) [2]
-Overfull \hbox (77.22783pt too wide) in paragraph at lines 71--76
-\T1/pplx/m/n/10.95 (-20) [[]Put14[]][[]].
- []
-
-) (2_prelims/prelims.tex [3]
+] [2]) (2_prelims/prelims.tex [3]
 chapter 2.
-
-Overfull \hbox (13.26494pt too wide) in paragraph at lines 7--13
-\T1/pplx/m/n/10.95 (-20) In this chapter, we introduce the underlying definitions necessary to have an understanding
- []
-
 (examples/exampleSG.tex
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 8.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 8.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 8.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 8.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 8.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 8.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1791,180 +1678,38 @@ File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 
 
 ]
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 39.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 39.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
  [5] [6] (examples/exampleEC.tex) [7] [8] [9]
-Overfull \hbox (0.52144pt too wide) in paragraph at lines 222--224
-\T1/pplx/m/n/10.95 (-20) where value iteration requires exponentially many steps to converge and its performance
+Overfull \hbox (11.93988pt too wide) in paragraph at lines 232--235
+\T1/ptm/m/n/10.95 (-20) [[]Brá+14a[]]. However, it was already benchmarked in [[]K°e+20[]] and its random nature is fundamentally
  []
 
-
-Overfull \hbox (2.62811pt too wide) in paragraph at lines 230--233
-\T1/pplx/m/n/10.95 (-20) programming [[]]
- []
-
-[10]) (implemented_algos/implemented_algos.tex [11]
+[10] [11]) (implemented_algos/implemented_algos.tex [12]
 chapter 3.
-) (3_randomGen/randomGen.tex [12
+) (3_randomGen/randomGen.tex [13
 
 
 ]
 chapter 4.
-
-Overfull \hbox (1.36696pt too wide) in paragraph at lines 15--19
-\T1/pplx/m/n/10.95 (-20) handcrafted reachability problems is useful to make comparisons on edge-case situations
- []
-
-[13
+[14
 
 
 ]
-
-Package caption Warning: \label without proper reference on input line 64.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `algo:randomRandom' on page 14 undefined on input line 54.
-
-
-Package caption Warning: \label without proper reference on input line 97.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `algo:FillActions' on page 14 undefined on input line 59.
-
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 65.
-
-Package caption Warning: \label without proper reference on input line 64.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `algo:randomRandom' on page 14 undefined on input line 116.
-
-
-Package caption Warning: \label without proper reference on input line 97.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `algo:FillActions' on page 14 undefined on input line 130.
-
-[14]
-
-Package caption Warning: \label without proper reference on input line 97.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `algo:FillActions' on page 15 undefined on input line 134.
-
-
-Package caption Warning: \label without proper reference on input line 97.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `algo:FillActions' on page 15 undefined on input line 135.
-
-[15]
-
-Package caption Warning: \label without proper reference on input line 64.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `algo:randomRandom' on page 16 undefined on input line 138.
-
-
-LaTeX Warning: Reference `procedure:randomRandom' on page 16 undefined on input line 143.
-
-
-Package caption Warning: \label without proper reference on input line 64.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `algo:randomRandom' on page 16 undefined on input line 150.
-
-[16]
-Overfull \hbox (0.90721pt too wide) in paragraph at lines 179--181
-[]\T1/pplx/m/n/10.95 (-20) Since we decide randomly on the number of states, the initial state and the partitioning
- []
-
-
-Package caption Warning: \label without proper reference on input line 97.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `algo:FillActions' on page 17 undefined on input line 182.
-
-
-Package caption Warning: \label without proper reference on input line 64.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `algo:randomRandom' on page 17 undefined on input line 197.
-
-
-Package caption Warning: \label without proper reference on input line 97.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `algo:FillActions' on page 17 undefined on input line 199.
-
-[17]) (3_randomGen/implementation.tex [18]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 77.
+ [15] [16] [17] [18]) (3_randomGen/implementation.tex [19]
 chapter 5.
 
-Package caption Warning: \label without proper reference on input line 64.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `algo:randomRandom' on page 19 undefined on input line 5.
-
-
-Overfull \hbox (2.08745pt too wide) in paragraph at lines 19--22
-\T1/pplx/m/n/10.95 (-20) Although the parameters we expose for random generation can constrain some structural
+Overfull \hbox (0.11472pt too wide) in paragraph at lines 20--23
+\T1/ptm/m/n/10.95 (-20) Although the parameters we expose for random generation can constrain some structural properties
  []
 
-[19
+[20
 
 
-] [20]
-
-Package caption Warning: \label without proper reference on input line 64.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `algo:randomRandom' on page 21 undefined on input line 65.
-
-
-Overfull \hbox (4.17824pt too wide) in paragraph at lines 67--68
-[]\T1/pplx/m/n/10.95 (-20) backwardsProb: How probable is a state to have actions in the backward procedure? 
- []
-
-
-Package caption Warning: \label without proper reference on input line 64.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `algo:randomRandom' on page 21 undefined on input line 83.
-
-
-Overfull \hbox (4.59161pt too wide) in paragraph at lines 83--87
-\T1/pplx/m/n/10.95 (-20) random generation as described in Algorithm [][][] happens in module "graphGenerator.py".
- []
-
-[21]
-Overfull \hbox (18.55074pt too wide) in paragraph at lines 88--90
-\T1/pplx/m/n/10.95 (-20) any graph generator requires. []I should probably rewrite this such that every graphGenerator
- []
-
-) (4_analysis/analysis.tex [22]
-chapter 6.
-[23
-
-
-] [24]) (5_results/results.tex [25]
-chapter 7.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 16.
-(/home/sasha/.miktex/texmfs/install/tex/latex/base/t1cmtt.fd
+]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 52.
+ (/home/sasha/.miktex/texmfs/install/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1972,131 +1717,132 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (17.98567pt too wide) in paragraph at lines 13--17
-\T1/pplx/m/n/10.95 (-20) Various algorithms we consider were already implemented in PRISM-games [[]].
+Overfull \hbox (10.7656pt too wide) in paragraph at lines 50--54
+\T1/ptm/m/n/10.95 (-20) In this section, we describe the implementation details and provide guidance for using, understanding,
  []
 
+[21] [22]) (4_analysis/analysis.tex [23]
+chapter 6.
+[24
 
-Overfull \hbox (9.7598pt too wide) in paragraph at lines 13--17
-\T1/pplx/m/n/10.95 (-20) games before, and extended the strategy iteration (which was implemented in [[]])
+
+] [25]) (5_results/results.tex [26]
+chapter 7.
+
+Overfull \hbox (7.25745pt too wide) in paragraph at lines 16--20
+\T1/ptm/m/n/10.95 (-20) the GitHub repository []$\T1/cmtt/m/n/10.95 https : / / github . com / ga67vib / Algorithms-[]For-[]Stochastic-[]Games$[]\T1/ptm/m/n/10.95 (-20) . 
  []
 
-<figures/Real_FeatureDistribution.png, id=382, 703.62875pt x 695.59875pt>
+<figures/Real_FeatureDistribution.png, id=442, 771.88374pt x 649.42625pt>
 File: figures/Real_FeatureDistribution.png Graphic file (type png)
 <use figures/Real_FeatureDistribution.png>
-Package pdftex.def Info: figures/Real_FeatureDistribution.png  used on input line 37.
-(pdftex.def)             Requested size: 418.25555pt x 413.47777pt.
-[26
+Package pdftex.def Info: figures/Real_FeatureDistribution.png  used on input line 40.
+(pdftex.def)             Requested size: 418.25555pt x 351.8939pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27
+
+
+] [28 <./figures/Real_FeatureDistribution.png>]
+<figures/RandomRandom_FeatureDistribution.png, id=458, 867.24pt x 722.7pt>
+File: figures/RandomRandom_FeatureDistribution.png Graphic file (type png)
+<use figures/RandomRandom_FeatureDistribution.png>
+Package pdftex.def Info: figures/RandomRandom_FeatureDistribution.png  used on input line 76.
+(pdftex.def)             Requested size: 418.25555pt x 348.54617pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[29] [30 <./figures/RandomRandom_FeatureDistribution.png>]
+Overfull \hbox (6.58536pt too wide) in paragraph at lines 99--106
+\T1/ptm/m/n/10.95 (-20) we can use other guidelines as described in Section []5.1[]. []Show the Figure of SCC FeatureDistribution
+ []
+
+<figures/Real_AlgoPerformance.png, id=482, 751.80875pt x 284.06125pt>
+File: figures/Real_AlgoPerformance.png Graphic file (type png)
+<use figures/Real_AlgoPerformance.png>
+Package pdftex.def Info: figures/Real_AlgoPerformance.png  used on input line 130.
+(pdftex.def)             Requested size: 334.60571pt x 126.43068pt.
+<figures/RandomRandom_AlgoPerformance.png, id=483, 761.84625pt x 289.08pt>
+File: figures/RandomRandom_AlgoPerformance.png Graphic file (type png)
+<use figures/RandomRandom_AlgoPerformance.png>
+Package pdftex.def Info: figures/RandomRandom_AlgoPerformance.png  used on input line 132.
+(pdftex.def)             Requested size: 334.60571pt x 126.9618pt.
+[31]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 150.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 150.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 150.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 150.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 150.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 150.
+
+[32 <./figures/Real_AlgoPerformance.png> <./figures/RandomRandom_AlgoPerformance.png>]
+<figures/WPvsBVIandOVIonAll.png, id=504, 694.595pt x 538.01pt>
+File: figures/WPvsBVIandOVIonAll.png Graphic file (type png)
+<use figures/WPvsBVIandOVIonAll.png>
+Package pdftex.def Info: figures/WPvsBVIandOVIonAll.png  used on input line 158.
+(pdftex.def)             Requested size: 418.25555pt x 323.97421pt.
+ [33 <./figures/WPvsBVIandOVIonAll.png>]
+<figures/WPvsOVIon1DFeatureScatter.png, id=513, 778.91pt x 392.46625pt>
+File: figures/WPvsOVIon1DFeatureScatter.png Graphic file (type png)
+<use figures/WPvsOVIon1DFeatureScatter.png>
+Package pdftex.def Info: figures/WPvsOVIon1DFeatureScatter.png  used on input line 176.
+(pdftex.def)             Requested size: 418.25555pt x 210.74287pt.
+<figures/WPvsBVIon1DFeatureScatter.png.png, id=516, 773.89125pt x 392.46625pt>
+File: figures/WPvsBVIon1DFeatureScatter.png.png Graphic file (type png)
+<use figures/WPvsBVIon1DFeatureScatter.png.png>
+Package pdftex.def Info: figures/WPvsBVIon1DFeatureScatter.png.png  used on input line 197.
+(pdftex.def)             Requested size: 418.25555pt x 212.11424pt.
+ [34 <./figures/WPvsOVIon1DFeatureScatter.png>] [35 <./figures/WPvsBVIon1DFeatureScatter.png.png>]
+
+LaTeX Warning: Reference `fig:' on page 36 undefined on input line 244.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 258.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 258.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 258.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 258.
+
+[36]) (6_conclusion/conclusion.tex [37]
+chapter 8.
+[38
 
 
 ]
-<figures/RandomRandom_FeatureDistribution.png, id=394, 790.955pt x 779.91376pt>
-File: figures/RandomRandom_FeatureDistribution.png Graphic file (type png)
-<use figures/RandomRandom_FeatureDistribution.png>
-Package pdftex.def Info: figures/RandomRandom_FeatureDistribution.png  used on input line 66.
-(pdftex.def)             Requested size: 418.25555pt x 412.42409pt.
-
-Overfull \hbox (26.04369pt too wide) in paragraph at lines 80--83
-[]\T1/pplx/m/n/10.95 (-20) NumMecs shows that are usually at most three MECs per model and NumNonSingleton
+Overfull \hbox (3.59995pt too wide) in paragraph at lines 34--36
+[]\T1/ptm/m/n/10.95 (-20) The analysis techniques could be improved by including stochastic tests and artificial intelligence
  []
 
-[27]
-
-Package caption Warning: \label without proper reference on input line 64.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `algo:randomRandom' on page 28 undefined on input line 91.
-
-
-Package caption Warning: \label without proper reference on input line 64.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `algo:randomRandom' on page 28 undefined on input line 104.
-
-<figures/Real_AlgoPerformance.png, id=408, 873.2625pt x 611.28375pt>
-File: figures/Real_AlgoPerformance.png Graphic file (type png)
-<use figures/Real_AlgoPerformance.png>
-Package pdftex.def Info: figures/Real_AlgoPerformance.png  used on input line 119.
-(pdftex.def)             Requested size: 334.60571pt x 234.22101pt.
-<figures/RandomRandom_AlgoPerformance.png, id=409, 865.2325pt x 712.6625pt>
-File: figures/RandomRandom_AlgoPerformance.png Graphic file (type png)
-<use figures/RandomRandom_AlgoPerformance.png>
-Package pdftex.def Info: figures/RandomRandom_AlgoPerformance.png  used on input line 121.
-(pdftex.def)             Requested size: 334.60571pt x 275.59927pt.
-
-LaTeX Warning: Float too large for page by 21.2001pt on input line 124.
-
-[28]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 139.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 139.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 139.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 139.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 139.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 139.
-
-<figures/WPvsBVIandOVIonAll.png, id=421, 694.595pt x 538.01pt>
-File: figures/WPvsBVIandOVIonAll.png Graphic file (type png)
-<use figures/WPvsBVIandOVIonAll.png>
-Package pdftex.def Info: figures/WPvsBVIandOVIonAll.png  used on input line 147.
-(pdftex.def)             Requested size: 418.25555pt x 323.97421pt.
-<figures/WPvsOVIon1DFeatureScatter.png, id=423, 778.91pt x 392.46625pt>
-File: figures/WPvsOVIon1DFeatureScatter.png Graphic file (type png)
-<use figures/WPvsOVIon1DFeatureScatter.png>
-Package pdftex.def Info: figures/WPvsOVIon1DFeatureScatter.png  used on input line 165.
-(pdftex.def)             Requested size: 418.25555pt x 210.74287pt.
-[29]
-<figures/WPvsBVIon1DFeatureScatter.png.png, id=432, 773.89125pt x 392.46625pt>
-File: figures/WPvsBVIon1DFeatureScatter.png.png Graphic file (type png)
-<use figures/WPvsBVIon1DFeatureScatter.png.png>
-Package pdftex.def Info: figures/WPvsBVIon1DFeatureScatter.png.png  used on input line 186.
-(pdftex.def)             Requested size: 418.25555pt x 212.11424pt.
-
-
-LaTeX Warning: Reference `fig:' on page 30 undefined on input line 231.
-
-[30]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 245.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 245.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 245.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 245.
-
-[31]) (6_conclusion/conclusion.tex [32] [33 <./figures/Real_FeatureDistribution.png>] [34 <./figures/RandomRandom_FeatureDistribution.png>] [35 <./figures/Real_AlgoPerformance.png> <./figures/RandomRandom_AlgoPerformance.png>] [36 <./figures/WPvsBVIandOVIonAll.png>] [37 <./figures/WPvsOVIon1DFeatureScatter.png>] [38 <./figures/WPvsBVIon1DFeatureScatter.png.png>]
-chapter 8.
-[39
-
-
-]) [40]
-Package tocbasic Info: character protrusion at lof deactivated on input line 64.
+) [39]
+Package tocbasic Info: character protrusion at lof deactivated on input line 67.
  (main.lof)
 \tf@lof=\write10
 \openout10 = `main.lof'.
@@ -2104,31 +1850,33 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 64.
 
 No file main.gls.
 No file main.acr.
-[41
+[40
 
 
 ]
 chapter without number
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/pplx/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-[42
+[41
 
 
-]
-Overfull \hbox (22.0075pt too wide) in paragraph at lines 68--68
-[]\T1/pplx/m/n/10.95 (-20) M. L. Puterman. \T1/pplx/m/it/10.95 (-20) Markov decision processes: Discrete stochastic dynamic programming\T1/pplx/m/n/10.95 (-20) .
+] [42]
+Overfull \hbox (19.58191pt too wide) in paragraph at lines 71--71
+\T1/ptm/m/n/10.95 (-20) Propagation in Bounded Value Iteration for Stochastic Games. In: \T1/ptm/m/it/10.95 (-20) CoRR \T1/ptm/m/n/10.95 (-20) abs/2007.07421
+ []
+
+
+Overfull \hbox (12.04697pt too wide) in paragraph at lines 71--71
+[]\T1/ptm/m/n/10.95 (-20) M. L. Puterman. \T1/ptm/m/it/10.95 (-20) Markov decision processes: Discrete stochastic dynamic programming\T1/ptm/m/n/10.95 (-20) .
  []
 
 (pages/appendix.tex [43]
 chapter A.
 
-LaTeX Warning: Reference `sec:benchmarks' on page 44 undefined on input line 2.
+LaTeX Warning: Reference `sec:benchmarks' on page 44 undefined on input line 3.
 
 [44
 
 
-]) [45] [46]
+]) [45]
 No complaints by nag.
 (main.aux)
 
@@ -2141,17 +1889,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59546 strings out of 480864
- 1266092 string characters out of 2904336
- 2355448 words of memory out of 3000000
- 75135 multiletter control sequences out of 15000+600000
- 520167 words of font info for 644 fonts, out of 8000000 for 9000
+ 59523 strings out of 480864
+ 1268273 string characters out of 2904336
+ 2357630 words of memory out of 3000000
+ 75251 multiletter control sequences out of 15000+600000
+ 532220 words of font info for 514 fonts, out of 8000000 for 9000
  2 hyphenation exceptions out of 8191
  115i,19n,111p,10662b,2329s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/home/sasha/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc} </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk> </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/public/wasy/dpi600/wasy7.pk> </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/public/wasy/dpi600/wasy8.pk></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss8.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss9.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/mathpazo/fplmbb.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/mathpazo/fplmr.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/mathpazo/fplmri.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/fpl/fplrc8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/palatino/uplb8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/palatino/uplr8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (53 pages, 1099146 bytes).
+ </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk> </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/public/wasy/dpi600/wasy7.pk>{/home/sasha/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc} </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/public/wasy/dpi600/wasy8.pk></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss8.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss9.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/mathpazo/fplmbb.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/mathpazo/fplmr.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/palatino/uplr8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/symbol/usyr.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/symbol/usyr.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/times/utmb8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (52 pages, 1112057 bytes).
 PDF statistics:
- 821 PDF objects out of 1000 (max. 8388607)
- 162 named destinations out of 1000 (max. 500000)
- 157562 words of extra memory for PDF output out of 184870 (max. 10000000)
+ 911 PDF objects out of 1000 (max. 8388607)
+ 173 named destinations out of 1000 (max. 500000)
+ 130914 words of extra memory for PDF output out of 154059 (max. 10000000)
 

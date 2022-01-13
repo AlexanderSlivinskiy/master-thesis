@@ -1,54 +1,55 @@
 \chapter{Implementing randomly generated stochastic games} \label{ch:implementedRandomGen}
-In this chapter, we discuss how our implementation of random generation differs from the theory described in \ref{ch:randomGen} as well as how to use and extend our implementation. 
+In this chapter, we discuss how our implementation of random generation differs from the theory described in Chapter \ref{ch:randomGen} as well as how to use and extend our implementation. 
 
 \section{Parameters and guidelines for model construction} \label{sec:guidelines}
-We have implemented a constrained version of Algorithm \ref{algo:randomRandom} from Section \ref{sec:randomGenAlgo} to randomly generate models.
-The real-world implementation has to be constrained on one hand due to the natural restriction that a computer cannot generate arbitrarily big stochastic games due and 
-arbitrarily small transitions due to finite memory.
+We have implemented a constrained version of Algorithm \ref{alg:randomRandom} from Section \ref{sec:randomGenAlgo} to randomly generate models.
+The real-world implementation has to be constrained on one hand due to the natural restriction that a computer cannot generate arbitrarily big stochastic games and 
+arbitrarily small transitions due to finite memory. Additional constraints on the real-world implementation are the pseudo-randomness while taking decisions as well as
+floating point machine precision.
 
 However, usually, the users also want some control over the properties of the resulting models like the number of states.
 If all model properties are differing too much, it is very hard to deduct why an algorithm performs differently on two models.
 For example, it is very likely that if we would always randomize the number of states of a model, the models would differ so much in their number of unknown states that all other structural differences 
-would have a comparatively diminishing impact on algorithm performance on the models.
+would have a comparatively diminishing impact on algorithm performance.
 
 Thus, we provide several parameters which we do not randomize. Instead, we give the user the option of providing a value for the parameter or using our default parameters.
-The parameters in Subsection \ref{list:params} provide an overview that we do not randomize in our implementation.
-Of course, it is possible to wrap a script around our generation implementation that randomizes the parameters to avoid too deterministic models.
+The parameters in Subsection \ref{list:params} provide an overview of what we do not randomize in our implementation.
+Of course, it is possible to wrap a script around our generation implementation that randomizes the parameters to avoid too deterministic model generation.
 
-\subsection{Limits and additional guideline options}
+\subsection*{Limits and additional guideline options} \label{sec:guidelinesSubsec}
 Although the parameters we expose for random generation can constrain some structural properties of the resulting models, 
 there are many structural properties we can only barely influence. For example, there is no obvious way how to influence the size and number of SCCs that a model has or to guarantee
-that every state in a model has a certain number of actions.
+that every state in a model has a certain number of actions when using Algorithm \ref{alg:randomRandom}.
 
-For this, we provide the option in our implementation to use other scripts for the model generation that are then wrapped into PRISM files. We refer to these scripts as guidelines.
+For this, we provide the option in our implementation to use other scripts for the model generation that are wrapped into PRISM files. We refer to these scripts as guidelines.
 We provide two additional guidelines to our random-generation procedure described in Section \ref{sec:randomGenAlgo}: 
 A procedure that controls how many actions each state has and another one that provides a guarantee on the size and number of SCCs in the model.
 Both guidelines are connected from the initial state, but are not able to create any game in $\connectedSG$.
 
-The guideline that controls how many actions a state has is called \emph{RandomTree}, 
+The guideline that controls how many actions a state has is called \emph{RandomTree} 
 because it creates a treelike graph structure where the initial state is the root.
-Every node of the tree has k actions and at most k children, where k is a user parameter. 
+Every node of the tree has k actions and at most k children, where k is a parameter. 
 Every action has an assigned child to which it has a positive transition probability.
 The rest of the probability distribution of the action is assigned at random.
-An inner node of the tree may not have k children if adding k children would exceed the requested number of states n for the model.
+An inner node of the tree may have less than k children if adding k children would exceed the requested number of states n for the model.
 Also, leafs are not required to have k actions.
 Their actions are only introduced during the backward process and are there to enable the generation of end components.
 
 We refer to the guideline that controls the SCCs of a model by \emph{RandomSCC}.
-The procedure requires a minimal and maximal size boundary for all SCC $[a, b]$ and the total number of states in the stochastic game $n$.
-First, we create subgames of size $[a,b]$.
+The procedure requires a minimal and maximal size boundary $[a, b]$ for every SCC and the total number of states in the stochastic game $n$.
+First, we create subgames of a randomly chosen size in $[a,b]$.
 The subgames are created by the algorithm described in Section \ref{sec:randomGenAlgo}.
-We use then Tarjan's Algorithm for strongly connected components to identify the SCCs of the created subgame.
-Next, we unify all the SCCs of the subgame by using the topological enumeration Tarjan's Algorithm provides.
+We use then Tarjan's algorithm for strongly connected components \cite{TarjansAlgorithm} to identify the SCCs of the created subgame.
+Next, we unify all the SCCs of the subgame by using the topological enumeration Tarjan's algorithm provides.
 We circularly connect the SCCs along the enumeration, making the whole subgame an SCC.
 Next, we make sure that the subgame is connected to the rest of the stochastic game by making sure a previously created subgame has an action
 leading into this subgame. We repeat this procedure until we have at least $n$ states in the stochastic game, 
 resulting in a stochastic game $\SG$ that is connected from the root where the user has an easy way of controlling the number and size of the SCC in $\SG$.
 
 \section{A manual on how to use our implementation}
-In this section, we consider the implementation details and provide guidance for using, understanding, and extending our implementation.
+In this section, we describe the implementation details and provide guidance for using, understanding, and extending our implementation.
 The random generation is split into multiple python modules to maximize extendability and readability.
-All relevant python modules for this are located in the folder "random-generated-models".
+All relevant python modules are located in the folder "random-generated-models" in the GitHub Repository \url{https://github.com/ga67vib/Algorithms-For-Stochastic-Games}.
 We provide a description on how to use the modules and how to extend in case the reader wants to.
 
 \subsubsection*{Generating models}
@@ -61,42 +62,47 @@ Here is the exhaustive list of parameters:
     \item outputDir: Where to put the resulting model
     \item size: How many states should the generated model have
     \item numModels: How many models to create
-    \item numMinActions: \textcolor{purple}{probably deprecated after rewriting code}
-    \item guideline: Which guideline to use when generating the model. Will use by default Algorithm \ref{algo:randomRandom}.
+    %\item numMinActions: \textcolor{purple}{probably deprecated after rewriting code}
+    \item guideline: Which guideline to use when generating the model. Will use by default Algorithm \ref{alg:randomRandom}.
+    Alternatives are the "RandomTree" and "RandomSCC" guidelines that are described in Section \ref{sec:guidelinesSubsec}.
     \item smallestProb: What is the smallest probability that is allowed to occur?
-    \item backwardsProb: How probable is a state to have actions in the backward procedure?
-    \item branchingProb: How probable is that an action has multiple transitions
+    \item backwardsProb: How probable is it that a state generates actions during the backward procedure?
+    \item branchingProb: How probable is it that an action has multiple transitions
     \item maxBranchNum: How many positive transition probabilities may one action have at most?
-    \item forceUnknown: Try to reduce the number of known states. This will violate the size parameters by introducing a new sink and target.
+    \item forceUnknown: A switch. Turn on to try to reduce the number of known states. 
+    If set to true, a new target and sink is introduced. The original target of the game receives a new action that leads with a 0.9 probability to the new target and a 0.1 probability to the new sink.
+    Thus, every state 
 \end{itemize}
+\textcolor{red}{With correct implementation, generating models is slow. Say that you have a 'fast' switch to make randomPicker less random but way faster.
+With fast <1ŝ for a 10k model. Without its 10s}
 
-The generated model will be named after the parameter settings and will be stored in the specified directory or "generatedModels" by default.
+The generated model will be named by the parameter values and will be stored in the specified directory or "generatedModels" by default.
 
 To generate multiple models with different parameter settings, we have used the simple script "massModelGenerator.py" which calls modelGenerator various times with the different sets of parameters.
 
 \subsubsection*{Module explanation}
 Here we describe what every module does.
 
-The module "modelgenerator.py" is responsible for calling the module that generates the stochastic game and translating it into a .prism file. 
-Furthermore, it is supposed to be the interaction point for users.
+The module "modelGenerator.py" is responsible for calling the module that generates the stochastic game and translating it into a .prism file. 
+Furthermore, it is the interface for users.
 
-The creation of the stochastic game is outsourced in another python module. The random generation as described in Algorithm \ref{algo:randomRandom} happens in
+The creation of the stochastic game is outsourced in another python module. The random generation as described in Algorithm \ref{alg:randomRandom} happens in
 module "graphGenerator.py". This is also the base class for other procedure guidelines. 
-Both the randomTree guideline - implemented in model treeGraphGenerator.py - and the randomSCC guideline - implemented in module sccGraphGenerator.py - inherit
+Both the RandomTree guideline - implemented in model treeGraphGenerator.py - and the RandomSCC guideline - implemented in module sccGraphGenerator.py - inherit
 from graphGenerator.
 
 The module "graphGenParams.py" contains a class that contains all the parameters any graph generator requires. 
-\textcolor{red}{I should probably rewrite this such that every graphGenerator has its dataclass.}
+\textcolor{red}{I should probably rewrite this such that every guideline has its own parameter dataclass.}
 
 Lastly, there is a module called "randomStateGetter.py". This class implements various randomPickers.
 A randomPicker selects a state of the state-space randomly.
 This is used for example to decide which state should have an action to the currently introduced state.
-Different implementations allow to guide the selection process to achieve different distributions on which states have how many actions or transitions.
+Different implementations allow to guide the selection process to achieve different distributions of actions and transitions.
 Each generator receives two randomPickers as part of their input parameters: One that decided which state should receive an outgoing action, 
-and another one which decides to which states the branching transitions of an action should connect.
+and another one that decides where a transition should lead.
 \textcolor{red}{Should rename them to randomPicker and make them truly more random.}
 
 \subsubsection*{Module extension}
 If you are interested in implementing a new way of generating random models by providing new guidelines, all you have to do is create a new
 module that inherits from GraphGenerator and implement the functionality. The generateGraph() call must receive a GraphGenParams object and return nothing.
-During the generateGraph call. After generateGraph(), the GraphGenerator instance should hold all the information about the game in its class variables.
+After generateGraph(), the GraphGenerator instance should hold all the information about the game in its class variables.

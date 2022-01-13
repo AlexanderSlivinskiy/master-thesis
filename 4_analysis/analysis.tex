@@ -1,4 +1,4 @@
-\chapter{Algorithm analysis} \label{ch:analysis}
+\chapter{Tools for algorithm analysis} \label{ch:analysis}
 
 To facilitate the algorithm performance analysis, we track statistics about the models we use and the algorithms that solve them. 
 We refer to every category of data that we track as \emph{features}.
@@ -59,26 +59,31 @@ The values of features with a star are measured absolutely, but displayed relati
 All relative measures that are related to states like number of unknown states are displayed relative to $|\states|$ (NumStates).
 We found it easier to extract knowledge from relatively displayed features due to their independence of the model size. 
 
-\section{Visualization}
+\section*{Visualization}
 
 Tracking all these features requires tools to visualize and summarize the collected data, since otherwise the raw data is overwhelming.
 We have implemented a bare-bones toolset to facilitate the analysis. 
 
-\subsubsection{Data visualization script - data loading}
+\subsubsection*{Data visualization script - data loading}
 First, we load the tracked data and select the features we are interested in. We allow here to include filters to remove uninteresting data based on feature values.
 We also check for errors and wrong values in the data loading phase. To assert whether a value is correct, we need a reference value whose result we believe to be true.
-We usually use $\OVI$ or $\TLPSI$ as references since they tend to have the least timeouts and thus provide a good reference.
+We usually use $\OVI$, $\TLPSI$ or $\WP$ as references since they tend to have the least timeouts and thus provide a good reference.
 
-\subsubsection{Data visualization script - handling missing data}
+\subsubsection*{Data visualization script - handling missing data}
 Next, we need to handle data that does not contain numerical values - for example, the algorithms that got timeouts on certain models.
-For model features, we usually use 0 as a replacement value. 
-If an algorithm cannot provide the correct value in time, we set its time and iterations count to a penalty value.
+
+One way to handle this situation is by only analyzing models where every algorithm finishes computation.
+However, then we would risk losing information about models where one algorithm would perform way better than another algorithm.
+
+Instead, we assign fixed values for missing features. For model features, we usually use 0 as a replacement value. 
+If an algorithm fails to provide the correct value in time, we set its time and iterations count to a penalty value.
 These penalty values should be higher than any truly occurring value to easily calculate and visualize which algorithms performed best.
 For time, we usually use the time limit as penalty, and for iterations, we use 10 million iterations as penalty.
 
 The problem of introducing these penalty values is that they influence the data distribution.
 For visualization, the graphs can end up skewed because most non-penalty data points are significantly smaller than the penalty, 
-and so it becomes harder to observe trends in graphs. Also, many visualization methods like heatmaps or statistical tests perform operations on the
-data. Thus, untrue values can falsify the correlation between features.
-
-To handle this problem, in addition to the analysis of the whole data with penalty values, we only consider data where we have a value for every feature.
+and so it becomes harder to observe trends in graphs. In these cases we zoom in on the majority of the non-penalty data to be able to observe trends,
+but take note of the outlying values.
+Also, many visualization methods like heatmaps or statistical tests perform operations on the
+data. Thus, untrue values can falsify the correlation between features. 
+Thus, when working with heatmaps, we only include those models that are solved by every algorithm.

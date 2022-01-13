@@ -1,6 +1,7 @@
 \chapter{Appendix: Additional benchmarks} \label{sec:appendix}
+\textcolor{red}{ADD THE OTHER MODELS ASWELL}
 We provide benchmarks similar to those in Section \ref{sec:benchmarks}. We compare \conQP{}, value iteration, and our improved quadratic program, but we use other models. Each of these models is a stopping game.
-\section{Models}
+\section*{Models}
 We use the models Dice \cite{dice} and Charlton\cite{charlton}, which are included in PRISM-games \cite{PRISM-games}. Furthermore, we use the models Hallway and Avoid the Observer, provided in \cite{cav20}. The descriptions of the models are also from \cite{cav20}.
 \begin{itemize}
 	\item[Dice \cite{dice}:] First player 1 throws a fair die repeatedly until accepting an outcome. Up to $N$
@@ -15,46 +16,46 @@ We use the models Dice \cite{dice} and Charlton\cite{charlton}, which are includ
 	The most important objective of the intruder is to avoid the observer, its secondary objective is to exit the grid. We assume that the observer can only detect the intruder within a certain distance and otherwise makes random moves. At every position, the intruder moreover has the option to stay and search to find a precious item. In our example, this occurs with probability 0.1 and is assumed to be the third objective. We compute with the quadratic program only the maximal probability that the intruder exits the grid and that he finds a precious item on a 2$\times$2 grid, since the first property is not a reachability, but a safety game.
 \end{itemize}
 
-\section{More Formal Random Generation Algorithm}
-
-
-\textcolor{purple}{Basically, replace every function Im speaking about with a tuple (which it formally is) and do set-operations. 
-Not as nice in my opinion as a descriptive approach. This is not done yet. Also I will need a formal fill actions.
-Whenever you add an action with a transition distribution that sums up to one, every state NOT reached must be added with transition probability 0.}
-\begin{algorithm}[ht]
-  \label{algo:randomRandomFormal}
-  \caption{Generating random models connected from initial state}
-  \begin{algorithmic}[1]
-  \Ensure Stochastic game $\SG$ where the initial state is connected to any $\state \in \states$
-  \State Create $\states$ with a random $n \in \Naturals$
-  \State Partition $\states$ uniformly at random into $\maxStates$ and $\minStates$
-  \State Enumerate $\state \in \states$ in any random order from 0 to n-1
-  \State Set $\initstate$ to the state with index 0
-  \State $\trans = \emptyset$
-  \State $\actions = \emptyset$
-  \For{$\state = 0 \rightarrow n-1$} $\Av(\state) = \emptyset$\EndFor
-  \For{$\state = 1 \rightarrow n-1$} \Comment{Forward Procedure}
-      \If{$\exists \state' \in \states, \action \in \actions: \trans(\state', \action, \state) > 0$} 
-          Skip state
-      \Else
-          \State Pick any state $\state'$ with index smaller than $\state$
-          \State Pick a random $p \in (0, 1]$
-          \State Create a new action $\action$
-          \State $\actions \gets \actions \union \{action\}$
-          \State $\trans \gets \trans \union \{(\state', \action, \state, p)\}$
-          \State Make $\action$ a valid action by applying FillAction($\state'$, $\action$)
-          \State $\Av(\state') \gets \Av(\state') \union \{action\}$
-      \EndIf
-  \EndFor
-  \For{$\state = n - 1 \rightarrow 0$} \Comment{Backward Procedure}
-      \State Pick a random number $m \in [M - |\Av(\state)]$ \Comment{Add as many actions as possible}
-      \If{$|\Av(\state)| = 0$} $m \gets \max{\{m, 1\}}$ \Comment{Every state needs to have at least one action} \EndIf 
-      \For{$i = 1 \rightarrow m$}
-          \State $(\state, \action<i>)$ = FillAction($\state$, $\action<i>$)
-          \State Add $\action<i>$ to $\Av(\state)$
-          \State Add $\action$ to $\actions$
-      \EndFor
-  \EndFor
-  \end{algorithmic}
-\end{algorithm}
-
+%\section{More Formal Random Generation Algorithm}
+%
+%
+%\textcolor{purple}{Basically, replace every function Im speaking about with a tuple (which it formally is) and do set-operations. 
+%Not as nice in my opinion as a descriptive approach. This is not done yet. Also I will need a formal fill actions.
+%Whenever you add an action with a transition distribution that sums up to one, every state NOT reached must be added with transition probability 0.}
+%\begin{algorithm}[ht]
+%  \label{alg:randomRandomFormal}
+%  \caption{Generating random models connected from initial state}
+%  \begin{algorithmic}[1]
+%  \Ensure Stochastic game $\SG$ where the initial state is connected to any $\state \in \states$
+%  \State Create $\states$ with a random $n \in \Naturals$
+%  \State Partition $\states$ uniformly at random into $\maxStates$ and $\minStates$
+%  \State Enumerate $\state \in \states$ in any random order from 0 to n-1
+%  \State Set $\initstate$ to the state with index 0
+%  \State $\trans = \emptyset$
+%  \State $\actions = \emptyset$
+%  \For{$\state = 0 \rightarrow n-1$} $\Av(\state) = \emptyset$\EndFor
+%  \For{$\state = 1 \rightarrow n-1$} \Comment{Forward Procedure}
+%      \If{$\exists \state' \in \states, \action \in \actions: \trans(\state', \action, \state) > 0$} 
+%          Skip state
+%      \Else
+%          \State Pick any state $\state'$ with index smaller than $\state$
+%          \State Pick a random $p \in (0, 1]$
+%          \State Create a new action $\action$
+%          \State $\actions \gets \actions \union \{action\}$
+%          \State $\trans \gets \trans \union \{(\state', \action, \state, p)\}$
+%          \State Make $\action$ a valid action by applying FillAction($\state'$, $\action$)
+%          \State $\Av(\state') \gets \Av(\state') \union \{action\}$
+%      \EndIf
+%  \EndFor
+%  \For{$\state = n - 1 \rightarrow 0$} \Comment{Backward Procedure}
+%      \State Pick a random number $m \in [M - |\Av(\state)]$ \Comment{Add as many actions as possible}
+%      \If{$|\Av(\state)| = 0$} $m \gets \max{\{m, 1\}}$ \Comment{Every state needs to have at least one action} \EndIf 
+%      \For{$i = 1 \rightarrow m$}
+%          \State $(\state, \action<i>)$ = FillAction($\state$, $\action<i>$)
+%          \State Add $\action<i>$ to $\Av(\state)$
+%          \State Add $\action$ to $\actions$
+%      \EndFor
+%  \EndFor
+%  \end{algorithmic}
+%\end{algorithm}
+%
