@@ -23,17 +23,39 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.2}{\ignorespaces Feature Distribution of random models}}{32}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Overview of Algorithm Performance}}{34}{figure.caption.27}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Feature Distribution of random models}}{34}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Performance Overview on real case studies}}}{34}{subfigure.3.1}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Overview of Algorithm Performance}}{35}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Performance Overview on randomly generated models}}}{34}{subfigure.3.2}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Performance Overview on real case studies}}}{35}{subfigure.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces $\mathbf {WP}$ compared to $\mathbf {BVI}$ and $\mathbf {OVI}$ on time necessary to solve models}}{36}{figure.caption.28}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Performance Overview on randomly generated models}}}{35}{subfigure.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces $\mathbf {WP}$ compared to $\mathbf {OVI}$}}{37}{figure.caption.29}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces $\mathbf {WP}$ compared to $\mathbf {BVI}$ and $\mathbf {OVI}$ on time necessary to solve models}}{37}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.6}{\ignorespaces $\mathbf {WP}$ compared to $\mathbf {BVI}$}}{38}{figure.caption.30}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces $\mathbf {WP}$ compared to $\mathbf {OVI}$}}{38}{figure.caption.30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.7}{\ignorespaces $\mathbf {WP}$ compared to $\mathbf {BVI}$}}{39}{figure.caption.31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.8}{\ignorespaces $\mathbf {BVI}$ and $\mathbf {OVI}$ compared to their Gauss-Seidel optimizations\relax }}{40}{figure.caption.32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Time required to solve a model}}}{40}{subfigure.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Iterations required to solve a model}}}{40}{subfigure.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.9}{\ignorespaces $\mathbf {BVI}$ compared to its optimization where deflating happens only every 100 iterations\relax }}{41}{figure.caption.33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Time required to solve a model}}}{41}{subfigure.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Iterations required to solve a model}}}{41}{subfigure.9.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.10}{\ignorespaces $\mathbf {BVI}$, $\mathbf {OVI}$ and $\mathbf {SI_{LP}}$ compared to their topological optimizations\relax }}{42}{figure.caption.34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Time required to solve a model}}}{42}{subfigure.10.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Iterations required to solve a model}}}{42}{subfigure.10.2}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

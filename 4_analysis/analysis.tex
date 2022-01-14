@@ -20,13 +20,13 @@ $\mathbf{State-related:}$
 $\mathbf{Actions-related:}$
 \begin{itemize}
 \item (NumMaxActions) Number of maximum actions per state
-\item (NumMaxTransitions) Number of maximum transitions per action
 \item (NumProbActions) Number of actions with probabilistic actions*
 \item (AvgNumActionsPerState) Average number of actions per state
 \end{itemize}
 
 $\mathbf{Transitions-related:}$
 \begin{itemize}
+\item (NumMaxTransitions) Number of maximum transitions per action
 \item (SmallestTransProb) Smallest occurring positive transition probability in the model
 \item (AvgNumTransPerAction) Average number of transitions per action
 \end{itemize} 
@@ -34,19 +34,19 @@ $\mathbf{Transitions-related:}$
 $\mathbf{MEC-related:}$
 \begin{itemize}
 \item (NumMECs) Number of MECs
-\item (BiggestMEC, SmallestMEC) Size of biggest and smallest MEC
-\item (AvgMEC, MedianMEC) Average MEC-size and Median MEC-size
+\item (BiggestMEC, SmallestMEC) Size of biggest and smallest MEC*
+\item (AvgMEC, MedianMEC) Average MEC-size and Median MEC-size*
 \end{itemize}
 
 $\mathbf{SCC-related:}$
 \begin{itemize}
 \item (NumSCCs) Number of SCCs
-\item (BiggestSCC, SmallestSCC) Size of biggest and smallest SCC
-\item (AvgSCC, MedianSCC) Average SCC-size and Median SCC-size
+\item (BiggestSCC, SmallestSCC) Size of biggest and smallest SCC*
+\item (AvgSCC, MedianSCC) Average SCC-size and Median SCC-size*
 \item (MaxSCCDepth) Longest chain of SCCs from the initial-state SCC
 \item (NumSCCNonSingleton) Number of SCCs with cardinality bigger than 1
 \item (SmallestSCCNonSingleton) Smallest SCC with cardinality bigger than 1
-\item (AvgSCCNonSingleton) Average SCC size with cardinality bigger than 1
+\item (AvgSCCNonSingleton) Average SCC size with cardinality bigger than 1*
 \end{itemize}
 
 $\mathbf{Path-related}:$
@@ -55,7 +55,8 @@ $\mathbf{Path-related}:$
     \item (FurthestTarget) Shortest Path from initial state to the furthest target
 \end{itemize}
 
-The values of features with a star are measured absolutely, but displayed relative to a fitting measure.
+The values of features with a star are measured absolutely, but displayed relative to a fitting measure. 
+When referring to the relative value, we a \% sign instead of the "Num"-prefix (e.g. Unknown\% instead of NumUnknown).
 All relative measures that are related to states like number of unknown states are displayed relative to $|\states|$ (NumStates).
 We found it easier to extract knowledge from relatively displayed features due to their independence of the model size. 
 

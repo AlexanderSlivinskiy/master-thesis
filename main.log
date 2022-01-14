@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.30)  13 JAN 2022 21:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.30)  14 JAN 2022 14:41
 entering extended mode
 **/home/sasha/Documents/Masterarbeit/MasterThesis/Current/Thesis/main.tex
 (/home/sasha/Documents/Masterarbeit/MasterThesis/Current/Thesis/main.tex
@@ -1622,4 +1622,331 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
 File: logos/faculty.pdf Graphic file (type pdf)
-<use logos/fac
+<use logos/faculty.pdf>
+Package pdftex.def Info: logos/faculty.pdf  used on input line 36.
+(pdftex.def)             Requested size: 56.904pt x 56.9055pt.
+ [2
+
+
+]) (pages/disclaimer.tex [3]) (pages/acknowledgments.tex
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 13.
+ (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [4
+
+
+]) (pages/abstract.tex) [5
+
+
+
+
+]
+Package tocbasic Info: character protrusion at toc deactivated on input line 39.
+ (main.toc [6
+
+
+
+
+])
+\tf@toc=\write9
+\openout9 = `main.toc'.
+
+ [7] (1_intro/intro.tex
+chapter 1.
+[1
+
+
+
+] [2]) (2_prelims/prelims.tex [3]
+chapter 2.
+(examples/exampleSG.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmss' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+)
+LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 23.
+ (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/ufplmbb.fd
+File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
+) [4
+
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+ [5] [6] (examples/exampleEC.tex) [7] [8] [9]
+Overfull \hbox (11.93988pt too wide) in paragraph at lines 232--235
+\T1/ptm/m/n/10.95 (-20) [[]Brá+14a[]]. However, it was already benchmarked in [[]K°e+20[]] and its random nature is fundamentally
+ []
+
+[10] [11]) (implemented_algos/implemented_algos.tex [12]
+chapter 3.
+) (3_randomGen/randomGen.tex [13
+
+
+]
+chapter 4.
+[14
+
+
+]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 77.
+ [15] [16] [17] [18]) (3_randomGen/implementation.tex [19]
+chapter 5.
+
+Overfull \hbox (0.11472pt too wide) in paragraph at lines 20--23
+\T1/ptm/m/n/10.95 (-20) Although the parameters we expose for random generation can constrain some structural properties
+ []
+
+[20
+
+
+]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 52.
+ (/home/sasha/.miktex/texmfs/install/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (10.7656pt too wide) in paragraph at lines 50--54
+\T1/ptm/m/n/10.95 (-20) In this section, we describe the implementation details and provide guidance for using, understanding,
+ []
+
+[21] [22]) (4_analysis/analysis.tex [23]
+chapter 6.
+[24
+
+
+] [25]) (5_results/results.tex [26]
+chapter 7.
+
+Overfull \hbox (7.25745pt too wide) in paragraph at lines 16--20
+\T1/ptm/m/n/10.95 (-20) the GitHub repository []$\T1/cmtt/m/n/10.95 https : / / github . com / ga67vib / Algorithms-[]For-[]Stochastic-[]Games$[]\T1/ptm/m/n/10.95 (-20) . 
+ []
+
+[27
+
+
+] [28]
+<figures/Real_FeatureDistribution.jpg, id=469, 867.24pt x 722.7pt>
+File: figures/Real_FeatureDistribution.jpg Graphic file (type jpg)
+<use figures/Real_FeatureDistribution.jpg>
+Package pdftex.def Info: figures/Real_FeatureDistribution.jpg  used on input line 92.
+(pdftex.def)             Requested size: 418.25555pt x 348.54617pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[29] [30 <./figures/Real_FeatureDistribution.jpg>]
+<figures/RandomRandom_FeatureDistribution.jpg, id=487, 867.24pt x 722.7pt>
+File: figures/RandomRandom_FeatureDistribution.jpg Graphic file (type jpg)
+<use figures/RandomRandom_FeatureDistribution.jpg>
+Package pdftex.def Info: figures/RandomRandom_FeatureDistribution.jpg  used on input line 123.
+(pdftex.def)             Requested size: 418.25555pt x 348.54617pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[31] [32 <./figures/RandomRandom_FeatureDistribution.jpg>]
+<figures/Placeholder.png, id=509, 803.0pt x 803.0pt>
+File: figures/Placeholder.png Graphic file (type png)
+<use figures/Placeholder.png>
+Package pdftex.def Info: figures/Placeholder.png  used on input line 161.
+(pdftex.def)             Requested size: 418.25555pt x 418.26082pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[33] [34 <./figures/Placeholder.png>]
+<figures/Real_AlgoPerformance.png, id=527, 751.80875pt x 284.06125pt>
+File: figures/Real_AlgoPerformance.png Graphic file (type png)
+<use figures/Real_AlgoPerformance.png>
+Package pdftex.def Info: figures/Real_AlgoPerformance.png  used on input line 187.
+(pdftex.def)             Requested size: 334.60571pt x 126.43068pt.
+<figures/RandomRandom_AlgoPerformance.png, id=528, 761.84625pt x 289.08pt>
+File: figures/RandomRandom_AlgoPerformance.png Graphic file (type png)
+<use figures/RandomRandom_AlgoPerformance.png>
+Package pdftex.def Info: figures/RandomRandom_AlgoPerformance.png  used on input line 189.
+(pdftex.def)             Requested size: 334.60571pt x 126.9618pt.
+ [35 <./figures/Real_AlgoPerformance.png> <./figures/RandomRandom_AlgoPerformance.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 207.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 207.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 207.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 207.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 207.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 207.
+
+<figures/WPvsBVIandOVIonAll.png, id=543, 694.595pt x 538.01pt>
+File: figures/WPvsBVIandOVIonAll.png Graphic file (type png)
+<use figures/WPvsBVIandOVIonAll.png>
+Package pdftex.def Info: figures/WPvsBVIandOVIonAll.png  used on input line 215.
+(pdftex.def)             Requested size: 418.25555pt x 323.97421pt.
+<figures/WPvsOVIon1DFeatureScatter.png, id=545, 778.91pt x 392.46625pt>
+File: figures/WPvsOVIon1DFeatureScatter.png Graphic file (type png)
+<use figures/WPvsOVIon1DFeatureScatter.png>
+Package pdftex.def Info: figures/WPvsOVIon1DFeatureScatter.png  used on input line 233.
+(pdftex.def)             Requested size: 418.25555pt x 210.74287pt.
+<figures/WPvsBVIon1DFeatureScatter.png.png, id=548, 773.89125pt x 392.46625pt>
+File: figures/WPvsBVIon1DFeatureScatter.png.png Graphic file (type png)
+<use figures/WPvsBVIon1DFeatureScatter.png.png>
+Package pdftex.def Info: figures/WPvsBVIon1DFeatureScatter.png.png  used on input line 254.
+(pdftex.def)             Requested size: 418.25555pt x 212.11424pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[36] [37 <./figures/WPvsBVIandOVIonAll.png>] [38 <./figures/WPvsOVIon1DFeatureScatter.png>] [39 <./figures/WPvsBVIon1DFeatureScatter.png.png>]
+<figures/Scatter_G.jpg, id=572, 656.4525pt x 614.295pt>
+File: figures/Scatter_G.jpg Graphic file (type jpg)
+<use figures/Scatter_G.jpg>
+Package pdftex.def Info: figures/Scatter_G.jpg  used on input line 281.
+(pdftex.def)             Requested size: 200.76086pt x 187.87054pt.
+<figures/Scatter_G_iters.jpg, id=573, 678.535pt x 613.29124pt>
+File: figures/Scatter_G_iters.jpg Graphic file (type jpg)
+<use figures/Scatter_G_iters.jpg>
+Package pdftex.def Info: figures/Scatter_G_iters.jpg  used on input line 283.
+(pdftex.def)             Requested size: 200.76086pt x 181.45274pt.
+ [40
+
+ <./figures/Scatter_G.jpg> <./figures/Scatter_G_iters.jpg>]
+<figures/Scatter_D.jpg, id=583, 656.4525pt x 614.295pt>
+File: figures/Scatter_D.jpg Graphic file (type jpg)
+<use figures/Scatter_D.jpg>
+Package pdftex.def Info: figures/Scatter_D.jpg  used on input line 306.
+(pdftex.def)             Requested size: 200.76086pt x 187.87054pt.
+<figures/Scatter_D_iters.jpg, id=584, 678.535pt x 613.29124pt>
+File: figures/Scatter_D_iters.jpg Graphic file (type jpg)
+<use figures/Scatter_D_iters.jpg>
+Package pdftex.def Info: figures/Scatter_D_iters.jpg  used on input line 308.
+(pdftex.def)             Requested size: 200.76086pt x 181.45274pt.
+<figures/Scatter_T.jpg, id=586, 656.4525pt x 614.295pt>
+File: figures/Scatter_T.jpg Graphic file (type jpg)
+<use figures/Scatter_T.jpg>
+Package pdftex.def Info: figures/Scatter_T.jpg  used on input line 319.
+(pdftex.def)             Requested size: 200.76086pt x 187.87054pt.
+<figures/Scatter_T_iters.jpg, id=587, 678.535pt x 613.29124pt>
+File: figures/Scatter_T_iters.jpg Graphic file (type jpg)
+<use figures/Scatter_T_iters.jpg>
+Package pdftex.def Info: figures/Scatter_T_iters.jpg  used on input line 321.
+(pdftex.def)             Requested size: 200.76086pt x 181.45274pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[41 <./figures/Scatter_D.jpg> <./figures/Scatter_D_iters.jpg>]
+
+LaTeX Warning: Reference `fig:' on page 42 undefined on input line 343.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 357.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 357.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 357.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 357.
+
+[42 <./figures/Scatter_T.jpg> <./figures/Scatter_T_iters.jpg>] [43]) (6_conclusion/conclusion.tex [44]
+chapter 8.
+[45
+
+
+]
+Overfull \hbox (3.59995pt too wide) in paragraph at lines 34--36
+[]\T1/ptm/m/n/10.95 (-20) The analysis techniques could be improved by including stochastic tests and artificial intelligence
+ []
+
+) [46]
+Package tocbasic Info: character protrusion at lof deactivated on input line 68.
+ (main.lof)
+\tf@lof=\write10
+\openout10 = `main.lof'.
+
+
+No file main.gls.
+No file main.acr.
+[47
+
+
+]
+chapter without number
+[48
+
+
+] [49]
+Overfull \hbox (19.58191pt too wide) in paragraph at lines 72--72
+\T1/ptm/m/n/10.95 (-20) Propagation in Bounded Value Iteration for Stochastic Games. In: \T1/ptm/m/it/10.95 (-20) CoRR \T1/ptm/m/n/10.95 (-20) abs/2007.07421
+ []
+
+
+Overfull \hbox (12.04697pt too wide) in paragraph at lines 72--72
+[]\T1/ptm/m/n/10.95 (-20) M. L. Puterman. \T1/ptm/m/it/10.95 (-20) Markov decision processes: Discrete stochastic dynamic programming\T1/ptm/m/n/10.95 (-20) .
+ []
+
+(pages/appendix.tex [50]
+chapter A.
+
+LaTeX Warning: Reference `sec:benchmarks' on page 51 undefined on input line 3.
+
+[51
+
+
+]) [52]
+No complaints by nag.
+(main.aux)
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 59623 strings out of 480864
+ 1270284 string characters out of 2904336
+ 2358502 words of memory out of 3000000
+ 75318 multiletter control sequences out of 15000+600000
+ 532346 words of font info for 516 fonts, out of 8000000 for 9000
+ 2 hyphenation exceptions out of 8191
+ 115i,19n,111p,10662b,2329s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk> </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/public/wasy/dpi600/wasy7.pk>{/home/sasha/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc} </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/public/wasy/dpi600/wasy8.pk></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss8.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss9.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/mathpazo/fplmbb.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/mathpazo/fplmr.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/palatino/uplr8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/symbol/usyr.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/symbol/usyr.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/times/utmb8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (59 pages, 1625695 bytes).
+PDF statistics:
+ 1004 PDF objects out of 1200 (max. 8388607)
+ 196 named destinations out of 1000 (max. 500000)
+ 130973 words of extra memory for PDF output out of 154059 (max. 10000000)
+
