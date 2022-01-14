@@ -1,7 +1,7 @@
 \chapter{Implemented algorithm extensions} \label{ch:implementedAlgos}
 As part of the thesis, we have implemented the following extensions to Value Iteration and Strategy Iteration:
 
-\subsubsection*{$\TOPAlg$} $\TOPAlg$ as in \emph{topological and precise} is an extension to Value-Iteration-based algorithms that builds on top of the idea of topological sorting of \cite{gandalf}.
+\subsubsection*{$\TOPAlg$} $\TOPAlg$ as in \emph{precise and topological} is an extension to Value-Iteration-based algorithms that builds on top of the idea of topological sorting of \cite{gandalf}.
 We analyze the graph underlying the stochastic game, detect the strongly connected components, and create a topological sorting based on the SCCs.
 To ensure that every SCC provides an exact result to the next one, we take the $\epsilon$-precise values of the states of the finished SCC and compute all the
 strategies that correspond to the given bounds of the states.
