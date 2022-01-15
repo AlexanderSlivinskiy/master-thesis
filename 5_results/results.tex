@@ -210,14 +210,15 @@ To see whether this is the case for all models or only when accumulating runtime
 Each point in the graph is a model. The x-axis marks the time $\WP$ requires to solve the stochastic game, and the y-axis marks the respective time $\BVI$ or $\OVI$.
 The two lines next to the diagonal mark the case that $\WP$ is twice as fast as $\BVI$ / $\OVI$s or half as fast.
 
-\begin{figure}[t]
+\begin{figure}[h!]
     \centering
-    \includegraphics[width=1\textwidth]{figures/WPvsBVIandOVIonAll.png}
-    \caption[$\WP$ compared to $\BVI$ and $\OVI$ on time necessary to solve models]{
-        $\WP$ compared to $\BVI$ and $\OVI$ on time necessary to solve models
-    }
-    \label{fig:WPvsBVIandOVIonRandomRandom}
-\end{figure}
+    \subfloat[\centering Time required to solve a model]{{\includegraphics[width=.48\textwidth]{figures/WPvsBVIandOVIonAll.png} }}%
+    \
+    \subfloat[\centering Iterations required to solve a model]{{\includegraphics[width=.48\textwidth]{figures/WPvsBVIandOVIonAll_Iters.png} }}%
+    \caption{$\WP$ compared to $\BVI$ and $\OVI$}%
+    \label{fig:WPvsBVIvsOVI}%
+    \end{figure}
+\FloatBarrier
 
 $\WP$ is usually faster than $\BVI$ and $\OVI$ and never requires more than twice as long.
 We are interested in whether there is a correlation between structural properties and $\WP$ being better or worse than the other two.
@@ -249,17 +250,23 @@ for the opposite event. Thus, we conclude that $\WP$ is overall more performant 
 \textcolor{blue}{@Maxi: The two cases where BVI is better are quite noisy, so it is not worth including the Figure in my Opinion.
 But I have added it in case you think it is interesting. It is Figure \ref{fig:WPvsBVIon1DFeatureScatter}}
 
+Furthermore, $\WP$ requires always fewer iterations than $\OVI$ and almost always fewer iterations than $\BVI$. 
+Also, it is interesting to see that for about half of the models $\WP$ requires only 1 iteration whereas $\OVI$ requires many iterations to solve the model.
+When inspecting for which values this event occurs, we found that this happens either for models with value 1 or 0.
+We reflect this in Figure \ref{fig:OVIinstantCompute}. When comparing $\BVI$ to $\OVI$, $\BVI$ is also capable of solving these models in one iteration.
+In the runtime scatter plot of Figure \ref{fig:WPvsBVIvsOVI}, these models are the cloud of orange dots in the lower left quadrant \textcolor{red}{Is that true?}.
+Even if $\BVI$ and $\WP$ require only one iteration, they still require up to 5 seconds to perform this iteration.
+
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=1\textwidth]{figures/WPvsBVIon1DFeatureScatter.png}
-    \caption[$\WP$ compared to $\BVI$]{
-        Comparing cases where $\WP$ is better than $\BVI$ (green) and $\BVI$ is better than $\WP$ (red) 
-        and plotting the corresponding feature values of the models.
+    \includegraphics[width=1\textwidth]{figures/OVI_Bad_At_Computing_Instant_Values.png}
+    \caption[$\OVI$ cannot instantly compute models]{
+        A one dimensional scatter plot of when $\WP$ could solve a model in 1 iteration while $\OVI$ could not (red) 
+        against where $\WP$ requires more than 1 iteration (green).
     }
-    \label{fig:WPvsBVIon1DFeatureScatter}
+    \label{fig:OVIinstantCompute}
 \end{figure}
 \FloatBarrier
-
 
 However, time is not the best measure we can use to compare value-iteration-based approaches. 
 This is because time may be very dependent on optimizations in the code. 
