@@ -210,7 +210,7 @@ and repeatedly applies the Bellman operator. Since the value is the least fixpoi
 
 \subsubsection*{Bounded value iteration}
 While this approach is often fast in practice, it has the drawback that it is not possible to know the current difference between $\Bop^i(\lb_0)$ and $\val$ for any given~$i$. 
-To address this, one can employ \emph{bounded value iteration} ($\BVI$, also known as interval iteration~\cite{bviMDP,atva,paperMaxi})
+To address this, one can employ \emph{bounded value iteration} ($\BVI$, also known as interval iteration~\cite{haddadmonmege,learningBased,paperMaxi})
 It additionally starts from an over-approximation $\ub_0$, with $\ub_0(s) = 1$ for all $s \in \states$. 
 However, applying the Bellman operator to this upper estimate might not converge to the value, but some greater fixpoint instead due to end components. 
 See~\cite[Example 2]{gandalf} for an example.

@@ -1,38 +1,46 @@
 \chapter{Conclusion and future work} \label{ch:conclusion}
-\textcolor{blue}{@Maxi: This Chapter is still mostly ideas.}
-General outline: We have found some cool stuff, and we have guided a so far unexplored way of analyzing Data.
+In this thesis we introduced a toolset to randomly generate models to enrich the structural variety of available models.
+This enabled a broader and more precise comparison of the available solution algorithms.
 
-A huge benefit of including data analysis is that we could simply prototype an algorithm idea and assess very fast where on the spectrum of performance it lies.
-Also, we can simply add more algorithms and we get an even better overview. This is not the case with the tables.
-Probably we would not even have tried $\TLPSI$ if we did not have the visualization tools to simply include it.
+Our randomly generated models can be in adjusted in a way that resembles the currently available case studies we are aware of.
+At the same time, we are able to adjust the parameters and guidelines in such a way that they do express structural properties that differ from the case studies.
+The only limit we face at the moment is that explicit models can be parsed only slowly in PRISM. 
+To avoid this issue, we provide the option to prepend graphs at runtime.
 
-We have shown again that structure is very important for algorithm performance.
+Furthermore, we explored were helpful to analyze the growing set of both models and algorithms to analyze.
+Establishing analysis tools allowed us to prototype algorithm ideas, assess fast whether it seems promising,
+and provide a better overview of the data we collect. 
+Lastly, our tools for model analysis improve with increasing data points.
+This is not the case for tables as visualization and analysis tool, 
+but they are nevertheless frequently the only utility used for visualization in analysis \cite{paperMaxi}\cite{widestPath}\cite{learningBased}.
 
-We have created an arbitrarily big or small benchmarking suite for stochastic games that could be profitable for the whole stochastic game community.
-With the random models and our analysis tool, we derived some interesting properties of algorithm X and found out Y about algorithm Z.
+Lastly, we have compared algorithms for $\SG$ solving and have found that although $\TLPSI$ is not competitive to $\OVI$, $\BVI$ and $\WP$ for large models,
+it may be a good alternative for games that are adversarial to approached based on value iteration. 
+Furthermore, it may be a good approach in case a model has many SCCs that are all of small size.
 
-
-Most important stuff in short
-\begin{itemize}
-    \item Use WP. If WP is bad, try $\TLPSI$. Especially if the SCC size is fitting.
-    \item We have found a nice way of creating random models - but they can only be small due to PRISM
-    \item Random models we create resemble some structural properties of real models
-    \item Without precomp, we can create big models with configs (hopefully)
-    \item Structure is important. Scalability is too. Just because an algorithm is good on one scale, does not mean it is on the others too.
-\end{itemize}
+Like $\TLPSI$, $\OVI$ seemed promising for smaller models, but could not keep up with $\WP$ and $\BVI$ for large models.
+Thus, for now we conclude in general one should try $\BVI$ or $\WP$ when trying to solve a stochastic reachability game, 
+and should pivot to other methods if these approaches struggle to converge.
 
 \section*{Future work}
-The features we track are all very basic, but it is a good step forward. However, we still cannot explain a lot of what is going on.
-For that, we may need new structural concepts and features we track.
+The model features we analyze at the moment helped us to draw some conclusions, but there are still many questions unanswered that would require
+additional structural concepts and features that we track.
+These questions are for example when to use Gauss-Seidel optimization or when to use $\WP$ instead of $\BVI$.
 
-We believe that if someone would go further down this direction, a portfolio solver is definitely possible and maybe the best solution for users.
-Combinations of OVI and WP could cost a small overhead for computing both at the same time but would get the best of both.
+In addition, there are still many data analysis techniques we did not implement yet like stochastic tests or artificial intelligence algorithms
+that can cluster features and find correlations between them. 
 
-PRISM cannot handle explicit big files.
-The next step would be to create an optimization system to create random files that hold chunks of the data in implicit blocks to make the files easier parsable.
+We believe more research of the correlation between algorithm performance and structural properties gives way to a portfolio solver which could first
+analyze important structural features and then pick heuristically the most adapt algorithm to solve the problem.
+With enough models, the decision which algorithm to use may be made by a neural network.
+Also, combinations of algorithms like $\OVI$ and $\BVI$ could then be used effectively in a fitting scenario.
+The user would have to pay the overhead for computing more vectors but may converge faster.
 
-The analysis techniques could be improved by including stochastic tests and artificial intelligence algorithms to cluster features and find correlations.
-This could then even allow for a portfolio solver which decides based on machine learning which algorithm to apply based on the graph structure.
+Since algorithm performance may change drastically depending on the models size,
+we need to resolve the issue that our random generation process creates large explicit files which PRISM cannot handle.
+The next step would be to create an optimization system to our random generation algorithm that would hold chunks of the data in 
+implicit blocks to make the files easier parsable.
 
-At the moment, states with lower index tend do have more actions than states with higher index (33 in initial state, 4 in last states for example).
-This could be addressed by introducing restrictions like for example that a state $\stateMac_i$ can only be connected to states $\stateMac_{j}$ with $j \in [i-50, i+50]$.
+Lastly, at the moment, our random generation algorithm enforces a tendency of states with smaller indices to have more actions than states with higher indices.
+Ideally, the user should be able to remove this restriction.
+This could be addressed by introducing mechanisms like for example that a state $\stateMac_i$ can only be connected to states $\stateMac_{j}$ with $j \in [i-50, i+50]$.

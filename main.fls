@@ -2284,8 +2284,6 @@ INPUT /home/sasha/.miktex/texmfs/install/fonts/tfm/adobe/times/ptmro8t.tfm
 INPUT /home/sasha/.miktex/texmfs/install/fonts/vf/adobe/times/ptmro8t.vf
 INPUT /home/sasha/.miktex/texmfs/install/fonts/tfm/adobe/times/ptmro8r.tfm
 INPUT /home/sasha/.miktex/texmfs/install/fonts/vf/adobe/times/ptmb7t.vf
-INPUT /home/sasha/.miktex/texmfs/install/fonts/vf/adobe/times/ptmb7t.vf
-INPUT /home/sasha/.miktex/texmfs/install/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT ./1_intro/intro.tex
 INPUT ./1_intro/intro.tex
 INPUT ./1_intro/intro.tex
@@ -2461,6 +2459,8 @@ INPUT /home/sasha/.miktex/texmfs/install/fonts/vf/adobe/times/zptmcm7t.vf
 INPUT /home/sasha/.miktex/texmfs/install/fonts/tfm/public/cm/cmr10.tfm
 INPUT /home/sasha/.miktex/texmfs/install/fonts/vf/adobe/times/zptmcm7t.vf
 INPUT /home/sasha/.miktex/texmfs/install/fonts/tfm/public/cm/cmr10.tfm
+INPUT /home/sasha/.miktex/texmfs/install/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /home/sasha/.miktex/texmfs/install/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT ./implemented_algos/implemented_algos.tex
 INPUT implemented_algos/implemented_algos.tex
 INPUT ./implemented_algos/implemented_algos.tex
@@ -2605,8 +2605,6 @@ INPUT ./figures/Scatter_T_iters.jpg
 INPUT ./figures/Scatter_T_iters.jpg
 INPUT ./figures/Scatter_T_iters.jpg
 INPUT ./figures/Scatter_T_iters.jpg
-INPUT /home/sasha/.miktex/texmfs/install/fonts/vf/adobe/times/ptmb7t.vf
-INPUT /home/sasha/.miktex/texmfs/install/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT ./6_conclusion/conclusion.tex
 INPUT ./6_conclusion/conclusion.tex
 INPUT ./6_conclusion/conclusion.tex

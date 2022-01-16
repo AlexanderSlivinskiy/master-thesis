@@ -65,18 +65,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.3.2}Analyzing the optimizations}{38}{subsection.7.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.3}$\mathbf {\mathbf {SI_{LP}}^T}$}{41}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.3}Algorithms based on strategy iteration}{41}{subsection.7.3.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.3.4}Big models}{42}{subsection.7.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Searching correlations between algorithms and features}{42}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Conclusion and future work}{43}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Conclusion and future work}{44}{chapter.8}%
+\contentsline {chapter}{\nonumberline List of Figures}{45}{chapter*.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{46}{chapter*.39}%
+\contentsline {chapter}{\nonumberline Bibliography}{46}{chapter*.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{47}{chapter*.40}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix: Additional benchmarks}{50}{appendix.A}%
+\contentsline {chapter}{\numberline {A}Appendix: Additional benchmarks}{49}{appendix.A}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

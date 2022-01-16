@@ -214,7 +214,6 @@
       \field{labelalpha}{Brá+14}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extraalpha}{1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proc. 12th International Symposium on Automated Technology for Verification and Analysis (ATVA'14)}
@@ -224,83 +223,6 @@
       \field{year}{2014}
       \field{pages}{98\bibrangedash 114}
       \range{pages}{17}
-    \endentry
-    \entry{atva}{inproceedings}{}
-      \name{author}{8}{}{%
-        {{un=0,uniquepart=base,hash=3aee1d084894c0ad96922a5ff11988a8}{%
-           family={Brázdil},
-           familyi={B\bibinitperiod},
-           given={Tomás},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1a126fe7ca5387e01e1bebcd84f3c49b}{%
-           family={Chatterjee},
-           familyi={C\bibinitperiod},
-           given={Krishnendu},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2c470cf493a51ab2b4f7ae5604fd1875}{%
-           family={Chmelik},
-           familyi={C\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=38317fad0bdfb65aa56516d29e6cc0de}{%
-           family={Forejt},
-           familyi={F\bibinitperiod},
-           given={Vojtech},
-           giveni={V\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a8c5ee149c52cad09e51b67596da337e}{%
-           family={Kretínský},
-           familyi={K\bibinitperiod},
-           given={Jan},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=347bafffd6816c888fdb1f5b697a07eb}{%
-           family={Kwiatkowska},
-           familyi={K\bibinitperiod},
-           given={Marta\bibnamedelima Z.},
-           giveni={M\bibinitperiod\bibinitdelim Z\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=85aa04746604480ce47f280e167052ff}{%
-           family={Parker},
-           familyi={P\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3e5639056eacbd337dded469b7cac2c6}{%
-           family={Ujma},
-           familyi={U\bibinitperiod},
-           given={Mateusz},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{8d57a48e98c73e48fe26d76ae50ed998}
-      \strng{fullhash}{10750c936a010d61158987c5727c64c9}
-      \strng{bibnamehash}{10750c936a010d61158987c5727c64c9}
-      \strng{authorbibnamehash}{10750c936a010d61158987c5727c64c9}
-      \strng{authornamehash}{8d57a48e98c73e48fe26d76ae50ed998}
-      \strng{authorfullhash}{10750c936a010d61158987c5727c64c9}
-      \field{labelalpha}{Brá+14}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extraalpha}{2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{{ATVA}}
-      \field{series}{Lecture Notes in Computer Science}
-      \field{title}{Verification of Markov Decision Processes Using Learning Algorithms}
-      \field{volume}{8837}
-      \field{year}{2014}
-      \field{pages}{98\bibrangedash 114}
-      \range{pages}{17}
-      \verb{doi}
-      \verb 10.1007/978-3-319-11936-6\_8
-      \endverb
     \endentry
     \entry{CC15}{article}{}
       \name{author}{2}{}{%
@@ -1066,11 +988,9 @@
       \strng{authorbibnamehash}{d04dd24848574e88cecb263293fdd19c}
       \strng{authornamehash}{d04dd24848574e88cecb263293fdd19c}
       \strng{authorfullhash}{d04dd24848574e88cecb263293fdd19c}
-      \field{extraname}{1}
       \field{labelalpha}{HM18}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extraalpha}{1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Theor. Comput. Sci.}
@@ -1087,44 +1007,6 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1016/j.tcs.2016.12.003
-      \endverb
-    \endentry
-    \entry{bviMDP}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=1286d88b1156ec54ce4e1783cf83fd17}{%
-           family={Haddad},
-           familyi={H\bibinitperiod},
-           given={Serge},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=368b0bb98044000c987a49d622363d5d}{%
-           family={Monmege},
-           familyi={M\bibinitperiod},
-           given={Benjamin},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{d04dd24848574e88cecb263293fdd19c}
-      \strng{fullhash}{d04dd24848574e88cecb263293fdd19c}
-      \strng{bibnamehash}{d04dd24848574e88cecb263293fdd19c}
-      \strng{authorbibnamehash}{d04dd24848574e88cecb263293fdd19c}
-      \strng{authornamehash}{d04dd24848574e88cecb263293fdd19c}
-      \strng{authorfullhash}{d04dd24848574e88cecb263293fdd19c}
-      \field{extraname}{2}
-      \field{labelalpha}{HM18}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extraalpha}{2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Theor. Comput. Sci.}
-      \field{title}{Interval iteration algorithm for MDPs and IMDPs}
-      \field{volume}{735}
-      \field{year}{2018}
-      \field{pages}{111\bibrangedash 131}
-      \range{pages}{21}
-      \verb{doi}
-      \verb 10.1016/j.tcs.2016.12.003
       \endverb
     \endentry
     \entry{paperMaxi}{article}{}

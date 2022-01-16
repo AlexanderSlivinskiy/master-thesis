@@ -2374,8 +2374,8 @@
     <bcf:citekey order="28">TarjansAlgorithm</bcf:citekey>
     <bcf:citekey order="29">visurvey</bcf:citekey>
     <bcf:citekey order="30">visurvey</bcf:citekey>
-    <bcf:citekey order="31">bviMDP</bcf:citekey>
-    <bcf:citekey order="31">atva</bcf:citekey>
+    <bcf:citekey order="31">haddadmonmege</bcf:citekey>
+    <bcf:citekey order="31">learningBased</bcf:citekey>
     <bcf:citekey order="31">paperMaxi</bcf:citekey>
     <bcf:citekey order="32">gandalf</bcf:citekey>
     <bcf:citekey order="33">paperMaxi</bcf:citekey>
@@ -2409,18 +2409,22 @@
     <bcf:citekey order="61">PRISMben</bcf:citekey>
     <bcf:citekey order="62">haddadmonmege</bcf:citekey>
     <bcf:citekey order="63">gandalf</bcf:citekey>
-    <bcf:citekey order="64">dice</bcf:citekey>
-    <bcf:citekey order="65">charlton</bcf:citekey>
-    <bcf:citekey order="66">PRISM-games</bcf:citekey>
-    <bcf:citekey order="67">cav20</bcf:citekey>
-    <bcf:citekey order="68">cav20</bcf:citekey>
-    <bcf:citekey order="69">dice</bcf:citekey>
-    <bcf:citekey order="70">charlton</bcf:citekey>
+    <bcf:citekey order="64">gandalf</bcf:citekey>
+    <bcf:citekey order="65">paperMaxi</bcf:citekey>
+    <bcf:citekey order="66">widestPath</bcf:citekey>
+    <bcf:citekey order="67">learningBased</bcf:citekey>
+    <bcf:citekey order="68">dice</bcf:citekey>
+    <bcf:citekey order="69">charlton</bcf:citekey>
+    <bcf:citekey order="70">PRISM-games</bcf:citekey>
     <bcf:citekey order="71">cav20</bcf:citekey>
-    <bcf:citekey order="72">LCK95</bcf:citekey>
-    <bcf:citekey order="72">CCGK16</bcf:citekey>
-    <bcf:citekey order="73">cav20</bcf:citekey>
-    <bcf:citekey order="74">CC15</bcf:citekey>
+    <bcf:citekey order="72">cav20</bcf:citekey>
+    <bcf:citekey order="73">dice</bcf:citekey>
+    <bcf:citekey order="74">charlton</bcf:citekey>
+    <bcf:citekey order="75">cav20</bcf:citekey>
+    <bcf:citekey order="76">LCK95</bcf:citekey>
+    <bcf:citekey order="76">CCGK16</bcf:citekey>
+    <bcf:citekey order="77">cav20</bcf:citekey>
+    <bcf:citekey order="78">CC15</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">
