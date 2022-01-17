@@ -166,17 +166,20 @@ the number of actions to \textcolor{red}{Parameter}.
 Figure \ref{fig:Random_FeatureDistribution} contains the box plots for our randomly generated models.
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=1\textwidth]{figures/Placeholder.png}
-    \caption[Feature Distribution of random models]{
-        Feature Distribution of randomly generated models by applying the RandomSCC guideline. For a description on how to read the plot is provided in Section \ref{plot:boxplot}.
-        The evaluation of the plot is located in Section \ref{insights:sccDistribution}.
+    \includegraphics[width=1\textwidth]{figures/RandomSCC_FeatureDistribution.jpg}
+    \caption[Feature Distribution of randomly generated models with the RandomSCC guideline]{
+        Feature Distribution of randomly generated models by applying the RandomSCC guideline. The description on how to read the plot is provided in Section \ref{plot:boxplot}.
+        %The evaluation of the plot is located in Section \ref{insights:sccDistribution}.
     }
     \label{fig:RandomSCC_FeatureDistributions}
 \end{figure}
 \FloatBarrier
 
 \label{insights:sccDistribution}
-\textcolor{red}{Some easy conclusions. Cleary different - smaller SCCs, more actions, hopefully less bias towards states with smaller index}
+Clearly, the guideline allows us to control the size of the SCCs. No SCC has more than 2000 states, which is the upper bound we provided.
+\textcolor{purple}{However, I have no idea why sometimes we have less 10000 states. I will investigate it.}
+Also, MaxActions is not as biased as in Algorithm \ref{alg:randomRandom}. However, this is only due to the SCCs being smaller.
+If every SCC had size 10000, the results would be similar.
 
 \subsubsection*{Increasing the number of unknown states}
 A reoccurring problem we encountered was that many models we generated randomly were solved entirely or mostly by simple graph algorithms.
@@ -199,7 +202,7 @@ performance of the algorithms relative to each other and find correlations betwe
 First, we provide a general overview of the performance of all algorithms on our benchmarking set through a line plot in Figure \ref{fig:AlgoPerformance}.
 \begin{figure}[h!]
     \centering
-    \subfloat[\centering Accumulated algorithm performance overview on real case studies]{{\includegraphics[width=0.7\textwidth]{figures/Real_AlgoPerformance.png} }}%
+    \subfloat[\centering Accumulated algorithm performance overview on real case studies]{{\includegraphics[width=0.7\textwidth]{figures/Real_AlgoPerformance.jpg} }}%
     \qquad
     \subfloat[\centering Accumulated algorithm performance overview on all randomly generated models.]{{\includegraphics[width=0.7\textwidth]{figures/RandomRandom_AlgoPerformance.png} }}%
     \caption[Overview of Algorithm Performance]{
@@ -391,24 +394,33 @@ $\mathbf{T}$ for $\BVI, \OVI$ and $\LPSI$:
     \end{figure}
 \FloatBarrier
 
-As the scatter plot \ref{fig:Scatter_T} shows,
-the topological addition for strategy iteration with linear programming in the real case studies and random models does 
-neither in- nor decrease the performance of the algorithm considerably.
-However, most models have very few SCCs, so the topological optimization does not contribute a lot.
-The data point where $\TLPSI$ is significantly faster is on the real case study "dice", where every state is an SCC on its own.
-This is obviously the best-case scenario for topological algorithms.
-\textcolor{red}{Show Scatter.
-Explain why $\OVI$ and $\BVI$ do not scale that well (explained in Gandalf Paper)}
+As \ref{fig:Scatter_T} indicates, the topological addition improves the runtime of $\OVI$ considerably. 
+However, $\OVIT$ returns an incorrect value in around 10\% of all models.
 
-\textcolor{red}{When comparing $\OVI$ with $\OVI_T$ I could not find any defining feature that would say much}
+For $\LPSI$, the topological addition does neither in- nor decrease the performance of the algorithm considerably expect for case studies
+like dice or MulMEC that have long chains of SCCs and are advantageous for topological algorithms.
+Since $\LPSI$ and $\TLPSI$ are almost identical, we conclude that if in doubt use the topological variant since it may be beneficial.
+
+Lastly, the topological addition affects $\BVI$ usually negatively. As explained in \cite{gandalf}, 
+chains of subsequent SCCs are harder to compute for $\BVIT$ because the values of the already computed SCCs is not exact, 
+making it harder for the following SCCs to reach $\epsilon$-precision.
 
 $\TOPAlg$ for $\BVI$:
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/colorScatter_BVI_TOP.jpg}
+    \caption[$\BVI$ compared to $\TOPAlg$]{
+        A scatter plot of time required for both $\BVI$ and $\TOPAlg$ to solve a model for all models.
+        The darker the dot is, the bigger is the biggest SCC of the model.
+    }
+    \label{fig:colorScatterBviTop}
+\end{figure}
+\FloatBarrier
 
-$\TOPAlg$ seems to perform worse than $\BVI$ in general. This is because we solve the DTMCs with exact methods. 
-\textcolor{red}{Scatter BVI vs TOP.}
-This requires a matrix inversion, which is an $\mathcal{O}(n^{2})$-operation, where n is the number of states in the SCC whose value is being computed.
-The bottleneck becomes apparent if we consider a scatter plot where we show the runtime against the size of the biggest SCC as in Figure \ref{fig:} \textcolor{red}{ADD FEATURE-SCATTER}.
-We have also tried solving the resulting MDP with linear programming instead of strategy iteration, but it was still worse than $\TLPSI$.
+Although there are few exceptions, in general $\TOPAlg$ is significantly slower than $\BVI$.
+This is due to the matrix inversion, which is an $\mathcal{O}(n^{2})$-operation, where n is the number of states in the SCC whose value is being computed.
+In consequence, $\TOPAlg$ is worse the more states the largest SCC has. This bottleneck becomes apparent in Figure \ref{fig:colorScatterBviTop}, 
+where almost all the models that had one large SCC were either not solved by $\TOPAlg$ or were close to the time limit. 
 
 %There are several relations we read from Figure \ref{fig:AlgoPerformance}:
 %\begin{itemize}

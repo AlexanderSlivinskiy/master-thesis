@@ -23,7 +23,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.2}{\ignorespaces Feature Distribution of random models}}{32}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Feature Distribution of random models}}{34}{figure.caption.28}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Feature Distribution of randomly generated models with the RandomSCC guideline}}{34}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.4}{\ignorespaces Overview of Algorithm Performance}}{36}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
@@ -62,6 +62,8 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Time required to solve a model}}}{42}{subfigure.10.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Iterations required to solve a model}}}{42}{subfigure.10.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.11}{\ignorespaces $\mathbf {BVI}$ compared to $\mathbf {PT}$}}{43}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
