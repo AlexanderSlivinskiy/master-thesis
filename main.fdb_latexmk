@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1642404786 "main.bcf" "main.bbl" "main" 1642407478
+["biber main"] 1642404786 "main.bcf" "main.bbl" "main" 1642408857
   "bibliography.bib" 1642334794 23960 b4fe53d203e838cf8845585285671b92 ""
-  "main.bcf" 1642407478 111179 8a9cca01fbd35fbf86db5422d123c7ef "pdflatex"
+  "main.bcf" 1642408856 111179 8a9cca01fbd35fbf86db5422d123c7ef "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1642407473 "/home/sasha/Documents/Masterarbeit/MasterThesis/Current/Thesis/main.tex" "main.pdf" "main" 1642407478
+["pdflatex"] 1642408852 "/home/sasha/Documents/Masterarbeit/MasterThesis/Current/Thesis/main.tex" "main.pdf" "main" 1642408857
   "/home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk" 1636357644 21972 523450cb0ddd7c21e2ac72c9e43db080 ""
   "/home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/public/wasy/dpi600/wasy7.pk" 1638286051 10716 062dc548909349a7e6f0a9bbfe1c62ae ""
   "/home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/public/wasy/dpi600/wasy8.pk" 1637776778 12188 f3c9a617e7437393d485ca971cfb019f ""
@@ -405,7 +405,7 @@
   "3_randomGen/implementation.tex" 1642368310 9505 89f451980c5e9ff3f0b86276e8adb922 ""
   "3_randomGen/randomGen.tex" 1642346201 24918 0921c963376c5d3ff8d7ae548c247e43 ""
   "4_analysis/analysis.tex" 1642148977 5285 9b9322e3ae92cb9a59d3f043386338b1 ""
-  "5_results/results.tex" 1642407472 37526 4b5d536a1003b2834fa54cb2eaa5f125 ""
+  "5_results/results.tex" 1642408850 38244 c0744174719b948e06d44ad1e8e57257 ""
   "6_conclusion/conclusion.tex" 1642369920 4292 1a4c22473c63f4ba2feeeb389a6581ab ""
   "examples/exampleEC.tex" 1586163786 1418 92d11368bc2793775d3676c72c6799dd ""
   "examples/exampleSG.tex" 1641117259 2307 e39375ffc294383475cf283946c06532 ""
@@ -431,14 +431,14 @@
   "logos/faculty.pdf" 1581930849 18895 fda0a374ec73ce8c51eeb911bf8bd0e1 ""
   "logos/tum.pdf" 1581700589 230879 eb1c3a1a80bd3179fe0bcb97210ec484 ""
   "main.acr" 0 -1 0 ""
-  "main.aux" 1642407477 43248 b96a8729269c665937e72273c50bb464 "pdflatex"
+  "main.aux" 1642408856 43531 09c6c8cecbe49e81de3bfba605849181 "pdflatex"
   "main.bbl" 1642404793 61596 0732408c8cce60396828ae689f239ac9 "biber main"
   "main.gls" 0 -1 0 ""
-  "main.lof" 1642407478 5115 4600a2bd59d4e3b55ea96ee579b34a13 "pdflatex"
-  "main.out" 1642407475 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.run.xml" 1642407478 2406 2a7295332f2500a5f57e5a95935970e8 "pdflatex"
+  "main.lof" 1642408856 5246 5c89f94618878df110fae39e1e36d704 "pdflatex"
+  "main.out" 1642408854 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.run.xml" 1642408856 2406 2a7295332f2500a5f57e5a95935970e8 "pdflatex"
   "main.tex" 1642089234 2558 0fb3c7b4de1f0bec16c143feacd66276 ""
-  "main.toc" 1642407478 4838 d8bd043ec460dae67f9810a2815cdf10 "pdflatex"
+  "main.toc" 1642408856 4838 d80bd854fbb9a76c5c6297597583e79f "pdflatex"
   "pages/abstract.tex" 1640882446 946 647a801977250b5b8bed26dbee864e52 ""
   "pages/acknowledgments.tex" 1641578135 837 d738c72a0dee83eb6dc72d31dc66e9d4 ""
   "pages/appendix.tex" 1641579254 5517 70a7c8be0904de2867b0f3fd9e1d0476 ""

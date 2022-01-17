@@ -31,7 +31,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Accumulated algorithm performance overview on all randomly generated models.}}}{36}{subfigure.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces $\mathbf {WP}$ compared to $\mathbf {BVI}$ and $\mathbf {OVI}$. See \ref {plot:performanceScatter} for a reference on how to read the plot.\relax }}{37}{figure.caption.31}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces $\mathbf {WP}$ compared to $\mathbf {BVI}$ and $\mathbf {OVI}$ on every model of all datasets. See \ref {plot:performanceScatter} for a reference on how to read the plot.\relax }}{37}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Time required to solve a model}}}{37}{subfigure.5.1}%
 \defcounter {refsection}{0}\relax 
@@ -39,29 +39,29 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.6}{\ignorespaces $\mathbf {BVI}$ compared to $\mathbf {WP}$ and $\mathbf {OVI}$. See \ref {plot:performanceScatter} for a reference on how to read the plot.\relax }}{38}{figure.caption.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Time required to solve a model with all models}}}{38}{subfigure.6.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Time required to solve on every model of all datasets}}}{38}{subfigure.6.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Time required to solve a model only with large models }}}{38}{subfigure.6.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.7}{\ignorespaces $\mathbf {OVI}$ cannot instantly compute models}}{39}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.8}{\ignorespaces $\mathbf {BVI}$ and $\mathbf {OVI}$ compared to their Gauss-Seidel optimizations\relax }}{40}{figure.caption.37}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces $\mathbf {BVI}$ and $\mathbf {OVI}$ compared to their Gauss-Seidel optimizations on every model of all datasets\relax }}{40}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Time required to solve a model}}}{40}{subfigure.8.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Iterations required to solve a model}}}{40}{subfigure.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.9}{\ignorespaces $\mathbf {BVI}$ compared to its optimization where deflating happens only every 100 iterations\relax }}{41}{figure.caption.38}%
+\contentsline {figure}{\numberline {7.9}{\ignorespaces $\mathbf {BVI}$ compared to its optimization where deflating happens only every 100 iterations on every model of all datasets\relax }}{41}{figure.caption.38}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Time required to solve a model}}}{41}{subfigure.9.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Iterations required to solve a model}}}{41}{subfigure.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.10}{\ignorespaces $\mathbf {BVI}$, $\mathbf {OVI}$ and $\mathbf {SI_{LP}}$ compared to their topological optimizations\relax }}{41}{figure.caption.39}%
+\contentsline {figure}{\numberline {7.10}{\ignorespaces $\mathbf {BVI}$, $\mathbf {OVI}$ and $\mathbf {SI_{LP}}$ compared to their topological optimizations on every model of all datasets\relax }}{42}{figure.caption.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Time required to solve a model}}}{41}{subfigure.10.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Time required to solve a model}}}{42}{subfigure.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Iterations required to solve a model}}}{41}{subfigure.10.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Iterations required to solve a model}}}{42}{subfigure.10.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

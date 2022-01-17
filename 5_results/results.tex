@@ -197,11 +197,11 @@ In this section, we compare the Algorithms introduced in Section \ref{sec:SGAlgo
 performance of the algorithms relative to each other and find correlations between model feature values and algorithm performance.
 
 First, we provide a general overview of the performance of all algorithms on our benchmarking set through a line plot in Figure \ref{fig:AlgoPerformance}.
-\begin{figure}
+\begin{figure}[h!]
     \centering
-    \subfloat[\centering Accumulated algorithm performance overview on real case studies]{{\includegraphics[width=0.8\textwidth]{figures/Real_AlgoPerformance.png} }}%
+    \subfloat[\centering Accumulated algorithm performance overview on real case studies]{{\includegraphics[width=0.7\textwidth]{figures/Real_AlgoPerformance.png} }}%
     \qquad
-    \subfloat[\centering Accumulated algorithm performance overview on all randomly generated models.]{{\includegraphics[width=0.8\textwidth]{figures/RandomRandom_AlgoPerformance.png} }}%
+    \subfloat[\centering Accumulated algorithm performance overview on all randomly generated models.]{{\includegraphics[width=0.7\textwidth]{figures/RandomRandom_AlgoPerformance.png} }}%
     \caption[Overview of Algorithm Performance]{
         A line plot providing an overview of the accumulated algorithm performance.
         }%
@@ -220,19 +220,20 @@ Then, we analyze the impact of the optimizations from Subsection \ref{subsec:opt
 Lastly, we investigate the performance of strategy-iteration-based algorithms in comparison to value-iteration-based algorithms.
 For $\OVI$, $\WP$, $\BVI$ and their optimizations, we compare the number of iterations required to solve a model in addition to the time.
 While time is practically more relevant, the number of iterations is independent of how optimized the implementation of the algorithm is.
+\FloatBarrier
 
 \subsection{$\BVI$ vs $\OVI$ vs $\WP$}
-We read from Figure \ref{fig:AlgoPerformance} that WP is the fastest to solve the problems on both random-generated models and real case studies.
-To see whether this is the case for all models or only when accumulating runtime, we consider the scatter plot in Figure \ref{fig:WPvsBVIvsOVI}.
+We read from Figure \ref{fig:AlgoPerformance} that WP is the fastest to solve the problems on both randomly generated models and real case studies.
+To see whether this is the case for all models or only when accumulating runtime, we provide a scatter plot in Figure \ref{fig:WPvsBVIvsOVI}.
 The x-axis marks the time $\WP$ requires to solve a stochastic game, and the y-axis marks the respective time $\BVI$ or $\OVI$ needs.
-The two lines next to the diagonal mark the case that $\WP$ is twice as fast as $\BVI$ / $\OVI$s or half as fast.
+The two lines next to the diagonal mark the case that $\WP$ is twice as fast as $\BVI$ / $\OVI$ or half as fast.
 
 \begin{figure}[h!]
     \centering
     \subfloat[\centering Time required to solve a model]{{\includegraphics[width=.48\textwidth]{figures/WPvsBVIandOVIonAll.png} }}%
     \
     \subfloat[\centering Iterations required to solve a model]{{\includegraphics[width=.48\textwidth]{figures/WPvsBVIandOVIonAll_Iters.png} }}%
-    \caption{$\WP$ compared to $\BVI$ and $\OVI$. See \ref{plot:performanceScatter} for a reference on how to read the plot.}%
+    \caption{$\WP$ compared to $\BVI$ and $\OVI$ on every model of all datasets. See \ref{plot:performanceScatter} for a reference on how to read the plot.}%
     \label{fig:WPvsBVIvsOVI}%
     \end{figure}
 \FloatBarrier
@@ -240,10 +241,10 @@ The two lines next to the diagonal mark the case that $\WP$ is twice as fast as 
 \subsubsection*{$\WP$}
 Regarding time, $\WP$ is neither significantly better nor worse than $\OVI$ and $\BVI$.
 However, in every data set we analyzed, $\WP$ was one of the fast algorithms when measuring accumulated time.
-On large models, $\WP$ was accumulated slower than $\BVI$, but still comparable.
+On large models, $\WP$ was accumulated slower than $\BVI$, but they are close enough that the difference is negligible.
 When comparing iterations, $\WP$ requires almost always fewer iterations than $\BVI$ and $\OVI$, and never more than twice as many.
 
-Since we could not find a weakness of $\WP$, we conclude that it is a good initial choice in case of doubt.
+Since we could not find a clear weakness of $\WP$, we conclude that it is a good initial choice in case of doubt.
 
 \iffalse
 Regarding time, $\WP$ is usually faster than $\BVI$ and $\OVI$ and never requires more than twice as long.
@@ -286,7 +287,7 @@ shows that for large models $\BVI$ tends to be faster. \textcolor{purple}{Howeve
 
 \begin{figure}[h!]
     \centering
-    \subfloat[\centering Time required to solve a model with all models]{{\includegraphics[width=.48\textwidth]{figures/BVIvsWPvsOVI.jpg} }}%
+    \subfloat[\centering Time required to solve on every model of all datasets]{{\includegraphics[width=.48\textwidth]{figures/BVIvsWPvsOVI.jpg} }}%
     \
     \subfloat[\centering Time required to solve a model only with large models ]{{\includegraphics[width=.48\textwidth]{figures/BVIvsWPvsOVI_OnlyBig.jpg} }}%
     \caption{$\BVI$ compared to $\WP$ and $\OVI$. See \ref{plot:performanceScatter} for a reference on how to read the plot.}%
@@ -309,8 +310,8 @@ For large models, it is likelier that a model is so complex that it requires mul
 Thus, it is also more probable that the precision is halved at a point that will lead to unnecessary iterations.
 In addition to that iterations are also more costly for larger models since the state space is bigger.
 
-$\OVI$ requires generally require more iterations than $\WP$ and $\BVI$. This is partly because of the extra iterations that may happen in $\OVI$, 
-and partly because during verification phase the iteration counter increases, but only the lower bound is being iterated.
+$\OVI$ generally requires more iterations than $\WP$ and $\BVI$. This is partly because of the extra iterations that may happen in $\OVI$ as mentioned, 
+and partly because during verification phase only the upper bound is being iterated on. Meanwhile, in $\BVI$ both upper- and lower bound are updated per iteration.
 Also, it is interesting to see that for about half of the models in Figure \ref{fig:WPvsBVIvsOVI} $\WP$ requires only 1 iteration whereas $\OVI$ requires many iterations to solve the model.
 The red dots in Figure \ref{fig:OVIinstantCompute} visualize the value of the games where $\WP$ required only 1 iteration and $\OVI$ multiple,
 while the green dots represent models where $\WP$ required also multiple iterations to solve the game.
@@ -347,7 +348,7 @@ $\mathbf{Gauss-Seidel}$ for $\BVI$:
     \subfloat[\centering Time required to solve a model]{{\includegraphics[width=.48\textwidth]{figures/Scatter_G.jpg} }}%
     \
     \subfloat[\centering Iterations required to solve a model]{{\includegraphics[width=.48\textwidth]{figures/Scatter_G_iters.jpg} }}%
-    \caption{$\BVI$ and $\OVI$ compared to their Gauss-Seidel optimizations}%
+    \caption{$\BVI$ and $\OVI$ compared to their Gauss-Seidel optimizations on every model of all datasets}%
     \label{fig:Scatter_G}%
     \end{figure}
 \FloatBarrier
@@ -372,7 +373,7 @@ $\mathbf{D}$ for $\BVI$:
     \subfloat[\centering Time required to solve a model]{{\includegraphics[width=.48\textwidth]{figures/Scatter_D.jpg} }}%
     \
     \subfloat[\centering Iterations required to solve a model]{{\includegraphics[width=.48\textwidth]{figures/Scatter_D_iters.jpg} }}%
-    \caption{$\BVI$ compared to its optimization where deflating happens only every 100 iterations}%
+    \caption{$\BVI$ compared to its optimization where deflating happens only every 100 iterations on every model of all datasets}%
     \label{fig:Scatter_D}%
     \end{figure}
 \FloatBarrier
@@ -385,7 +386,7 @@ $\mathbf{T}$ for $\BVI, \OVI$ and $\LPSI$:
     \subfloat[\centering Time required to solve a model]{{\includegraphics[width=.48\textwidth]{figures/Scatter_T.jpg} }}%
     \
     \subfloat[\centering Iterations required to solve a model]{{\includegraphics[width=.48\textwidth]{figures/Scatter_T_iters.jpg} }}%
-    \caption{$\BVI$, $\OVI$ and $\LPSI$ compared to their topological optimizations}%
+    \caption{$\BVI$, $\OVI$ and $\LPSI$ compared to their topological optimizations on every model of all datasets}%
     \label{fig:Scatter_T}%
     \end{figure}
 \FloatBarrier
@@ -446,6 +447,12 @@ Also, the topological improvement allows solving models with huge numbers of sma
 LP could likely be improved. At the moment, we do not even deflate but use MIP to encode the maximum-best-exit constraints. But this should maybe go into future work}
 
 \subsubsection*{Strategy iteration with exact Markov chain solving}
+\textcolor{purple}{Just bad. Fails most of the time because either out of memory or timeout. 
+While $\TOPAlg$ needs to perform exact DTMC solving only once per SCC and $\TOPAlg$ is already not so great, $\SISI$ may change strategies and thus needs to perform exact DTMC solving multiple times.
+}
+
+\subsubsection*{Strategy iteration with value iteration}
+\textcolor{purple}{In general okay but worse than $\BVI$. Will usually struggle where value iteration struggles in general.}
 
 
 \subsection{Big models}

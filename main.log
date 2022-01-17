@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.30)  17 JAN 2022 09:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.30)  17 JAN 2022 09:40
 entering extended mode
 **/home/sasha/Documents/Masterarbeit/MasterThesis/Current/Thesis/main.tex
 (/home/sasha/Documents/Masterarbeit/MasterThesis/Current/Thesis/main.tex
@@ -1767,57 +1767,64 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: figures/Real_AlgoPerformance.png Graphic file (type png)
 <use figures/Real_AlgoPerformance.png>
 Package pdftex.def Info: figures/Real_AlgoPerformance.png  used on input line 202.
-(pdftex.def)             Requested size: 334.60571pt x 126.43068pt.
+(pdftex.def)             Requested size: 292.7776pt x 110.62305pt.
 <figures/RandomRandom_AlgoPerformance.png, id=527, 761.84625pt x 289.08pt>
 File: figures/RandomRandom_AlgoPerformance.png Graphic file (type png)
 <use figures/RandomRandom_AlgoPerformance.png>
 Package pdftex.def Info: figures/RandomRandom_AlgoPerformance.png  used on input line 204.
-(pdftex.def)             Requested size: 334.60571pt x 126.9618pt.
+(pdftex.def)             Requested size: 292.7776pt x 111.09102pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[35]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 225.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 224.
+(hyperref)                removing `math shift' on input line 225.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 224.
+(hyperref)                removing `math shift' on input line 225.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 224.
+(hyperref)                removing `math shift' on input line 225.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 224.
+(hyperref)                removing `math shift' on input line 225.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 224.
+(hyperref)                removing `math shift' on input line 225.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 224.
-
-[35] [36 <./figures/Real_AlgoPerformance.png> <./figures/RandomRandom_AlgoPerformance.png>]
-<figures/WPvsBVIandOVIonAll.png, id=548, 639.38875pt x 614.295pt>
+<figures/WPvsBVIandOVIonAll.png, id=538, 639.38875pt x 614.295pt>
 File: figures/WPvsBVIandOVIonAll.png Graphic file (type png)
 <use figures/WPvsBVIandOVIonAll.png>
-Package pdftex.def Info: figures/WPvsBVIandOVIonAll.png  used on input line 232.
+Package pdftex.def Info: figures/WPvsBVIandOVIonAll.png  used on input line 233.
 (pdftex.def)             Requested size: 200.76086pt x 192.8853pt.
-<figures/WPvsBVIandOVIonAll_Iters.png, id=549, 662.475pt x 613.29124pt>
+<figures/WPvsBVIandOVIonAll_Iters.png, id=539, 662.475pt x 613.29124pt>
 File: figures/WPvsBVIandOVIonAll_Iters.png Graphic file (type png)
 <use figures/WPvsBVIandOVIonAll_Iters.png>
-Package pdftex.def Info: figures/WPvsBVIandOVIonAll_Iters.png  used on input line 234.
+Package pdftex.def Info: figures/WPvsBVIandOVIonAll_Iters.png  used on input line 235.
 (pdftex.def)             Requested size: 200.76086pt x 185.85104pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[36 <./figures/Real_AlgoPerformance.png> <./figures/RandomRandom_AlgoPerformance.png>]
 <figures/BVIvsWPvsOVI.jpg, id=556, 649.42625pt x 614.295pt>
 File: figures/BVIvsWPvsOVI.jpg Graphic file (type jpg)
 <use figures/BVIvsWPvsOVI.jpg>
-Package pdftex.def Info: figures/BVIvsWPvsOVI.jpg  used on input line 289.
+Package pdftex.def Info: figures/BVIvsWPvsOVI.jpg  used on input line 290.
 (pdftex.def)             Requested size: 200.76086pt x 189.89519pt.
 <figures/BVIvsWPvsOVI_OnlyBig.jpg, id=557, 649.42625pt x 614.295pt>
 File: figures/BVIvsWPvsOVI_OnlyBig.jpg Graphic file (type jpg)
 <use figures/BVIvsWPvsOVI_OnlyBig.jpg>
-Package pdftex.def Info: figures/BVIvsWPvsOVI_OnlyBig.jpg  used on input line 291.
+Package pdftex.def Info: figures/BVIvsWPvsOVI_OnlyBig.jpg  used on input line 292.
 (pdftex.def)             Requested size: 200.76086pt x 189.89519pt.
 
 
@@ -1827,17 +1834,17 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <figures/OVI_Bad_At_Computing_Instant_Values.png, id=579, 759.83875pt x 68.255pt>
 File: figures/OVI_Bad_At_Computing_Instant_Values.png Graphic file (type png)
 <use figures/OVI_Bad_At_Computing_Instant_Values.png>
-Package pdftex.def Info: figures/OVI_Bad_At_Computing_Instant_Values.png  used on input line 320.
+Package pdftex.def Info: figures/OVI_Bad_At_Computing_Instant_Values.png  used on input line 321.
 (pdftex.def)             Requested size: 418.25555pt x 37.5716pt.
 <figures/Scatter_G.jpg, id=583, 656.4525pt x 614.295pt>
 File: figures/Scatter_G.jpg Graphic file (type jpg)
 <use figures/Scatter_G.jpg>
-Package pdftex.def Info: figures/Scatter_G.jpg  used on input line 347.
+Package pdftex.def Info: figures/Scatter_G.jpg  used on input line 348.
 (pdftex.def)             Requested size: 200.76086pt x 187.87054pt.
 <figures/Scatter_G_iters.jpg, id=584, 678.535pt x 613.29124pt>
 File: figures/Scatter_G_iters.jpg Graphic file (type jpg)
 <use figures/Scatter_G_iters.jpg>
-Package pdftex.def Info: figures/Scatter_G_iters.jpg  used on input line 349.
+Package pdftex.def Info: figures/Scatter_G_iters.jpg  used on input line 350.
 (pdftex.def)             Requested size: 200.76086pt x 181.45274pt.
 
 
@@ -1847,12 +1854,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <figures/Scatter_D.jpg, id=593, 656.4525pt x 614.295pt>
 File: figures/Scatter_D.jpg Graphic file (type jpg)
 <use figures/Scatter_D.jpg>
-Package pdftex.def Info: figures/Scatter_D.jpg  used on input line 372.
+Package pdftex.def Info: figures/Scatter_D.jpg  used on input line 373.
 (pdftex.def)             Requested size: 200.76086pt x 187.87054pt.
 <figures/Scatter_D_iters.jpg, id=594, 678.535pt x 613.29124pt>
 File: figures/Scatter_D_iters.jpg Graphic file (type jpg)
 <use figures/Scatter_D_iters.jpg>
-Package pdftex.def Info: figures/Scatter_D_iters.jpg  used on input line 374.
+Package pdftex.def Info: figures/Scatter_D_iters.jpg  used on input line 375.
 (pdftex.def)             Requested size: 200.76086pt x 181.45274pt.
 
 
@@ -1862,23 +1869,27 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <figures/Scatter_T.jpg, id=603, 656.4525pt x 614.295pt>
 File: figures/Scatter_T.jpg Graphic file (type jpg)
 <use figures/Scatter_T.jpg>
-Package pdftex.def Info: figures/Scatter_T.jpg  used on input line 385.
+Package pdftex.def Info: figures/Scatter_T.jpg  used on input line 386.
 (pdftex.def)             Requested size: 200.76086pt x 187.87054pt.
 <figures/Scatter_T_iters.jpg, id=604, 678.535pt x 613.29124pt>
 File: figures/Scatter_T_iters.jpg Graphic file (type jpg)
 <use figures/Scatter_T_iters.jpg>
-Package pdftex.def Info: figures/Scatter_T_iters.jpg  used on input line 387.
+Package pdftex.def Info: figures/Scatter_T_iters.jpg  used on input line 388.
 (pdftex.def)             Requested size: 200.76086pt x 181.45274pt.
- [41 <./figures/Scatter_D.jpg> <./figures/Scatter_D_iters.jpg> <./figures/Scatter_T.jpg> <./figures/Scatter_T_iters.jpg>]
 
-LaTeX Warning: Reference `fig:' on page 42 undefined on input line 409.
 
-[42]) (6_conclusion/conclusion.tex [43]
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[41 <./figures/Scatter_D.jpg> <./figures/Scatter_D_iters.jpg>]
+
+LaTeX Warning: Reference `fig:' on page 42 undefined on input line 410.
+
+[42 <./figures/Scatter_T.jpg> <./figures/Scatter_T_iters.jpg>] [43]) (6_conclusion/conclusion.tex [44]
 chapter 8.
-[44
+[45
 
 
-]) [45]
+]) [46]
 Package tocbasic Info: character protrusion at lof deactivated on input line 68.
  (main.lof)
 \tf@lof=\write10
@@ -1887,15 +1898,15 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 68.
 
 No file main.gls.
 No file main.acr.
-[46
+[47
 
 
 ]
 chapter without number
-[47
+[48
 
 
-] [48]
+] [49]
 Overfull \hbox (19.58191pt too wide) in paragraph at lines 72--72
 \T1/ptm/m/n/10.95 (-20) Propagation in Bounded Value Iteration for Stochastic Games. In: \T1/ptm/m/it/10.95 (-20) CoRR \T1/ptm/m/n/10.95 (-20) abs/2007.07421
  []
@@ -1905,15 +1916,15 @@ Overfull \hbox (12.04697pt too wide) in paragraph at lines 72--72
 []\T1/ptm/m/n/10.95 (-20) M. L. Puterman. \T1/ptm/m/it/10.95 (-20) Markov decision processes: Discrete stochastic dynamic programming\T1/ptm/m/n/10.95 (-20) .
  []
 
-(pages/appendix.tex [49]
+(pages/appendix.tex [50]
 chapter A.
 
-LaTeX Warning: Reference `sec:benchmarks' on page 50 undefined on input line 3.
+LaTeX Warning: Reference `sec:benchmarks' on page 51 undefined on input line 3.
 
-[50
+[51
 
 
-]) [51]
+]) [52]
 No complaints by nag.
 (main.aux)
 
@@ -1926,17 +1937,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59624 strings out of 480864
- 1270028 string characters out of 2904336
- 2358643 words of memory out of 3000000
- 75312 multiletter control sequences out of 15000+600000
- 531443 words of font info for 517 fonts, out of 8000000 for 9000
+ 59629 strings out of 480864
+ 1270076 string characters out of 2904336
+ 2358770 words of memory out of 3000000
+ 75313 multiletter control sequences out of 15000+600000
+ 531496 words of font info for 518 fonts, out of 8000000 for 9000
  2 hyphenation exceptions out of 8191
  115i,19n,111p,10662b,2329s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk> </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/public/wasy/dpi600/wasy7.pk>{/home/sasha/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc} </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/public/wasy/dpi600/wasy8.pk></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss8.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss9.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/mathpazo/fplmbb.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/mathpazo/fplmr.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/palatino/uplr8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/symbol/usyr.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/symbol/usyr.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/times/utmb8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (58 pages, 1737193 bytes).
+Output written on main.pdf (59 pages, 1740184 bytes).
 PDF statistics:
- 1017 PDF objects out of 1200 (max. 8388607)
- 201 named destinations out of 1000 (max. 500000)
+ 1026 PDF objects out of 1200 (max. 8388607)
+ 203 named destinations out of 1000 (max. 500000)
  128927 words of extra memory for PDF output out of 154059 (max. 10000000)
 

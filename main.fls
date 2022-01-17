@@ -2534,7 +2534,6 @@ INPUT ./figures/RandomRandom_AlgoPerformance.png
 INPUT ./figures/RandomRandom_AlgoPerformance.png
 INPUT /home/sasha/.miktex/texmfs/install/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /home/sasha/.miktex/texmfs/install/fonts/tfm/public/mathpazo/fplmbb.tfm
-INPUT /home/sasha/.miktex/texmfs/install/fonts/vf/adobe/times/ptmb7t.vf
 INPUT ./figures/WPvsBVIandOVIonAll.png
 INPUT ./figures/WPvsBVIandOVIonAll.png
 INPUT figures/WPvsBVIandOVIonAll.png
@@ -2549,6 +2548,7 @@ INPUT ./figures/WPvsBVIandOVIonAll_Iters.png
 INPUT ./figures/WPvsBVIandOVIonAll_Iters.png
 INPUT ./figures/WPvsBVIandOVIonAll_Iters.png
 INPUT ./figures/WPvsBVIandOVIonAll_Iters.png
+INPUT /home/sasha/.miktex/texmfs/install/fonts/vf/adobe/times/ptmb7t.vf
 INPUT ./figures/BVIvsWPvsOVI.jpg
 INPUT ./figures/BVIvsWPvsOVI.jpg
 INPUT figures/BVIvsWPvsOVI.jpg
