@@ -57,7 +57,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.1.2}Plot overview}{28}{subsection.7.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Model analysis results}{30}{section.7.2}%
+\contentsline {section}{\numberline {7.2}Model analysis results}{29}{section.7.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.3}Algorithm comparison results}{35}{section.7.3}%
 \defcounter {refsection}{0}\relax 
@@ -65,15 +65,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.3.2}Analyzing the optimizations}{39}{subsection.7.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.3}Algorithms based on strategy iteration}{44}{subsection.7.3.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.4}Big models}{45}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.3.3}Algorithms based on strategy iteration}{43}{subsection.7.3.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {8}Conclusion and future work}{46}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{48}{chapter*.45}%
+\contentsline {chapter}{\nonumberline List of Figures}{48}{chapter*.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{49}{chapter*.46}%
+\contentsline {chapter}{\nonumberline Bibliography}{49}{chapter*.47}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Appendix: Additional benchmarks}{52}{appendix.A}%
 \defcounter {refsection}{0}\relax 

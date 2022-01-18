@@ -1,8 +1,5 @@
 \chapter{Results} \label{ch:results}
 
-\textcolor{red}{Include $\SI$ as an okay alternative to BVI}
-\textcolor{red}{Try to verify that $\LPSI$ may be bad. The best way to argue about this is that we get out-of-memory errors. This also is what Gandalf said about memory: LP takes more.}
-
 In this chapter, we analyze models regarding their feature distribution and algorithms regarding their performance.
 Furthermore, we investigate which model features influence the performance of the algorithms.
 
@@ -21,9 +18,9 @@ Our code is available in the GitHub repository \url{https://github.com/ga67vib/A
 
 \subsubsection*{Technical details}
 We conducted the experiments on a server with 64 GB of RAM and a 3.60GHz Intel CPU running Manjaro Linux. %Intel (R) Xeon(R) W-2123 CPU.
-We always use a precision of $\varepsilon=10^{-6}$. The timeout was set to 15 minutes for all models. 
-The memory limit for every experiment was 6 GB.
-\textcolor{red}{For large model (ANY REF TO LARGE), we have set 36 GB memory limit and 30 minutes time limit for all models.}
+We always use a precision of $\varepsilon=10^{-6}$. 
+The timeout was set to 15 minutes and the memory limit was 6 GB for all models except for large Models (see Subsection \ref{subsec:largeModels}).
+For large models the timeout was set to 30 minutes and the memory limit to 36 GB. 
 
 \subsection{Case studies}
 We consider case studies from four different sources: 
@@ -38,7 +35,7 @@ The games we prepend are very similar to the RandomTree guideline from Section \
 \textcolor{red}{Here we should state the exact parameters we have used for our models. States are 1000 to 10000, transition probabilities between 0.1 and 0.01 etc.
 However, since there are many parameters and many models I probably rather put it into the appendix}
 
-\subsubsection*{Generating large models}
+\subsubsection*{Generating large models} \label{subsec:largeModels}
 Note that all the randomly generated models have 10000 states. On one hand, we have chosen a fixed state size to make the results more comparable.
 On the other hand, we could not generate models with larger state spaces (at least 1000000 states) because every action in our random generated models is stored explicitly
 in the corresponding .prism file. Thus, PRISM requires a lot of time to parse these files. Parsing the randomly generated models with 10000 states takes
@@ -47,7 +44,7 @@ up to 200 seconds and scales up non-linearly with the number of actions or state
 Handcrafted models and real case studies achieve a larger state space because many the .prism files are parameterized.
 Effectively, not every action is written out explicitly, but is stored implicitly, allowing the model to be parsed faster.
 Generating models at runtime as we describe in Section \ref{sec:configs} skips the state exploration process and 
-creates large models fast. However, precomputation for these models requires more than 1 hours of computation time, so we include them without precomputation.
+creates large models fast. However, precomputation for these models requires more than 1 hour of computation time, so we include them without precomputation.
 Thus, our benchmarking set for large models is created only out of games we generate at runtime and the real case studies that are non-trivial and parameterizable, 
 which are AV, dice, and hallway. \textcolor{purple}{Additionally, we may add in MulMEC and BigMEC without precomp, since for them precomp also takes too long.}
 
@@ -62,8 +59,8 @@ outliers that differ significantly from the rest of the dataset.
 The are plots grouped by and colored into the following categories:
 \begin{itemize}
     \item Green outlines are for properties related to states. 
-    \item Blue outlines are for properties related to Actions. 
-    \item Cyan outlines are for properties related to Transitions.
+    \item Blue outlines are for properties related to actions. 
+    \item Cyan outlines are for properties related to transitions.
     \item Red outlines are for properties related to MECs.
     \item Orange outlines are for properties related to SECs. 
 \end{itemize}
@@ -205,9 +202,12 @@ First, we provide a general overview of the performance of all algorithms on our
     \subfloat[\centering Accumulated algorithm performance overview on real case studies]{{\includegraphics[width=0.7\textwidth]{figures/Real_AlgoPerformance.jpg} }}%
     \qquad
     \subfloat[\centering Accumulated algorithm performance overview on all randomly generated models.]{{\includegraphics[width=0.7\textwidth]{figures/RandomRandom_AlgoPerformance.png} }}%
+    \qquad
+    \subfloat[\centering Accumulated algorithm performance overview on large models.]{{\includegraphics[width=0.7\textwidth]{figures/Big_AlgoPerformance.png} }}%
     \caption[Overview of Algorithm Performance]{
         A line plot providing an overview of the accumulated algorithm performance.
         }%
+    \label{fig:AlgoPerformanceBig}
     \label{fig:AlgoPerformance}
 \end{figure}
 
@@ -285,7 +285,7 @@ But I have added it in case you think it is interesting. It is Figure \ref{fig:W
 
 Figure \ref{fig:BVIvsWPvsOVI} provides an overview of the time $\BVI$ requires to solve a model compared to $\OVI$ and $\WP$.
 While both the accumulated runtime of Figure \ref{fig:AlgoPerformance} and the left scatter plot with all the models of Figure \ref{fig:BVIvsWPvsOVI}
-suggest that for more complicated models $\OVI$ and $\WP$ are faster than $\BVI$, the times required to solve large models only in Figure \ref{fig:BVIvsWPvsOVI} (b)
+suggest that for more complicated models $\OVI$ and $\WP$ are faster than $\BVI$, the time required to solve large models only in Figure \ref{fig:BVIvsWPvsOVI} (b)
 shows that for large models $\BVI$ tends to be faster. \textcolor{purple}{However, we emphasize that this tendency may be due to a lack of large models.}
 
 \begin{figure}[h!]
@@ -360,8 +360,9 @@ $\mathbf{Gauss-Seidel}$ for $\BVI$:
 As Figure \ref{fig:Scatter_G} suggests, using the Gauss-Seidel optimization may reduce both the time and iterations required to solve a model by 1-4 times in most cases.
 However, Figure \ref{fig:AlgoPerformance} shows when accumulating runtime, $\OVI$ is still slightly faster than $\OVIG$.
 The Gauss-Seidel optimization is slower in some cases because the values are computed state by state to enable using already computed results.
-The unoptimized version uses vector operations instead, which turn out to be faster sometimes.
-Furthermore, it is possible that there are more iterations required to solve. 
+The unoptimized version uses vector operations instead, which is faster sometimes.
+
+In a few instances, the Gauss-Seidel optimization requires more iterations than the unoptimized version. 
 This is because $\OVI$ and $\BVI$ may find different end components to deflate depending on whether Gauss-Seidel is used or not.
 In some cases, the unoptimized version is able to find more favorable sets of end components and requires thus less iterations.
 Changing the order of computation of the states for the Gauss-Seidel optimization by computing along a topological enumeration of the states did not
@@ -382,8 +383,10 @@ $\mathbf{D}$ for $\BVI$:
 \FloatBarrier
 Figure \ref{fig:Scatter_D} clearly indicates that although $\BVID$ may solve sometimes models faster, 
 for most of our models it could not compete with $\BVI$.
+\textcolor{purple}{If I have the time, I might go a bit deeper into this. Why is D better on the real case studies?
+When is it beneficial to deflate only every 100 steps? (no idea at the moment)}
 
-$\mathbf{T}$ for $\BVI, \OVI$ and $\LPSI$:
+$\mathbf{T}$ for $\BVI, \OVI$ and $\LPSI$: \label{subsubsec:topologicalOptim}
 \begin{figure}[h!]
     \centering
     \subfloat[\centering Time required to solve a model]{{\includegraphics[width=.48\textwidth]{figures/Scatter_T.jpg} }}%
@@ -394,24 +397,24 @@ $\mathbf{T}$ for $\BVI, \OVI$ and $\LPSI$:
     \end{figure}
 \FloatBarrier
 
-As \ref{fig:Scatter_T} indicates, the topological addition improves the runtime of $\OVI$ considerably. 
+As Figure \ref{fig:Scatter_T} displays, the topological addition improves the runtime of $\OVI$ considerably. 
 However, $\OVIT$ returns an incorrect value in around 10\% of all models.
 
 For $\LPSI$, the topological addition does neither in- nor decrease the performance of the algorithm considerably expect for case studies
-like dice or MulMEC that have long chains of SCCs and are advantageous for topological algorithms.
-Since $\LPSI$ and $\TLPSI$ are almost identical, we conclude that if in doubt use the topological variant since it may be beneficial.
+like dice or MulMEC that have long chains of SCCs and favor topological algorithms.
+Since $\TLPSI$ incurs very little overhead, we conclude that if in doubt use the topological variant.
 
 Lastly, the topological addition affects $\BVI$ usually negatively. As explained in \cite{gandalf}, 
-chains of subsequent SCCs are harder to compute for $\BVIT$ because the values of the already computed SCCs is not exact, 
+chains of subsequent SCCs are harder to compute for $\BVIT$ because the values of the already computed SCCs are not exact, 
 making it harder for the following SCCs to reach $\epsilon$-precision.
 
 $\TOPAlg$ for $\BVI$:
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=1\textwidth]{figures/colorScatter_BVI_TOP.jpg}
+    \includegraphics[width=0.5\textwidth]{figures/colorScatter_BVI_TOP.jpg}
     \caption[$\BVI$ compared to $\TOPAlg$]{
         A scatter plot of time required for both $\BVI$ and $\TOPAlg$ to solve a model for all models.
-        The darker the dot is, the bigger is the biggest SCC of the model.
+        The darker the dot is, the larger the biggest SCC relative to the number of states of the model.
     }
     \label{fig:colorScatterBviTop}
 \end{figure}
@@ -437,42 +440,64 @@ where almost all the models that had one large SCC were either not solved by $\T
 \textcolor{red}{It would also be interesting to see if more probabilistic loops affect $\LPSI$ as strong as VI}.
 
 Although value iteration was regarded for a long time to be the most performant algorithm type for solving stochastic games, 
-\cite{gandalf} that $\SI$ is a valid option, and that mathematical programming can be good sometimes.
+\cite{gandalf} showed that $\SI$ is a valid option, and that mathematical programming can be good sometimes.
 Thus, in addition to $\SI$ we consider $\SISI$ and $\LPSI$ which do not use value iteration at all to solve stochastic games.
 
 \subsubsection*{Strategy iteration with linear programming}
+\textcolor{purple}{Try to verify that $\LPSI$ may be bad. The best way to argue about this is that we get out-of-memory errors. This also is what Gandalf said about memory: LP takes more.}
 $\TLPSI$ yielded the best results alongside widest-path bounded value iteration.
 Since strategy iteration simply tries to make an informed decision on which strategy to pick and solves the underlying MDP, 
 we have to inspect the algorithms we use to solve MDPs - for $\TLPSI$ this is linear programming.
 
 Linear programming scales worse than value iteration for huge models.
-As Figure \textcolor{red}{REF BIG MODELS} indicates, $\TLPSI$ and $\LPSI$ were slower to solve the models than $\OVI$, $\BVI$ and $\WP$.
-This is partly due to the LP solver running out of memory, which happened 8/36. \textcolor{red}{Check that this number is correct.}
+As Figure \ref{fig:AlgoPerformanceBig} indicates, $\TLPSI$ and $\LPSI$ were slower to solve the models than $\OVI$, $\BVI$ and $\WP$.
+This is partly due to the LP solver running out of memory, which happened for models with SCC size of 10 million.
 
-\textcolor{purple}{To test this, we have 
-run several benchmarks on models with state size 10 million and varying SCC sizes. [Now enter Feature-Performance Scatter Plot] 
-The bigger the SCCs become, the slower $\TLPSI$ becomes. At a size of [...] per SCC, $\WP$ was faster than $\TLPSI$.}
+%\textcolor{purple}{To test this, we have 
+%run several benchmarks on models with state size 10 million and varying SCC sizes. [Now enter Feature-Performance Scatter Plot] 
+%The bigger the SCCs become, the slower $\TLPSI$ becomes. At a size of [...] per SCC, $\WP$ was faster than $\TLPSI$.}
 Thus, we do not recommend using $\TLPSI$ on models with numerous states.
-However, $\TLPSI$ may be a good complementary solution approach in case a model is especially hard for value iteration.
-Also, the topological improvement allows solving models with huge numbers of small SCCs faster than value iteration.
-\textcolor{purple}{And also value iteration was the focus of research for the last 20 years. 
-LP could likely be improved. At the moment, we do not even deflate but use MIP to encode the maximum-best-exit constraints. But this should maybe go into future work}
+However, $\TLPSI$ may be a good complementary solution approach in case a model is especially hard for value iteration based approaches.
+Also, the topological improvement allows solving models with huge numbers of small SCCs faster than value iteration \textcolor{purple}{show big confs that prove that},
+since it is the fastest topological algorithm variant that is precise as we point out in Subsection \ref{subsec:optimizations}.
+%\textcolor{purple}{And also value iteration was the focus of research for the last 20 years. 
+%LP could likely be improved. At the moment, we do not even defslate but use MIP to encode the maximum-best-exit constraints. But this should maybe go into future work}
 
 \subsubsection*{Strategy iteration with exact Markov chain solving}
-\textcolor{purple}{Just bad. Fails most of the time because either out of memory or timeout. 
-While $\TOPAlg$ needs to perform exact DTMC solving only once per SCC and $\TOPAlg$ is already not so great, $\SISI$ may change strategies and thus needs to perform exact DTMC solving multiple times.
-}
+$\SISI$ is the least performant algorithm we analyze in this thesis.
+It is not included in \ref{fig:AlgoPerformance} since it timed out on every model that had more than 5 unknown states.
+As for $\TOPAlg$, the worst bottleneck is the matrix inversion during the Markov chain solving.
+However, while $\TOPAlg$ has to solve one Markov chain per SCC to confirm that it found the correct strategy,
+$\SISI$ may need to repeat this step multiple times as it has no recommendation on which strategy to use and will in general not start out with the optimal strategy.
 
 \subsubsection*{Strategy iteration with value iteration}
-\textcolor{purple}{In general okay but worse than $\BVI$. Will usually struggle where value iteration struggles in general.}
+While we confirm the findings of \cite{gandalf} that for the real models $\SI$ is comparable with $\BVI$, 
+the accumulated runtime for the randomly generated models displayed in Figure \ref{fig:AlgoPerformance} (b) clearly shows that 
+the models generated we generate are highly unfavorable for $\SI$.
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/colorScatter_SI_VI.jpg}
+    \caption[$\SI$ compared to $\BVI$ based on MaxNumActions]{
+        A scatter plot of time required for both $\SI$ and $\BVI$ to solve a model for all models.
+        The more the color of a point goes towards yellow, the more actions the corresponding model has.
+    }
+    \label{fig:colorScatterSi}
+\end{figure}
+\FloatBarrier
+This is most likely due to the higher number of actions per state of our generated models compared to the case studies.
+As Figure \ref{fig:colorScatterSi} suggests, if every state has up to 3 actions, $\SI$ and $\BVI$ perform similar.
+However, as soon as there are states with more  actions, $\SI$ is performing worse.
+\textcolor{purple}{When using AvgNumActionsPerState for the coloring, the result was not as clear.}
 
+\iffalse
 \subsection{Big models}
 \textcolor{red}{Might also put in somewhere else. Basically too little data but also pretty though PRISM constraints.
 $\TLPSI$ ran sometimes out of stack (see memo comparation in GANDALF for QP or make own) suggesting that $\LPSI$ may not scale too well 
 for bigger models but it may be good if there are many SCCs with smaller SCCs.
 It seems that $\OVI$ does not scale too well. However, in the end it is very important to note that we are lacking the capacity to create
 big models.}
+\fi
 
 
 \iffalse

@@ -2532,6 +2532,13 @@ INPUT ./figures/RandomRandom_AlgoPerformance.png
 INPUT ./figures/RandomRandom_AlgoPerformance.png
 INPUT ./figures/RandomRandom_AlgoPerformance.png
 INPUT ./figures/RandomRandom_AlgoPerformance.png
+INPUT ./figures/Big_AlgoPerformance.png
+INPUT ./figures/Big_AlgoPerformance.png
+INPUT figures/Big_AlgoPerformance.png
+INPUT ./figures/Big_AlgoPerformance.png
+INPUT ./figures/Big_AlgoPerformance.png
+INPUT ./figures/Big_AlgoPerformance.png
+INPUT ./figures/Big_AlgoPerformance.png
 INPUT /home/sasha/.miktex/texmfs/install/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /home/sasha/.miktex/texmfs/install/fonts/tfm/public/mathpazo/fplmbb.tfm
 INPUT ./figures/WPvsBVIandOVIonAll.png
@@ -2619,6 +2626,13 @@ INPUT ./figures/colorScatter_BVI_TOP.jpg
 INPUT ./figures/colorScatter_BVI_TOP.jpg
 INPUT ./figures/colorScatter_BVI_TOP.jpg
 INPUT ./figures/colorScatter_BVI_TOP.jpg
+INPUT ./figures/colorScatter_SI_VI.jpg
+INPUT ./figures/colorScatter_SI_VI.jpg
+INPUT figures/colorScatter_SI_VI.jpg
+INPUT ./figures/colorScatter_SI_VI.jpg
+INPUT ./figures/colorScatter_SI_VI.jpg
+INPUT ./figures/colorScatter_SI_VI.jpg
+INPUT ./figures/colorScatter_SI_VI.jpg
 INPUT ./6_conclusion/conclusion.tex
 INPUT ./6_conclusion/conclusion.tex
 INPUT ./6_conclusion/conclusion.tex

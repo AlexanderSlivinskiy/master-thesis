@@ -2411,21 +2411,22 @@
     <bcf:citekey order="63">gandalf</bcf:citekey>
     <bcf:citekey order="64">gandalf</bcf:citekey>
     <bcf:citekey order="65">gandalf</bcf:citekey>
-    <bcf:citekey order="66">paperMaxi</bcf:citekey>
-    <bcf:citekey order="67">widestPath</bcf:citekey>
-    <bcf:citekey order="68">learningBased</bcf:citekey>
-    <bcf:citekey order="69">dice</bcf:citekey>
-    <bcf:citekey order="70">charlton</bcf:citekey>
-    <bcf:citekey order="71">PRISM-games</bcf:citekey>
-    <bcf:citekey order="72">cav20</bcf:citekey>
+    <bcf:citekey order="66">gandalf</bcf:citekey>
+    <bcf:citekey order="67">paperMaxi</bcf:citekey>
+    <bcf:citekey order="68">widestPath</bcf:citekey>
+    <bcf:citekey order="69">learningBased</bcf:citekey>
+    <bcf:citekey order="70">dice</bcf:citekey>
+    <bcf:citekey order="71">charlton</bcf:citekey>
+    <bcf:citekey order="72">PRISM-games</bcf:citekey>
     <bcf:citekey order="73">cav20</bcf:citekey>
-    <bcf:citekey order="74">dice</bcf:citekey>
-    <bcf:citekey order="75">charlton</bcf:citekey>
-    <bcf:citekey order="76">cav20</bcf:citekey>
-    <bcf:citekey order="77">LCK95</bcf:citekey>
-    <bcf:citekey order="77">CCGK16</bcf:citekey>
-    <bcf:citekey order="78">cav20</bcf:citekey>
-    <bcf:citekey order="79">CC15</bcf:citekey>
+    <bcf:citekey order="74">cav20</bcf:citekey>
+    <bcf:citekey order="75">dice</bcf:citekey>
+    <bcf:citekey order="76">charlton</bcf:citekey>
+    <bcf:citekey order="77">cav20</bcf:citekey>
+    <bcf:citekey order="78">LCK95</bcf:citekey>
+    <bcf:citekey order="78">CCGK16</bcf:citekey>
+    <bcf:citekey order="79">cav20</bcf:citekey>
+    <bcf:citekey order="80">CC15</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

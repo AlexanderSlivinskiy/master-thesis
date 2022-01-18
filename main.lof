@@ -31,6 +31,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Accumulated algorithm performance overview on all randomly generated models.}}}{36}{subfigure.4.2}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering Accumulated algorithm performance overview on large models.}}}{36}{subfigure.4.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.5}{\ignorespaces $\mathbf {WP}$ compared to $\mathbf {BVI}$ and $\mathbf {OVI}$ on every model of all datasets. See \ref {plot:performanceScatter} for a reference on how to read the plot.\relax }}{37}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Time required to solve a model}}}{37}{subfigure.5.1}%
@@ -64,6 +66,8 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Iterations required to solve a model}}}{42}{subfigure.10.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.11}{\ignorespaces $\mathbf {BVI}$ compared to $\mathbf {PT}$}}{43}{figure.caption.40}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.12}{\ignorespaces $\mathbf {SI_{VI}}$ compared to $\mathbf {BVI}$ based on MaxNumActions}}{45}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
