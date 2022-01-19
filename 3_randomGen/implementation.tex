@@ -72,6 +72,10 @@ Here is the exhaustive list of parameters:
     \item forceUnknown: A switch. If set to true, a new target and sink are introduced that effectively multiply the value of each state by 0.9.
     This ensures that no additional targets are created during precomputation. 
     We introduce the switch to ensure that the generated models is not solved mostly during precomputation.
+    \item maximizerProb
+    \item maximumBackwardsActions
+    \item minSCCSize
+    \item maxSCCSize
 \end{itemize}
 \textcolor{red}{With correct implementation, generating models is slow. Say that you have a 'fast' switch to make randomPicker less random but way faster.
 With fast <1ŝ for a 10k model. Without its 10s}

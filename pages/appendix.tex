@@ -1,7 +1,7 @@
-\chapter{Appendix: Additional benchmarks} \label{sec:appendix}
+\chapter{Appendix: Information about the models} \label{sec:appendix}
 \textcolor{red}{ADD THE OTHER MODELS ASWELL}
 We provide benchmarks similar to those in Section \ref{sec:benchmarks}. We compare \conQP{}, value iteration, and our improved quadratic program, but we use other models. Each of these models is a stopping game.
-\section*{Models}
+\section*{Real case studies}
 We use the models Dice \cite{dice} and Charlton\cite{charlton}, which are included in PRISM-games \cite{PRISM-games}. Furthermore, we use the models Hallway and Avoid the Observer, provided in \cite{cav20}. The descriptions of the models are also from \cite{cav20}.
 \begin{itemize}
 	\item[Dice \cite{dice}:] First player 1 throws a fair die repeatedly until accepting an outcome. Up to $N$
@@ -15,6 +15,50 @@ We use the models Dice \cite{dice} and Charlton\cite{charlton}, which are includ
 	The grid can have different sizes as in Hallway.
 	The most important objective of the intruder is to avoid the observer, its secondary objective is to exit the grid. We assume that the observer can only detect the intruder within a certain distance and otherwise makes random moves. At every position, the intruder moreover has the option to stay and search to find a precious item. In our example, this occurs with probability 0.1 and is assumed to be the third objective. We compute with the quadratic program only the maximal probability that the intruder exits the grid and that he finds a precious item on a 2$\times$2 grid, since the first property is not a reachability, but a safety game.
 \end{itemize}
+
+\section*{Random model generation parameters} \label{sec:GenParams}
+We have generated four sets of random models: Two for Algorithm \ref{alg:randomRandom} referred to as RandomA and RandomB with a distinct set of parameters, one with the RandomSCC guideline 
+and one with the RandomTree guideline. The difference between the two sets for Algorithm \ref{alg:randomRandom} is that in one every state has 10 actions,
+and in the other one we decided for a lower number of actions. The feature distributions of these sets are seen in Figures \ref{fig:Random_FeatureDistribution}, \ref{fig:RandomSCC_FeatureDistributions}, 
+\textcolor{red}{Need one for RandomRandom10Act and one for RandomTree}.
+\textcolor{red}{Make sure the numbers here match with \ref{ch:implementedAlgos}.}
+The parameters we have used to generate these models were the following:
+\begin{center}
+	\begin{tabular}{| c | c c c c |} 
+	 \hline
+	 Parameter & RandomA & RandomB & RandomSCC & RandomTree \\ [0.5ex] 
+	 \hline\hline
+	 size & 10000 & 10000 & 10000 & 10000 \\
+	 \hline
+	 numModels & 100 & 100 & 100 & 100 \\
+	 \hline
+	 guideline & - & - & RandomSCC & RandomTree \\
+	 \hline
+	 smallestProb & $10^{-2}$ & $10^{-3}$ & $10^{-3}$ & $10^{-3}$ \\
+	 \hline
+	 backwardsProb & 1 & 1 & 1 & 0.7 \\ [1ex] 
+	 \hline
+	 maxBranchNum & 10 & 10 & 10 & 10 \\ [1ex] 
+	 \hline
+	 forceUnknown & false & false & true & true \\ [1ex] 
+	 \hline
+	 branchingProb & 1 & 0.75 & 0.75 & 0.75 \\ [1ex] 
+	 \hline
+	 maximizerProb & 0.5 & 0.5 & 0.7 & 0.5 \\ [1ex] 
+	 \hline
+	 minIncomingActions & 2 & 10 & 10 & 2 \\ [1ex] 
+	 \hline
+	 maxIncomingActions & 4 & 12 & 12 & 4 \\ [1ex] 
+	 \hline
+	 maxBackwardsActions & 1 & 1 & 10 & 1 \\ [1ex] 
+	 \hline
+	 minSCCSize & - & - & 1000 & - \\ [1ex] 
+	 \hline
+	 maxSCCSize & - & - & 2000 & - \\ [1ex] 
+	 \hline
+	\end{tabular}
+\end{center}
+	
 
 %\section{More Formal Random Generation Algorithm}
 %

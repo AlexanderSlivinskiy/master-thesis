@@ -23,6 +23,20 @@ Together with the fact that $\BVI$ and $\WP$ can be stopped at any point and pro
 we conclude in general one should try $\BVI$ or $\WP$ when trying to solve a stochastic reachability game, 
 and should pivot to other methods if these approaches struggle to converge.
 
+\textcolor{purple}{
+    Based on current results, the story may be this:
+    \begin{enumerate}
+        \item Big Scc, Big Mec, weakly connected: $\WP$ (ideal)
+        \item Big Scc, Big Mec, strongly connected: $\WP$ (?)
+        \item Big Scc, Small Mec, weakly connected: $\WP$ (?)
+        \item Big Scc, Small Mec, strongly connected: $\OVI$ (ideal)
+        \item Small Scc, Big Mec: (IMPOSSIBLE since MEC is SCC)
+        \item Small Scc, Small Mec: ($\TLPSI$)
+        \item Hard VI-problem (like hm): ($\TLPSI$)
+        \item Where is $\BVI$ in this? 
+    \end{enumerate}
+}
+
 \section*{Future work}
 The model features we analyze at the moment helped us to draw some conclusions, but there are still many questions unanswered that would require
 additional structural concepts and features that we track.
