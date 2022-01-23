@@ -37,6 +37,9 @@ and should pivot to other methods if these approaches struggle to converge.
     \end{enumerate}
 }
 
+\textcolor{purple}{egarding the red stuff: I think you could even have a table with rows Big SCC/small SCC and columns Big MEC/small MEC with subcolumns strongly/weakly connected, and enter the things you say; also indicating how certain you are of things. Maybe even referring to sections of exp where claims of "ideal" are backed up. So a cell would be "WP (ideal, see Sec 7.x.x, FIgure 7.y and 7.z)" or "WP (general recommendation, see Overview Line Plot)"
+Then, you could say "Table shows what we currently believe". Point 7 can be separately stated, and your sentence above the red stuff can also stay in this or similar form, as it summarizes the table. But the table also sounds cool and is something Jan would love to have.}
+
 \section*{Future work}
 The model features we analyze at the moment helped us to draw some conclusions, but there are still many questions unanswered that would require
 additional structural concepts and features that we track.
@@ -56,9 +59,16 @@ we need to resolve the issue that our random generation process creates large ex
 The next step would be to create an optimization system to our random generation algorithm that would hold chunks of the data in 
 implicit blocks to make the files easier parsable.
 
+\textcolor{purple}{"Optimizatino system to our random generation" I was rather thinking of using more features of the PRISM language, e.g. taking advantage of modules. Can you add this suggestion in?}
+\textcolor{purple}{The trivial thing is interesting and actually mathematically challenging, so I suggest to leave it in.}
+
 Lastly, at the moment, our random generation algorithm enforces a tendency of states with smaller indices to have more actions than states with higher indices.
 Ideally, the user should be able to remove this restriction.
 This could be addressed by introducing mechanisms like for example that a state $\stateMac_i$ can only be connected to states $\stateMac_{j}$ with $j \in [i-50, i+50]$.
 Another way to improve the random generation algorithm is to find a method of reducing the models numbers of states that can be computed trivially.
 \textcolor{purple}{I may also leave this out since I have nothing to say about it. We would simply generate less junk and more of the state space
 would be used in a smart way instead of wasting it on trivially computed states we could have summarized into sinks and targets all along.} 
+
+\textcolor{purple}{Think about what the last sentence of your thesis should be. It should be something that leaves a good feeling in the belly of the reader. So not some detail of future work, but something more general.
+Direction of "In conclusion, we have taken the first step towards better analysis of algorithms on SGs with our random generation, and there are many promising directions for improving this."
+}

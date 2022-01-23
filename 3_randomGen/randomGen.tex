@@ -200,6 +200,7 @@ $\textbf{Show } \connectedSG \subset \randomRandomOutcome$:
 
 Pick an arbitrary but fixed stochastic game $\SG \in \connectedSG$.
 Next, we show that there is a run of our algorithm that will return a stochastic game $\SG' \in \randomRandomOutcome$ where $\SG'$ is an automorphism to $\SG$.
+I.e. there is a function $\phi$ which maps $\SG$ on $\SG'$ 
 
 \textcolor{purple}{It is most likely wrong calling everything automorph. But it is also wrong referring to it by 'the same' (for example initial states).
 But I also do not want to make the proof unnecessary complicated.}
@@ -213,7 +214,7 @@ For this, we need several statements to hold at once:
 \end{enumerate}
 
 We decide randomly on the number of states in line 1 of Algorithm \ref{alg:randomRandom} and partition $\states$ into $\maxStates$ and $\minStates$ at random
-in line 2 of Algorithm \ref{alg:randomRandom}. Thus, for every $\SG \in \connectedSG$ there exists $\SG' \in randomRandomOutcome$ that have the same number of states to which
+in line 2 of Algorithm \ref{alg:randomRandom}. Thus, for every $\SG \in \connectedSG$ there exists $\SG' \in \randomRandomOutcome$ that have the same number of states to which
 there is an enumeration such that they are partitioned equally in both stochastic games.
 Both games have automorph initial states since the automorph mapping of the state indices can be used to determine the initial state of $\SG'$ according to $\SG$.
 All targets of $\SG$ can be mapped to the singular target of $\SG'$, since they only have self-loops and behave identically to $\target$ of $\SG'$.
