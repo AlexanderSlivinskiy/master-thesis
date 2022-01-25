@@ -7,12 +7,12 @@ At the same time, we are able to adjust the parameters and guidelines in such a 
 The only limit we face at the moment is that explicit models can be parsed only slowly in PRISM. 
 To avoid this issue, we provide the option to prepend graphs at runtime.
 
-Furthermore, we explored were helpful to analyze the growing set of both models and algorithms to analyze.
+Furthermore, we explored were helpful to analyze the growing set of both models and algorithms to analyze. \textcolor{red}{Sentence is wrong}
 Establishing analysis tools allowed us to prototype algorithm ideas, assess fast whether it seems promising,
 and provide a better overview of the data we collect. 
 Additionally, our tools for model analysis improve with increasing data points.
 This is not the case for tables as visualization and analysis tool, 
-but they are nevertheless frequently the only utility used for visualization in analysis \cite{paperMaxi}\cite{widestPath}\cite{learningBased}.
+but they are nevertheless frequently the only utility used for visualization in analysis \cite{paperMaxi,widestPath,learningBased}.
 
 Lastly, we have compared algorithms for $\SG$ solving and have found that although $\TLPSI$ is not competitive to $\OVI$, $\BVI$ and $\WP$ for large models,
 it may be a good alternative for games that are adversarial to approached based on value iteration. 
@@ -48,7 +48,7 @@ These questions are for example when to use Gauss-Seidel optimization or when to
 In addition, there are still many data analysis techniques we did not implement yet like stochastic tests or artificial intelligence algorithms
 that can cluster features and find correlations between them. 
 
-We believe more research of the correlation between algorithm performance and structural properties gives way to a portfolio solver which could first
+We believe more research on the correlation between algorithm performance and structural properties gives way to a portfolio solver which could first
 analyze important structural features and then pick heuristically the most adapt algorithm to solve the problem.
 With enough models, the decision which algorithm to use may be made by a neural network.
 Also, combinations of algorithms like $\OVI$ and $\BVI$ could then be used effectively in a fitting scenario.

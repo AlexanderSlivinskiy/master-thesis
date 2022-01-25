@@ -1,18 +1,18 @@
-[0] Config.pm:311> INFO - This is Biber 2.16
-[0] Config.pm:314> INFO - Logfile is 'main.blg'
-[84] biber:340> INFO - === Do Jan 20, 2022, 21:34:23
-[100] Biber.pm:415> INFO - Reading 'main.bcf'
-[196] Biber.pm:952> INFO - Found 29 citekeys in bib section 0
-[215] Biber.pm:4340> INFO - Processing section 0
-[228] Biber.pm:4531> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[233] bibtex.pm:1689> INFO - LaTeX decoding ...
-[303] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
-[384] Utils.pm:395> WARN - legacy month field 'Sep' in entry 'gandalf' is not an integer - this will probably not sort properly.
-[596] Utils.pm:395> WARN - legacy year field '\noop{2020} accepted' in entry 'cav20' is not an integer - this will probably not sort properly.
-[706] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[706] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[706] Biber.pm:4168> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
-[706] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[758] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[798] bbl.pm:757> INFO - Output to main.bbl
-[798] Biber.pm:128> INFO - WARNINGS: 2
+[0] Config.pm:312> INFO - This is Biber 2.15
+[1] Config.pm:315> INFO - Logfile is 'main.blg'
+[72] biber:330> INFO - === Mo Jan 24, 2022, 20:03:28
+[83] Biber.pm:415> INFO - Reading 'main.bcf'
+[135] Biber.pm:952> INFO - Found 29 citekeys in bib section 0
+[145] Biber.pm:4334> INFO - Processing section 0
+[153] Biber.pm:4523> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[155] bibtex.pm:1682> INFO - LaTeX decoding ...
+[196] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
+[246] Utils.pm:395> WARN - month field 'Sep' in entry 'gandalf' is not an integer - this will probably not sort properly.
+[360] Utils.pm:395> WARN - year field '\noop{2020} accepted' in entry 'cav20' is not an integer - this will probably not sort properly.
+[412] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[412] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[412] Biber.pm:4162> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
+[412] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
+[440] bbl.pm:651> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[462] bbl.pm:754> INFO - Output to main.bbl
+[462] Biber.pm:128> INFO - WARNINGS: 2

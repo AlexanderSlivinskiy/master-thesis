@@ -1,41 +1,122 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.30)  20 JAN 2022 21:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.30)  24 JAN 2022 20:15
 entering extended mode
-**/home/sasha/Documents/Masterarbeit/MasterThesis/Current/Thesis/main.tex
-(/home/sasha/Documents/Masterarbeit/MasterThesis/Current/Thesis/main.tex
-LaTeX2e <2021-06-01> patch level 1
-L3 programming layer <2021-08-27> (/home/sasha/.miktex/texmfs/install/tex/latex/nag/nag.sty
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/sascha/master-thesis/main.tex
+(/home/sascha/master-thesis/main.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18> (/usr/share/texmf-dist/tex/latex/nag/nag.sty
 Package: nag 2011/11/25 0.7 warning about old commands (ulmi)
-\c@nag@c=\count182
-\c@nag@sins=\count183
+\c@nag@c=\count179
+\c@nag@sins=\count180
 Package nag Info: Loaded nag-l2tabu.cfg  on input line 552.
- (/home/sasha/.miktex/texmfs/install/tex/latex/nag/nag-l2tabu.cfg
+ (/usr/share/texmf-dist/tex/latex/nag/nag-l2tabu.cfg
 File: nag-l2tabu.cfg 2010/05/17 v2.11 l2tabu rules for nag.sty (ulmi)
 )
 Package nag Info: Loaded nag-orthodox.cfg  on input line 552.
- (/home/sasha/.miktex/texmfs/install/tex/latex/nag/nag-orthodox.cfg
+ (/usr/share/texmf-dist/tex/latex/nag/nag-orthodox.cfg
 File: nag-orthodox.cfg 2006/04/19 v1.8 strict rules for nag.sty (ulmi)
-)) (/home/sasha/.miktex/texmfs/install/tex/latex/koma-script/scrbook.cls
-Document Class: scrbook 2021/06/25 v3.34 KOMA-Script document class (book)
-(/home/sasha/.miktex/texmfs/install/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2021/06/25 v3.34 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
- (/home/sasha/.miktex/texmfs/install/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2021/06/25 v3.34 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
- (/home/sasha/.miktex/texmfs/install/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2021/06/25 v3.34 KOMA-Script package (file load hooks)
- (/home/sasha/.miktex/texmfs/install/tex/latex/koma-script/scrlfile-hook.sty
-Package: scrlfile-hook 2021/06/25 v3.34 KOMA-Script package (using LaTeX hooks)
- (/home/sasha/.miktex/texmfs/install/tex/latex/koma-script/scrlogo.sty
-Package: scrlogo 2021/06/25 v3.34 KOMA-Script package (logo)
-))) (/home/sasha/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
+)) (/usr/share/texmf-dist/tex/latex/koma-script/scrbook.cls
+Document Class: scrbook 2021/03/17 v3.33 KOMA-Script document class (book)
+(/usr/share/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2021/03/17 v3.33 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+ (/usr/share/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2021/03/17 v3.33 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (/usr/share/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2021/03/17 v3.33 KOMA-Script package (file load hooks)
+ (/usr/share/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2021/03/17 v3.33 KOMA-Script package (using LaTeX hooks)
+
+LaTeX3 Info: Defining command \BeforeFile with sig. 'm' on line 61.
+
+
+LaTeX3 Info: Defining command \AfterFile with sig. 'm' on line 65.
+
+
+LaTeX3 Info: Defining command \BeforeClass with sig. 'm' on line 69.
+
+
+LaTeX3 Info: Defining command \BeforePackage with sig. 'm' on line 73.
+
+
+LaTeX3 Info: Defining command \AfterAtEndOfClass with sig. 'smo+m' on line 83.
+
+
+LaTeX3 Info: Defining command \AfterAtEndOfPackage with sig. 'smo+m' on line
+(LaTeX3)     93.
+
+
+LaTeX3 Info: Defining command \scrlfile@AfterClass with sig. 'smo+m' on line
+(LaTeX3)     173.
+
+
+LaTeX3 Info: Defining command \AfterClass with sig. '' on line 174.
+
+
+LaTeX3 Info: Defining command \scrlfile@AfterPackage with sig. 'smo+m' on line
+(LaTeX3)     191.
+
+
+LaTeX3 Info: Defining command \AfterPackage with sig. '' on line 192.
+
+
+LaTeX3 Info: Defining command \ReplaceInput with sig. '' on line 193.
+
+
+LaTeX3 Info: Defining command \ReplaceClass with sig. 'mm' on line 196.
+
+
+LaTeX3 Info: Defining command \ReplacePackage with sig. 'mm' on line 199.
+
+
+LaTeX3 Info: Defining command \UnReplaceInput with sig. '' on line 200.
+
+
+LaTeX3 Info: Defining command \UnReplaceClass with sig. 'm' on line 203.
+
+
+LaTeX3 Info: Defining command \UnReplacePackage with sig. 'mm' on line 206.
+
+
+LaTeX3 Info: Defining command \PreventPackageFromLoading with sig. 's+om' on
+(LaTeX3)     line 234.
+
+
+LaTeX3 Info: Defining command \StorePreventPackageFromLoading with sig. 'm' on
+(LaTeX3)     line 242.
+
+
+LaTeX3 Info: Defining command \ResetPreventPackageFromLoading with sig. '' on
+(LaTeX3)     line 247.
+
+
+LaTeX3 Info: Defining command \UnPreventPackageFromLoading with sig. 'sm' on
+(LaTeX3)     line 261.
+
+
+LaTeX3 Info: Defining command \BeforeClosingMainAux with sig. 'om' on line
+(LaTeX3)     274.
+
+
+LaTeX3 Info: Defining command \AfterReadingMainAux with sig. 'om' on line 287.
+
+
+LaTeX3 Info: Defining command \protected@immediate@write with sig. 'm+m+m' on
+(LaTeX3)     line 298.
+
+ (/usr/share/texmf-dist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2021/03/17 v3.33 KOMA-Script package (logo)
+))) (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
+\KV@toks@=\toks15
 )
-Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
-Already applied: [0000/00/00] Usage of raw or classic option list on input line 368.
-)) (/home/sasha/.miktex/texmfs/install/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2021/06/25 v3.34 KOMA-Script package (handling toc-files)
+Skipping: [2021/05/01] Usage of raw option list on input line 252.
+Applying: [0000/00/00] compatibility for LaTeX before 2021/05/01 on input line 337.
+)) (/usr/share/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2021/03/17 v3.33 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip47
-\scr@dte@tocline@numbox=\box50
+\scr@dte@tocline@numbox=\box47
 )
 Package tocbasic Info: babel extension for `toc' omitted
 (tocbasic)             because of missing \bbl@set@language on input line 137.
@@ -45,13 +126,13 @@ Class scrbook Info: You've used standard option `oneside'.
 (scrbook)           If you'd like to set the option with \KOMAoptions,
 (scrbook)           you'd have to use `twoside=false' there
 (scrbook)           instead of `oneside', too.
-Class scrbook Info: File `scrsize11pt.clo' used to setup font sizes on input line 2489.
- (/home/sasha/.miktex/texmfs/install/tex/latex/koma-script/scrsize11pt.clo
-File: scrsize11pt.clo 2021/06/25 v3.34 KOMA-Script font size class option (11pt)
-) (/home/sasha/.miktex/texmfs/install/tex/latex/koma-script/typearea.sty
-Package: typearea 2021/06/25 v3.34 KOMA-Script package (type area)
+Class scrbook Info: File `scrsize11pt.clo' used to setup font sizes on input line 2454.
+ (/usr/share/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+File: scrsize11pt.clo 2021/03/17 v3.33 KOMA-Script font size class option (11pt)
+) (/usr/share/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2021/03/17 v3.33 KOMA-Script package (type area)
 \ta@bcor=\skip48
-\ta@div=\count184
+\ta@div=\count181
 Package typearea Info: You've used standard option `oneside'.
 (typearea)             This is correct!
 (typearea)             Internally I'm using `twoside=false'.
@@ -78,210 +159,208 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1742.
+(typearea)              on input line 1741.
 )
-\c@part=\count185
-\c@chapter=\count186
-\c@section=\count187
-\c@subsection=\count188
-\c@subsubsection=\count189
-\c@paragraph=\count190
-\c@subparagraph=\count191
+\c@part=\count182
+\c@chapter=\count183
+\c@section=\count184
+\c@subsection=\count185
+\c@subsubsection=\count186
+\c@paragraph=\count187
+\c@subparagraph=\count188
 \scr@dte@chapter@maxnumwidth=\skip53
 Class scrbook Info: using compatibility default `afterindent=bysign'
-(scrbook)           for `\chapter on input line 5714.
+(scrbook)           for `\chapter on input line 5676.
 \scr@dte@section@maxnumwidth=\skip54
 Class scrbook Info: using compatibility default `runin=bysign'
-(scrbook)           for `\section on input line 5725.
+(scrbook)           for `\section on input line 5687.
 Class scrbook Info: using compatibility default `afterindent=bysign'
-(scrbook)           for `\section on input line 5725.
+(scrbook)           for `\section on input line 5687.
 \scr@dte@part@maxnumwidth=\skip55
 Class scrbook Info: using compatibility default `afterindent=true'
-(scrbook)           for `\part on input line 5734.
+(scrbook)           for `\part on input line 5696.
 \scr@dte@subsection@maxnumwidth=\skip56
 Class scrbook Info: using compatibility default `runin=bysign'
-(scrbook)           for `\subsection on input line 5744.
+(scrbook)           for `\subsection on input line 5706.
 Class scrbook Info: using compatibility default `afterindent=bysign'
-(scrbook)           for `\subsection on input line 5744.
+(scrbook)           for `\subsection on input line 5706.
 \scr@dte@subsubsection@maxnumwidth=\skip57
 Class scrbook Info: using compatibility default `runin=bysign'
-(scrbook)           for `\subsubsection on input line 5754.
+(scrbook)           for `\subsubsection on input line 5716.
 Class scrbook Info: using compatibility default `afterindent=bysign'
-(scrbook)           for `\subsubsection on input line 5754.
+(scrbook)           for `\subsubsection on input line 5716.
 \scr@dte@paragraph@maxnumwidth=\skip58
 Class scrbook Info: using compatibility default `runin=bysign'
-(scrbook)           for `\paragraph on input line 5765.
+(scrbook)           for `\paragraph on input line 5727.
 Class scrbook Info: using compatibility default `afterindent=bysign'
-(scrbook)           for `\paragraph on input line 5765.
+(scrbook)           for `\paragraph on input line 5727.
 \scr@dte@subparagraph@maxnumwidth=\skip59
 Class scrbook Info: using compatibility default `runin=bysign'
-(scrbook)           for `\subparagraph on input line 5775.
+(scrbook)           for `\subparagraph on input line 5737.
 Class scrbook Info: using compatibility default `afterindent=bysign'
-(scrbook)           for `\subparagraph on input line 5775.
+(scrbook)           for `\subparagraph on input line 5737.
 \abovecaptionskip=\skip60
 \belowcaptionskip=\skip61
-\c@pti@nb@sid@b@x=\box51
+\c@pti@nb@sid@b@x=\box48
 Package tocbasic Info: babel extension for `lof' omitted
-(tocbasic)             because of missing \bbl@set@language on input line 6961.
+(tocbasic)             because of missing \bbl@set@language on input line 6980.
 \scr@dte@figure@maxnumwidth=\skip62
-\c@figure=\count192
+\c@figure=\count189
 Package tocbasic Info: babel extension for `lot' omitted
-(tocbasic)             because of missing \bbl@set@language on input line 6982.
+(tocbasic)             because of missing \bbl@set@language on input line 7001.
 \scr@dte@table@maxnumwidth=\skip63
-\c@table=\count193
-Class scrbook Info: Redefining `\numberline' on input line 7155.
+\c@table=\count190
+Class scrbook Info: Redefining `\numberline' on input line 7174.
 \bibindent=\dimen138
-) (settings.tex (/home/sasha/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2021/04/20 v2.17j AMS math features
+) (/home/sascha/master-thesis/settings.tex (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip64
 
 For additional information on amsmath, use the `?' option.
-(/home/sasha/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- (/home/sasha/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
+ (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
+\@emptytoks=\toks16
 \ex@=\dimen139
-)) (/home/sasha/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
+)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen140
-) (/home/sasha/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count194
+\inf@bad=\count191
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count195
-\leftroot@=\count196
+\uproot@=\count192
+\leftroot@=\count193
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count197
-\DOTSCASE@=\count198
+\classnum@=\count194
+\DOTSCASE@=\count195
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box52
-\strutbox@=\box53
+\Mathstrutbox@=\box49
+\strutbox@=\box50
 \big@size=\dimen141
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count199
-\c@MaxMatrixCols=\count266
+\macc@depth=\count196
+\c@MaxMatrixCols=\count197
 \dotsspace@=\muskip16
-\c@parentequation=\count267
-\dspbrk@lvl=\count268
-\tag@help=\toks18
-\row@=\count269
-\column@=\count270
-\maxfields@=\count271
-\andhelp@=\toks19
+\c@parentequation=\count198
+\dspbrk@lvl=\count199
+\tag@help=\toks17
+\row@=\count266
+\column@=\count267
+\maxfields@=\count268
+\andhelp@=\toks18
 \eqnshift@=\dimen142
 \alignsep@=\dimen143
 \tagshift@=\dimen144
 \tagwidth@=\dimen145
 \totwidth@=\dimen146
 \lineht@=\dimen147
-\@envbody=\toks20
+\@envbody=\toks19
 \multlinegap=\skip65
 \multlinetaggap=\skip66
-\mathdisplay@stack=\toks21
+\mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
-) (/home/sasha/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
+) (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/home/sasha/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+ (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/home/sasha/.miktex/texmfs/install/tex/latex/amscls/amsthm.sty
+)) (/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks22
-\thm@bodyfont=\toks23
-\thm@headfont=\toks24
-\thm@notefont=\toks25
-\thm@headpunct=\toks26
+\thm@style=\toks21
+\thm@bodyfont=\toks22
+\thm@headfont=\toks23
+\thm@notefont=\toks24
+\thm@headpunct=\toks25
 \thm@preskip=\skip67
 \thm@postskip=\skip68
 \thm@headsep=\skip69
-\dth@everypar=\toks27
-) (/home/sasha/.miktex/texmfs/install/tex/latex/xpatch/xpatch.sty (/home/sasha/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
-Package: expl3 2021-08-27 L3 programming layer (loader) 
- (/home/sasha/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count272
-\l__pdf_internal_box=\box54
+\dth@everypar=\toks26
+) (/usr/share/texmf-dist/tex/latex/xpatch/xpatch.sty (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+ (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count269
+\l__pdf_internal_box=\box51
 ))
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
- (/home/sasha/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2021-08-27 L3 Experimental document command parser
-) (/home/sasha/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+ (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-01.sty (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))) (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count273
+\etb@tempcnta=\count270
 ))
 Class scrbook Info: amsthm's \deferred@thm@head patched.
- (/home/sasha/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
-Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
- (/home/sasha/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
-Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
- (/home/sasha/.miktex/texmfs/install/tex/latex/graphics/trig.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/home/sasha/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
- (/home/sasha/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen148
 \Gin@req@width=\dimen149
-) (/home/sasha/.miktex/texmfs/install/tex/latex/wrapfig/wrapfig.sty
+) (/usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen150
 \WF@size=\dimen151
-\c@WF@wrappedlines=\count274
-\WF@box=\box55
-\WF@everypar=\toks28
+\c@WF@wrappedlines=\count271
+\WF@box=\box52
+\WF@everypar=\toks27
 Package: wrapfig 2003/01/31  v 3.6
-) (/home/sasha/.miktex/texmfs/install/tex/latex/paralist/paralist.sty
+) (/usr/share/texmf-dist/tex/latex/paralist/paralist.sty
 Package: paralist 2017/01/22 v2.7 Extended list environments
 \pltopsep=\skip70
 \plpartopsep=\skip71
 \plitemsep=\skip72
 \plparsep=\skip73
-\pl@lab=\toks29
-) (/home/sasha/.miktex/texmfs/install/tex/latex/algorithmicx/algorithmicx.sty
+\pl@lab=\toks28
+) (/usr/share/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
- (/home/sasha/.miktex/texmfs/install/tex/latex/base/ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+ (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count275
-\c@ALG@rem=\count276
-\c@ALG@nested=\count277
+\c@ALG@line=\count272
+\c@ALG@rem=\count273
+\c@ALG@nested=\count274
 \ALG@tlm=\skip74
 \ALG@thistlm=\skip75
-\c@ALG@Lnr=\count278
-\c@ALG@blocknr=\count279
-\c@ALG@storecount=\count280
-\c@ALG@tmpcounter=\count281
+\c@ALG@Lnr=\count275
+\c@ALG@blocknr=\count276
+\c@ALG@storecount=\count277
+\c@ALG@tmpcounter=\count278
 \ALG@tmplength=\skip76
-) (/home/sasha/.miktex/texmfs/install/tex/latex/algorithms/algorithm.sty
+) (/usr/share/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
- (/home/sasha/.miktex/texmfs/install/tex/latex/float/float.sty
+ (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count282
-\float@exts=\toks30
-\float@box=\box56
-\@float@everytoks=\toks31
-\@floatcapt=\box57
+\c@float@type=\count279
+\float@exts=\toks29
+\float@box=\box53
+\@float@everytoks=\toks30
+\@floatcapt=\box54
 )
-\@float@every@algorithm=\toks32
-\c@algorithm=\count283
-) (/home/sasha/.miktex/texmfs/install/tex/latex/algorithmicx/algpseudocode.sty
+\@float@every@algorithm=\toks31
+\c@algorithm=\count280
+) (/usr/share/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
 
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (/home/sasha/.miktex/texmfs/install/tex/latex/booktabs/booktabs.sty
+) (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen152
 \lightrulewidth=\dimen153
@@ -293,14 +372,14 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen159
 \cmidrulekern=\dimen160
 \defaultaddspace=\dimen161
-\@cmidla=\count284
-\@cmidlb=\count285
+\@cmidla=\count281
+\@cmidlb=\count282
 \@aboverulesep=\dimen162
 \@belowrulesep=\dimen163
-\@thisruleclass=\count286
-\@lastruleclass=\count287
+\@thisruleclass=\count283
+\@lastruleclass=\count284
 \@thisrulewidth=\dimen164
-) (/home/sasha/.miktex/texmfs/install/tex/latex/lkproof/proof.sty
+) (/usr/share/texmf-dist/tex/latex/lkproof/proof.sty
 \inferLineSkip=\dimen165
 \inferLabelSkip=\dimen166
 \@LeftOffset=\dimen167
@@ -320,27 +399,27 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \HLabelAdjust=\dimen181
 \VLabelAdjust=\dimen182
 \WidthAdjust=\dimen183
-\@UpperPart=\box58
-\@LowerPart=\box59
-\@LabelPart=\box60
-\ResultBox=\box61
-) (/home/sasha/.miktex/texmfs/install/tex/latex/pgf/frontendlayer/tikz.sty (/home/sasha/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgf.sty (/home/sasha/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks33
+\@UpperPart=\box55
+\@LowerPart=\box56
+\@LabelPart=\box57
+\ResultBox=\box58
+) (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks32
 \pgfutil@tempdima=\dimen184
 \pgfutil@tempdimb=\dimen185
- (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box62
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.tex (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box59
+) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
 ))
-Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
- (/home/sasha/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgfcore.sty (/home/sasha/.miktex/texmfs/install/tex/latex/pgf/systemlayer/pgfsys.sty (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
- (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks34
-\pgfkeys@temptoks=\toks35
- (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks36
+Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
+ (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks35
 ))
 \pgf@x=\dimen186
 \pgf@y=\dimen187
@@ -354,50 +433,50 @@ Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@yd=\dimen195
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count288
-\c@pgf@countb=\count289
-\c@pgf@countc=\count290
-\c@pgf@countd=\count291
-\t@pgf@toka=\toks37
-\t@pgf@tokb=\toks38
-\t@pgf@tokc=\toks39
-\pgf@sys@id@count=\count292
- (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+\c@pgf@counta=\count285
+\c@pgf@countb=\count286
+\c@pgf@countc=\count287
+\c@pgf@countd=\count288
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
+\pgf@sys@id@count=\count289
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
- (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
-))) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count293
-\pgfsyssoftpath@bigbuffer@items=\count294
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)) (/home/sasha/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
+))) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfsyssoftpath@smallbuffer@items=\count290
+\pgfsyssoftpath@bigbuffer@items=\count291
+) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)) (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
- (/home/sasha/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
+ (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
- (/home/sasha/.miktex/texmfs/install/tex/latex/colortbl/colortbl.sty
+ (/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
- (/home/sasha/.miktex/texmfs/install/tex/latex/tools/array.sty
-Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
+ (/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
 \col@sep=\dimen196
-\ar@mcellbox=\box63
+\ar@mcellbox=\box60
 \extrarowheight=\dimen197
-\NC@list=\toks40
+\NC@list=\toks39
 \extratabsurround=\skip77
 \backup@length=\skip78
-\ar@cellbox=\box64
+\ar@cellbox=\box61
 )
-\everycr=\toks41
+\everycr=\toks40
 \minrowclearance=\skip79
 )
-\rownum=\count295
+\rownum=\count292
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -407,23 +486,23 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
- (/home/sasha/.miktex/texmfs/install/tex/latex/graphics/dvipsnam.def
+ (/usr/share/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-) (/home/sasha/.miktex/texmfs/install/tex/latex/xcolor/svgnam.def
+) (/usr/share/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
-)) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
- (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathcalc.code.tex (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathutil.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathparser.code.tex
+)) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen198
-\pgfmath@count=\count296
-\pgfmath@box=\box65
-\pgfmath@toks=\toks42
-\pgfmath@stack@operand=\toks43
-\pgfmath@stack@operation=\toks44
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.code.tex (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count297
-)) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/math/pgfint.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmath@count=\count293
+\pgfmath@box=\box62
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
+) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count294
+)) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@picminx=\dimen199
 \pgf@picmaxx=\dimen256
 \pgf@picminy=\dimen257
@@ -438,78 +517,78 @@ File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@yy=\dimen266
 \pgf@zx=\dimen267
 \pgf@zy=\dimen268
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@path@lastx=\dimen269
 \pgf@path@lasty=\dimen270
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@shorten@end@additional=\dimen271
 \pgf@shorten@start@additional=\dimen272
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfpic=\box66
-\pgf@hbox=\box67
-\pgf@layerbox@main=\box68
-\pgf@picture@serial@count=\count298
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfpic=\box63
+\pgf@hbox=\box64
+\pgf@layerbox@main=\box65
+\pgf@picture@serial@count=\count295
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgflinewidth=\dimen273
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@pt@x=\dimen274
 \pgf@pt@y=\dimen275
 \pgf@pt@temp=\dimen276
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgfarrowsep=\dimen277
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@max=\dimen278
-\pgf@sys@shading@range@num=\count299
-\pgf@shadingcount=\count300
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
- (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfexternal@startupbox=\box69
-)) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box70
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/home/sasha/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@sys@shading@range@num=\count296
+\pgf@shadingcount=\count297
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfexternal@startupbox=\box66
+)) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfnodeparttextbox=\box67
+) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@nodesepstart=\dimen279
 \pgf@nodesepend=\dimen280
-) (/home/sasha/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
-)) (/home/sasha/.miktex/texmfs/install/tex/latex/pgf/utilities/pgffor.sty (/home/sasha/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfkeys.sty (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/home/sasha/.miktex/texmfs/install/tex/latex/pgf/math/pgfmath.sty (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex)) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
- (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex)
+) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
+)) (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen281
 \pgffor@skip=\dimen282
-\pgffor@stack=\toks45
-\pgffor@toks=\toks46
-)) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
- (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count301
+\pgffor@stack=\toks44
+\pgffor@toks=\toks45
+)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@plot@mark@count=\count298
 \pgfplotmarksize=\dimen283
 )
 \tikz@lastx=\dimen284
@@ -520,44 +599,47 @@ File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikz@lastmovetoy=\dimen289
 \tikzleveldistance=\dimen290
 \tikzsiblingdistance=\dimen291
-\tikz@figbox=\box71
-\tikz@figbox@bg=\box72
-\tikz@tempbox=\box73
-\tikz@tempbox@bg=\box74
-\tikztreelevel=\count302
-\tikznumberofchildren=\count303
-\tikznumberofcurrentchild=\count304
-\tikz@fig@count=\count305
- (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count306
-\pgfmatrixcurrentcolumn=\count307
-\pgf@matrix@numberofcolumns=\count308
+\tikz@figbox=\box68
+\tikz@figbox@bg=\box69
+\tikz@tempbox=\box70
+\tikz@tempbox@bg=\box71
+\tikztreelevel=\count299
+\tikznumberofchildren=\count300
+\tikznumberofcurrentchild=\count301
+\tikz@fig@count=\count302
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfmatrixcurrentrow=\count303
+\pgfmatrixcurrentcolumn=\count304
+\pgf@matrix@numberofcolumns=\count305
 )
-\tikz@expandcount=\count309
- (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))) (/home/sasha/.miktex/texmfs/install/tex/latex/stmaryrd/stmaryrd.sty
+\tikz@expandcount=\count306
+ (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))) (/usr/share/texmf-dist/tex/latex/stmaryrd/stmaryrd.sty
 Package: stmaryrd 1994/03/03 St Mary's Road symbol package
 \symstmry=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
 (Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
-) (/home/sasha/.miktex/texmfs/install/tex/latex/wasysym/wasysym.sty
+) (/usr/share/texmf-dist/tex/latex/wasysym/wasysym.sty
 Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
 \symwasy=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
 LaTeX Font Info:    Redeclaring math symbol \ocircle on input line 243.
-) (/home/sasha/.miktex/texmfs/install/tex/latex/ellipsis/ellipsis.sty
+) (/usr/share/texmf-dist/tex/latex/ellipsis/ellipsis.sty
 Package: ellipsis 2020/05/22 v1.8 fixes spacing around ellipses (three dots)
- (/home/sasha/.miktex/texmfs/install/tex/latex/tools/xspace.sty
+ (/usr/share/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 LaTeX Info: Redefining \textellipsis on input line 77.
-) (/home/sasha/.miktex/texmfs/install/tex/latex/mparhack/mparhack.sty
-Package: mparhack 2021-05-02 v1.5 (T. Sgouros and S. Ulrich)
-) (/home/sasha/.miktex/texmfs/install/tex/latex/ragged2e/ragged2e.sty
+) (/usr/share/texmf-dist/tex/latex/mparhack/mparhack.sty
+Package: mparhack 2005/04/17 v1.4 (T. Sgouros and S. Ulrich)
+) (/usr/share/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 Package: ragged2e 2021/02/05 v3.0 ragged2e Package
+ (/usr/share/texmf-dist/tex/latex/everysel/everysel.sty
+Package: everysel 2021/01/20 v2.1 EverySelectfont Package (MS)
+ (/usr/share/texmf-dist/tex/latex/everysel/everysel-2011-10-28.sty))
 \CenteringLeftskip=\skip80
 \RaggedLeftLeftskip=\skip81
 \RaggedRightLeftskip=\skip82
@@ -572,21 +654,21 @@ Package: ragged2e 2021/02/05 v3.0 ragged2e Package
 \RaggedLeftParindent=\skip91
 \RaggedRightParindent=\skip92
 \JustifyingParindent=\skip93
-) (/home/sasha/.miktex/texmfs/install/tex/latex/tabu/tabu.sty
+) (/usr/share/texmf-dist/tex/latex/tabu/tabu.sty
 Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
- (/home/sasha/.miktex/texmfs/install/tex/latex/varwidth/varwidth.sty
+ (/usr/share/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box75
-\sift@deathcycles=\count310
+\@vwid@box=\box72
+\sift@deathcycles=\count307
 \@vwid@loff=\dimen292
 \@vwid@roff=\dimen293
 )
-\c@taburow=\count311
-\tabu@nbcols=\count312
-\tabu@cnt=\count313
-\tabu@Xcol=\count314
-\tabu@alloc=\count315
-\tabu@nested=\count316
+\c@taburow=\count308
+\tabu@nbcols=\count309
+\tabu@cnt=\count310
+\tabu@Xcol=\count311
+\tabu@alloc=\count312
+\tabu@nested=\count313
 \tabu@target=\dimen294
 \tabu@spreadtarget=\dimen295
 \tabu@naturalX=\dimen296
@@ -596,41 +678,41 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \abovetabulinesep=\dimen300
 \belowtabulinesep=\dimen301
 \tabustrutrule=\dimen302
-\tabu@thebody=\toks47
-\tabu@footnotes=\toks48
-\tabu@box=\box76
-\tabu@arstrutbox=\box77
-\tabu@hleads=\box78
-\tabu@vleads=\box79
+\tabu@thebody=\toks46
+\tabu@footnotes=\toks47
+\tabu@box=\box73
+\tabu@arstrutbox=\box74
+\tabu@hleads=\box75
+\tabu@vleads=\box76
 \tabu@cellskip=\skip94
-) (/home/sasha/.miktex/texmfs/install/tex/latex/multirow/multirow.sty
+) (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip95
-\multirow@cntb=\count317
+\multirow@cntb=\count314
 \multirow@dima=\skip96
 \bigstrutjot=\dimen303
-) (/home/sasha/.miktex/texmfs/install/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2021/04/12 v1.27 mathematical typesetting tools
- (/home/sasha/.miktex/texmfs/install/tex/latex/tools/calc.sty
+) (/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2021/03/18 v1.25 mathematical typesetting tools
+ (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count318
-\calc@Bcount=\count319
+\calc@Acount=\count315
+\calc@Bcount=\count316
 \calc@Adimen=\dimen304
 \calc@Bdimen=\dimen305
 \calc@Askip=\skip97
 \calc@Bskip=\skip98
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count320
+\calc@Ccount=\count317
 \calc@Cskip=\skip99
-) (/home/sasha/.miktex/texmfs/install/tex/latex/mathtools/mhsetup.sty
+) (/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
 LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count321
+\g_MT_multlinerow_int=\count318
 \l_MT_multwidth_dim=\dimen306
 \origjot=\skip100
 \l_MT_shortvdotswithinadjustabove_dim=\dimen307
@@ -639,49 +721,41 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \l_MT_below_intertext_sep=\dimen310
 \l_MT_above_shortintertext_sep=\dimen311
 \l_MT_below_shortintertext_sep=\dimen312
-\xmathstrut@box=\box80
+\xmathstrut@box=\box77
 \xmathstrut@dim=\dimen313
-) (/home/sasha/.miktex/texmfs/install/tex/latex/environ/environ.sty
+) (/usr/share/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
- (/home/sasha/.miktex/texmfs/install/tex/latex/trimspaces/trimspaces.sty
+ (/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-)) (/home/sasha/.miktex/texmfs/install/tex/generic/babel/babel.sty
-Package: babel 2021/07/22 3.63 The Babel package
- (/home/sasha/.miktex/texmfs/install/tex/generic/babel/babel.def
-File: babel.def 2021/07/22 3.63 Babel common definitions
-\babel@savecnt=\count322
+)) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2021/03/24 3.56 The Babel package
+ (/usr/share/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2021/03/24 3.56 Babel common definitions
+\babel@savecnt=\count319
 \U@D=\dimen314
-\l@unhyphenated=\language1
- (/home/sasha/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
+\l@babelnohyphens=\language87
+ (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
 )
-\bbl@dirlevel=\count323
-
-*************************************
-* Local config file bblopts.cfg used
-*
-(/home/sasha/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (/home/sasha/.miktex/texmfs/install/tex/latex/babel-german/ngerman.ldf
+\bbl@dirlevel=\count320
+ (/usr/share/texmf-dist/tex/generic/babel-german/ngerman.ldf
 Language: ngerman 2021/02/27 v2.13 German support for babel (post-1996 orthography)
- (/home/sasha/.miktex/texmfs/install/tex/latex/babel-german/ngermanb.ldf
+ (/usr/share/texmf-dist/tex/generic/babel-german/ngermanb.ldf
 Language: ngermanb 2021/02/27 v2.13 German support for babel (post-1996 orthography)
-
-
-Package babel Warning: No hyphenation patterns were preloaded for
-(babel)                the language 'German (new orthography)' into the format.
-(babel)                Please, configure your TeX system to add them and
-(babel)                rebuild the format. Now I will use the patterns
-(babel)                preloaded for \language=0 instead on input line 48.
-
 Package babel Info: Making " an active character on input line 122.
-)) (/home/sasha/.miktex/texmfs/install/tex/latex/babel-english/american.ldf
+)) (/usr/share/texmf-dist/tex/generic/babel-english/american.ldf
 Language: american 2017/06/06 v3.3r English support from the babel system
- (/home/sasha/.miktex/texmfs/install/tex/latex/babel-english/english.ldf
+ (/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
-))) (/home/sasha/.miktex/texmfs/install/tex/latex/caption/caption.sty
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language21) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language21) on input line 108.
+))) (/usr/share/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
- (/home/sasha/.miktex/texmfs/install/tex/latex/caption/caption3.sty
+ (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \captionmargin=\dimen315
 \captionmargin@=\dimen316
@@ -691,170 +765,170 @@ Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \caption@parindent=\dimen320
 \caption@hangindent=\dimen321
 Package caption Info: KOMA-Script document class detected.
- (/home/sasha/.miktex/texmfs/install/tex/latex/caption/caption-koma.sto
+ (/usr/share/texmf-dist/tex/latex/caption/caption-koma.sto
 File: caption-koma.sto 2020/09/21 v2.0b Adaption of the caption package to the KOMA-Script document classes (AR)
 ))
-\c@caption@flags=\count324
-\c@continuedfloat=\count325
+\c@caption@flags=\count321
+\c@continuedfloat=\count322
 Package caption Info: float package is loaded.
 Package caption Info: wrapfig package is loaded.
-) (/home/sasha/.miktex/texmfs/install/tex/latex/marginfix/marginfix.sty
+) (/usr/share/texmf-dist/tex/latex/marginfix/marginfix.sty
 Package: marginfix 2020/05/06 v1.2 Fix Margin Paragraphs
 \Mfx@inject@insert=\insert252
-\Mfx@marginbox=\box81
+\Mfx@marginbox=\box78
 \Mfx@marginpos@min=\dimen322
 \Mfx@marginpos@max=\dimen323
 \Mfx@marginspace=\dimen324
 \Mfx@marginheight=\dimen325
-\Mfx@piece@content=\box82
-\Mfx@piece@count=\count326
+\Mfx@piece@content=\box79
+\Mfx@piece@count=\count323
 \Mfx@mparshift=\dimen326
 \marginheightadjustment=\dimen327
 \marginposadjustment=\dimen328
 \Mfx@strutheight=\dimen329
-) (/home/sasha/.miktex/texmfs/install/tex/latex/xifthen/xifthen.sty
+) (/usr/share/texmf-dist/tex/latex/xifthen/xifthen.sty
 Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
- (/home/sasha/.miktex/texmfs/install/tex/latex/ifmtarg/ifmtarg.sty
+ (/usr/share/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
-)) (/home/sasha/.miktex/texmfs/install/tex/latex/koma-script/scrhack.sty
-Package: scrhack 2021/06/25 v3.34 KOMA-Script package (hacking other packages)
-Package scrhack Info: loading float hack on input line 178.
- (/home/sasha/.miktex/texmfs/install/tex/latex/koma-script/float.hak
-File: float.hak 2021/06/25 v3.34 KOMA-Script scrhack part (hacking package float)
+)) (/usr/share/texmf-dist/tex/latex/koma-script/scrhack.sty
+Package: scrhack 2021/03/17 v3.33 KOMA-Script package (hacking other packages)
+Package scrhack Info: loading float hack on input line 169.
+ (/usr/share/texmf-dist/tex/latex/koma-script/float.hak
+File: float.hak 2021/03/17 v3.33 KOMA-Script scrhack part (hacking package float)
 Package scrhack Info: redefining \newfloat on input line 163.
 Package scrhack Info: redefining \listof on input line 163.
 Package scrhack Info: undefining \float@addtolists on input line 163.
-)) (/home/sasha/.miktex/texmfs/install/tex/latex/listings/listings.sty
-\lst@mode=\count327
-\lst@gtempboxa=\box83
-\lst@token=\toks49
-\lst@length=\count328
+)) (/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count324
+\lst@gtempboxa=\box80
+\lst@token=\toks48
+\lst@length=\count325
 \lst@currlwidth=\dimen330
-\lst@column=\count329
-\lst@pos=\count330
+\lst@column=\count326
+\lst@pos=\count327
 \lst@lostspace=\dimen331
 \lst@width=\dimen332
-\lst@newlines=\count331
-\lst@lineno=\count332
+\lst@newlines=\count328
+\lst@lineno=\count329
 \lst@maxwidth=\dimen333
- (/home/sasha/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
+ (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count333
-\lst@skipnumbers=\count334
-\lst@framebox=\box84
-) (/home/sasha/.miktex/texmfs/install/tex/latex/listings/listings.cfg
+\c@lstnumber=\count330
+\lst@skipnumbers=\count331
+\lst@framebox=\box81
+) (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package scrhack Info: loading listings hack on input line 36.
- (/home/sasha/.miktex/texmfs/install/tex/latex/koma-script/listings.hak
-File: listings.hak 2021/06/25 v3.34 KOMA-Script scrhack part (hacking package listings)
+ (/usr/share/texmf-dist/tex/latex/koma-script/listings.hak
+File: listings.hak 2021/03/17 v3.33 KOMA-Script scrhack part (hacking package listings)
 Package tocbasic Info: setting babel extension for `lol' on input line 143.
 Package scrhack Info: redefining \lstlistoflistings on input line 143.
 )
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (/home/sasha/.miktex/texmfs/install/tex/latex/placeins/placeins.sty
+ (/usr/share/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
-) (/home/sasha/.miktex/texmfs/install/tex/latex/tools/afterpage.sty
+) (/usr/share/texmf-dist/tex/latex/tools/afterpage.sty
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
-\AP@output=\toks50
-\AP@partial=\box85
-\AP@footins=\box86
-) (/home/sasha/.miktex/texmfs/install/tex/latex/base/inputenc.sty
-Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks51
-\inpenc@posthook=\toks52
-) (/home/sasha/.miktex/texmfs/install/tex/latex/base/fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/mathpazo.sty
+\AP@output=\toks49
+\AP@partial=\box82
+\AP@footins=\box83
+) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks50
+\inpenc@posthook=\toks51
+) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+) (/usr/share/texmf-dist/tex/latex/psnfss/mathpazo.sty
 Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup8
-) (/home/sasha/.miktex/texmfs/install/tex/latex/csquotes/csquotes.sty
+) (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
-\csq@reset=\count335
-\csq@gtype=\count336
-\csq@glevel=\count337
-\csq@qlevel=\count338
-\csq@maxlvl=\count339
-\csq@tshold=\count340
-\csq@ltx@everypar=\toks53
- (/home/sasha/.miktex/texmfs/install/tex/latex/csquotes/csquotes.def
+\csq@reset=\count332
+\csq@gtype=\count333
+\csq@glevel=\count334
+\csq@qlevel=\count335
+\csq@maxlvl=\count336
+\csq@tshold=\count337
+\csq@ltx@everypar=\toks52
+ (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
- (/home/sasha/.miktex/texmfs/install/tex/latex/csquotes/csquotes.cfg
+ (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 )
 Package csquotes Info: Enabling multilingual quotes.
-) (/home/sasha/.miktex/texmfs/install/tex/latex/biblatex/biblatex.sty
+) (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
- (/home/sasha/.miktex/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+ (/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (/home/sasha/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+ (/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (/home/sasha/.miktex/texmfs/install/tex/generic/iftex/iftex.sty
+) (/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
-) (/home/sasha/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+) (/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (/home/sasha/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+) (/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
- (/home/sasha/.miktex/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
+ (/usr/share/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)) (/home/sasha/.miktex/texmfs/install/tex/latex/logreq/logreq.sty
+)) (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count341
- (/home/sasha/.miktex/texmfs/install/tex/latex/logreq/logreq.def
+\lrq@indent=\count338
+ (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-)) (/home/sasha/.miktex/texmfs/install/tex/latex/url/url.sty
+)) (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count342
-\c@listtotal=\count343
-\c@listcount=\count344
-\c@liststart=\count345
-\c@liststop=\count346
-\c@citecount=\count347
-\c@citetotal=\count348
-\c@multicitecount=\count349
-\c@multicitetotal=\count350
-\c@instcount=\count351
-\c@maxnames=\count352
-\c@minnames=\count353
-\c@maxitems=\count354
-\c@minitems=\count355
-\c@citecounter=\count356
-\c@maxcitecounter=\count357
-\c@savedcitecounter=\count358
-\c@uniquelist=\count359
-\c@uniquename=\count360
-\c@refsection=\count361
-\c@refsegment=\count362
-\c@maxextratitle=\count363
-\c@maxextratitleyear=\count364
-\c@maxextraname=\count365
-\c@maxextradate=\count366
-\c@maxextraalpha=\count367
-\c@abbrvpenalty=\count368
-\c@highnamepenalty=\count369
-\c@lownamepenalty=\count370
-\c@maxparens=\count371
-\c@parenlevel=\count372
-\blx@tempcnta=\count373
-\blx@tempcntb=\count374
-\blx@tempcntc=\count375
-\blx@maxsection=\count376
-\blx@maxsegment@0=\count377
-\blx@notetype=\count378
-\blx@parenlevel@text=\count379
-\blx@parenlevel@foot=\count380
-\blx@sectionciteorder@0=\count381
-\blx@entrysetcounter=\count382
-\blx@biblioinstance=\count383
+\c@tabx@nest=\count339
+\c@listtotal=\count340
+\c@listcount=\count341
+\c@liststart=\count342
+\c@liststop=\count343
+\c@citecount=\count344
+\c@citetotal=\count345
+\c@multicitecount=\count346
+\c@multicitetotal=\count347
+\c@instcount=\count348
+\c@maxnames=\count349
+\c@minnames=\count350
+\c@maxitems=\count351
+\c@minitems=\count352
+\c@citecounter=\count353
+\c@maxcitecounter=\count354
+\c@savedcitecounter=\count355
+\c@uniquelist=\count356
+\c@uniquename=\count357
+\c@refsection=\count358
+\c@refsegment=\count359
+\c@maxextratitle=\count360
+\c@maxextratitleyear=\count361
+\c@maxextraname=\count362
+\c@maxextradate=\count363
+\c@maxextraalpha=\count364
+\c@abbrvpenalty=\count365
+\c@highnamepenalty=\count366
+\c@lownamepenalty=\count367
+\c@maxparens=\count368
+\c@parenlevel=\count369
+\blx@tempcnta=\count370
+\blx@tempcntb=\count371
+\blx@tempcntc=\count372
+\blx@maxsection=\count373
+\blx@maxsegment@0=\count374
+\blx@notetype=\count375
+\blx@parenlevel@text=\count376
+\blx@parenlevel@foot=\count377
+\blx@sectionciteorder@0=\count378
+\blx@entrysetcounter=\count379
+\blx@biblioinstance=\count380
 \labelnumberwidth=\skip101
 \labelalphawidth=\skip102
 \biblabelsep=\skip103
@@ -865,87 +939,87 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibhang=\skip108
 \blx@bcfin=\read4
 \blx@bcfout=\write4
-\blx@langwohyphens=\language2
-\c@mincomprange=\count384
-\c@maxcomprange=\count385
-\c@mincompwidth=\count386
+\blx@langwohyphens=\language88
+\c@mincomprange=\count381
+\c@maxcomprange=\count382
+\c@mincompwidth=\count383
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- (/home/sasha/.miktex/texmfs/install/tex/latex/biblatex/blx-dm.def
+ (/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2020/12/31 v3.16 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'alphabetic.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count387
-\c@savedafterword=\count388
-\c@annotator=\count389
-\c@savedannotator=\count390
-\c@author=\count391
-\c@savedauthor=\count392
-\c@bookauthor=\count393
-\c@savedbookauthor=\count394
-\c@commentator=\count395
-\c@savedcommentator=\count396
-\c@editor=\count397
-\c@savededitor=\count398
-\c@editora=\count399
-\c@savededitora=\count400
-\c@editorb=\count401
-\c@savededitorb=\count402
-\c@editorc=\count403
-\c@savededitorc=\count404
-\c@foreword=\count405
-\c@savedforeword=\count406
-\c@holder=\count407
-\c@savedholder=\count408
-\c@introduction=\count409
-\c@savedintroduction=\count410
-\c@namea=\count411
-\c@savednamea=\count412
-\c@nameb=\count413
-\c@savednameb=\count414
-\c@namec=\count415
-\c@savednamec=\count416
-\c@translator=\count417
-\c@savedtranslator=\count418
-\c@shortauthor=\count419
-\c@savedshortauthor=\count420
-\c@shorteditor=\count421
-\c@savedshorteditor=\count422
-\c@labelname=\count423
-\c@savedlabelname=\count424
-\c@institution=\count425
-\c@savedinstitution=\count426
-\c@lista=\count427
-\c@savedlista=\count428
-\c@listb=\count429
-\c@savedlistb=\count430
-\c@listc=\count431
-\c@savedlistc=\count432
-\c@listd=\count433
-\c@savedlistd=\count434
-\c@liste=\count435
-\c@savedliste=\count436
-\c@listf=\count437
-\c@savedlistf=\count438
-\c@location=\count439
-\c@savedlocation=\count440
-\c@organization=\count441
-\c@savedorganization=\count442
-\c@origlocation=\count443
-\c@savedoriglocation=\count444
-\c@origpublisher=\count445
-\c@savedorigpublisher=\count446
-\c@publisher=\count447
-\c@savedpublisher=\count448
-\c@language=\count449
-\c@savedlanguage=\count450
-\c@origlanguage=\count451
-\c@savedoriglanguage=\count452
-\c@pageref=\count453
-\c@savedpageref=\count454
+\c@afterword=\count384
+\c@savedafterword=\count385
+\c@annotator=\count386
+\c@savedannotator=\count387
+\c@author=\count388
+\c@savedauthor=\count389
+\c@bookauthor=\count390
+\c@savedbookauthor=\count391
+\c@commentator=\count392
+\c@savedcommentator=\count393
+\c@editor=\count394
+\c@savededitor=\count395
+\c@editora=\count396
+\c@savededitora=\count397
+\c@editorb=\count398
+\c@savededitorb=\count399
+\c@editorc=\count400
+\c@savededitorc=\count401
+\c@foreword=\count402
+\c@savedforeword=\count403
+\c@holder=\count404
+\c@savedholder=\count405
+\c@introduction=\count406
+\c@savedintroduction=\count407
+\c@namea=\count408
+\c@savednamea=\count409
+\c@nameb=\count410
+\c@savednameb=\count411
+\c@namec=\count412
+\c@savednamec=\count413
+\c@translator=\count414
+\c@savedtranslator=\count415
+\c@shortauthor=\count416
+\c@savedshortauthor=\count417
+\c@shorteditor=\count418
+\c@savedshorteditor=\count419
+\c@labelname=\count420
+\c@savedlabelname=\count421
+\c@institution=\count422
+\c@savedinstitution=\count423
+\c@lista=\count424
+\c@savedlista=\count425
+\c@listb=\count426
+\c@savedlistb=\count427
+\c@listc=\count428
+\c@savedlistc=\count429
+\c@listd=\count430
+\c@savedlistd=\count431
+\c@liste=\count432
+\c@savedliste=\count433
+\c@listf=\count434
+\c@savedlistf=\count435
+\c@location=\count436
+\c@savedlocation=\count437
+\c@organization=\count438
+\c@savedorganization=\count439
+\c@origlocation=\count440
+\c@savedoriglocation=\count441
+\c@origpublisher=\count442
+\c@savedorigpublisher=\count443
+\c@publisher=\count444
+\c@savedpublisher=\count445
+\c@language=\count446
+\c@savedlanguage=\count447
+\c@origlanguage=\count448
+\c@savedoriglanguage=\count449
+\c@pageref=\count450
+\c@savedpageref=\count451
 \shorthandwidth=\skip109
 \shortjournalwidth=\skip110
 \shortserieswidth=\skip111
@@ -962,41 +1036,41 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip122
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- (/home/sasha/.miktex/texmfs/install/tex/latex/biblatex/blx-compat.def
+ (/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (/home/sasha/.miktex/texmfs/install/tex/latex/biblatex/biblatex.def
+ (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
-\c@textcitecount=\count455
-\c@textcitetotal=\count456
-\c@textcitemaxnames=\count457
-\c@biburlbigbreakpenalty=\count458
-\c@biburlbreakpenalty=\count459
-\c@biburlnumpenalty=\count460
-\c@biburlucpenalty=\count461
-\c@biburllcpenalty=\count462
+\c@textcitecount=\count452
+\c@textcitetotal=\count453
+\c@textcitemaxnames=\count454
+\c@biburlbigbreakpenalty=\count455
+\c@biburlbreakpenalty=\count456
+\c@biburlnumpenalty=\count457
+\c@biburlucpenalty=\count458
+\c@biburllcpenalty=\count459
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count463
+\c@smartand=\count460
 )
 Package biblatex Info: Trying to load bibliography style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.bbx' found.
- (/home/sasha/.miktex/texmfs/install/tex/latex/biblatex/bbx/alphabetic.bbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/bbx/alphabetic.bbx
 File: alphabetic.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- (/home/sasha/.miktex/texmfs/install/tex/latex/biblatex/bbx/standard.bbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count464
-\c@bbx:relatedtotal=\count465
+\c@bbx:relatedcount=\count461
+\c@bbx:relatedtotal=\count462
 ))
 Package biblatex Info: Trying to load citation style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.cbx' found.
- (/home/sasha/.miktex/texmfs/install/tex/latex/biblatex/cbx/alphabetic.cbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/cbx/alphabetic.cbx
 File: alphabetic.cbx 2020/12/31 v3.16 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -1011,133 +1085,140 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (/home/sasha/.miktex/texmfs/install/tex/latex/biblatex/biblatex.cfg
+ (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
-)) (/home/sasha/.miktex/texmfs/install/tex/latex/subfig/subfig.sty
+)) (/usr/share/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count466
+\c@KVtest=\count463
 \sf@farskip=\skip123
 \sf@captopadj=\dimen334
 \sf@capskip=\skip124
 \sf@nearskip=\skip125
-\c@subfigure=\count467
-\c@subfigure@save=\count468
-\c@lofdepth=\count469
-\c@subtable=\count470
-\c@subtable@save=\count471
-\c@lotdepth=\count472
+\c@subfigure=\count464
+\c@subfigure@save=\count465
+\c@lofdepth=\count466
+\c@subtable=\count467
+\c@subtable@save=\count468
+\c@lotdepth=\count469
 \sf@top=\skip126
 \sf@bottom=\skip127
-) (/home/sasha/.miktex/texmfs/install/tex/latex/todonotes/todonotes.sty
-Package: todonotes 2021/06/04 v1.1.5 Todonotes source and documentation.
-Package: todonotes 2021/06/04
- (/home/sasha/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty
+) (/usr/share/texmf-dist/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2020/08/18 v1.1.3 Todonotes source and documentation.
+Package: todonotes 2018/11/22
+ (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
- (/home/sasha/.miktex/texmfs/install/tex/generic/xkeyval/xkeyval.tex (/home/sasha/.miktex/texmfs/install/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks54
-\XKV@tempa@toks=\toks55
+ (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks53
+\XKV@tempa@toks=\toks54
 )
-\XKV@depth=\count473
+\XKV@depth=\count470
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-\c@@todonotes@numberoftodonotes=\count474
-) (/home/sasha/.miktex/texmfs/install/tex/latex/lstaddons/lstautogobble.sty
+)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
+\c@@todonotes@numberoftodonotes=\count471
+) (/usr/share/texmf-dist/tex/latex/lstaddons/lstautogobble.sty
 Package: lstautogobble 2012/05/03 v0.1 Implements 'autogobble' option for 'listings'
-\lstag@spacecount=\count475
-) (/home/sasha/.miktex/texmfs/install/tex/latex/pgfplots/pgfplots.sty (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.revision.tex)
-Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
- (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.code.tex (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks56
-\t@pgfplots@tokb=\toks57
-\t@pgfplots@tokc=\toks58
+\lstag@spacecount=\count472
+) (/usr/share/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2020/02/29 v1.17 Data Visualization (1.17)
+ (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks55
+\t@pgfplots@tokb=\toks56
+\t@pgfplots@tokc=\toks57
 \pgfplots@tmpa=\dimen335
-\c@pgfplots@coordindex=\count476
-\c@pgfplots@scanlineindex=\count477
- (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count478
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count479
-\t@pgfplotstable@a=\toks59
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count480
- (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.markers.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsticks.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.paths.code.tex) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\c@pgfplots@coordindex=\count473
+\c@pgfplots@scanlineindex=\count474
+ (/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count475
+) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count476
+\t@pgfplotstable@a=\toks58
+) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count477
+ (/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
 \pgfdecoratedcompleteddistance=\dimen336
 \pgfdecoratedremainingdistance=\dimen337
 \pgfdecoratedinputsegmentcompleteddistance=\dimen338
 \pgfdecoratedinputsegmentremainingdistance=\dimen339
 \pgf@decorate@distancetomove=\dimen340
-\pgf@decorate@repeatstate=\count481
+\pgf@decorate@repeatstate=\count478
 \pgfdecorationsegmentamplitude=\dimen341
 \pgfdecorationsegmentlength=\dimen342
 )
-\tikz@lib@dec@box=\box87
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count482
+\tikz@lib@dec@box=\box84
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex))
+\pgfplots@numplots=\count479
 \pgfplots@xmin@reg=\dimen343
 \pgfplots@xmax@reg=\dimen344
 \pgfplots@ymin@reg=\dimen345
 \pgfplots@ymax@reg=\dimen346
 \pgfplots@zmin@reg=\dimen347
 \pgfplots@zmax@reg=\dimen348
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
-File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
- (/home/sasha/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
-File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))) (/home/sasha/.miktex/texmfs/install/tex/latex/pgfplots/pgfplotstable.sty (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.revision.tex)
-Package: pgfplotstable 2021/05/15 v1.18.1 Table typesetting and Pretty-printing (1.18.1)
- (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/numtable/pgfplotstable.code.tex (/home/sasha/.miktex/texmfs/install/tex/generic/pgfplots/numtable/pgfplotstable.coltype.code.tex))) (/home/sasha/.miktex/texmfs/install/tex/latex/microtype/microtype.sty
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))) (/usr/share/texmf-dist/tex/latex/pgfplots/pgfplotstable.sty (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplotstable 2020/02/29 v1.17 Table typesetting and Pretty-printing (1.17)
+ (/usr/share/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable.coltype.code.tex))) (/usr/share/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2021/03/14 v2.8c Micro-typographical refinements (RS)
-\MT@toks=\toks60
-\MT@count=\count483
+\MT@toks=\toks59
+\MT@count=\count480
 LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen349
 LaTeX Info: Redefining \textmicrotypecontext on input line 1374.
-\MT@listname@count=\count484
- (/home/sasha/.miktex/texmfs/install/tex/latex/microtype/microtype-pdftex.def
+\MT@listname@count=\count481
+ (/usr/share/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2021/03/14 v2.8c Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 915.
 LaTeX Info: Redefining \lslig on input line 915.
 \MT@outer@space=\skip128
 )
 Package microtype Info: Loading configuration file microtype.cfg.
- (/home/sasha/.miktex/texmfs/install/tex/latex/microtype/microtype.cfg
+ (/usr/share/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2021/03/14 v2.8c microtype main configuration file (RS)
 ))
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
 (scrhack)             need that hack, on input line 85.
- (/home/sasha/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
- (/home/sasha/.miktex/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+ (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+ (/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (/home/sasha/.miktex/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+) (/usr/share/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (/home/sasha/.miktex/texmfs/install/tex/latex/hycolor/hycolor.sty
+) (/usr/share/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (/home/sasha/.miktex/texmfs/install/tex/latex/letltxmacro/letltxmacro.sty
+) (/usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) (/home/sasha/.miktex/texmfs/install/tex/latex/auxhook/auxhook.sty
+) (/usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen350
-\Hy@linkcounter=\count485
-\Hy@pagecounter=\count486
- (/home/sasha/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+\Hy@linkcounter=\count482
+\Hy@pagecounter=\count483
+ (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (/home/sasha/.miktex/texmfs/install/tex/latex/hyperref/hyperref-langpatches.def
-File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel languages
-) (/home/sasha/.miktex/texmfs/install/tex/generic/intcalc/intcalc.sty
+) (/usr/share/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel languages
+) (/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-) (/home/sasha/.miktex/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+) (/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count487
- (/home/sasha/.miktex/texmfs/install/tex/latex/hyperref/puenc.def
-File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count484
+ (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
@@ -1148,166 +1229,164 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count488
+\c@Hy@tempcnt=\count485
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen351
- (/home/sasha/.miktex/texmfs/install/tex/generic/bitset/bitset.sty
+ (/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (/home/sasha/.miktex/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+ (/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count489
+\Fld@menulength=\count486
 \Field@Width=\dimen352
 \Fld@charsize=\dimen353
-Package hyperref Info: Hyper figures OFF on input line 6076.
-Package hyperref Info: Link nesting OFF on input line 6081.
-Package hyperref Info: Hyper index ON on input line 6084.
-Package hyperref Info: backreferencing OFF on input line 6091.
-Package hyperref Info: Link coloring OFF on input line 6096.
-Package hyperref Info: Link coloring with OCG OFF on input line 6101.
-Package hyperref Info: PDF/A mode OFF on input line 6106.
-LaTeX Info: Redefining \ref on input line 6146.
-LaTeX Info: Redefining \pageref on input line 6150.
- (/home/sasha/.miktex/texmfs/install/tex/latex/base/atbegshi-ltx.sty
-Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
-package with kernel methods
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+ (/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi package
+with kernel methods
 )
-\Hy@abspage=\count490
-\c@Item=\count491
-\c@Hfootnote=\count492
+\Hy@abspage=\count487
+\c@Item=\count488
+\c@Hfootnote=\count489
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (/home/sasha/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
- (/home/sasha/.miktex/texmfs/install/tex/latex/base/atveryend-ltx.sty
+ (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
+ (/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery package
 with kernel methods
 )
-\Fld@listcount=\count493
-\c@bookmark@seq@number=\count494
- (/home/sasha/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+\Fld@listcount=\count490
+\c@bookmark@seq@number=\count491
+ (/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
- (/home/sasha/.miktex/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+ (/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
 \Hy@SectionHShift=\skip129
-) (/home/sasha/.miktex/texmfs/install/tex/latex/glossaries/base/glossaries.sty
-Package: glossaries 2021/11/01 v4.49 (NLCT)
- (/home/sasha/.miktex/texmfs/install/tex/latex/mfirstuc/mfirstuc.sty
-Package: mfirstuc 2021/10/15 v2.07 (NLCT)
-\@glsmfirst=\toks61
-\@glsmrest=\toks62
-) (/home/sasha/.miktex/texmfs/install/tex/latex/textcase/textcase.sty
+) (/usr/share/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2020/03/19 v4.46 (NLCT)
+ (/usr/share/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
+Package: mfirstuc 2017/11/14 v2.06 (NLCT)
+\@glsmfirst=\toks60
+\@glsmrest=\toks61
+) (/usr/share/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
-) (/home/sasha/.miktex/texmfs/install/tex/latex/xfor/xfor.sty
+) (/usr/share/texmf-dist/tex/latex/xfor/xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
-) (/home/sasha/.miktex/texmfs/install/tex/latex/datatool/datatool-base.sty
+) (/usr/share/texmf-dist/tex/latex/datatool/datatool-base.sty
 Package: datatool-base 2019/09/27 v2.32 (NLCT)
- (/home/sasha/.miktex/texmfs/install/tex/latex/substr/substr.sty
+ (/usr/share/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count495
-) (/home/sasha/.miktex/texmfs/install/tex/latex/datatool/datatool-fp.sty
+\c@su@anzahl=\count492
+) (/usr/share/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2019/09/27 v2.32 (NLCT)
- (/home/sasha/.miktex/texmfs/install/tex/latex/fp/fp.sty
+ (/usr/share/texmf-dist/tex/latex/fp/fp.sty
 Package: fp 1995/04/02
- `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (/home/sasha/.miktex/texmfs/install/tex/latex/fp/defpattern.sty
+ `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (/usr/share/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count496
-) (/home/sasha/.miktex/texmfs/install/tex/latex/fp/fp-basic.sty
+\actioncount=\count493
+) (/usr/share/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count497
-\FP@xia=\count498
-\FP@xib=\count499
-\FP@xfa=\count500
-\FP@xfb=\count501
-\FP@rega=\count502
-\FP@regb=\count503
-\FP@regs=\count504
-\FP@times=\count505
-) (/home/sasha/.miktex/texmfs/install/tex/latex/fp/fp-addons.sty
+\FP@xs=\count494
+\FP@xia=\count495
+\FP@xib=\count496
+\FP@xfa=\count497
+\FP@xfb=\count498
+\FP@rega=\count499
+\FP@regb=\count500
+\FP@regs=\count501
+\FP@times=\count502
+) (/usr/share/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
-) (/home/sasha/.miktex/texmfs/install/tex/latex/fp/fp-snap.sty
+) (/usr/share/texmf-dist/tex/latex/fp/fp-snap.sty
 Package: fp-snap 1995/04/05
-) (/home/sasha/.miktex/texmfs/install/tex/latex/fp/fp-exp.sty
+) (/usr/share/texmf-dist/tex/latex/fp/fp-exp.sty
 Package: fp-exp 1995/04/03
-) (/home/sasha/.miktex/texmfs/install/tex/latex/fp/fp-trigo.sty
+) (/usr/share/texmf-dist/tex/latex/fp/fp-trigo.sty
 Package: fp-trigo 1995/04/14
-)
-(/home/sasha/.miktex/texmfs/install/tex/latex/fp/fp-pas.sty
+) (/usr/share/texmf-dist/tex/latex/fp/fp-pas.sty
 Package: fp-pas 1994/08/29
-) (/home/sasha/.miktex/texmfs/install/tex/latex/fp/fp-random.sty
+) (/usr/share/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count506
-) (/home/sasha/.miktex/texmfs/install/tex/latex/fp/fp-eqn.sty
+\FPseed=\count503
+) (/usr/share/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
-) (/home/sasha/.miktex/texmfs/install/tex/latex/fp/fp-upn.sty
+) (/usr/share/texmf-dist/tex/latex/fp/fp-upn.sty
 Package: fp-upn 1996/10/21
-) (/home/sasha/.miktex/texmfs/install/tex/latex/fp/fp-eval.sty
+) (/usr/share/texmf-dist/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
-\@dtl@toks=\toks63
-\@dtl@tmpcount=\count507
+\@dtl@toks=\toks62
+\@dtl@tmpcount=\count504
 \dtl@tmplength=\skip130
-\dtl@sortresult=\count508
-\@dtl@numgrpsepcount=\count509
-\@dtl@datatype=\count510
-\dtl@codeA=\count511
-\dtl@codeB=\count512
-\@dtl@foreach@level=\count513
-) (/home/sasha/.miktex/texmfs/install/tex/latex/glossaries/base/glossaries-compatible-307.sty
-Package: glossaries-compatible-307 2021/11/01 v4.49 (NLCT)
-) (/home/sasha/.miktex/texmfs/install/tex/latex/tracklang/tracklang.sty
+\dtl@sortresult=\count505
+\@dtl@numgrpsepcount=\count506
+\@dtl@datatype=\count507
+\dtl@codeA=\count508
+\dtl@codeB=\count509
+\@dtl@foreach@level=\count510
+) (/usr/share/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-307.sty
+Package: glossaries-compatible-307 2020/03/19 v4.46 (NLCT)
+) (/usr/share/texmf-dist/tex/latex/tracklang/tracklang.sty
 Package: tracklang 2020/06/30 v1.5 (NLCT) Track Languages
- (/home/sasha/.miktex/texmfs/install/tex/generic/tracklang/tracklang.tex)) (/home/sasha/.miktex/texmfs/install/tex/latex/translator/translator.sty
-Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
-) (/home/sasha/.miktex/texmfs/install/tex/latex/glossaries-english/glossaries-english.ldf
+ (/usr/share/texmf-dist/tex/generic/tracklang/tracklang.tex)) (/usr/share/texmf-dist/tex/latex/translator/translator.sty
+Package: translator 2020-08-03 v1.12c Easy translation of strings in LaTeX
+) (/usr/share/texmf-dist/tex/latex/glossaries-english/glossaries-english.ldf
 File: glossaries-english.ldf 2014/11/23 v1.0
-) (/home/sasha/.miktex/texmfs/install/tex/latex/glossaries-german/glossaries-german.ldf
+) (/usr/share/texmf-dist/tex/latex/glossaries-german/glossaries-german.ldf
 File: glossaries-german.ldf 2014/11/23 v1.0
 )
-\gls@level=\count514
-\@gls@tmpb=\toks64
+\gls@level=\count511
+\@gls@tmpb=\toks63
 \gls@tmplen=\skip131
-\glskeylisttok=\toks65
-\glslabeltok=\toks66
-\glsshorttok=\toks67
-\glslongtok=\toks68
- (/home/sasha/.miktex/texmfs/install/tex/latex/glossaries/styles/glossary-hypernav.sty
-Package: glossary-hypernav 2021/11/01 v4.49 (NLCT)
-) (/home/sasha/.miktex/texmfs/install/tex/latex/glossaries/styles/glossary-list.sty
-Package: glossary-list 2021/11/01 v4.49 (NLCT)
+\glskeylisttok=\toks64
+\glslabeltok=\toks65
+\glsshorttok=\toks66
+\glslongtok=\toks67
+ (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
+Package: glossary-hypernav 2020/03/19 v4.46 (NLCT)
+) (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
+Package: glossary-list 2020/03/19 v4.46 (NLCT)
 \glslistdottedwidth=\skip132
-) (/home/sasha/.miktex/texmfs/install/tex/latex/glossaries/styles/glossary-long.sty
-Package: glossary-long 2021/11/01 v4.49 (NLCT)
- (/home/sasha/.miktex/texmfs/install/tex/latex/tools/longtable.sty
-Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
+) (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
+Package: glossary-long 2020/03/19 v4.46 (NLCT)
+ (/usr/share/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTleft=\skip133
 \LTright=\skip134
 \LTpre=\skip135
 \LTpost=\skip136
-\LTchunksize=\count515
+\LTchunksize=\count512
 \LTcapwidth=\dimen354
-\LT@head=\box88
-\LT@firsthead=\box89
-\LT@foot=\box90
-\LT@lastfoot=\box91
-\LT@gbox=\box92
-\LT@cols=\count516
-\LT@rows=\count517
-\c@LT@tables=\count518
-\c@LT@chunks=\count519
-\LT@p@ftn=\toks69
+\LT@head=\box85
+\LT@firsthead=\box86
+\LT@foot=\box87
+\LT@lastfoot=\box88
+\LT@cols=\count513
+\LT@rows=\count514
+\c@LT@tables=\count515
+\c@LT@chunks=\count516
+\LT@p@ftn=\toks68
 )
 Class scrbook Info: longtable captions redefined on input line 43.
 \glsdescwidth=\skip137
 \glspagelistwidth=\skip138
-) (/home/sasha/.miktex/texmfs/install/tex/latex/glossaries/styles/glossary-super.sty
-Package: glossary-super 2021/11/01 v4.49 (NLCT)
- (/home/sasha/.miktex/texmfs/install/tex/latex/supertabular/supertabular.sty
+) (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
+Package: glossary-super 2020/03/19 v4.46 (NLCT)
+ (/usr/share/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
-\c@tracingst=\count520
+\c@tracingst=\count517
 \ST@wd=\dimen355
 \ST@rightskip=\skip139
 \ST@leftskip=\skip140
@@ -1321,9 +1400,9 @@ Package: supertabular 2020/02/02 v4.1g the supertabular environment
 \ST@prevht=\dimen362
 \ST@toadd=\dimen363
 \ST@dimen=\dimen364
-\ST@pbox=\box93
-)) (/home/sasha/.miktex/texmfs/install/tex/latex/glossaries/styles/glossary-tree.sty
-Package: glossary-tree 2021/11/01 v4.49 (NLCT)
+\ST@pbox=\box89
+)) (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
+Package: glossary-tree 2020/03/19 v4.46 (NLCT)
 \glstreeindent=\skip142
 ))
 \glswrite=\write5
@@ -1335,13 +1414,13 @@ Package glossaries Info: Writing glossary file main.glo on input line 127.
 \openout7 = `main.acn'.
 
 Package glossaries Info: Writing glossary file main.acn on input line 127.
- (pages/glossary.tex)) (format/macros.tex
-\c@theorem=\count521
-\c@corollary=\count522
-\c@definition=\count523
- (/home/sasha/.miktex/texmfs/install/tex/latex/marvosym/marvosym.sty
+ (/home/sascha/master-thesis/pages/glossary.tex)) (/home/sascha/master-thesis/format/macros.tex
+\c@theorem=\count518
+\c@corollary=\count519
+\c@definition=\count520
+ (/usr/share/texmf-dist/tex/latex/marvosym/marvosym.sty
 Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
-)) (format/sashasmacros.tex) (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/mathptmx.sty
+)) (/home/sascha/master-thesis/format/sashasmacros.tex) (/usr/share/texmf-dist/tex/latex/psnfss/mathptmx.sty
 Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -1392,9 +1471,9 @@ LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 14.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 28.
- (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/t1ptm.fd
+ (/usr/share/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-) (main.aux)
+) (/home/sascha/master-thesis/main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -1421,64 +1500,66 @@ Package nag Info: pgf.sty is broken: disabling dollar check on input line 28.
 Package scrbase Info: activating american \contentsname on input line 28.
 Package scrbase Info: activating american \listfigurename on input line 28.
 Package scrbase Info: activating american \listtablename on input line 28.
- (/home/sasha/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count524
+\scratchcounter=\count521
 \scratchdimen=\dimen365
-\scratchbox=\box94
-\nofMPsegments=\count525
-\nofMParguments=\count526
-\everyMPshowfont=\toks70
-\MPscratchCnt=\count527
+\scratchbox=\box90
+\nofMPsegments=\count522
+\nofMParguments=\count523
+\everyMPshowfont=\toks69
+\MPscratchCnt=\count524
 \MPscratchDim=\dimen366
-\MPnumerator=\count528
-\makeMPintoPDFobject=\count529
-\everyMPtoPDFconversion=\toks71
-) (/home/sasha/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\MPnumerator=\count525
+\makeMPintoPDFobject=\count526
+\everyMPtoPDFconversion=\toks70
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/home/sasha/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+ (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 LaTeX Info: Redefining \dots on input line 28.
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 28.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
- (/home/sasha/.miktex/texmfs/install/tex/latex/caption/ltcaption.sty
+ (/usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count530
+\c@lstlisting=\count527
 Package scrhack Info: undefining \float@addtolists on input line 28.
 Package biblatex Info: Trying to load language 'american'...
 Package biblatex Info: ... file 'american.lbx' found.
- (/home/sasha/.miktex/texmfs/install/tex/latex/biblatex/lbx/american.lbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/lbx/american.lbx
 File: american.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
- (/home/sasha/.miktex/texmfs/install/tex/latex/biblatex/lbx/english.lbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
- (/home/sasha/.miktex/texmfs/install/tex/latex/biblatex/lbx/english.lbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
 ))
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
- (/home/sasha/.miktex/texmfs/install/tex/latex/biblatex/lbx/ngerman.lbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
 File: ngerman.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
- (/home/sasha/.miktex/texmfs/install/tex/latex/biblatex/lbx/german.lbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/lbx/german.lbx
 File: german.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
- (/home/sasha/.miktex/texmfs/install/tex/latex/biblatex/lbx/german.lbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/lbx/german.lbx
 File: german.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
 ))
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -1486,21 +1567,21 @@ Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2021-08-27 L3 programming layer (loader) 
+(biblatex)             2021-02-18 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
- (/home/sasha/.miktex/texmfs/install/tex/latex/biblatex/blx-case-expl3.sty
+ (/usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 )
 \openout4 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (main.bbl)
+ (/home/sascha/master-thesis/main.bbl)
 Package biblatex Info: Reference section=0 on input line 28.
 Package biblatex Info: Reference segment=0 on input line 28.
 
-Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.17}).
 
 LaTeX Info: Redefining \microtypecontext on input line 28.
 Package microtype Info: Generating PDF output.
@@ -1513,23 +1594,23 @@ LaTeX Info: Redefining \showhyphens on input line 28.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-(/home/sasha/.miktex/texmfs/install/tex/latex/microtype/mt-ptm.cfg
+(/usr/share/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 Package hyperref Info: Link coloring OFF on input line 28.
- (/home/sasha/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
+ (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
- (/home/sasha/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
+ (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (/home/sasha/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+) (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count531
+\c@section@level=\count528
 )
 LaTeX Info: Redefining \ref on input line 28.
 LaTeX Info: Redefining \pageref on input line 28.
 LaTeX Info: Redefining \nameref on input line 28.
- (main.out) (main.out)
+ (/home/sascha/master-thesis/main.out) (/home/sascha/master-thesis/main.out)
 \@outlinefile=\write8
 \openout8 = `main.out'.
 
@@ -1541,23 +1622,23 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
 (scrbook)           before \begin{document} on input line 28.
- (/home/sasha/.miktex/texmfs/install/tex/latex/bookmark/bookmark.sty
+ (/usr/share/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
- (/home/sasha/.miktex/texmfs/install/tex/latex/bookmark/bkm-pdftex.def
+ (/usr/share/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count532
+\BKM@id=\count529
 ))
 Package nag Info: Command \hc@caption not defined, skipping amendment on input line 28.
- (pages/cover.tex
-<logos/tum.pdf, id=6, 54.02504pt x 28.452pt>
+ (/home/sascha/master-thesis/pages/cover.tex
+<logos/tum.pdf, id=31, 54.02504pt x 28.452pt>
 File: logos/tum.pdf Graphic file (type pdf)
 <use logos/tum.pdf>
 Package pdftex.def Info: logos/tum.pdf  used on input line 16.
 (pdftex.def)             Requested size: 108.06296pt x 56.9055pt.
 
 
-pdfTeX warning: pdflatex (file ./logos/faculty.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<logos/faculty.pdf, id=7, 339.51843pt x 339.51843pt>
+pdfTeX warning: pdflatex (file /home/sascha/master-thesis/logos/faculty.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<logos/faculty.pdf, id=32, 339.51843pt x 339.51843pt>
 File: logos/faculty.pdf Graphic file (type pdf)
 <use logos/faculty.pdf>
 Package pdftex.def Info: logos/faculty.pdf  used on input line 36.
@@ -1568,13 +1649,13 @@ Package pdftex.def Info: logos/faculty.pdf  used on input line 36.
 
 
 
-{/home/sasha/.miktex/texmfs/data/pdftex/config/pdftex.map} <./logos/tum.pdf> <./logos/faculty.pdf>]) (pages/title.tex
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/sascha/master-thesis/logos/tum.pdf> </home/sascha/master-thesis/logos/faculty.pdf>]) (/home/sascha/master-thesis/pages/title.tex
 File: logos/tum.pdf Graphic file (type pdf)
 <use logos/tum.pdf>
 Package pdftex.def Info: logos/tum.pdf  used on input line 8.
 (pdftex.def)             Requested size: 108.06296pt x 56.9055pt.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 26.
- (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/ot1ztmcm.fd
+ (/usr/share/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1582,29 +1663,29 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 26.
- (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/omlztmcm.fd
+ (/usr/share/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 26.
- (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/omsztmcm.fd
+ (/usr/share/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 26.
- (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/omxztmcm.fd
+ (/usr/share/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-) (/home/sasha/.miktex/texmfs/install/tex/latex/microtype/mt-msa.cfg
+) (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-) (/home/sasha/.miktex/texmfs/install/tex/latex/microtype/mt-msb.cfg
+) (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 26.
- (/home/sasha/.miktex/texmfs/install/tex/latex/stmaryrd/Ustmry.fd)
+ (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 26.
- (/home/sasha/.miktex/texmfs/install/tex/latex/wasysym/uwasy.fd
+ (/usr/share/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 26.
- (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/ot1zplm.fd
+ (/usr/share/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1612,7 +1693,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 26.
- (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/ot1ptm.fd
+ (/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
@@ -1628,21 +1709,21 @@ Package pdftex.def Info: logos/faculty.pdf  used on input line 36.
  [2
 
 
-]) (pages/disclaimer.tex [3]) (pages/acknowledgments.tex
+]) (/home/sascha/master-thesis/pages/disclaimer.tex [3]) (/home/sascha/master-thesis/pages/acknowledgments.tex
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 13.
- (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/ts1ptm.fd
+ (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [4
 
 
-]) (pages/abstract.tex) [5
+]) (/home/sascha/master-thesis/pages/abstract.tex) [5
 
 
 
 
 ]
 Package tocbasic Info: character protrusion at toc deactivated on input line 39.
- (main.toc [6
+ (/home/sascha/master-thesis/main.toc [6
 
 
 
@@ -1651,15 +1732,15 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 39.
 \tf@toc=\write9
 \openout9 = `main.toc'.
 
- [7] (1_intro/intro.tex
+ [7] (/home/sascha/master-thesis/1_intro/intro.tex
 chapter 1.
 [1
 
 
 
-] [2]) (2_prelims/prelims.tex [3]
+] [2]) (/home/sascha/master-thesis/2_prelims/prelims.tex [3]
 chapter 2.
-(examples/exampleSG.tex
+(/home/sascha/master-thesis/examples/exampleSG.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
@@ -1671,23 +1752,18 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 )
-LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 23.
- (/home/sasha/.miktex/texmfs/install/tex/latex/psnfss/ufplmbb.fd
+LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 20.
+ (/usr/share/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 ) [4
 
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
- [5] [6] (examples/exampleEC.tex) [7] [8] [9]
-Overfull \hbox (7.17538pt too wide) in paragraph at lines 232--235
-\T1/ptm/m/n/10.95 (-20) [[]Brá+14[]]. However, it was already benchmarked in [[]K°e+20[]] and its random nature is fundamentally
- []
-
-[10] [11]) (implemented_algos/implemented_algos.tex [12]
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
+ [5] [6] (/home/sascha/master-thesis/examples/exampleEC.tex) [7] [8] [9] [10] [11]) (/home/sascha/master-thesis/implemented_algos/implemented_algos.tex [12]
 chapter 3.
-) (3_randomGen/randomGen.tex [13
+) (/home/sascha/master-thesis/3_randomGen/randomGen.tex [13
 
 
 ]
@@ -1695,266 +1771,256 @@ chapter 4.
 [14
 
 
-]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 77.
- [15] [16] [17] [18]) (3_randomGen/implementation.tex [19]
+] [15]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 81.
+ [16] [17] [18] [19]) (/home/sascha/master-thesis/3_randomGen/implementation.tex [20]
 chapter 5.
-
-Overfull \hbox (0.11472pt too wide) in paragraph at lines 20--23
-\T1/ptm/m/n/10.95 (-20) Although the parameters we expose for random generation can constrain some structural properties
- []
-
-[20
+[21
 
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 52.
- (/home/sasha/.miktex/texmfs/install/tex/latex/base/t1cmtt.fd
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 53.
+ (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Overfull \hbox (10.7656pt too wide) in paragraph at lines 50--54
-\T1/ptm/m/n/10.95 (-20) In this section, we describe the implementation details and provide guidance for using, understanding,
- []
-
-[21] [22]) (4_analysis/analysis.tex [23]
+ [22] [23]) (/home/sascha/master-thesis/4_analysis/analysis.tex [24]
 chapter 6.
-[24
 
-
-] [25]) (5_results/results.tex [26]
-chapter 7.
-
-Overfull \hbox (17.68655pt too wide) in paragraph at lines 15--20
-\T1/ptm/m/n/10.95 (-20) in the GitHub repository []$\T1/cmtt/m/n/10.95 https : / / github . com / ga67vib / Algorithms-[]For-[]Stochastic-[]Games$[]\T1/ptm/m/n/10.95 (-20) . 
+Overfull \hbox (16.69228pt too wide) in alignment at lines 8--11
+ [] [] [] 
  []
 
-[27
+
+Overfull \hbox (16.69228pt too wide) in alignment at lines 11--31
+ [] [] [] 
+ []
 
 
-] [28] [29]
-<figures/Real_FeatureDistribution.jpg, id=477, 867.24pt x 722.7pt>
+Overfull \hbox (16.69228pt too wide) in alignment at lines 31--52
+ [] [] [] 
+ []
+
+[25
+
+
+] [26]) (/home/sascha/master-thesis/5_results/results.tex [27]
+chapter 7.
+[28
+
+
+] [29] [30]
+<figures/Real_FeatureDistribution.jpg, id=513, 867.24pt x 722.7pt>
 File: figures/Real_FeatureDistribution.jpg Graphic file (type jpg)
 <use figures/Real_FeatureDistribution.jpg>
-Package pdftex.def Info: figures/Real_FeatureDistribution.jpg  used on input line 101.
+Package pdftex.def Info: figures/Real_FeatureDistribution.jpg  used on input line 107.
 (pdftex.def)             Requested size: 418.25555pt x 348.54617pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[30]
-<figures/RandomRandom_FeatureDistribution.jpg, id=488, 867.24pt x 722.7pt>
+[31]
+<figures/RandomRandom_FeatureDistribution.jpg, id=524, 867.24pt x 722.7pt>
 File: figures/RandomRandom_FeatureDistribution.jpg Graphic file (type jpg)
 <use figures/RandomRandom_FeatureDistribution.jpg>
-Package pdftex.def Info: figures/RandomRandom_FeatureDistribution.jpg  used on input line 130.
+Package pdftex.def Info: figures/RandomRandom_FeatureDistribution.jpg  used on input line 136.
 (pdftex.def)             Requested size: 418.25555pt x 348.54617pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[31 <./figures/Real_FeatureDistribution.jpg>] [32 <./figures/RandomRandom_FeatureDistribution.jpg>]
-<figures/RandomSCC_FeatureDistribution.jpg, id=508, 867.24pt x 722.7pt>
+[32 </home/sascha/master-thesis/figures/Real_FeatureDistribution.jpg>] [33 </home/sascha/master-thesis/figures/RandomRandom_FeatureDistribution.jpg>]
+<figures/RandomSCC_FeatureDistribution.jpg, id=544, 867.24pt x 722.7pt>
 File: figures/RandomSCC_FeatureDistribution.jpg Graphic file (type jpg)
 <use figures/RandomSCC_FeatureDistribution.jpg>
-Package pdftex.def Info: figures/RandomSCC_FeatureDistribution.jpg  used on input line 167.
+Package pdftex.def Info: figures/RandomSCC_FeatureDistribution.jpg  used on input line 173.
 (pdftex.def)             Requested size: 418.25555pt x 348.54617pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[33] [34 <./figures/RandomSCC_FeatureDistribution.jpg>]
-<figures/Real_AlgoPerformance.jpg, id=525, 850.17625pt x 327.2225pt>
+[34] [35 </home/sascha/master-thesis/figures/RandomSCC_FeatureDistribution.jpg>]
+<figures/Real_AlgoPerformance.jpg, id=562, 850.17625pt x 327.2225pt>
 File: figures/Real_AlgoPerformance.jpg Graphic file (type jpg)
 <use figures/Real_AlgoPerformance.jpg>
-Package pdftex.def Info: figures/Real_AlgoPerformance.jpg  used on input line 208.
+Package pdftex.def Info: figures/Real_AlgoPerformance.jpg  used on input line 214.
 (pdftex.def)             Requested size: 292.7776pt x 112.68716pt.
-<figures/RandomRandom_AlgoPerformance.png, id=526, 881.2925pt x 337.26pt>
+<figures/RandomRandom_AlgoPerformance.png, id=563, 881.2925pt x 337.26pt>
 File: figures/RandomRandom_AlgoPerformance.png Graphic file (type png)
 <use figures/RandomRandom_AlgoPerformance.png>
-Package pdftex.def Info: figures/RandomRandom_AlgoPerformance.png  used on input line 210.
+Package pdftex.def Info: figures/RandomRandom_AlgoPerformance.png  used on input line 216.
 (pdftex.def)             Requested size: 292.7776pt x 112.04233pt.
-<figures/Big_AlgoPerformance.png, id=527, 765.86125pt x 288.07625pt>
+<figures/Big_AlgoPerformance.png, id=564, 765.86125pt x 288.07625pt>
 File: figures/Big_AlgoPerformance.png Graphic file (type png)
 <use figures/Big_AlgoPerformance.png>
-Package pdftex.def Info: figures/Big_AlgoPerformance.png  used on input line 212.
+Package pdftex.def Info: figures/Big_AlgoPerformance.png  used on input line 218.
 (pdftex.def)             Requested size: 292.7776pt x 110.12946pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[35] [36 <./figures/Real_AlgoPerformance.jpg> <./figures/RandomRandom_AlgoPerformance.png> <./figures/Big_AlgoPerformance.png>]
+[36] [37 </home/sascha/master-thesis/figures/Real_AlgoPerformance.jpg> </home/sascha/master-thesis/figures/RandomRandom_AlgoPerformance.png> </home/sascha/master-thesis/figures/Big_AlgoPerformance.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 238.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 238.
+(hyperref)                removing `math shift' on input line 244.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 238.
+(hyperref)                removing `math shift' on input line 244.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 238.
+(hyperref)                removing `math shift' on input line 244.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 238.
+(hyperref)                removing `math shift' on input line 244.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 238.
+(hyperref)                removing `math shift' on input line 244.
 
-<figures/WPvsBVIandOVIonAll.png, id=547, 639.38875pt x 614.295pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 244.
+
+<figures/WPvsBVIandOVIonAll.png, id=584, 639.38875pt x 614.295pt>
 File: figures/WPvsBVIandOVIonAll.png Graphic file (type png)
 <use figures/WPvsBVIandOVIonAll.png>
-Package pdftex.def Info: figures/WPvsBVIandOVIonAll.png  used on input line 246.
+Package pdftex.def Info: figures/WPvsBVIandOVIonAll.png  used on input line 252.
 (pdftex.def)             Requested size: 200.76086pt x 192.8853pt.
-<figures/WPvsBVIandOVIonAll_Iters.png, id=548, 662.475pt x 613.29124pt>
+<figures/WPvsBVIandOVIonAll_Iters.png, id=585, 662.475pt x 613.29124pt>
 File: figures/WPvsBVIandOVIonAll_Iters.png Graphic file (type png)
 <use figures/WPvsBVIandOVIonAll_Iters.png>
-Package pdftex.def Info: figures/WPvsBVIandOVIonAll_Iters.png  used on input line 248.
+Package pdftex.def Info: figures/WPvsBVIandOVIonAll_Iters.png  used on input line 254.
 (pdftex.def)             Requested size: 200.76086pt x 185.85104pt.
-[37 <./figures/WPvsBVIandOVIonAll.png> <./figures/WPvsBVIandOVIonAll_Iters.png>]
-<figures/BVIvsWPvsOVI.jpg, id=563, 649.42625pt x 614.295pt>
+[38 </home/sascha/master-thesis/figures/WPvsBVIandOVIonAll.png> </home/sascha/master-thesis/figures/WPvsBVIandOVIonAll_Iters.png>]
+<figures/BVIvsWPvsOVI.jpg, id=600, 649.42625pt x 614.295pt>
 File: figures/BVIvsWPvsOVI.jpg Graphic file (type jpg)
 <use figures/BVIvsWPvsOVI.jpg>
-Package pdftex.def Info: figures/BVIvsWPvsOVI.jpg  used on input line 303.
+Package pdftex.def Info: figures/BVIvsWPvsOVI.jpg  used on input line 309.
 (pdftex.def)             Requested size: 200.76086pt x 189.89519pt.
-<figures/BVIvsWPvsOVI_OnlyBig.jpg, id=564, 649.42625pt x 614.295pt>
+<figures/BVIvsWPvsOVI_OnlyBig.jpg, id=601, 649.42625pt x 614.295pt>
 File: figures/BVIvsWPvsOVI_OnlyBig.jpg Graphic file (type jpg)
 <use figures/BVIvsWPvsOVI_OnlyBig.jpg>
-Package pdftex.def Info: figures/BVIvsWPvsOVI_OnlyBig.jpg  used on input line 305.
+Package pdftex.def Info: figures/BVIvsWPvsOVI_OnlyBig.jpg  used on input line 311.
 (pdftex.def)             Requested size: 200.76086pt x 189.89519pt.
- [38 <./figures/BVIvsWPvsOVI.jpg> <./figures/BVIvsWPvsOVI_OnlyBig.jpg>]
-<figures/OVI_Bad_At_Computing_Instant_Values.png, id=580, 759.83875pt x 68.255pt>
+ [39 </home/sascha/master-thesis/figures/BVIvsWPvsOVI.jpg> </home/sascha/master-thesis/figures/BVIvsWPvsOVI_OnlyBig.jpg>]
+<figures/OVI_Bad_At_Computing_Instant_Values.png, id=617, 759.83875pt x 68.255pt>
 File: figures/OVI_Bad_At_Computing_Instant_Values.png Graphic file (type png)
 <use figures/OVI_Bad_At_Computing_Instant_Values.png>
-Package pdftex.def Info: figures/OVI_Bad_At_Computing_Instant_Values.png  used on input line 334.
+Package pdftex.def Info: figures/OVI_Bad_At_Computing_Instant_Values.png  used on input line 340.
 (pdftex.def)             Requested size: 418.25555pt x 37.5716pt.
-<figures/BVI_1_Iteration_vs_OVI.jpg, id=583, 637.38126pt x 614.295pt>
+<figures/BVI_1_Iteration_vs_OVI.jpg, id=620, 637.38126pt x 614.295pt>
 File: figures/BVI_1_Iteration_vs_OVI.jpg Graphic file (type jpg)
 <use figures/BVI_1_Iteration_vs_OVI.jpg>
-Package pdftex.def Info: figures/BVI_1_Iteration_vs_OVI.jpg  used on input line 350.
+Package pdftex.def Info: figures/BVI_1_Iteration_vs_OVI.jpg  used on input line 357.
 (pdftex.def)             Requested size: 167.29967pt x 161.24078pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[39 <./figures/OVI_Bad_At_Computing_Instant_Values.png>]
-<figures/Scatter_G.jpg, id=593, 656.4525pt x 614.295pt>
+[40 </home/sascha/master-thesis/figures/OVI_Bad_At_Computing_Instant_Values.png>]
+<figures/Scatter_G.jpg, id=630, 656.4525pt x 614.295pt>
 File: figures/Scatter_G.jpg Graphic file (type jpg)
 <use figures/Scatter_G.jpg>
-Package pdftex.def Info: figures/Scatter_G.jpg  used on input line 372.
+Package pdftex.def Info: figures/Scatter_G.jpg  used on input line 379.
 (pdftex.def)             Requested size: 200.76086pt x 187.87054pt.
-<figures/Scatter_G_iters.jpg, id=594, 678.535pt x 613.29124pt>
+<figures/Scatter_G_iters.jpg, id=631, 678.535pt x 613.29124pt>
 File: figures/Scatter_G_iters.jpg Graphic file (type jpg)
 <use figures/Scatter_G_iters.jpg>
-Package pdftex.def Info: figures/Scatter_G_iters.jpg  used on input line 374.
+Package pdftex.def Info: figures/Scatter_G_iters.jpg  used on input line 381.
 (pdftex.def)             Requested size: 200.76086pt x 181.45274pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[40 <./figures/BVI_1_Iteration_vs_OVI.jpg>]
-<figures/Scatter_D.jpg, id=601, 656.4525pt x 614.295pt>
+[41 </home/sascha/master-thesis/figures/BVI_1_Iteration_vs_OVI.jpg>]
+<figures/Scatter_D.jpg, id=638, 656.4525pt x 614.295pt>
 File: figures/Scatter_D.jpg Graphic file (type jpg)
 <use figures/Scatter_D.jpg>
-Package pdftex.def Info: figures/Scatter_D.jpg  used on input line 398.
+Package pdftex.def Info: figures/Scatter_D.jpg  used on input line 405.
 (pdftex.def)             Requested size: 200.76086pt x 187.87054pt.
-<figures/Scatter_D_iters.jpg, id=602, 678.535pt x 613.29124pt>
+<figures/Scatter_D_iters.jpg, id=639, 678.535pt x 613.29124pt>
 File: figures/Scatter_D_iters.jpg Graphic file (type jpg)
 <use figures/Scatter_D_iters.jpg>
-Package pdftex.def Info: figures/Scatter_D_iters.jpg  used on input line 400.
+Package pdftex.def Info: figures/Scatter_D_iters.jpg  used on input line 407.
 (pdftex.def)             Requested size: 200.76086pt x 181.45274pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[41 <./figures/Scatter_G.jpg> <./figures/Scatter_G_iters.jpg>]
-<figures/Scatter_T.jpg, id=611, 656.4525pt x 614.295pt>
+[42 </home/sascha/master-thesis/figures/Scatter_G.jpg> </home/sascha/master-thesis/figures/Scatter_G_iters.jpg>]
+<figures/Scatter_T.jpg, id=649, 656.4525pt x 614.295pt>
 File: figures/Scatter_T.jpg Graphic file (type jpg)
 <use figures/Scatter_T.jpg>
-Package pdftex.def Info: figures/Scatter_T.jpg  used on input line 413.
+Package pdftex.def Info: figures/Scatter_T.jpg  used on input line 420.
 (pdftex.def)             Requested size: 200.76086pt x 187.87054pt.
-<figures/Scatter_T_iters.jpg, id=612, 678.535pt x 613.29124pt>
+<figures/Scatter_T_iters.jpg, id=650, 678.535pt x 613.29124pt>
 File: figures/Scatter_T_iters.jpg Graphic file (type jpg)
 <use figures/Scatter_T_iters.jpg>
-Package pdftex.def Info: figures/Scatter_T_iters.jpg  used on input line 415.
+Package pdftex.def Info: figures/Scatter_T_iters.jpg  used on input line 422.
 (pdftex.def)             Requested size: 200.76086pt x 181.45274pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[42 <./figures/Scatter_D.jpg> <./figures/Scatter_D_iters.jpg>]
-<figures/colorScatter_BVI_TOP.jpg, id=623, 475.7775pt x 485.815pt>
+[43 </home/sascha/master-thesis/figures/Scatter_D.jpg> </home/sascha/master-thesis/figures/Scatter_D_iters.jpg>]
+<figures/colorScatter_BVI_TOP.jpg, id=660, 475.7775pt x 485.815pt>
 File: figures/colorScatter_BVI_TOP.jpg Graphic file (type jpg)
 <use figures/colorScatter_BVI_TOP.jpg>
-Package pdftex.def Info: figures/colorScatter_BVI_TOP.jpg  used on input line 435.
+Package pdftex.def Info: figures/colorScatter_BVI_TOP.jpg  used on input line 442.
 (pdftex.def)             Requested size: 209.12778pt x 213.54428pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[43 <./figures/Scatter_T.jpg> <./figures/Scatter_T_iters.jpg>] [44 <./figures/colorScatter_BVI_TOP.jpg>]
-<figures/colorScatter_SI_VI.jpg, id=644, 458.71375pt x 475.7775pt>
+[44 </home/sascha/master-thesis/figures/Scatter_T.jpg> </home/sascha/master-thesis/figures/Scatter_T_iters.jpg>] [45 </home/sascha/master-thesis/figures/colorScatter_BVI_TOP.jpg>]
+<figures/colorScatter_SI_VI.jpg, id=681, 458.71375pt x 475.7775pt>
 File: figures/colorScatter_SI_VI.jpg Graphic file (type jpg)
 <use figures/colorScatter_SI_VI.jpg>
-Package pdftex.def Info: figures/colorScatter_SI_VI.jpg  used on input line 502.
+Package pdftex.def Info: figures/colorScatter_SI_VI.jpg  used on input line 509.
 (pdftex.def)             Requested size: 209.12778pt x 216.90741pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[45]) (6_conclusion/conclusion.tex [46 <./figures/colorScatter_SI_VI.jpg>]
+[46]) (/home/sascha/master-thesis/6_conclusion/conclusion.tex [47 </home/sascha/master-thesis/figures/colorScatter_SI_VI.jpg>]
 chapter 8.
-[47
+[48
 
 
-] [48]) [49]
+] [49]) [50]
 Package tocbasic Info: character protrusion at lof deactivated on input line 68.
- (main.lof)
+ (/home/sascha/master-thesis/main.lof)
 \tf@lof=\write10
 \openout10 = `main.lof'.
 
 
 No file main.gls.
 No file main.acr.
-[50
+[51
 
 
 ]
 chapter without number
-[51
+[52
 
 
-] [52]
-Overfull \hbox (19.58191pt too wide) in paragraph at lines 72--72
-\T1/ptm/m/n/10.95 (-20) Propagation in Bounded Value Iteration for Stochastic Games. In: \T1/ptm/m/it/10.95 (-20) CoRR \T1/ptm/m/n/10.95 (-20) abs/2007.07421
- []
-
-
-Overfull \hbox (12.04697pt too wide) in paragraph at lines 72--72
-[]\T1/ptm/m/n/10.95 (-20) M. L. Puterman. \T1/ptm/m/it/10.95 (-20) Markov decision processes: Discrete stochastic dynamic programming\T1/ptm/m/n/10.95 (-20) .
- []
-
-(pages/appendix.tex [53]
+] [53] (/home/sascha/master-thesis/pages/appendix.tex [54]
 chapter A.
 
-LaTeX Warning: Reference `sec:benchmarks' on page 54 undefined on input line 3.
+LaTeX Warning: Reference `sec:benchmarks' on page 55 undefined on input line 3.
 
-[54
+[55
 
 
-] [55]) [56]
+] [56]) [57]
 No complaints by nag.
-(main.aux)
+(/home/sascha/master-thesis/main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1965,17 +2031,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59683 strings out of 480864
- 1271530 string characters out of 2904336
- 2359315 words of memory out of 3000000
- 75347 multiletter control sequences out of 15000+600000
- 531472 words of font info for 518 fonts, out of 8000000 for 9000
- 2 hyphenation exceptions out of 8191
- 115i,19n,111p,10662b,2329s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk> </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/public/wasy/dpi600/wasy7.pk>{/home/sasha/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc} </home/sasha/.miktex/texmfs/data/fonts/pk/ljfour/public/wasy/dpi600/wasy8.pk></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss8.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss9.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/mathpazo/fplmbb.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/public/mathpazo/fplmr.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/palatino/uplr8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/symbol/usyr.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/symbol/usyr.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/times/utmb8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></home/sasha/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (63 pages, 2059104 bytes).
+ 59035 strings out of 478994
+ 1243692 string characters out of 5864751
+ 2359321 words of memory out of 5000000
+ 74556 multiletter control sequences out of 15000+600000
+ 528516 words of font info for 513 fonts, out of 8000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 118i,19n,119p,10626b,2329s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texmf-dist/fonts/type1/public/wasy-type1/wasy7.pfb></usr/share/texmf-dist/fonts/type1/public/wasy-type1/wasy8.pfb>
+Output written on /home/sascha/master-thesis/main.pdf (64 pages, 1960585 bytes).
 PDF statistics:
- 1078 PDF objects out of 1200 (max. 8388607)
- 219 named destinations out of 1000 (max. 500000)
- 128939 words of extra memory for PDF output out of 154059 (max. 10000000)
+ 1050 PDF objects out of 1200 (max. 8388607)
+ 892 compressed objects within 9 object streams
+ 221 named destinations out of 1000 (max. 500000)
+ 129035 words of extra memory for PDF output out of 154059 (max. 10000000)
 

@@ -2,6 +2,7 @@
 
 \textcolor{purple}{Make sure to check the spacing in the end. Right now, often we have a heading on one page and then the content for it on the next. Play with graph sizes and float barriers. Also, can you make the headings stand out more? We already are at level of subsubsection, so it's hard... But maybe... Emph? Underline? Also, maybe making the whole thing bold? That drops the effect of bolding the letters, but might still be ok...}
 \textcolor{red}{Make sure that all graphs are $SI_{LP}^T$}
+\textcolor{red}{Also, while recomputing the graphs export them directly as PDFs}
 
 In this chapter, we analyze models regarding their feature distribution and algorithms regarding their performance.
 Furthermore, we investigate which model features influence the performance of the algorithms.
@@ -38,6 +39,7 @@ The games we prepend are very similar to the RandomTree guideline from Section \
 For  the exact parameters we have used to generate our models see Section \ref{sec:GenParams} in the appendix.
 
 \subsubsection*{Generating large models} \label{subsec:largeModels}
+\textcolor{red}{Talk about how long it takes to generate models}
 Note that all the randomly generated models have 10000 states. On one hand, we have chosen a fixed state size to make the results more comparable.
 On the other hand, we could not generate models with larger state spaces (at least 1000000 states) because every action in our random generated models is stored explicitly
 in the corresponding .prism file \textcolor{purple}{"We could not generate larger models" is actually wrong (and underselling). We can generate them, PRISM just can't run on them^^ Rephrase, since it makes your contribution stronger and bashing PRISM is ok}. Thus, PRISM requires a lot of time to parse these files. Parsing the randomly generated models with 10000 states takes
@@ -54,11 +56,12 @@ which are AV, dice, and hallway. \textcolor{purple}{Additionally, we may add in 
 We provide a short description of each type of plot we use in this chapter:
 \subsubsection*{Box plots} \label{plot:boxplot}
 A box plot provides an overview of the spread and skewness of the model features of our model sets.
+See Table \ref{tab:modelFeatures} for an overview of all model features we track and an explanation of the abbreviations.
 The orange line marks the median of a feature in all models and the green triangle marks the
 average. The bounds of the boxes mark the 25 and 75 percentile, and the lines extended
-by the whiskers mark the 10 and 90 percentile. Dots outside the whiskers represent
+mark the last data point included in the interquartile range times the factor 1.5. Dots outside the whiskers represent
 outliers that differ significantly from the rest of the dataset.
-The are plots grouped by and colored into the following categories:
+The plots are grouped by and colored into the following categories:
 \begin{itemize}
     \item Green outlines are for properties related to states. 
     \item Blue outlines are for properties related to actions. 
@@ -82,6 +85,7 @@ If a point is below the diagonal, the algorithm on the x-axis required more time
 The two lines next to the diagonal mark the case where one algorithm was twice as fast as the other.
 
 \subsubsection*{1-dimensional scatter plots} \label{plot:1Dscatter}
+\textcolor{red}{Histograms}
 \textcolor{red}{This is very abstract, and I do not like it. If you use it only once you can move it down OR put it into an own subsection OR reference it only once}
 In some cases we want to analyze how two sets of events $\mathbf{A}, \mathbf{B}$ correlate to model features. 
 Usually, we use $\mathbf{B}$ as the complement to $\mathbf{A}$.
@@ -96,6 +100,8 @@ For example, we may find that all models in set $\mathbf{A}$ have smaller MECs t
 \section{Model analysis results}
 First, we want to learn about the feature distribution of the real case studies we have. 
 For this we use a box plot for each feature in Figure \ref{fig:Real_FeatureDistribution}.
+\textcolor{red}{Clearly explain that there are outlier for AvgMEC because most MECs have exactly 0 Mecs.}
+\textcolor{red}{Say how many models in the dataset}
 \begin{figure}[h!]
     \centering
     \includegraphics[width=1\textwidth]{figures/Real_FeatureDistribution.jpg}
@@ -198,8 +204,8 @@ General comment: When you are kinda done, you can skim your thesis and check tha
 
 
 \section{Algorithm comparison results}
-
-In this section, we compare the Algorithms introduced in Section \ref{sec:SGAlgos} on real case studies, handcrafted examples, and our randomly generated models to both evaluate the 
+\textcolor{red}{GIVE A REFERENCE WHAT ALL THE ALGORITHMS MEAN (OVI, WP ...)}
+In this section, we compare the algorithms introduced in Section \ref{sec:SGAlgos} on real case studies, handcrafted examples, and our randomly generated models to both evaluate the 
 performance of the algorithms relative to each other and find correlations between model feature values and algorithm performance.
 
 First, we provide a general overview of the performance of all algorithms on our benchmarking sets with a line plots in Figure \ref{fig:AlgoPerformance}.
@@ -236,7 +242,7 @@ While time is practically more relevant, the number of iterations is independent
 \FloatBarrier
 
 \subsection{$\BVI$ vs $\OVI$ vs $\WP$}
-We read from Figure \ref{fig:AlgoPerformance} that WP is the fastest to solve the problems on both randomly generated models and real case studies.
+We observe in Figure \ref{fig:AlgoPerformance} that WP is the fastest approach for solving both randomly generated models and real case studies.
 To see whether this is the case for all models or only when accumulating runtime, we provide a scatter plot in Figure \ref{fig:WPvsBVIvsOVI}.
 The x-axis marks the time $\WP$ requires to solve a stochastic game, and the y-axis marks the respective time $\BVI$ or $\OVI$ needs.
 The two lines next to the diagonal mark the case that $\WP$ is twice as fast as $\BVI$ / $\OVI$ or half as fast.
@@ -317,11 +323,11 @@ This is due to the termination criterion of $\OVI$:
 If no value improves more than an $\epsilon'$, the verification phase starts to ensure that $\OVI$ is close enough to the optimal value.
 If the verification fails, $\epsilon'$ is halved. 
 Thus, it is possible that the verification phase fails, although the game is almost solved.
-In that case $\OVI$ will iterate unnecessary extra steps until it reaches its new precision that verifies that $\OVI$ may indeed terminate.
-For large models, it is likelier that a model is so complex that it requires multiple verification phases as Figure
+In that case $\OVI$ will perform unnecessary extra iterations until it reaches its new precision that verifies that $\OVI$ may indeed terminate.
+For large models, it is more likely that a model is so complex that it requires multiple verification phases as Figure
 \textcolor{red}{Show something about verification phases (or do not)} suggests. 
 Thus, it is also more probable that the precision is halved at a point that will lead to unnecessary iterations.
-In addition to that iterations are also more costly for larger models since the state space is bigger.
+In addition, iterations are also more costly for larger models since the state space is bigger.
 
 $\OVI$ generally requires more iterations than $\WP$ and $\BVI$. This is partly because of the extra iterations that may happen in $\OVI$ as mentioned, 
 and partly because during verification phase only the upper bound is being iterated on. Meanwhile, in $\BVI$ both upper- and lower bound are updated per iteration.
@@ -338,6 +344,7 @@ while the green dots represent models where $\WP$ required also multiple iterati
     }
     \label{fig:OVIinstantCompute}
 \end{figure}
+\textcolor{red}{Screenshot is faulty}
 \FloatBarrier
 
 Clearly, in some instances where a game has value 0 or 1, $\WP$ is able to identify its value in only 1 iteration while $\OVI$ cannot.
@@ -507,6 +514,7 @@ the models generated we generate are highly unfavorable for $\SI$.
     \label{fig:colorScatterSi}
 \end{figure}
 \FloatBarrier
+\textcolor{red}{ADD Time limit on the edges of the graph}
 This is most likely due to the higher number of actions per state of our generated models compared to the case studies.
 As Figure \ref{fig:colorScatterSi} suggests, if every state has up to 3 actions, $\SI$ and $\BVI$ perform similar.
 However, as soon as there are states with more  actions, $\SI$ is performing worse.

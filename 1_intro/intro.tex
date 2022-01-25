@@ -1,28 +1,27 @@
 \chapter{Introduction} \label{ch:intro}
 
-\textcolor{purple}{Im intro wirklich gut verkaufen, wie cool das ist, was du gemacht hast, und warum jeder das jetzt wissen sollte. (wenn andere das für ihre Algos verwenden, werden die auch bessere Daten und mehr Verständnis haben. Dann gibt es mehr Algos, mehr competition, bettere Algos, vielleicht auch einen portfolio solver. Dann werden die angewandten Leute aufmerksam, dann gibt es sogar mehr echte Case studies. Und am Ende solven wir echte case studies ganz ganz toll und retten die Welt.)
-- Auf Überleitungen und Leserführung schauen. Dein Inhalt ist super und die Struktur sinnvoll. Das, was jetzt zu einer wirklich hervorragenden Arbeit noch wichtig ist, ist, dass der Leser immer weiß was du ihm grade warum erzählst.}
+\textcolor{purple}{Auf Überleitungen und Leserführung schauen. Dein Inhalt ist super und die Struktur sinnvoll. Das, was jetzt zu einer wirklich hervorragenden Arbeit noch wichtig ist, ist, dass der Leser immer weiß was du ihm grade warum erzählst.}
 
 We live in a time in which technology and computer systems are all around us and are a crucial part of our daily life. 
 Our dependency on these systems is increasing. 
 No matter if we consider sending an email, paying online with our smartphone, being driven by an autonomously driving car, or a factory where machines have to perform tasks: 
 we as consumers and also as developers want to be sure that the systems and the programs are doing exactly what they should.
 
-Verification is a field of computer science dealing with this question. 
+Verification is a field of computer science focussed on providing formal guarantees for systems. 
 One widely used approach to do so is \emph{model checking} where a real system is simplified to a theoretical model.
 The model is then used to assess which properties about the given system hold.
 
-However, in the real world, some events only happen occasionally, like bad weather while driving somewhere or that a part in factory breaks. 
+When modelling a real world system, occasional events like bad weather while driving or that a part breaking in the factory may be necessary to take into account. 
 Thus, we need to quantify how often these realistic events occur and make our theoretical model probabilistic. 
-Through \emph{probabilistic model checking} it is then possible to guarantee with a probability that the model is going to behave as it should. 
+Through \emph{probabilistic model checking} it is possible to provide a guarantee with a probability that the model is going to behave as it should. 
 One prominent way to express various probabilistic systems is to model them as \emph{simple stochastic games (SGs)} which are two-player zero-sum games that are played on graphs. 
 The vertices of the graph belong to either one player or the other and in every state, there is a set of actions that lead in a probabilistic manner into other states. 
 One player tries to achieve his goal and the other tries to prevent him from this. This is a natural way to model, for example, a system in an unknown environment.
 The goal we consider is reachability, i.e. the first player has to reach a certain set of states to win, while the other player has to prevent this. 
 We call these types of games \emph{reachability games}.
 
-A practically relevant problem is to compute how high the probability is that the first player reaches one of these goal states. 
-Through this, we can derive what we wanted to in the first place: 
+A practically relevant problem is to compute the probability of the first player reaching one of these goal states. 
+This way we derive what we want to verify to in the first place: 
 the probabilistic guarantee that the real-world system behaves as we expect it to.
 
 The three common solution techniques to solve reachability problems for stochastic games are quadratic programming, 
@@ -31,7 +30,7 @@ In practice, value iteration is considered the fastest of the three solution tec
 However, there is an adversarial example proving that value iteration may need exponentially many steps to solve a problem \cite{viExponential}.
 
 
-To all the three techniques for solving reachability games, there are many optimizations and changes available that affect their performance.
+For all the three techniques for solving reachability games, there are many optimizations and changes available that affect their performance.
 However, at the moment, there is a lack of experimental data that enables a solid quantitative assertion of the performance of the solution techniques and their extensions.
 In the PRISM-games benchmark suite, there are \textcolor{red}{NUMBER OF MODELS} distinct models. 
 With \textcolor{red}{CITATIONS TO OTHER MODELS} we are aware of about a dozen real-world case studies.
@@ -48,9 +47,13 @@ To tackle these problems, we provide following contributions:
         In particular, we analyze the impact of structural properties of models on the algorithms, structural biases of the real case studies, and the algorithm performance.
 \end{itemize}
 
+We see our contributions as the first steps towards making stochastic games a practically relevant solution for modelling systems. 
+The more insights we gather about the relation between structural properties and algorithms solving stochastic games, the more sophisticated 
+solutions can be found for problems that current prominent algorithms have. 
+
 Note that we will only focus on value iteration, strategy iteration, and their extensions since it was already shown in \cite{gandalf} that at the moment
-Quadratic Programming is in general not a recommended approach to tackle reachability problems in stochastic games.
-When testing Quadratic Programming on randomly generated models, we confirmed these results.
+quadratic programming is in general not a recommended approach to tackle reachability problems in stochastic games.
+When testing quadratic programming on randomly generated models, we confirmed these results.
 
 %To tackle this issue, we create a broad set of randomly generated stochastic games and test the existing solution techniques on them.
 %The growing number of reachability games and solution technique extensions makes analysis tools necessary that are scalable.
@@ -62,7 +65,7 @@ The rest of the thesis is structured as follows:
 Chapter \ref{ch:prelim} introduces the necessary preliminaries for this thesis.
 In Chapter \ref{ch:implementedAlgos} we describe the extensions we have implemented in the PRISM model checker for strategy iteration and value iteration.
 First, Chapter \ref{ch:randomGen} provides the benefits as well as the theoretical aspects to the random generation of stochastic games,
-then Chapter \ref{ch:implementedRandomGen} contains implementation details and a manual on how to use our implementation.
+then Chapter \ref{ch:implementedRandomGen} presents implementation details and a manual on how to use our implementation.
 In Chapter \ref{ch:analysis} we describe the tools we implemented for the analysis of both stochastic games and solution techniques.
 Chapter \ref{ch:results} presents benchmarks of the algorithms on the reachability games, as well as results of the model and algorithm analysis.
 Lastly, Chapter \ref{ch:conclusion} concludes our work.
@@ -72,20 +75,21 @@ Markov Decision Processes are a generalization of Markov Chains \cite{Puterman} 
 
 The first to introduce the concept of stochastic games as well as value iteration as solution algorithm was Shapley in \cite{shapley}.
 Condon has shown that solving simple stochastic games has a complexity in $\nptime$ $\cap$ co-$\nptime$ \cite{condonComplexity}.
-Condon has also introduced both Quadratic Programming and Strategy Iteration as algorithms for stochastic reachability games in \cite{condonQP}. 
+Condon has also introduced both quadratic programming and strategy iteration as algorithms for stochastic reachability games in \cite{condonQP}. 
 
 Both value iteration and strategy iteration are also solution methods for MDPs \cite{Puterman}\cite{HoffmanKarp}.
 However, the problem with standard value iteration in both MDPs and $\SG$s is that it could be arbitrary imprecise \cite{haddadmonmege} and 
-could in practice run for exponentially many steps \textcolor{purple}{Citation as comment}%\cite{https://link.springer.com/chapter/10.1007%2F978-3-540-69850-0_7}
-Recently, several heuristics were introduced that provide a guarantee on how close value iteration is away from the result for MDPs\textcolor{red}{Copy from Maxi} and SGs \cite{paperMaxi}.
-\textcolor{purple}{More stuff about VI}
+could in practice run for exponentially many steps \cite{viExponential}.
+Recently, several heuristics were introduced that provide a guarantee on how close value iteration is away from the result for MDPs \cite{haddadmonmege} and SGs \cite{paperMaxi}.
+\cite{widestPath} provided for these heuristics for SGs a new way of solving structures called end components.
 
-\textcolor{purple}{more stuff about SI}
+\cite{gandalf} has recently shown that at the moment quadratic programming is not competitive with value iteration and strategy iteration,
+so we will not consider it in this thesis. 
+Furthermore, it has introduced optimizations for both strategy iteration and value iteration for stochastic games that solve via divide and conquer by 
+first providing a topological partitioning of the stochastic game.
 
-\cite{gandalf} has recently shown that at the moment Quadratic Programming is not competitive with Value Iteration and Strategy Iteration,
-so we will not consider it in this thesis.
 
-The tools implementing the standard SI and/or VI algorithms for $\SG$s are PRISM-games \cite{PRISM-games}, 
+The tools implementing the standard ways of standard iteration and/or value iteration algorithms for $\SG$s are PRISM-games \cite{PRISM-games}, 
 GAVS+ \cite{gavs+} and GIST \cite{chatterjee2010gist}.
 GAVS+ is however not maintained anymore, and more for educational purposes.
 GIST considers $\omega$-regular objectives, but performs only qualitative analysis. 

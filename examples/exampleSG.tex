@@ -27,8 +27,8 @@
 \draw[-] (q) to node [midway,anchor=south] {$\mathsf{b}$} (mid) ;
 %\draw (mid) -- (0);% node [midway,anchor=north east] {0.5};
 %\draw (mid) -- (1);% node [midway,anchor=south east] {0.5};
-\draw[->] (mid) to [bend right] node [text width =3.0cm, align=left, midway, below] {$\trans(\mathsf{s_1}, b, \mathrm{\zeroSink})$} (0);
-\draw[->] (mid) to [bend left] node [text width =3.0cm, near end, above] {$\trans(\mathsf{s_1}, b, \target)$} (1);
+\draw[->] (mid) to [bend right] node [text width =1.4cm, align=left, midway, below] {$0.25$} (0);
+\draw[->] (mid) to [bend left] node [text width =1.2cm, near end, above] {$0.75$} (1);
 %\draw (mid) to [bend left,out=270,in=270] (q) ;
 \draw[->]  (0) to[loop above]  node [midway,anchor=south] {$\mathsf{a}$} (0);
 \draw[->]  (1) to [loop above] node [midway,anchor=south] {$\mathsf{a}$} (1) ;
@@ -38,6 +38,6 @@
 \caption[Example of a simple stochastic game]{An example of a simple stochastic game. $s_0, s_1, s_2, \target, \mathrm{\zeroSink}$ are states. 
 $a,b$ are actions. $s_1$ and $\target$ are Maximizer-states, while the rest of the states belongs to the Minimizer. 
 $\target$ is a target and $\mathrm{\zeroSink}$ is a so-called sink, i.e. a state that has no path to the target. 
-$\trans(\mathsf{s_1}, b, \target)$ and $\trans(\mathsf{s_1}, b, \mathrm{\zeroSink})$ are the transition probabilities that a token in $s_1$ moved through action $b$ would either be moved to $\target$ or $\mathrm{\zeroSink}$}
+0.75 and 0.25 are the transition probabilities that a token in $s_1$ moved through action $b$ would either be moved to $\target$ or $\mathrm{\zeroSink}$}
 \label{ex:exampleSG}
 \end{figure}
