@@ -14,26 +14,26 @@ would have a comparatively diminishing impact on algorithm performance.
 
 Thus, we provide several parameters which we do not randomize. Instead, we give the user the option of providing a value for the parameter or using our default parameters.
 The parameters in Subsection \ref{list:params} provide an overview of what we do not randomize in our implementation.
-Of course, it is possible to wrap a script around our generation implementation that randomizes the parameters to avoid too deterministic model generation.
+Of course, it is possible to wrap a script around our generation implementation that randomizes the parameters to increase the variation of generated models.
 
 \subsection*{Limits and additional guideline options} \label{sec:guidelinesSubsec}
-Although the parameters we expose for random generation can constrain some structural properties of the resulting models, 
-there are many structural properties we can only barely influence. For example, there is no obvious way how to influence the size and number of SCCs that a model has or to guarantee
+Although the parameters we expose for random generation constrain some structural properties of the resulting models, 
+there are many structural properties we can only barely influence. For example, there is no obvious way how to influence the size of SCCs that a model has or to guarantee
 that every state in a model has a certain number of actions when using Algorithm \ref{alg:randomRandom}.
 
 For this, we provide the option in our implementation to use other scripts for the model generation that are wrapped into PRISM files. We refer to these scripts as guidelines.
 We provide two additional guidelines to our random-generation procedure described in Section \ref{sec:randomGenAlgo}: 
-A procedure that controls how many actions each state has and another one that provides a guarantee on the size and number of SCCs in the model.
-Both guidelines are connected from the initial state, but are not able to create any game in $\connectedSG$.
+A procedure that controls how many actions each state has and another one that provides a guarantee on the size of SCCs in the model.
+Both guidelines generate model $\SG \in \connectedSG$, but are not able to create any game in $\connectedSG$.
 
 The guideline that controls how many actions a state has is called \emph{RandomTree} 
 because it creates a treelike graph structure where the initial state is the root.
-Every node of the tree has k actions and at most k children, where k is a parameter. 
+Every node of the tree has $k$ actions and at most $k$ children, where $k$ is a parameter. 
 Every action has an assigned child to which it has a positive transition probability.
 The rest of the probability distribution of the action is assigned at random.
-An inner node of the tree may have less than k children if adding k children would exceed the requested number of states n for the model.
-Also, leafs are not required to have k actions.
-Their actions are only introduced during the backward process and are there to enable the generation of end components.
+An inner node of the tree may have less than $k$ children if adding $k$ children would exceed the requested number of states n for the model.
+Also, leafs are not required to have $k$ actions.
+Their actions are only introduced during the backward process and enable the generation of end components.
 
 We refer to the guideline that controls the SCCs of a model by \emph{RandomSCC}.
 The procedure requires a minimal and maximal size boundary $[a, b]$ for every SCC and the total number of states in the stochastic game $n$.
@@ -44,19 +44,20 @@ Next, we unify all the SCCs of the subgame by using the topological enumeration 
 We circularly connect the SCCs along the enumeration, making the whole subgame an SCC.
 Next, we make sure that the subgame is connected to the rest of the stochastic game by making sure a previously created subgame has an action
 leading into this subgame. We repeat this procedure until we have at least $n$ states in the stochastic game, 
-resulting in a stochastic game $\SG$ that is connected from the root where the user has an easy way of controlling the number and size of the SCC in $\SG$.
+resulting in a stochastic game $\SG \in \connectedSG$ where the user has an easy way of controlling the size of the SCC in $\SG$.
 
 \section{A manual on how to use our implementation}
 In this section, we describe the implementation details and provide guidance for using, understanding, and extending our implementation.
-The random generation is split into multiple python modules to maximize extendability and readability.
-All relevant python modules are located in the folder "random-generated-models" in the GitHub Repository \url{https://github.com/ga67vib/Algorithms-For-Stochastic-Games}.
+The random generation is split into multiple Python modules to maximize extendability and readability. 
+We recall that a Python module is a file with a script.
+All relevant Python modules are located in the folder "random-generated-models" in the GitHub Repository \url{https://github.com/ga67vib/Algorithms-For-Stochastic-Games}.
 We provide a description on how to use the modules and how to extend in case the reader wants to.
 
 \subsubsection*{Generating models}
-If you want to generate a model, you can run the "modelGenerator.py"-script.
+If you want to generate a model, you can run the \texttt{modelGenerator.py}-script.
 This script can receive a number of parameters to guide the generation process and constrain which models can be created.
 
-You can use "python modelGenerator -help" to see all possible parameters and what they do.
+You can use \texttt{python modelGenerator -help} to see all possible parameters and what they do.
 Here is the exhaustive list of parameters:
 \begin{itemize} \label{list:params}
     \item outputDir: Where to put the resulting model
@@ -66,47 +67,44 @@ Here is the exhaustive list of parameters:
     \item guideline: Which guideline to use when generating the model. Will use by default Algorithm \ref{alg:randomRandom}.
     Alternatives are the "RandomTree" and "RandomSCC" guidelines that are described in Section \ref{sec:guidelinesSubsec}.
     \item smallestProb: What is the smallest probability that is allowed to occur?
-    \item backwardsProb: How probable is it that a state generates actions during the backward procedure?
-    \item branchingProb: How probable is it that an action has multiple transitions
+    \item maximumBackwardsActions: How many actions may a state receive at most during the backward procedure?
+    \item backwardsProb: If a random probability is generated below this threshold, the state receives no actions in the backward procedure.
+    \item branchingProb: If a random probability is generated below this threshold, the state-action pair leads into only one state with probability 1.
     \item maxBranchNum: How many positive transition probabilities may one action have at most?
     \item forceUnknown: A switch. If set to true, a new target and sink are introduced that effectively multiply the value of each state by 0.9.
     This ensures that no additional targets are created during precomputation. 
     We introduce the switch to ensure that the generated models is not solved mostly during precomputation.
-    \item maximizerProb
-    \item maximumBackwardsActions
-    \item minSCCSize
-    \item maxSCCSize
+    \item maximizerProb: What is the probability that a state belongs to the Maximizer?
+    \item minSCCSize: What is the smallest size an SCC may have (only for RandomSCC guideline)?
+    \item maxSCCSize: What is the largest size an SCC may have (only for RandomSCC guideline)?
 \end{itemize}
 \textcolor{red}{With correct implementation, generating models is slow. Say that you have a 'fast' switch to make randomPicker less random but way faster.
 With fast <1ŝ for a 10k model. Without its 10s}
 
-The generated model will be named by the parameter values and will be stored in the specified directory or "generatedModels" by default.
+The generated model will be named by the parameter values and will be stored in the specified directory or \texttt{generatedModels} by default.
 
-To generate multiple models with different parameter settings, we have used the simple script "massModelGenerator.py" which calls modelGenerator various times with the different sets of parameters.
+To generate multiple models with different parameter settings, we have used the simple script \texttt{massModelGenerator.py} which calls \texttt{modelGenerator} various times with the different sets of parameters.
 
 \subsubsection*{Module explanation}
-Here we describe what every module does.
-
-The module "modelGenerator.py" is responsible for calling the module that generates the stochastic game and translating it into a .prism file. 
+Next, we explain the functionality of every module. The module \texttt{modelGenerator.py} is responsible for calling the module that generates the stochastic game and translating it into a .prism file. 
 Furthermore, it is the interface for users.
 
-The creation of the stochastic game is outsourced in another python module. The random generation as described in Algorithm \ref{alg:randomRandom} happens in
-module "graphGenerator.py". This is also the base class for other procedure guidelines. 
-Both the RandomTree guideline - implemented in model treeGraphGenerator.py - and the RandomSCC guideline - implemented in module sccGraphGenerator.py - inherit
-from graphGenerator.
+The creation of the stochastic game is outsourced to another python module. The random generation as described in Algorithm \ref{alg:randomRandom} happens in
+module \texttt{graphGenerator.py}. This is also the base class for other procedure guidelines. 
+Both the RandomTree guideline - implemented in model \texttt{treeGraphGenerator.py} - and the RandomSCC guideline - implemented in module \texttt{sccGraphGenerator.py} - inherit
+from \texttt{graphGenerator}.
 
-The module "graphGenParams.py" contains a class that contains all the parameters any graph generator requires. 
-\textcolor{red}{I should probably rewrite this such that every guideline has its own parameter dataclass.}
+The module \texttt{graphGenParams.py} contains a class that contains all the parameters any graph generator requires. 
 
-Lastly, there is a module called "randomStateGetter.py". This class implements various randomPickers.
+Lastly, there is a module called \texttt{randomStateGetter.py}. This class implements various randomPickers.
 A randomPicker selects a state of the state-space randomly.
-This is used for example to decide which state should have an action to the currently introduced state.
+For example, this is used to decide which state should have an action to the currently introduced state.
 Different implementations allow to guide the selection process to achieve different distributions of actions and transitions.
-Each generator receives two randomPickers as part of their input parameters: One that decided which state should receive an outgoing action, 
-and another one that decides where a transition should lead.
-\textcolor{red}{Should rename them to randomPicker and make them truly more random.}
+Each generator receives two randomPickers as part of their input parameters: One that decides that which state should receive an outgoing action, 
+and another one that decides where a transition should lead. By default, the randomPicker picks any state $\in [\initstate, \state<m>]$ randomly at uniform, where $m$ is a parameter.
 
 \subsubsection*{Module extension}
 If you are interested in implementing a new way of generating random models by providing new guidelines, all you have to do is create a new
-module that inherits from GraphGenerator and implement the functionality. The generateGraph() call must receive a GraphGenParams object and return nothing.
-After generateGraph(), the GraphGenerator instance should hold all the information about the game in its class variables.
+module that inherits from \texttt{GraphGenerator} and implement the functionality. The \texttt{generateGraph()} call must receive a \texttt{GraphGenParams} object and return nothing.
+After \texttt{generateGraph()}, the \texttt{GraphGenerator} instance should hold all the information about the game in its class variables.
+\FloatBarrier

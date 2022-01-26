@@ -126,12 +126,12 @@
            given={Christel},
            giveni={C\bibinitperiod},
            givenun=0}}%
-        {{un=1,uniquepart=given,hash=392d5825b15ef7f81f68632c7a49fdef}{%
+        {{un=0,uniquepart=base,hash=392d5825b15ef7f81f68632c7a49fdef}{%
            family={Katoen},
            familyi={K\bibinitperiod},
-           given={Joost{-}Pieter},
-           giveni={J\bibinitperiod},
-           givenun=1}}%
+           given={Joost-Pieter},
+           giveni={J\bibinithyphendelim P\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {{MIT} Press}%
@@ -466,12 +466,12 @@
            given={Krishnendu},
            giveni={K\bibinitperiod},
            givenun=0}}%
-        {{un=1,uniquepart=given,hash=392d5825b15ef7f81f68632c7a49fdef}{%
+        {{un=0,uniquepart=base,hash=392d5825b15ef7f81f68632c7a49fdef}{%
            family={Katoen},
            familyi={K\bibinitperiod},
            given={Joost-Pieter},
            giveni={J\bibinithyphendelim P\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
         {{un=0,uniquepart=base,hash=aafb182186c9faf19232ee74fb85cb32}{%
            family={Weininger},
            familyi={W\bibinitperiod},

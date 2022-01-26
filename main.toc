@@ -1,5 +1,5 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {american}{}\relax 
+\babel@toc {american}{}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Acknowledgments}{d}{Doc-Start}%
 \defcounter {refsection}{0}\relax 
@@ -9,7 +9,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Intuition}{4}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Stochastic games}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Stochastic games}{5}{section.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Strategies}{6}{section.2.3}%
 \defcounter {refsection}{0}\relax 
@@ -35,44 +35,44 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Why to use randomly generated models}{14}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Constraining the random generation process}{14}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Constraining the random generation process}{15}{section.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Our algorithm for random model generation}{15}{section.4.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.4}An alternative to handcrafted models}{19}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Implementing randomly generated stochastic games}{20}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Implementing randomly generated stochastic games}{21}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Parameters and guidelines for model construction}{20}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Parameters and guidelines for model construction}{21}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}A manual on how to use our implementation}{21}{section.5.2}%
+\contentsline {section}{\numberline {5.2}A manual on how to use our implementation}{22}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Tools for algorithm analysis}{24}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Tools for algorithm analysis}{25}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Results}{27}{chapter.7}%
+\contentsline {chapter}{\numberline {7}Results}{28}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Experimental setup}{27}{section.7.1}%
+\contentsline {section}{\numberline {7.1}Experimental setup}{28}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}Case studies}{27}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.1}Case studies}{28}{subsection.7.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.2}Plot overview}{28}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.2}Plot overview}{29}{subsection.7.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Model analysis results}{30}{section.7.2}%
+\contentsline {section}{\numberline {7.2}Model analysis results}{31}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Algorithm comparison results}{35}{section.7.3}%
+\contentsline {section}{\numberline {7.3}Algorithm comparison results}{36}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.1}$\mathbf {BVI}$ vs $\mathbf {OVI}$ vs $\mathbf {WP}$}{37}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.1}$\mathbf {BVI}$ vs $\mathbf {OVI}$ vs $\mathbf {WP}$}{38}{subsection.7.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.2}Analyzing the optimizations}{40}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.2}Analyzing the optimizations}{41}{subsection.7.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.3}Algorithms based on strategy iteration}{44}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.3}Algorithms based on strategy iteration}{45}{subsection.7.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Conclusion and future work}{47}{chapter.8}%
+\contentsline {chapter}{\numberline {8}Conclusion and future work}{48}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{50}{chapter*.47}%
+\contentsline {chapter}{\nonumberline List of Figures}{51}{chapter*.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{51}{chapter*.48}%
+\contentsline {chapter}{\nonumberline Bibliography}{52}{chapter*.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix: Information about the models}{54}{appendix.A}%
+\contentsline {chapter}{\numberline {A}Appendix: Information about the models}{55}{appendix.A}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
