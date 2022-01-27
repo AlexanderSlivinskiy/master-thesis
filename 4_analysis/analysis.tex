@@ -10,41 +10,41 @@ The model features we track along with their names we use in the experimental se
         Feature Name & Description & Rel. \\\hline\multicolumn{3}{c}{}\\[-0.5em]\hline
         \endhead
         \multicolumn{3}{|c|}{$\mathbf{State-related}$} \\\hline
-        NumStates & Number of states & \\\hline
-        NumTargets & Number of targets & $\times$  \\\hline
-        NumSinks & Number of sinks & $\times$ \\\hline
-        NumUnknown & Number of unknown states & $\times$ \\\hline
-        NumMaxStates & Number of Maximizer states & $\times$ \\\hline
+        NumStates & Number of states & \\
+        NumTargets & Number of targets & $\times$  \\
+        NumSinks & Number of sinks & $\times$ \\
+        NumUnknown & Number of unknown states & $\times$ \\
+        NumMaxStates & Number of Maximizer states & $\times$ \\
         NumMinStates & Number of Minimizer states & $\times$ \\\hline\multicolumn{3}{c}{}\\[-0.5em]\hline
 
         \multicolumn{3}{|c|}{$\mathbf{Actions-related}$} \\\hline
-        NumActions & Total number of actions & \\\hline
-        NumMaxActions & Maximal occurring number of actions per state &  \\\hline
-        NumProbActions & Number of non-deterministic actions & $\times$ \\\hline
+        NumActions & Total number of actions & \\
+        NumMaxActions & Maximal occurring number of actions per state &  \\
+        NumProbActions & Number of non-deterministic actions & $\times$ \\
         AvgNumActionsPerState & Average number of actions per state & \\\hline\multicolumn{3}{c}{}\\[-0.5em]\hline
 
         \multicolumn{3}{|c|}{$\mathbf{Transitions-related}$} \\\hline
-        NumMaxTransitions & Number of maximum transitions per action & \\\hline
-        SmallestTransProb & Smallest occurring positive transition probability in the model &  \\\hline
+        NumMaxTransitions & Number of maximum transitions per action & \\
+        SmallestTransProb & Smallest occurring positive transition probability in the model &  \\
         AvgNumTransPerAction & Average number of transitions per action & \\\hline\multicolumn{3}{c}{}\\[-0.5em]\hline
         \pagebreak
         \multicolumn{3}{|c|}{$\mathbf{MEC-related}$} \\\hline
-        NumMECs & Number of MECs & \\\hline
-        Biggest-/ SmallestMEC & Size of biggest / smallest MEC & $\times$ \\\hline
+        NumMECs & Number of MECs & \\
+        Biggest-/ SmallestMEC & Size of biggest / smallest MEC & $\times$ \\
         AvgMEC, MedianMEC & Average MEC size and Median MEC size & $\times$ \\\hline\multicolumn{3}{c}{}\\[-0.5em]\hline
 
         \multicolumn{3}{|c|}{$\mathbf{SCC-related}$} \\\hline
-        NumSCCs & Number of SCCs & \\\hline
-        Biggest-/ SmallestSCC & Size of biggest / smallest SCC & $\times$ \\\hline
-        AvgSCC, MedianSCC & Average SCC size and median SCC size & $\times$ \\\hline
-        Biggest-/ SmallestSCC & Size of biggest / smallest SCC & $\times$ \\\hline
-        MaxSCCDepth & Longest chain of SCCs from the SCC of the initial state & \\\hline
-        NumSCCNonSingleton & Number of SCCs with size at least 2 & \\\hline
-        SmallestSCCNonSingleton & Smallest SCC with size greater than 1 & \\\hline
+        NumSCCs & Number of SCCs & \\
+        Biggest-/ SmallestSCC & Size of biggest / smallest SCC & $\times$ \\
+        AvgSCC, MedianSCC & Average SCC size and median SCC size & $\times$ \\
+        Biggest-/ SmallestSCC & Size of biggest / smallest SCC & $\times$ \\
+        MaxSCCDepth & Longest chain of SCCs from the SCC of the initial state & \\
+        NumSCCNonSingleton & Number of SCCs with size at least 2 & \\
+        SmallestSCCNonSingleton & Smallest SCC with size greater than 1 & \\
         AvgSCCNonSingleton & Average SCC size with cardinality greater than 1 & $\times$ \\\hline\multicolumn{3}{c}{}\\[-0.5em]\hline
 
         \multicolumn{3}{|c|}{$\mathbf{Path-related}$} \\\hline
-        NearestTarget & Shortest Path from initial state to the nearest target & \\\hline
+        NearestTarget & Shortest Path from initial state to the nearest target & \\
         FurthestTarget & Shortest Path from initial state to the furthest target &  \\\hline
         \caption{A summary of all features we track in every model. If a $\times$ symbol is present in the last column of the feature,
         the feature is measured absolutely, but we display it relative to a fitting measure.}

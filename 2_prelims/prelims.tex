@@ -1,25 +1,25 @@
 \chapter{Preliminaries} \label{ch:prelim}
 
 In this chapter, we introduce the underlying definitions necessary to have an understanding of the notation and foundation on which this thesis is built on. 
-To get an overview of what simple stochastic games are and how they are played we provide an intuition in Section \ref{sec:intuit}. 
-In Section \ref{sec:defSG} we introduce the formal definition of simple stochastic games, which is the stochastic model we consider. 
+To get an overview of what simple stochastic games are and how they are played, we provide an intuition in Section \ref{sec:intuit}. 
+In Section \ref{sec:defSG}, we introduce the formal definition of simple stochastic games, which is the stochastic model we consider. 
 We formalize the notion of players having strategies in Section \ref{sec:defStrat} and define the semantics of simple stochastic games in Section \ref{sec:defSemantics}. 
 We then consider special subparts of the state space of stochastic games called end components in Section \ref{sec:defEC}.
-Next, we recall an important graph property know as strongly connectedness in Section \ref{sec:SCC}.
+Next, we recall an important graph property known as strongly connectedness in Section \ref{sec:SCC}.
 Lastly, we provide short descriptions of the most prominent algorithms that solve simple stochastic games and some optimizations to them in Section \ref{sec:SGAlgos}.
 
 \section{Intuition} \label{sec:intuit}
 \input{examples/exampleSG}
-A \emph{simple stochastic game} is a two-player-game introduced by Shapley in \cite{shapley} played on a graph $G$ whose vertices $\states$ are partitioned into the two sets $\maxStates$ and $\minStates$. 
+A \emph{simple stochastic game} is a two-player game introduced by Shapley in \cite{shapley} played on a graph $G$ whose vertices $\states$ are partitioned into the two sets $\maxStates$ and $\minStates$. 
 Each set belongs to a player. We call the players Maximizer and Minimizer. We refer to vertices also as states.
 
 At the beginning of the game, a token is placed on the initial vertex $\initstate$. 
 The Maximizer's goal is to move the token to any \emph{target} $\target \in \fstates \subseteq \states$, 
 while the Minimizer's goal is that the token never reaches any target-vertex $\target$. Stochastic games with such objectives are called \emph{reachability games}.
-To move the token every vertex $s \in S$ has a finite set of actions $\Av(\state)$ that can be taken if the token is on this vertex. 
+To move the token, every vertex $s \in S$ has a finite set of actions $\Av(\state)$ that can be taken if the token is on this vertex. 
 Each action causes the transition of the token to another vertex with a probability according to the probability distribution $\trans: S \to [0,1] \subset \mathbb{Q}$. 
-If the token is in a Maximizer-state $s \in \maxStates$ then the Maximizer decides which action to pick. 
-If the token is in a Minimizer-state $\state \in \minStates$ the Minimizer decides. Figure \ref{ex:exampleSG} provides an example of a simple stochastic game.
+If the token is in a Maximizer-state $s \in \maxStates$, then the Maximizer decides which action to pick. 
+If the token is in a Minimizer-state $\state \in \minStates$, the Minimizer decides. Figure \ref{ex:exampleSG} provides an example of a simple stochastic game.
 
 The problem we consider in this thesis is: \emph{Given a token in the initial state $\initstate$, 
 what is the probability that the token reaches any target state $\target \in \fstates$ if both players play optimally?}
@@ -55,12 +55,6 @@ We assume that every state has at least one action it can take so that for all $
 
 %If the token is in a Maximizer-state $s \in \maxStates$ then the Maximizer may decide which action to pick. If the token is in a Minimizer-state $\state \in \minStates$ the Minimizer decides.
 
-%\textcolor{purple}{Omit it if you clearly will not need it}
-%Lastly, we use $T_\Box$ and $T_{\Circ}$ for any subset of states $T \subseteq \states$ to express the states in $T$ that belong to Maximizer and Minimizer, 
-%whose states are represented in the figures as $\Box$ and $\Circ$, respectively. 
-%We say that a pair of a state $\state$ in $T$ and an action $\action$ \emph{leaves} $T$ if there exists a state $\state' \notin T$ with $\trans(\state,\action,\state')>0$. 
-%The state $\state'$ is referred to as \emph{exit}.
-
 \section{Strategies} \label{sec:defStrat}
 As mentioned in Section \ref{sec:intuit}, the Maximizer selects the action for states $\state \in \maxStates$, 
 and the Minimizer chooses the action for states $\state \in \minStates$. 
@@ -73,10 +67,6 @@ This means that for each state there is exactly one fixed action that is taken:
 $\forall \state \in \maxStates : \exists \action \in \Av(\state): \straa(\state, \action) = 1$ and $\forall \state \in \minStates : \exists \action \in \Av(\state): \strab(\state, \action) = 1$. 
 For reachability games, these types of strategies are optimal~\cite{condonComplexity}.
 
-%\textcolor{purple}{May also delete}
-%A pair of positional strategies $(\straa,\strab)$ induces a Markov chain $\G[\straa,\strab]$ on $\SG$ as every state has only one action, 
-%and therefore it does not matter which player the state belongs to.
-
 \section{Reachability objective} \label{sec:defSemantics}
 We have introduced now what a $\SG$ is and how to fix strategies, but it is still unclear what the objectives of the players are.
 
@@ -85,12 +75,11 @@ Additionally, a subset $\fstates \subseteq \states$ is provided as input.
 The Maximizer's goal is to maximize the probability of reaching any \emph{target} $\target \in \fstates$ while the Minimizer's goal is to minimize the probability that the token reaches any target $\target$. 
 Vertices from which the Maximizer can never reach any target are referred to as \emph{sinks} $\zeroSink \in \zeroSinks \subseteq \states$. 
 Thus, once the token reaches any sink $\zeroSink$ the Maximizer loses the game.
-%\textcolor{purple}{We refer to both targets and sinks as \emph{absorbing states}.}
 
 Since the objective of the Maximizer is to reach a target state $\target$, we call this stochastic game a \emph{reachability game}. 
 In these kinds of games, we do not care what happens after reaching any target or sink state. 
 Therefore, we assume for simplicity that each target $\target$ and each sink $\zeroSink$ has only one action which is a self-loop with transition probability~1. 
-Figure \ref{ex:exampleSG} provides an example of an $\SG$ with one target $\target$ and one sink $\zeroSink$.
+Figure \ref{ex:exampleSG} provides an example of a $\SG$ with one target $\target$ and one sink $\zeroSink$.
 
 Intuitively, we measure how good a strategy $\straa$ for $\state$ is by the probability that the token would get from $\state$ to any target $f$ if the Minimizer is using strategy $\strab$. 
 This is what we call the \emph{value $\val$ of $\state \in \states$ using $(\straa,\strab)$}:
@@ -220,11 +209,12 @@ $\BVI$ terminates and reports $\val(\initstate) = \frac{\ub_0 + \lb_0}{2}$.
 In addition to $\BVI$, we will consider the widest path optimization $\WP$ introduced in \cite{widestPath} that offers an alternative to deflating for the correct handling of end components.
 
 \subsubsection*{Optimistic value iteration}
-Optimistic value iteration $\OVI$ takes a similar approach, but instead of calculating the upper bound at all times along the lower bound, 
+Optimistic value iteration $\OVI$ takes a similar approach to bounded value iteration, but instead of calculating the upper bound at all times along the lower bound, 
 an upper bound $B$ is guessed from the lower bound by adding a small $\epsilon$ to the lower bound. 
 If this induced bound $B$ is verified to be an upper bound, i.e. $\forall \state \in \states: \Bop(B)(\state) \leq B(\state)$, then $\OVI$ terminates.
 The upper bound is only guessed if the lower bound would converge according to classic value iteration. 
 If the guessed bound is not an upper bound, the precision for the lower bound gets reduced, and iterating continues.
+Optimistic value iteration was introduced in \cite{ovi} for MDPs and extended to SGs in \cite{cav22}.
 
 
 There are more extensions to value iteration. One of them is the learning-based approach introduced in \cite{learningBased}.
@@ -235,9 +225,8 @@ In practice, value iteration and its extensions are believed to be the fastest a
 However, as shown in \cite{viExponential}, there are counterexamples where value iteration requires exponentially many steps to converge and its performance is worse than the other solution approaches like strategy iteration.
 
 \subsection{Strategy iteration}
-In strategy iteration \cite{HoffmanKarp}\cite{condonQP}, instead of computing value-vectors we compute a sequence of strategies and terminate with an optimal strategy for both players.
-Starting from an arbitrary strategy for the Maximizer, we repeatedly compute the best response of Minimizer and then greedily improve Maximizer's strategy. 
-\textcolor{purple}{This is word for word copied from gandalf, so I should cite it?}
+In strategy iteration \cite{HoffmanKarp}\cite{condonQP}, instead of computing value-vectors we compute a sequence of strategies and terminate when an optimal strategy for both players is reached.
+We start at an arbitrary strategy for the Maximizer and repeatedly compute the best response the Minimizer can make. Next, the Maximizer's strategy is then improved greedily.
 The computed sequence of Maximizer strategies is monotonically increasing regarding the value and converges to the optimal strategy \cite[Theorem3]{correctnessSI}.
 For games with end components, the initial strategy may not be completely arbitrary but has to ensure that at least one target or sink is reached almost surely.
 Finding such an initial strategy can be achieved with the attractor strategy \cite[Section 5.3]{correctnessSI}.
@@ -245,8 +234,8 @@ Finding such an initial strategy can be achieved with the attractor strategy \ci
 Whenever a Maximizer strategy is fixed, the resulting $\SG$ is simplified to an MDP. 
 From there on, any solution method for MDPs can be applied.
 We use three different variants of solving the MDPs: value iteration ($\SI$), linear programming \cite{Puterman} ($\LPSI$),
-or strategy iteration ($\SISI$). When applying $\SISI$, the Minimizer picks a strategy and the MDP is reduced to a Markov chain, 
-which we solve with classic exact algorithms as described in ~\cite[Chapter 11]{introProb}. \textcolor{red}{If we use gurobi do not forget to mention here that we use an approximative method}
+or strategy iteration ($\SISI$). When applying $\SISI$, the Minimizer picks a strategy and the MDP is reduced to a Markov chain.
+We express the Markov chain as a degenerate linear program where every constraint is an equality and hand it to a linear programming solver. 
 
 Since trying out every possible deterministic positional strategy guarantees that the optimal strategy is found,
 the trivial upper bound on the number of iterations for strategy iteration is exponential in the number of actions per state.
@@ -274,7 +263,8 @@ $\mathbf{T}$: A topological decomposition of $\SG$ into its strongly connected c
 The stochastic game is decomposed into its SCCs, then the values of SCCs are computed along their topological order.
 This allows the algorithms to solve smaller sub-problems before instead of solving the whole $\SG$ at once.
 
-$\TOPAlg$: $\TOPAlg$ as in \emph{precise and topological} is an extension to value-iteration-based algorithms that builds on top of the idea of topological sorting of \cite{gandalf}.
+$\TOPAlg$: $\TOPAlg$ as in \emph{precise and topological} is an extension to value-iteration-based algorithms that builds on top of the idea of topological sorting of \cite{gandalf} 
+that was introduced in \cite{cav22}.
 We analyze the graph of the underlying the stochastic game, detect the strongly connected components, and create a topological sorting based on the SCCs.
 To ensure that every SCC provides an exact result to the next one, we take the $\epsilon$-precise values of the states of the finished SCC and infer all the
 strategies that may yield this value.

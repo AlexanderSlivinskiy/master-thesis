@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.30)  24 JAN 2022 20:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.30)  27 JAN 2022 19:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1772,7 +1772,7 @@ chapter 4.
 
 
 ] [15]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 81.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 79.
  [16] [17] [18] [19]) (/home/sascha/master-thesis/3_randomGen/implementation.tex [20]
 chapter 5.
 [21
@@ -1812,188 +1812,227 @@ chapter 7.
 [28
 
 
-] [29] [30]
-<figures/Real_FeatureDistribution.jpg, id=513, 867.24pt x 722.7pt>
-File: figures/Real_FeatureDistribution.jpg Graphic file (type jpg)
-<use figures/Real_FeatureDistribution.jpg>
-Package pdftex.def Info: figures/Real_FeatureDistribution.jpg  used on input line 107.
+] [29]
+<figures/Real_FeatureDistribution.pdf, id=517, 867.24pt x 722.7pt>
+File: figures/Real_FeatureDistribution.pdf Graphic file (type pdf)
+<use figures/Real_FeatureDistribution.pdf>
+Package pdftex.def Info: figures/Real_FeatureDistribution.pdf  used on input line 97.
 (pdftex.def)             Requested size: 418.25555pt x 348.54617pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[31]
-<figures/RandomRandom_FeatureDistribution.jpg, id=524, 867.24pt x 722.7pt>
-File: figures/RandomRandom_FeatureDistribution.jpg Graphic file (type jpg)
-<use figures/RandomRandom_FeatureDistribution.jpg>
-Package pdftex.def Info: figures/RandomRandom_FeatureDistribution.jpg  used on input line 136.
+[30] [31 </home/sascha/master-thesis/figures/Real_FeatureDistribution.pdf>]
+<figures/RandomRandom_FeatureDistribution.pdf, id=575, 867.24pt x 722.7pt>
+File: figures/RandomRandom_FeatureDistribution.pdf Graphic file (type pdf)
+<use figures/RandomRandom_FeatureDistribution.pdf>
+Package pdftex.def Info: figures/RandomRandom_FeatureDistribution.pdf  used on input line 130.
 (pdftex.def)             Requested size: 418.25555pt x 348.54617pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[32 </home/sascha/master-thesis/figures/Real_FeatureDistribution.jpg>] [33 </home/sascha/master-thesis/figures/RandomRandom_FeatureDistribution.jpg>]
-<figures/RandomSCC_FeatureDistribution.jpg, id=544, 867.24pt x 722.7pt>
-File: figures/RandomSCC_FeatureDistribution.jpg Graphic file (type jpg)
-<use figures/RandomSCC_FeatureDistribution.jpg>
-Package pdftex.def Info: figures/RandomSCC_FeatureDistribution.jpg  used on input line 173.
+[32] [33 </home/sascha/master-thesis/figures/RandomRandom_FeatureDistribution.pdf>]
+<figures/RandomSCC_FeatureDistribution.pdf, id=623, 867.24pt x 722.7pt>
+File: figures/RandomSCC_FeatureDistribution.pdf Graphic file (type pdf)
+<use figures/RandomSCC_FeatureDistribution.pdf>
+Package pdftex.def Info: figures/RandomSCC_FeatureDistribution.pdf  used on input line 168.
 (pdftex.def)             Requested size: 418.25555pt x 348.54617pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[34] [35 </home/sascha/master-thesis/figures/RandomSCC_FeatureDistribution.jpg>]
-<figures/Real_AlgoPerformance.jpg, id=562, 850.17625pt x 327.2225pt>
-File: figures/Real_AlgoPerformance.jpg Graphic file (type jpg)
-<use figures/Real_AlgoPerformance.jpg>
-Package pdftex.def Info: figures/Real_AlgoPerformance.jpg  used on input line 214.
-(pdftex.def)             Requested size: 292.7776pt x 112.68716pt.
-<figures/RandomRandom_AlgoPerformance.png, id=563, 881.2925pt x 337.26pt>
-File: figures/RandomRandom_AlgoPerformance.png Graphic file (type png)
-<use figures/RandomRandom_AlgoPerformance.png>
-Package pdftex.def Info: figures/RandomRandom_AlgoPerformance.png  used on input line 216.
-(pdftex.def)             Requested size: 292.7776pt x 112.04233pt.
-<figures/Big_AlgoPerformance.png, id=564, 765.86125pt x 288.07625pt>
+[34] [35 </home/sascha/master-thesis/figures/RandomSCC_FeatureDistribution.pdf>] [36]
+Overfull \hbox (37.60632pt too wide) in paragraph at lines 235--253
+ [][] 
+ []
+
+<figures/Real_AlgoPerformance.pdf, id=677, 828.44522pt x 319.64775pt>
+File: figures/Real_AlgoPerformance.pdf Graphic file (type pdf)
+<use figures/Real_AlgoPerformance.pdf>
+Package pdftex.def Info: figures/Real_AlgoPerformance.pdf  used on input line 260.
+(pdftex.def)             Requested size: 418.25555pt x 161.37936pt.
+<figures/RandomRandom_AlgoPerformance.pdf, id=678, 834.32013pt x 319.64775pt>
+File: figures/RandomRandom_AlgoPerformance.pdf Graphic file (type pdf)
+<use figures/RandomRandom_AlgoPerformance.pdf>
+Package pdftex.def Info: figures/RandomRandom_AlgoPerformance.pdf  used on input line 262.
+(pdftex.def)             Requested size: 418.25555pt x 160.24294pt.
+<figures/Big_AlgoPerformance.png, id=679, 765.86125pt x 288.07625pt>
 File: figures/Big_AlgoPerformance.png Graphic file (type png)
 <use figures/Big_AlgoPerformance.png>
-Package pdftex.def Info: figures/Big_AlgoPerformance.png  used on input line 218.
-(pdftex.def)             Requested size: 292.7776pt x 110.12946pt.
+Package pdftex.def Info: figures/Big_AlgoPerformance.png  used on input line 264.
+(pdftex.def)             Requested size: 418.25555pt x 157.32591pt.
+
+Overfull \hbox (2.73749pt too wide) in paragraph at lines 260--267
+ [][] 
+ []
+
+
+Overfull \hbox (2.73749pt too wide) in paragraph at lines 260--267
+ [][] 
+ []
+
+
+Overfull \hbox (2.73749pt too wide) in paragraph at lines 260--267
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 16.87805pt on input line 270.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[36] [37 </home/sascha/master-thesis/figures/Real_AlgoPerformance.jpg> </home/sascha/master-thesis/figures/RandomRandom_AlgoPerformance.png> </home/sascha/master-thesis/figures/Big_AlgoPerformance.png>]
+[37] [38] [39 </home/sascha/master-thesis/figures/Real_AlgoPerformance.pdf> </home/sascha/master-thesis/figures/RandomRandom_AlgoPerformance.pdf
+
+pdfTeX warning: pdflatex (file /home/sascha/master-thesis/figures/RandomRandom_AlgoPerformance.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> </home/sascha/master-thesis/figures/Big_AlgoPerformance.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 244.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 244.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 244.
+(hyperref)                removing `math shift' on input line 292.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 244.
+(hyperref)                removing `math shift' on input line 292.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 244.
+(hyperref)                removing `math shift' on input line 292.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 244.
+(hyperref)                removing `math shift' on input line 292.
 
-<figures/WPvsBVIandOVIonAll.png, id=584, 639.38875pt x 614.295pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 292.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 292.
+
+<figures/WPvsBVIandOVIonAll.png, id=719, 639.38875pt x 614.295pt>
 File: figures/WPvsBVIandOVIonAll.png Graphic file (type png)
 <use figures/WPvsBVIandOVIonAll.png>
-Package pdftex.def Info: figures/WPvsBVIandOVIonAll.png  used on input line 252.
+Package pdftex.def Info: figures/WPvsBVIandOVIonAll.png  used on input line 301.
 (pdftex.def)             Requested size: 200.76086pt x 192.8853pt.
-<figures/WPvsBVIandOVIonAll_Iters.png, id=585, 662.475pt x 613.29124pt>
+<figures/WPvsBVIandOVIonAll_Iters.png, id=720, 662.475pt x 613.29124pt>
 File: figures/WPvsBVIandOVIonAll_Iters.png Graphic file (type png)
 <use figures/WPvsBVIandOVIonAll_Iters.png>
-Package pdftex.def Info: figures/WPvsBVIandOVIonAll_Iters.png  used on input line 254.
+Package pdftex.def Info: figures/WPvsBVIandOVIonAll_Iters.png  used on input line 303.
 (pdftex.def)             Requested size: 200.76086pt x 185.85104pt.
-[38 </home/sascha/master-thesis/figures/WPvsBVIandOVIonAll.png> </home/sascha/master-thesis/figures/WPvsBVIandOVIonAll_Iters.png>]
-<figures/BVIvsWPvsOVI.jpg, id=600, 649.42625pt x 614.295pt>
+[40
+
+ </home/sascha/master-thesis/figures/WPvsBVIandOVIonAll.png> </home/sascha/master-thesis/figures/WPvsBVIandOVIonAll_Iters.png>]
+<figures/BVIvsWPvsOVI.jpg, id=737, 649.42625pt x 614.295pt>
 File: figures/BVIvsWPvsOVI.jpg Graphic file (type jpg)
 <use figures/BVIvsWPvsOVI.jpg>
-Package pdftex.def Info: figures/BVIvsWPvsOVI.jpg  used on input line 309.
+Package pdftex.def Info: figures/BVIvsWPvsOVI.jpg  used on input line 358.
 (pdftex.def)             Requested size: 200.76086pt x 189.89519pt.
-<figures/BVIvsWPvsOVI_OnlyBig.jpg, id=601, 649.42625pt x 614.295pt>
+<figures/BVIvsWPvsOVI_OnlyBig.jpg, id=740, 649.42625pt x 614.295pt>
 File: figures/BVIvsWPvsOVI_OnlyBig.jpg Graphic file (type jpg)
 <use figures/BVIvsWPvsOVI_OnlyBig.jpg>
-Package pdftex.def Info: figures/BVIvsWPvsOVI_OnlyBig.jpg  used on input line 311.
+Package pdftex.def Info: figures/BVIvsWPvsOVI_OnlyBig.jpg  used on input line 360.
 (pdftex.def)             Requested size: 200.76086pt x 189.89519pt.
- [39 </home/sascha/master-thesis/figures/BVIvsWPvsOVI.jpg> </home/sascha/master-thesis/figures/BVIvsWPvsOVI_OnlyBig.jpg>]
-<figures/OVI_Bad_At_Computing_Instant_Values.png, id=617, 759.83875pt x 68.255pt>
+ [41 </home/sascha/master-thesis/figures/BVIvsWPvsOVI.jpg> </home/sascha/master-thesis/figures/BVIvsWPvsOVI_OnlyBig.jpg>]
+<figures/OVI_Bad_At_Computing_Instant_Values.png, id=756, 1059.96pt x 92.59593pt>
 File: figures/OVI_Bad_At_Computing_Instant_Values.png Graphic file (type png)
 <use figures/OVI_Bad_At_Computing_Instant_Values.png>
-Package pdftex.def Info: figures/OVI_Bad_At_Computing_Instant_Values.png  used on input line 340.
-(pdftex.def)             Requested size: 418.25555pt x 37.5716pt.
-<figures/BVI_1_Iteration_vs_OVI.jpg, id=620, 637.38126pt x 614.295pt>
+Package pdftex.def Info: figures/OVI_Bad_At_Computing_Instant_Values.png  used on input line 392.
+(pdftex.def)             Requested size: 418.25555pt x 36.53754pt.
+<figures/BVI_1_Iteration_vs_OVI.jpg, id=759, 637.38126pt x 614.295pt>
 File: figures/BVI_1_Iteration_vs_OVI.jpg Graphic file (type jpg)
 <use figures/BVI_1_Iteration_vs_OVI.jpg>
-Package pdftex.def Info: figures/BVI_1_Iteration_vs_OVI.jpg  used on input line 357.
+Package pdftex.def Info: figures/BVI_1_Iteration_vs_OVI.jpg  used on input line 408.
 (pdftex.def)             Requested size: 167.29967pt x 161.24078pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[40 </home/sascha/master-thesis/figures/OVI_Bad_At_Computing_Instant_Values.png>]
-<figures/Scatter_G.jpg, id=630, 656.4525pt x 614.295pt>
-File: figures/Scatter_G.jpg Graphic file (type jpg)
-<use figures/Scatter_G.jpg>
-Package pdftex.def Info: figures/Scatter_G.jpg  used on input line 379.
-(pdftex.def)             Requested size: 200.76086pt x 187.87054pt.
-<figures/Scatter_G_iters.jpg, id=631, 678.535pt x 613.29124pt>
-File: figures/Scatter_G_iters.jpg Graphic file (type jpg)
-<use figures/Scatter_G_iters.jpg>
-Package pdftex.def Info: figures/Scatter_G_iters.jpg  used on input line 381.
-(pdftex.def)             Requested size: 200.76086pt x 181.45274pt.
+[42 </home/sascha/master-thesis/figures/OVI_Bad_At_Computing_Instant_Values.png>]
+<figures/Scatter_G.pdf, id=770, 646.5744pt x 609.38603pt>
+File: figures/Scatter_G.pdf Graphic file (type pdf)
+<use figures/Scatter_G.pdf>
+Package pdftex.def Info: figures/Scatter_G.pdf  used on input line 428.
+(pdftex.def)             Requested size: 200.76086pt x 189.21455pt.
+<figures/Scatter_G_iters.pdf, id=771, 656.47884pt x 609.38603pt>
+File: figures/Scatter_G_iters.pdf Graphic file (type pdf)
+<use figures/Scatter_G_iters.pdf>
+Package pdftex.def Info: figures/Scatter_G_iters.pdf  used on input line 430.
+(pdftex.def)             Requested size: 200.76086pt x 186.35992pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[41 </home/sascha/master-thesis/figures/BVI_1_Iteration_vs_OVI.jpg>]
-<figures/Scatter_D.jpg, id=638, 656.4525pt x 614.295pt>
-File: figures/Scatter_D.jpg Graphic file (type jpg)
-<use figures/Scatter_D.jpg>
-Package pdftex.def Info: figures/Scatter_D.jpg  used on input line 405.
-(pdftex.def)             Requested size: 200.76086pt x 187.87054pt.
-<figures/Scatter_D_iters.jpg, id=639, 678.535pt x 613.29124pt>
-File: figures/Scatter_D_iters.jpg Graphic file (type jpg)
-<use figures/Scatter_D_iters.jpg>
-Package pdftex.def Info: figures/Scatter_D_iters.jpg  used on input line 407.
-(pdftex.def)             Requested size: 200.76086pt x 181.45274pt.
+[43 </home/sascha/master-thesis/figures/BVI_1_Iteration_vs_OVI.jpg>]
+<figures/Scatter_D.pdf, id=781, 646.5744pt x 609.38603pt>
+File: figures/Scatter_D.pdf Graphic file (type pdf)
+<use figures/Scatter_D.pdf>
+Package pdftex.def Info: figures/Scatter_D.pdf  used on input line 450.
+(pdftex.def)             Requested size: 200.76086pt x 189.21455pt.
+<figures/Scatter_D_iters.pdf, id=782, 656.47884pt x 609.38603pt>
+File: figures/Scatter_D_iters.pdf Graphic file (type pdf)
+<use figures/Scatter_D_iters.pdf>
+Package pdftex.def Info: figures/Scatter_D_iters.pdf  used on input line 452.
+(pdftex.def)             Requested size: 200.76086pt x 186.35992pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[42 </home/sascha/master-thesis/figures/Scatter_G.jpg> </home/sascha/master-thesis/figures/Scatter_G_iters.jpg>]
-<figures/Scatter_T.jpg, id=649, 656.4525pt x 614.295pt>
-File: figures/Scatter_T.jpg Graphic file (type jpg)
-<use figures/Scatter_T.jpg>
-Package pdftex.def Info: figures/Scatter_T.jpg  used on input line 420.
-(pdftex.def)             Requested size: 200.76086pt x 187.87054pt.
-<figures/Scatter_T_iters.jpg, id=650, 678.535pt x 613.29124pt>
-File: figures/Scatter_T_iters.jpg Graphic file (type jpg)
-<use figures/Scatter_T_iters.jpg>
-Package pdftex.def Info: figures/Scatter_T_iters.jpg  used on input line 422.
-(pdftex.def)             Requested size: 200.76086pt x 181.45274pt.
+[44 </home/sascha/master-thesis/figures/Scatter_G.pdf> </home/sascha/master-thesis/figures/Scatter_G_iters.pdf
+
+pdfTeX warning: pdflatex (file /home/sascha/master-thesis/figures/Scatter_G_iters.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<figures/Scatter_T.pdf, id=815, 646.5744pt x 609.38603pt>
+File: figures/Scatter_T.pdf Graphic file (type pdf)
+<use figures/Scatter_T.pdf>
+Package pdftex.def Info: figures/Scatter_T.pdf  used on input line 463.
+(pdftex.def)             Requested size: 200.76086pt x 189.21455pt.
+<figures/Scatter_T_iters.pdf, id=816, 656.47884pt x 609.38603pt>
+File: figures/Scatter_T_iters.pdf Graphic file (type pdf)
+<use figures/Scatter_T_iters.pdf>
+Package pdftex.def Info: figures/Scatter_T_iters.pdf  used on input line 465.
+(pdftex.def)             Requested size: 200.76086pt x 186.35992pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[43 </home/sascha/master-thesis/figures/Scatter_D.jpg> </home/sascha/master-thesis/figures/Scatter_D_iters.jpg>]
-<figures/colorScatter_BVI_TOP.jpg, id=660, 475.7775pt x 485.815pt>
-File: figures/colorScatter_BVI_TOP.jpg Graphic file (type jpg)
-<use figures/colorScatter_BVI_TOP.jpg>
-Package pdftex.def Info: figures/colorScatter_BVI_TOP.jpg  used on input line 442.
-(pdftex.def)             Requested size: 209.12778pt x 213.54428pt.
+[45 </home/sascha/master-thesis/figures/Scatter_D.pdf> </home/sascha/master-thesis/figures/Scatter_D_iters.pdf
+
+pdfTeX warning: pdflatex (file /home/sascha/master-thesis/figures/Scatter_D_iters.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<figures/TOPvsBVI_TBVI.pdf, id=847, 627.01898pt x 609.38603pt>
+File: figures/TOPvsBVI_TBVI.pdf Graphic file (type pdf)
+<use figures/TOPvsBVI_TBVI.pdf>
+Package pdftex.def Info: figures/TOPvsBVI_TBVI.pdf  used on input line 491.
+(pdftex.def)             Requested size: 200.76086pt x 195.10979pt.
+<figures/bigConfBVIvsTOP.pdf, id=848, 406.12161pt x 391.13063pt>
+File: figures/bigConfBVIvsTOP.pdf Graphic file (type pdf)
+<use figures/bigConfBVIvsTOP.pdf>
+Package pdftex.def Info: figures/bigConfBVIvsTOP.pdf  used on input line 493.
+(pdftex.def)             Requested size: 200.76086pt x 193.35063pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[44 </home/sascha/master-thesis/figures/Scatter_T.jpg> </home/sascha/master-thesis/figures/Scatter_T_iters.jpg>] [45 </home/sascha/master-thesis/figures/colorScatter_BVI_TOP.jpg>]
-<figures/colorScatter_SI_VI.jpg, id=681, 458.71375pt x 475.7775pt>
-File: figures/colorScatter_SI_VI.jpg Graphic file (type jpg)
-<use figures/colorScatter_SI_VI.jpg>
-Package pdftex.def Info: figures/colorScatter_SI_VI.jpg  used on input line 509.
-(pdftex.def)             Requested size: 209.12778pt x 216.90741pt.
+[46 </home/sascha/master-thesis/figures/Scatter_T.pdf> </home/sascha/master-thesis/figures/Scatter_T_iters.pdf
 
+pdfTeX warning: pdflatex (file /home/sascha/master-thesis/figures/Scatter_T_iters.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [47 </home/sascha/master-thesis/figures/TOPvsBVI_TBVI.pdf> </home/sascha/master-thesis/figures/bigConfBVIvsTOP.pdf
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[46]) (/home/sascha/master-thesis/6_conclusion/conclusion.tex [47 </home/sascha/master-thesis/figures/colorScatter_SI_VI.jpg>]
+pdfTeX warning: pdflatex (file /home/sascha/master-thesis/figures/bigConfBVIvsTOP.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [48]
+<figures/colorScatter_SI_VI.pdf, id=922, 456.8864pt x 443.00777pt>
+File: figures/colorScatter_SI_VI.pdf Graphic file (type pdf)
+<use figures/colorScatter_SI_VI.pdf>
+Package pdftex.def Info: figures/colorScatter_SI_VI.pdf  used on input line 560.
+(pdftex.def)             Requested size: 209.12778pt x 202.77884pt.
+) (/home/sascha/master-thesis/6_conclusion/conclusion.tex [49 </home/sascha/master-thesis/figures/colorScatter_SI_VI.pdf>]
 chapter 8.
-[48
+[50
 
 
-] [49]) [50]
+] [51]) [52]
 Package tocbasic Info: character protrusion at lof deactivated on input line 68.
  (/home/sascha/master-thesis/main.lof)
 \tf@lof=\write10
@@ -2002,23 +2041,28 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 68.
 
 No file main.gls.
 No file main.acr.
-[51
+[53
 
 
 ]
 chapter without number
-[52
+[54
 
 
-] [53] (/home/sascha/master-thesis/pages/appendix.tex [54]
+]
+Overfull \hbox (23.74776pt too wide) in paragraph at lines 72--72
+[]\T1/ptm/m/n/10.95 (-20) A. Hart-manns and B. L. Kamin-ski. ^^P  Op-ti-mistic Value It-er-a-tion.^^Q In: \T1/ptm/m/it/10.95 (-20) CoRR \T1/ptm/m/n/10.95 (-20) abs/1910.01100
+ []
+
+[55] (/home/sascha/master-thesis/pages/appendix.tex [56]
 chapter A.
 
-LaTeX Warning: Reference `sec:benchmarks' on page 55 undefined on input line 3.
+LaTeX Warning: Reference `sec:benchmarks' on page 57 undefined on input line 3.
 
-[55
+[57
 
 
-] [56]) [57]
+] [58]) [59]
 No complaints by nag.
 (/home/sascha/master-thesis/main.aux)
 
@@ -2031,18 +2075,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59035 strings out of 478994
- 1243692 string characters out of 5864751
- 2359321 words of memory out of 5000000
- 74556 multiletter control sequences out of 15000+600000
- 528516 words of font info for 513 fonts, out of 8000000 for 9000
+ 59071 strings out of 478994
+ 1244594 string characters out of 5864751
+ 2355096 words of memory out of 5000000
+ 74572 multiletter control sequences out of 15000+600000
+ 530781 words of font info for 517 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  118i,19n,119p,10626b,2329s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texmf-dist/fonts/type1/public/wasy-type1/wasy7.pfb></usr/share/texmf-dist/fonts/type1/public/wasy-type1/wasy8.pfb>
-Output written on /home/sascha/master-thesis/main.pdf (64 pages, 1960585 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texmf-dist/fonts/type1/public/wasy-type1/wasy7.pfb></usr/share/texmf-dist/fonts/type1/public/wasy-type1/wasy8.pfb>
+Output written on /home/sascha/master-thesis/main.pdf (66 pages, 1321539 bytes).
 PDF statistics:
- 1050 PDF objects out of 1200 (max. 8388607)
- 892 compressed objects within 9 object streams
- 221 named destinations out of 1000 (max. 500000)
- 129035 words of extra memory for PDF output out of 154059 (max. 10000000)
+ 1319 PDF objects out of 1440 (max. 8388607)
+ 1095 compressed objects within 11 object streams
+ 234 named destinations out of 1000 (max. 500000)
+ 133168 words of extra memory for PDF output out of 154059 (max. 10000000)
 

@@ -2,7 +2,7 @@
 As part of the thesis, we have implemented the following extensions to Value Iteration and Strategy Iteration:
 
 \subsubsection*{$\TOPAlg$} To solve the MDPs in $\TOPAlg$, we used strategy iteration. This yields two discrete-time Markov chains (DTMCs).
-We then solve the DTMCs with non-iterative, exact methods as described in \cite{BaierBook}. \textcolor{red}{Or with approximate equation system solver gurobi}
+We then solve the DTMCs by expressing them as linear programs and handing them to linear programming solvers.
 
 \subsubsection*{Widest path for PRISM 3}
 Widest Path was introduced as an alternative to solving maximal end components for bounded value iteration \cite{widestPath}.

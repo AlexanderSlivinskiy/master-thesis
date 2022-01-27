@@ -23,6 +23,58 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
+    \entry{cav22}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=0d0d6bb3efdce4ede72239333ed17cdb}{%
+           family={Azeem},
+           familyi={A\bibinitperiod},
+           given={Muqsit},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=939531fe0b8d7bcd4bf157de209d5a8f}{%
+           family={Evangelidis},
+           familyi={E\bibinitperiod},
+           given={Alexandros},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84e2eac2f60f901f976235d20a567a59}{%
+           family={Křetínský},
+           familyi={K\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c78fee8739d29d36fce0764e62a364f}{%
+           family={Slivinskiy},
+           familyi={S\bibinitperiod},
+           given={Alexader},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aafb182186c9faf19232ee74fb85cb32}{%
+           family={Weininger},
+           familyi={W\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{bcc08ddf1c1c314adf1754c83f0e9644}
+      \strng{fullhash}{c75edf32b84e13985330b6ec7371f873}
+      \strng{bibnamehash}{c75edf32b84e13985330b6ec7371f873}
+      \strng{authorbibnamehash}{c75edf32b84e13985330b6ec7371f873}
+      \strng{authornamehash}{bcc08ddf1c1c314adf1754c83f0e9644}
+      \strng{authorfullhash}{c75edf32b84e13985330b6ec7371f873}
+      \field{labelalpha}{Aze+ed}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{CAV 2022}}
+      \field{series}{Lecture Notes in Computer Science}
+      \field{title}{Optimistic and Topological Value Iteration for Simple Stochastic Games}
+      \field{year}{\noop{2022} submitted}
+    \endentry
     \entry{viExponential}{inproceedings}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=a14da83355be43a173b122ce06f9dcc4}{%
@@ -920,6 +972,47 @@
       \range{pages}{24}
       \verb{doi}
       \verb 10.1007/978-3-030-17502-3_5
+      \endverb
+    \endentry
+    \entry{ovi}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5ee8e32c129a82f9fe67944701c268bf}{%
+           family={Hartmanns},
+           familyi={H\bibinitperiod},
+           given={Arnd},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a82c04370c73f1ddff9a3487e8d8044d}{%
+           family={Kaminski},
+           familyi={K\bibinitperiod},
+           given={Benjamin\bibnamedelima Lucien},
+           giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bce0ab718af540533eddbc2f01acab83}
+      \strng{fullhash}{bce0ab718af540533eddbc2f01acab83}
+      \strng{bibnamehash}{bce0ab718af540533eddbc2f01acab83}
+      \strng{authorbibnamehash}{bce0ab718af540533eddbc2f01acab83}
+      \strng{authornamehash}{bce0ab718af540533eddbc2f01acab83}
+      \strng{authorfullhash}{bce0ab718af540533eddbc2f01acab83}
+      \field{labelalpha}{HK19}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Optimistic Value Iteration}
+      \field{volume}{abs/1910.01100}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1910.01100
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1910.01100
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1910.01100
       \endverb
     \endentry
     \entry{HoffmanKarp}{article}{}

@@ -63,7 +63,7 @@ Here is the exhaustive list of parameters:
     \item outputDir: Where to put the resulting model
     \item size: How many states should the generated model have
     \item numModels: How many models to create
-    %\item numMinActions: \textcolor{purple}{probably deprecated after rewriting code}
+    \item numMinActions: The minimum of how many actions should lead into a state during the forward procedure of algorithm \ref{alg:randomRandom}.
     \item guideline: Which guideline to use when generating the model. Will use by default Algorithm \ref{alg:randomRandom}.
     Alternatives are the "RandomTree" and "RandomSCC" guidelines that are described in Section \ref{sec:guidelinesSubsec}.
     \item smallestProb: What is the smallest probability that is allowed to occur?
@@ -77,9 +77,9 @@ Here is the exhaustive list of parameters:
     \item maximizerProb: What is the probability that a state belongs to the Maximizer?
     \item minSCCSize: What is the smallest size an SCC may have (only for RandomSCC guideline)?
     \item maxSCCSize: What is the largest size an SCC may have (only for RandomSCC guideline)?
+    \item fastTransitions: When used, keep a stack of shuffled state indices that is popped whenever a need goal of a transition is needed. 
+    Transition goals are more predictable, but generated significantly faster.
 \end{itemize}
-\textcolor{red}{With correct implementation, generating models is slow. Say that you have a 'fast' switch to make randomPicker less random but way faster.
-With fast <1ŝ for a 10k model. Without its 10s}
 
 The generated model will be named by the parameter values and will be stored in the specified directory or \texttt{generatedModels} by default.
 

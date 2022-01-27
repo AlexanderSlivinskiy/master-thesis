@@ -33,7 +33,6 @@ the models can have arbitrary structural properties and thus enable broad test c
 %First, there are some properties like connectedness that we always want to have in the models we generate.
 %Secondly, algorithm-performance is easier to contextualize if the models differ in only few properties. If model A has more states, more and bigger MECs than model B, it is hard to relate the performance difference of an algorithm on model A and B to a specific property.
 
-%The problem with sampling the model space is that depending on the constraints it is infinite \textcolor{purple}{and at this moment I have no real idea how to do this. This is why we take an iterative model-generation process.}
 
 \section{Constraining the random generation process}
 While it is possible to completely randomize every property of a model, this procedure would yield graphs with undesirable properties. 
@@ -46,7 +45,6 @@ However, since $\connectedSG$ is infinite, we would be required to discretize th
 restricting $\connectedSG$.
 Instead, we use an iterative generation process.
 While not sampling $\connectedSG$ space uniformly, it is easy to implement, modify and can generate any stochastic game in $\connectedSG$.
-%\textcolor{purple}{Also, since $\connectedSG$ is infinite, as far as I understand there is no way to sample the space at uniform.
 %This is at least what this random 'Mathematician' in this post says https://www.askamathematician.com/2010/01/q-is-it-possible-to-choose-an-item-from-an-infinite-set-of-items-such-that-each-one-has-an-equal-chance-of-being-selected/ 
 %But it makes sense to me.}
 
@@ -92,7 +90,7 @@ After applying Algorithm \ref{alg:FillActions}, $(\state, \action)$ is a valid t
             Continue (Skip iteration)
         \Else
             \State Pick any state $\state'$ with index smaller than $\state$
-            \State Create an action $\action$ that starts at $\state'$ %\textcolor{purple}{Need to handle correct action indexing}
+            \State Create an action $\action$ that starts at $\state'$
             \State Assign to ($\state$, $\action$) a positive probability of reaching $\state$
             \State Create a valid probability distribution for ($\state$, $\action$) by applying FillAction($\state'$, $\action$)
             \State Add $\action$ to $\Av(\state')$
@@ -263,15 +261,11 @@ All state-action pairs from both games are used in $\SG''$, but whenever $\SG'$ 
 Since $\SG$ never reaches $\SG'$, the runtime of any topological variant of an algorithm is the sum of the runtime to solve both models.
 Prepending models allows us to analyze how much an added component influences algorithm performance.
 
-%While randomly generated graphs can be useful to get a broad overview of how algorithms perform against each other, it may be hard to pinpoint the exact reasons why one algorithm performs better than another one since the random nature of these graphs comes at the cost of knowledge about the structure of the generated graphs.\textcolor{purple}{[ Even narrowing down the graph structure by the randomTree-procedure leaves too much room for varience to make structural analysis trivial.]} However, often one has already either an intuition or a proof on special cases where one algorithm is better than another one. While handcrafting PRISM-models for such adversary examples is possible, the customizable parameters of prism models are very limited. Furthermore, one problem that comes with handcrafting is that we cannot asses how much impact a structure that is adversarial for a certain algorithm has if it appears in a bigger model. \textcolor{purple}{[IS IT TRULY LIKE THIS? CANNOT WE AT LEAST SAY THAT IT'S THE SUM?]} 
 
-%This procedure is only able to generate a subset of all models that are connected. For example it cannot generate a model \textcolor{purple}{[WHICH ONE???]}, and in general it has more forward actions than backwards actions \textcolor{purple}{[backwards action: action where every state' has index smaller than state. Forward action: Action where at least one state' has an index greater than state]}. Nevertheless, it is suffienciently random \textcolor{purple}{[Maybe here a distribution over several properties would be cool - in comparison to real models and also a general assessment. Ideally, we would like to have an almost uniform distribution over some properties? However, other properties like MEC-size are unlikely to be distributed randomly]} 
 
-%\textcolor{purple}{[Should I even talk about RandomTree? It was just there to create manyAction Models for that one reviewer of gandalf. Mostly all of the models are strict subset of models RandomRandom can generate. But maybe it is cool to later say 'the random-generation procedure greatly affects the benchmarks. For example we have implemented RandomTrees and the algorithms perform differently due to a more fixed structure. If someone finds a better approach to create models that are as random as possible, stuff may look differently. OR if someone finds a way to create random models that resemble real case-studies]}
 
 %To minimize the number of trivial models, we take several steps:
 %\begin{itemize}
-%\item We add a new target $\target'$ to the model. Every previous target $\target \in \targets$ has only one action that leads with 90\% probability to $\target'$ and with 10\% probability to a sink. Thus, the usual precomputation steps are not sufficient to recognize that the maximizer can always force a 0.9 value. \textcolor{purple}{[IS THIS A TRULY PLAUSIBLE APPROACH? IF THE GRAPH IS ONLY NON-TRIVIAL BECAUSE OF THE 0.9 VALUE, IS IT THEN STILL HARD TO SOLVE FOR THE ALGORITHMS?]}
 %\item ???
 %\end{itemize}
 
