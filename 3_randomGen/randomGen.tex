@@ -1,12 +1,12 @@
 \chapter{Randomly generated models} \label{ch:randomGen}
-In this chapter, we provide an overview about the theory of randomly generated models for stochastic games.
-We discuss first the benefits of randomly generated models, explain which types of stochastic games we want to generate and then present our algorithm for random model generation.
+In this chapter, we provide an overview of the theory of randomly generating models for stochastic games.
+We discuss first the benefits of randomly generated models, explain which types of stochastic games we want to generate, and then present our algorithm for random model generation.
 Lastly, we present a more flexible way of creating handcrafted models.
 
 \section{Why to use randomly generated models} \label{sec:WhyRandomGen}
 Using randomly generated problems is a classic approach to test algorithms.
 A key benefit of randomly generated models is that their structure can deviate from currently available case studies 
-and thus express other structural features than usually occurring. 
+and thus express structural features that usually do not occur. 
 This can lead to a difference in algorithm performance and may become relevant when new case studies emerge.
 Also, randomly generated models can be created both automatically and in large numbers.
 
@@ -19,12 +19,12 @@ of all possible graph structures that may occur.
 We need more distinct models to provide a solid algorithm comparison.
 Creating handcrafted reachability problems is useful to make comparisons on edge-case situations and 
 show off the weaknesses and strengths of categories of algorithms. Examples for this are \cite{haddadmonmege}, which is an adversarial example for
-value iteration, the model 'BigMEC'~\cite{gandalf}, which is adversarial for quadratic programming, or 'MulMEC'~\cite{gandalf}, which was presented as
+value iteration, the model 'BigMEC'~\cite{gandalf}, which is adversarial for quadratic programming, and 'MulMEC'~\cite{gandalf}, which was presented as
 a case that is especially easy for widest path bounded value iteration \cite{widestPath}.
 However, by nature handcrafted models cover only extreme cases and thus provide little test coverage for more general problems.
 
 To tackle these issues, we introduce randomly generated models. 
-This allows us to generate a lot of models in a short timespan.
+This allows us to generate a lot of models in a short time span.
 Since the graph structure is generated randomly, 
 the models can have arbitrary structural properties and thus enable broad test coverage for algorithm performance.
 
@@ -37,14 +37,14 @@ the models can have arbitrary structural properties and thus enable broad test c
 \section{Constraining the random generation process}
 While it is possible to completely randomize every property of a model, this procedure would yield graphs with undesirable properties. 
 We are only interested in models in which the initial state can reach every state of the underlying graph of a stochastic game. 
-This is because all the states that can never be reached by the initial state do not influence the value of the game, and thus add unnecessary complexity.
+This is because all the states that can never be reached by the initial state do not influence the value of the game and thus add unnecessary complexity.
 We refer to the set of stochastic games where the initial state can reach every other state in the game by $\connectedSG$.
 
 A viable approach is to sample uniformly from $\connectedSG$ to minimize the number of structural biases in our models.
 However, since $\connectedSG$ is infinite, we would be required to discretize the transition probabilities and limit the number of states,
 restricting $\connectedSG$.
 Instead, we use an iterative generation process.
-While not sampling $\connectedSG$ space uniformly, it is easy to implement, modify and can generate any stochastic game in $\connectedSG$.
+While not sampling $\connectedSG$ space uniformly, it is easy to implement, modify, and can generate any stochastic game in $\connectedSG$.
 %This is at least what this random 'Mathematician' in this post says https://www.askamathematician.com/2010/01/q-is-it-possible-to-choose-an-item-from-an-infinite-set-of-items-such-that-each-one-has-an-equal-chance-of-being-selected/ 
 %But it makes sense to me.}
 
@@ -129,7 +129,7 @@ After applying Algorithm \ref{alg:FillActions}, $(\state, \action)$ is a valid t
 \end{algorithm}
 
 Now that we have introduced our algorithm for randomly generating models, we need to prove two things: 
-We need a correctness proof to ensure that the algorithm only generates formally correct stochastic models, 
+We need proof of the algorithm's correctness to ensure that the algorithm only generates formally correct stochastic models, 
 and we need to prove that we can generate any model in $connectedSG$. We start with the former:
 
 \begin{lemma}
@@ -221,7 +221,7 @@ We decide randomly on the number of states in line 1 of Algorithm \ref{alg:rando
 in line 2 of Algorithm \ref{alg:randomRandom}. Thus, for every $\SG \in \connectedSG$ there exists $\SG' \in \randomRandomOutcome$ that have the same number of states to which
 there is an enumeration such that they are partitioned equally in both stochastic games.
 Since the states can be arranged in any order, we pick the initial state of $\G'$ such that is the same as in $\G$.
-All targets of $\SG$ can be mapped to the singular target of $\SG'$, since they only have self-loops and behave identically to $\target$ of $\SG'$.
+All targets of $\SG$ can be mapped to the singular target of $\SG'$ since they only have self-loops and behave identically to $\target$ of $\SG'$.
 Thus, there exists a run where statements 1, 2, and 3 hold. 
 
 When using Algorithm \ref{alg:FillActions} to create a probability distribution for a state-action pair $(\state, \action)$, 
@@ -230,10 +230,10 @@ In consequence, an action may lead into arbitrary states, have an arbitrary numb
 probability distributions on the transitions as long as they sum up to 1. So out of all runs where statements 1, 2, and 3 hold, there also must be at least one run where statement 4 holds too.
 
 Proving statement 5 is crucial to ensuring that every state may have an arbitrary positive number of actions. 
-While the backwards procedure enables every state to have many actions, we need to prove that games in $\connectedSG$ where every state has few actions can also be generated by our algorithm.
-To prove the statement, note that each $\SG \in \connectedSG$ has a minimal set of state-action tuples such that the initial state may reach to every state.
+While the backward procedure enables every state to have many actions, we need to prove that games in $\connectedSG$ where every state has few actions can also be generated by our algorithm.
+To prove the statement, note that each $\SG \in \connectedSG$ has a minimal set of state-action tuples such that the initial state may reach every state.
 Taking this set, we perform a breadth-first-search from the initial state to provide an enumeration of the states.
-If we iterate over the states along this enumeration, we can reproduce each of the actions in the minimal set during the forward process.
+If we iterate over the states following this enumeration, we can reproduce each of the actions in the minimal set during the forward process.
 Due to the enumeration, to each state $\state$ except for $\initstate$, there is a state with a smaller index $\state'$ such that $\state'$ has an action $\action$ with a positive transition
 probability of reaching $\state$. Since every other transition of ($\state'$, $\action$) can lead into arbitrary states and the probability distribution of ($\state'$, $\action$) can be arbitrary, 
 we can recreate the minimal set of state-action tuples in $\SG'$.
@@ -241,14 +241,14 @@ we can recreate the minimal set of state-action tuples in $\SG'$.
 The remaining state-action pairs of $\SG$ can be added to $\SG'$ during the backward process, where every state may add arbitrarily many actions with arbitrary transition distributions.
 \end{proof}
 
-Note that although $\randomRandomOutcome = \connectedSG$, in general Algorithm \ref{alg:randomRandom} does not sample $\connectedSG$ uniformly at random.
+Note that although $\randomRandomOutcome = \connectedSG$, in general, Algorithm \ref{alg:randomRandom} does not sample $\connectedSG$ uniformly at random.
 Due to the forward procedure, states with smaller indices tend to have more actions than states with higher indices.
 Additionally, creating the transition distributions as described in Algorithm \ref{alg:FillActions} favors state-action pairs to have few transitions.
 If we pick the transition probabilities between $(0, 1]$ uniformly at random, around $83,33\%$ of all actions have two or three transitions with positive probability and 
 none with one transition.
 
 \section{An alternative to handcrafted models} \label{sec:configs}
-Since the purpose of randomly generated models is to sample from a space as big a possible, we have few insights into the structure of the model.
+Since the purpose of randomly generated models is to sample from a space as big as possible, we have few insights into the structure of the model.
 Thus, this method is not very well suited if one wants to analyze the behavior of an algorithm on very specialized models. 
 Traditionally, this is where one would build handcrafted models. 
 However, handcrafting parameterizable prism files allows only for very restricted structural changes in the models. 

@@ -9,3 +9,4 @@ Tarjan
 subgame
 toolset
 automorph
+algortihms

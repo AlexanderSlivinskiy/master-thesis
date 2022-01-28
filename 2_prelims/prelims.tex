@@ -52,6 +52,7 @@ We use a model of stochastic games similar to \cite{paperMaxi}.
 The set of successors that can be reached from a state $\state$ taking the action $\action \in \Av(\state)$ is described by 
 $\post(\state,\action) := \set{\state' \mid \trans(\state,\action,\state') > 0}$. 
 We assume that every state has at least one action it can take so that for all $\state \in \states$ it holds that  $\Av(\state) \neq \emptyset$.
+Furthermore, we call an action deterministic if $|\post(\state,\action)| = 1$.
 
 %If the token is in a Maximizer-state $s \in \maxStates$ then the Maximizer may decide which action to pick. If the token is in a Minimizer-state $\state \in \minStates$ the Minimizer decides.
 
@@ -152,7 +153,7 @@ Decomposing $\states$ into its strongly connected components can be useful becau
 SCCs and solve the $\SG$ with a divide-and-conquer approach. 
 Instead of computing the values of the states in the stochastic game, one instead computes the value of the states in the subgames.
 To use this approach, we need to partition $\states$ into its SCCs, and we need to compute a topological enumeration of the SCCs to know in which order to process the components.
-Tarjan's Algorithm for strongly connected components \cite{TarjansAlgorithm} does both. 
+Tarjan's algorithm for strongly connected components \cite{TarjansAlgorithm} does both. 
 In this thesis, we refer to algorithms that use SCC decomposition to solve stochastic games as topological algorithms.
 
 \section{Algorithms for stochastic games} \label{sec:SGAlgos}
@@ -209,17 +210,23 @@ $\BVI$ terminates and reports $\val(\initstate) = \frac{\ub_0 + \lb_0}{2}$.
 In addition to $\BVI$, we will consider the widest path optimization $\WP$ introduced in \cite{widestPath} that offers an alternative to deflating for the correct handling of end components.
 
 \subsubsection*{Optimistic value iteration}
-Optimistic value iteration $\OVI$ takes a similar approach to bounded value iteration, but instead of calculating the upper bound at all times along the lower bound, 
-an upper bound $B$ is guessed from the lower bound by adding a small $\epsilon$ to the lower bound. 
-If this induced bound $B$ is verified to be an upper bound, i.e. $\forall \state \in \states: \Bop(B)(\state) \leq B(\state)$, then $\OVI$ terminates.
-The upper bound is only guessed if the lower bound would converge according to classic value iteration. 
-If the guessed bound is not an upper bound, the precision for the lower bound gets reduced, and iterating continues.
+The heuristic \emph{optimistic value iteration} ($\OVI$) takes a similar approach to bounded value iteration, but instead of calculating the upper bound at all times along with the lower bound, 
+an upper bound $B$ is guessed from the lower bound by adding a small $\epsilon$ to the lower bound.
+The bound is guessed when no states value changes by more than $\epsilon' \leq \epsilon$.
+After the guessing, the verification phase starts, in which $\OVI$ tries to verify that the guessed bound is truly an upper bound.
+During this phase, the algorithm only iterates on the guessed bound.
+There are three options of how the verification phase terminates:
+\begin{enumerate}
+	\item The guessed bound is verified to be an upper bound, i.e. $\forall \state \in \states: \Bop(B)(\state) \leq B(\state)$. In this case, $\OVI$ terminates since it has computed the values of the state up to $\epsilon$-precision.
+	\item The guessed bound is a tighter lower bound of $\val$ than the current one. In this case, the guessed bound is used a as new lower bound and the verification phase is delayed to the next time no states value changes by more than $\epsilon'$.
+	\item The guessed bound is not identified as either lower or upper bound. In this case, verification fails, $\OVI$ aborts the verification phase, halves $\epsilon'$ and continues iterating on the lower bound until the next verification phase may begin.
+\end{enumerate}
 Optimistic value iteration was introduced in \cite{ovi} for MDPs and extended to SGs in \cite{cav22}.
 
 
 There are more extensions to value iteration. One of them is the learning-based approach introduced in \cite{learningBased}.
-However, it was already benchmarked in \cite{gandalf} and its random nature is fundamentally different to the 
-solution approaches we analyze in this thesis, which is why we omit it.
+However, it was already benchmarked in \cite{gandalf}, and its random nature is fundamentally different to the 
+solution approaches we analyze in this thesis which is why we omit it.
 
 In practice, value iteration and its extensions are believed to be the fastest approaches to solve stochastic games.
 However, as shown in \cite{viExponential}, there are counterexamples where value iteration requires exponentially many steps to converge and its performance is worse than the other solution approaches like strategy iteration.
@@ -234,13 +241,13 @@ Finding such an initial strategy can be achieved with the attractor strategy \ci
 Whenever a Maximizer strategy is fixed, the resulting $\SG$ is simplified to an MDP. 
 From there on, any solution method for MDPs can be applied.
 We use three different variants of solving the MDPs: value iteration ($\SI$), linear programming \cite{Puterman} ($\LPSI$),
-or strategy iteration ($\SISI$). When applying $\SISI$, the Minimizer picks a strategy and the MDP is reduced to a Markov chain.
-We express the Markov chain as a degenerate linear program where every constraint is an equality and hand it to a linear programming solver. 
+or strategy iteration ($\SISI$). When applying $\SISI$, the Minimizer picks a strategy, and the MDP is reduced to a Markov chain.
+We express the Markov chain as a degenerate linear program where every constraint is an equation and hand it to a linear programming solver. 
 
 Since trying out every possible deterministic positional strategy guarantees that the optimal strategy is found,
 the trivial upper bound on the number of iterations for strategy iteration is exponential in the number of actions per state.
 
-However, so far no example confirmed that there is a stochastic game where strategy iteration truly needs exponentially many iterations.
+However, so far, no example confirmed that there is a stochastic game where strategy iteration truly needs exponentially many iterations.
 
 \subsection{Quadratic programming}
 In quadratic programming, the stochastic game is encoded into a mathematical framework called a quadratic program. 
@@ -259,8 +266,8 @@ Bellman updates happen in-place and state by state. Thus, states updated later u
 $\mathbf{D}$: The idea from~\cite{paperMaxi} to only deflate every 100 steps for $\BVI$. 
 By deflating only every 100 steps, there is less time spent on searching for the end components that need to be deflated.
 
-$\mathbf{T}$: A topological decomposition of $\SG$ into its strongly connected components for $\BVI$, $\OVI$ and $\LPSI$.
-The stochastic game is decomposed into its SCCs, then the values of SCCs are computed along their topological order.
+$\mathbf{T}$: A topological decomposition of $\SG$ into its strongly connected components for $\BVI$, $\OVI$, and $\LPSI$.
+The stochastic game is decomposed into its SCCs, then the values of the SCCs are computed along their topological order.
 This allows the algorithms to solve smaller sub-problems before instead of solving the whole $\SG$ at once.
 
 $\TOPAlg$: $\TOPAlg$ as in \emph{precise and topological} is an extension to value-iteration-based algorithms that builds on top of the idea of topological sorting of \cite{gandalf} 
@@ -276,7 +283,7 @@ If in both MDPs the strategies do not change, we confirmed that the actions we s
 
 \subsubsection*{Algorithm Performance and Stochastic Game Structure}
 As \cite{haddadmonmege} and \cite{gandalf} have shown, the performance of the algorithms is very dependent on the structural properties of the stochastic game.
-Structural properties are for example the number of transitions an action has, the size of the biggest $\mec$, or the number of strongly connected components in a stochastic game.
+Structural properties are, for example, the number of transitions an action has, the size of the biggest $\mec$, or the number of strongly connected components in a stochastic game.
 While some algorithms may struggle with solving certain stochastic games, others may solve them without problems.
 However, at the moment, there are only a few insights on which structural properties should be taken into account when deciding on which algorithm to take.
 %Together with the large number of algorithms and optimizations it is a difficult task to make an informaed

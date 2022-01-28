@@ -23,7 +23,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.7.1}Value iteration}{9}{subsection.2.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.2}Strategy iteration}{10}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.2}Strategy iteration}{11}{subsection.2.7.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.7.3}Quadratic programming}{11}{subsection.2.7.3}%
 \defcounter {refsection}{0}\relax 
@@ -53,13 +53,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.1}Experimental setup}{28}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}Case studies}{29}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.1}Case studies}{28}{subsection.7.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.1.2}Plot overview}{29}{subsection.7.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.2}Model analysis results}{30}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Evaluating our random model generation}{35}{section.7.3}%
+\contentsline {section}{\numberline {7.3}Evaluating our random model generation}{36}{section.7.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.3.1}Generating large models}{36}{subsection.7.3.1}%
 \defcounter {refsection}{0}\relax 
@@ -73,13 +73,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.4.2}Analyzing the optimizations}{43}{subsection.7.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4.3}Algorithms based on strategy iteration}{48}{subsection.7.4.3}%
+\contentsline {subsection}{\numberline {7.4.3}Algorithms based on strategy iteration}{47}{subsection.7.4.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {8}Conclusion and future work}{50}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{53}{chapter*.50}%
+\contentsline {chapter}{\nonumberline List of Figures}{53}{chapter*.51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{54}{chapter*.51}%
+\contentsline {chapter}{\nonumberline Bibliography}{54}{chapter*.52}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Appendix: Information about the models}{57}{appendix.A}%
 \defcounter {refsection}{0}\relax 

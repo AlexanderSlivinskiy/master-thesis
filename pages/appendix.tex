@@ -1,60 +1,46 @@
 \chapter{Appendix: Information about the models} \label{sec:appendix}
-\textcolor{red}{ADD THE OTHER MODELS ASWELL}
-We provide benchmarks similar to those in Section \ref{sec:benchmarks}. We compare \conQP{}, value iteration, and our improved quadratic program, but we use other models. Each of these models is a stopping game.
-\section*{Real case studies}
-We use the models Dice \cite{dice} and Charlton\cite{charlton}, which are included in PRISM-games \cite{PRISM-games}. Furthermore, we use the models Hallway and Avoid the Observer, provided in \cite{cav20}. The descriptions of the models are also from \cite{cav20}.
-\begin{itemize}
-	\item[Dice \cite{dice}:] First player 1 throws a fair die repeatedly until accepting an outcome. Up to $N$
-	 tries are possible. Then player 2 is allowed to throw the die at most as many times as player 1 did.
-	A player wins if it achieves a higher outcome than the opponent; draws are possible.
-	The number of throws $N$ in this game is a configurable parameter.
-	We compute the probability that player 1 wins and the probability that player 2 wins.
-	\item[Charlton \cite{charlton}:] This model describes an autonomous car navigating through a road network. We compute the maximal probability of reaching the destination.
-	\item[Hallway (HW) \cite{cav20}:] This instance is based on the Hallway example standard in the AI literature \cite{LCK95,CCGK16}. A robot can move north, east, south or west in a known environment, but each move only succeeds with a certain probability and otherwise rotates or moves the robot in an undesired direction. The example was extended by a target wandering around based on a mixture of probabilistic and demonic non-deterministic behavior, thereby obtaining a stochastic game modeling for instance a panicking human in a building on fire. Moreover, in  assume a 0.01 probability of damaging the robot when executing certain movements; the damaged robot's actions succeed with even smaller probability. The primary objective is to save the human and the secondary objective is to avoid damaging the robot. We use square grid-worlds of sizes 8$\times$8 and 10$\times$10 and only compute the probability that the robot saves the human, since this is the only reachability objective.
-	\item[Avoid the Observer (AV) \cite{cav20}:] This case study is inspired by a similar example in \cite{CC15}. It models a game between an intruder and an observer in a grid-world. 
-	The grid can have different sizes as in Hallway.
-	The most important objective of the intruder is to avoid the observer, its secondary objective is to exit the grid. We assume that the observer can only detect the intruder within a certain distance and otherwise makes random moves. At every position, the intruder moreover has the option to stay and search to find a precious item. In our example, this occurs with probability 0.1 and is assumed to be the third objective. We compute with the quadratic program only the maximal probability that the intruder exits the grid and that he finds a precious item on a 2$\times$2 grid, since the first property is not a reachability, but a safety game.
-\end{itemize}
 
 \section*{Random model generation parameters} \label{sec:GenParams}
-We have generated four sets of random models: Two for Algorithm \ref{alg:randomRandom} referred to as RandomA and RandomB with a distinct set of parameters, one with the RandomSCC guideline 
-and one with the RandomTree guideline. The difference between the two sets for Algorithm \ref{alg:randomRandom} is that in one every state has 10 actions,
-and in the other one we decided for a lower number of actions. The feature distributions of these sets are seen in Figures \ref{fig:Random_FeatureDistribution}, \ref{fig:RandomSCC_FeatureDistributions}, 
-\textcolor{red}{Need one for RandomRandom10Act and one for RandomTree}.
-\textcolor{red}{Make sure the numbers here match with \ref{ch:implementedAlgos}.}
+In this section we present the parameters we have used to generate the 300 randomly generated models. 
+We have generated three sets of random models: Two for Algorithm \ref{alg:randomRandom} referred to as RandomA and RandomB with a distinct set of parameters, and one with the RandomSCC guideline.
+While we have also tried and used the RandomTree guideline, we did not include it in our benchmarks due to a lack of time.
+All randomly generated models can be found in the GitHub Repository \url{https://github.com/ga67vib/Algorithms-For-Stochastic-Games} in the folder \texttt{random-generated-models}.
+The difference between the RandomA and RandomB is that in one every state has 10 actions,
+and in the other one we decided for a lower number of actions. The feature distributions of RandomA are displayed in Figure \ref{fig:Random_FeatureDistribution}, 
+and the feature distribution of the set created with the RandomSCC guideline are displayed in Figure \ref{fig:RandomSCC_FeatureDistributions}.
 The parameters we have used to generate these models were the following:
 \begin{center}
-	\begin{tabular}{| c | c c c c |} 
+	\begin{tabular}{| c | c c c |} 
 	 \hline
-	 Parameter & RandomA & RandomB & RandomSCC & RandomTree \\ [0.5ex] 
+	 Parameter & RandomA & RandomB & RandomSCC \\ [0.5ex] 
 	 \hline\hline
-	 size & 10000 & 10000 & 10000 & 10000 \\
+	 size & 10000 & 10000 & 10000 \\
 	 \hline
-	 numModels & 100 & 100 & 100 & 100 \\
+	 numModels & 100 & 100 & 100 \\
 	 \hline
-	 guideline & - & - & RandomSCC & RandomTree \\
+	 guideline & - & - & RandomSCC \\
 	 \hline
-	 smallestProb & $10^{-2}$ & $10^{-3}$ & $10^{-3}$ & $10^{-3}$ \\
+	 smallestProb & $10^{-2}$ & $10^{-3}$ & $10^{-3}$ \\
 	 \hline
-	 backwardsProb & 1 & 1 & 1 & 0.7 \\ [1ex] 
+	 backwardsProb & 1 & 1 & 1 \\ [1ex] 
 	 \hline
-	 maxBranchNum & 10 & 10 & 10 & 10 \\ [1ex] 
+	 maxBranchNum & 10 & 10 & 10 \\ [1ex] 
 	 \hline
-	 forceUnknown & false & false & true & true \\ [1ex] 
+	 forceUnknown & false & false & true \\ [1ex] 
 	 \hline
-	 branchingProb & 1 & 0.75 & 0.75 & 0.75 \\ [1ex] 
+	 branchingProb & 1 & 0.75 & 0.75 \\ [1ex] 
 	 \hline
-	 maximizerProb & 0.5 & 0.5 & 0.7 & 0.5 \\ [1ex] 
+	 maximizerProb & 0.5 & 0.5 & 0.7 \\ [1ex] 
 	 \hline
-	 minIncomingActions & 2 & 10 & 10 & 2 \\ [1ex] 
+	 minIncomingActions & 2 & 10 & 10 \\ [1ex] 
 	 \hline
-	 maxIncomingActions & 4 & 12 & 12 & 4 \\ [1ex] 
+	 maxIncomingActions & 4 & 12 & 12 \\ [1ex] 
 	 \hline
-	 maxBackwardsActions & 1 & 1 & 10 & 1 \\ [1ex] 
+	 maxBackwardsActions & 1 & 1 & 10 \\ [1ex] 
 	 \hline
-	 minSCCSize & - & - & 1000 & - \\ [1ex] 
+	 minSCCSize & - & - & 1000 \\ [1ex] 
 	 \hline
-	 maxSCCSize & - & - & 2000 & - \\ [1ex] 
+	 maxSCCSize & - & - & 2000 \\ [1ex] 
 	 \hline
 	\end{tabular}
 \end{center}

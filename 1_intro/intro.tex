@@ -34,7 +34,7 @@ However, there is an adversarial example proving that value iteration may need e
 For all the three techniques for solving reachability games, there are many optimizations and changes available that affect their performance.
 However, at the moment, there is a lack of experimental data that enables a solid quantitative assertion of the performance of the solution techniques and their extensions.
 In the PRISM-games benchmark suite, there are 10 distinct models. 
-With the models "Hallway" and "Avoid the Observer" (see Appendix \ref{sec:appendix}) we are aware of about a dozen real-world case studies.
+With the models "Hallway" and "Avoid the Observer" \cite{cav20} we are aware of about a dozen real-world case studies.
 Since the performance of every algorithm depends on the underlying structural properties of the stochastic game at hand \cite{gandalf}, 
 an algorithm that performs well on the available case studies could still overall be an unfavorable choice since the dataset might not contain enough
 structural variance to enable an adequate evaluation of the algorithm performance.
@@ -42,8 +42,8 @@ structural variance to enable an adequate evaluation of the algorithm performanc
 \subsection*{Our contribution}
 To tackle these problems, we provide the following contributions:
 \begin{itemize}
-    \item Extend the set of stochastic games by generating models randomly
-    \item Introduce analysis tools that are fit for a growing number of stochastic games and solution techniques
+    \item Extend the set of stochastic games by generating models randomly.
+    \item Introduce analysis tools that are fit for a growing number of stochastic games and solution techniques.
     \item Analyze the performance of the algorithms for stochastic games. 
         In particular, we analyze the impact of structural properties of models on the algorithms, structural biases of the real case studies, and algorithm performance.
 \end{itemize}

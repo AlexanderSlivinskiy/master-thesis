@@ -276,51 +276,6 @@
       \field{pages}{98\bibrangedash 114}
       \range{pages}{17}
     \endentry
-    \entry{CC15}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=1a126fe7ca5387e01e1bebcd84f3c49b}{%
-           family={Chatterjee},
-           familyi={C\bibinitperiod},
-           given={Krishnendu},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=55fcfb1b5f27a62c17e583182c8d5b95}{%
-           family={Chmelík},
-           familyi={C\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{4d06bdbbe52ec5fad40d5d390feddeb8}
-      \strng{fullhash}{4d06bdbbe52ec5fad40d5d390feddeb8}
-      \strng{bibnamehash}{4d06bdbbe52ec5fad40d5d390feddeb8}
-      \strng{authorbibnamehash}{4d06bdbbe52ec5fad40d5d390feddeb8}
-      \strng{authornamehash}{4d06bdbbe52ec5fad40d5d390feddeb8}
-      \strng{authorfullhash}{4d06bdbbe52ec5fad40d5d390feddeb8}
-      \field{labelalpha}{CC15}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{We consider partially observable Markov decision processes (POMDPs) with limit-average payoff, where a reward value in the interval [0, 1] is associated with every transition, and the payoff of an infinite path is the long-run average of the rewards. We consider two types of path constraints: (i) a quantitative constraint defines the set of paths where the payoff is at least a given threshold {$\lambda$}1 {$\in$} (0, 1]; and (ii) a qualitative constraint which is a special case of the quantitative constraint with {$\lambda$}1 = 1. We consider the computation of the almost-sure winning set, where the controller needs to ensure that the path constraint is satisfied with probability 1. Our main results for qualitative path constraints are as follows: (i) the problem of deciding the existence of a finite-memory controller is EXPTIME-complete; and (ii) the problem of deciding the existence of an infinite-memory controller is undecidable. For quantitative path constraints we show that the problem of deciding the existence of a finite-memory controller is undecidable. We also present a prototype implementation of our EXPTIME algorithm and experimental results on several examples.}
-      \field{issn}{00043702}
-      \field{journaltitle}{Artificial Intelligence}
-      \field{month}{4}
-      \field{title}{{{POMDPs}} under Probabilistic Semantics}
-      \field{volume}{221}
-      \field{year}{2015}
-      \field{pages}{46\bibrangedash 72}
-      \range{pages}{27}
-      \verb{doi}
-      \verb 10.1016/j.artint.2014.12.009
-      \endverb
-      \verb{file}
-      \verb /Users/tobias/Library/Mobile Documents/com~apple~CloudDocs/zotero/lexicographic-CAV20/Chatterjee_Chmelík_2015_POMDPs under probabilistic semantics.pdf
-      \endverb
-    \endentry
     \entry{correctnessSI}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=1a126fe7ca5387e01e1bebcd84f3c49b}{%
@@ -459,57 +414,6 @@
       \verb 1004.2367
       \endverb
     \endentry
-    \entry{CCGK16}{article}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=1a126fe7ca5387e01e1bebcd84f3c49b}{%
-           family={Chatterjee},
-           familyi={C\bibinitperiod},
-           given={Krishnendu},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2c470cf493a51ab2b4f7ae5604fd1875}{%
-           family={Chmelik},
-           familyi={C\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b19722dc931bc3f097274211dda4784e}{%
-           family={Gupta},
-           familyi={G\bibinitperiod},
-           given={Raghav},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f5fbfabdca7386319fcb760513adfe80}{%
-           family={Kanodia},
-           familyi={K\bibinitperiod},
-           given={Ayush},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{d5cd19ff1fb155470e10f8aae2672d93}
-      \strng{fullhash}{d5cd19ff1fb155470e10f8aae2672d93}
-      \strng{bibnamehash}{d5cd19ff1fb155470e10f8aae2672d93}
-      \strng{authorbibnamehash}{d5cd19ff1fb155470e10f8aae2672d93}
-      \strng{authornamehash}{d5cd19ff1fb155470e10f8aae2672d93}
-      \strng{authorfullhash}{d5cd19ff1fb155470e10f8aae2672d93}
-      \field{labelalpha}{Cha+16}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Artif. Intell.}
-      \field{title}{Optimal cost almost-sure reachability in {POMDP}s}
-      \field{volume}{234}
-      \field{year}{2016}
-      \field{pages}{26\bibrangedash 48}
-      \range{pages}{23}
-      \verb{urlraw}
-      \verb https://doi.org/10.1016/j.artint.2016.01.007
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1016/j.artint.2016.01.007
-      \endverb
-    \endentry
     \entry{cav20}{inproceedings}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=1a126fe7ca5387e01e1bebcd84f3c49b}{%
@@ -537,24 +441,81 @@
            giveni={T\bibinitperiod},
            givenun=0}}%
       }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
       \strng{namehash}{27c1201805fcd816b186dff7783cef6b}
       \strng{fullhash}{27c1201805fcd816b186dff7783cef6b}
       \strng{bibnamehash}{27c1201805fcd816b186dff7783cef6b}
       \strng{authorbibnamehash}{27c1201805fcd816b186dff7783cef6b}
       \strng{authornamehash}{27c1201805fcd816b186dff7783cef6b}
       \strng{authorfullhash}{27c1201805fcd816b186dff7783cef6b}
-      \field{labelalpha}{Cha+ed}
+      \field{labelalpha}{Cha+20}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{{CAV 2020}}
-      \field{series}{Lecture Notes in Computer Science}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
       \field{title}{Stochastic Games with Lexicographic Reachability-Safety Objectives}
-      \field{year}{\noop{2020} accepted}
+      \field{volume}{abs/2005.04018}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2005.04018
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2005.04018
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2005.04018
+      \endverb
+    \endentry
+    \entry{teamform}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=17541c65107086b7d7dd596d7ad81405}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=44f96ce7a6edd0d0f29170daeee1d90f}{%
+           family={Kwiatkowska},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=8f917e59f9bcb671f7f68671bf759fe7}{%
+           family={Parker},
+           familyi={P\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eac108b33aa9537f197544778ed8067b}{%
+           family={Simaitis},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{78374bc3f7ab15268067cde667f2c14d}
+      \strng{fullhash}{78374bc3f7ab15268067cde667f2c14d}
+      \strng{bibnamehash}{78374bc3f7ab15268067cde667f2c14d}
+      \strng{authorbibnamehash}{78374bc3f7ab15268067cde667f2c14d}
+      \strng{authornamehash}{78374bc3f7ab15268067cde667f2c14d}
+      \strng{authorfullhash}{78374bc3f7ab15268067cde667f2c14d}
+      \field{labelalpha}{Che+11}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. 12th International Workshop on Computational Logic in Multi-Agent Systems (CLIMA XII 2011)}
+      \field{series}{LNCS}
+      \field{title}{Verifying Team Formation Protocols with Probabilistic Model Checking}
+      \field{volume}{6814}
+      \field{year}{2011}
+      \field{pages}{190\bibrangedash 297}
+      \range{pages}{108}
     \endentry
     \entry{gavs+}{inproceedings}{}
       \name{author}{4}{}{%
@@ -613,6 +574,7 @@
       \field{labelalpha}{Che+11}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extraalpha}{2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper presents a major revision of the tool GAVS. First, the number of supported games has been greatly extended and now encompasses in addition many classes important for the design and analysis of programs, e.g., it now allows to explore concurrent / probabilistic / distributed games, and games played on pushdown graphs. Second, among newly introduced utility functions, GAVS+ includes features such that the user can now process and synthesize planning (game) problems described in the established Strips/PDDL language by introducing a slight extension which allows to specify a second player. This allows researchers in verification to profit from the rich collection of examples coming from the AI community.}
@@ -683,7 +645,6 @@
       \field{labelalpha}{Che+13}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extraalpha}{1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proc. 19th International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS'13)}
@@ -693,57 +654,6 @@
       \field{year}{2013}
       \field{pages}{185\bibrangedash 191}
       \range{pages}{7}
-    \endentry
-    \entry{charlton}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=9b50ea6cd887f69e8f4cd179ec4e8b4f}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Taolue},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=1,uniquepart=given,hash=347bafffd6816c888fdb1f5b697a07eb}{%
-           family={Kwiatkowska},
-           familyi={K\bibinitperiod},
-           given={Marta\bibnamedelima Z.},
-           giveni={M\bibinitperiod\bibinitdelim Z\bibinitperiod},
-           givenun=1}}%
-        {{un=0,uniquepart=base,hash=09bfc3530ff49e6779e8bd1dd07fb860}{%
-           family={Simaitis},
-           familyi={S\bibinitperiod},
-           given={Aistis},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=86d5b27980b0f05383df2fec8c8dcf60}{%
-           family={Wiltsche},
-           familyi={W\bibinitperiod},
-           given={Clemens},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{7a38d8ff5c37104e1d6594224fb625f6}
-      \strng{fullhash}{7a38d8ff5c37104e1d6594224fb625f6}
-      \strng{bibnamehash}{7a38d8ff5c37104e1d6594224fb625f6}
-      \strng{authorbibnamehash}{7a38d8ff5c37104e1d6594224fb625f6}
-      \strng{authornamehash}{7a38d8ff5c37104e1d6594224fb625f6}
-      \strng{authorfullhash}{7a38d8ff5c37104e1d6594224fb625f6}
-      \field{labelalpha}{Che+13}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extraalpha}{2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{{QEST}}
-      \field{title}{Synthesis for Multi-objective Stochastic Games: An Application to Autonomous Urban Driving}
-      \field{year}{2013}
-      \field{pages}{322\bibrangedash 337}
-      \range{pages}{16}
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/978-3-642-40196-1_28
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/978-3-642-40196-1_28
-      \endverb
     \endentry
     \entry{condonComplexity}{article}{}
       \name{author}{1}{}{%
@@ -1246,9 +1156,6 @@
            giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \list{publisher}{1}{%
-        {Open Publishing Association}%
-      }
       \strng{namehash}{01536c37e15d22f25a00c4822991b95a}
       \strng{fullhash}{01536c37e15d22f25a00c4822991b95a}
       \strng{bibnamehash}{01536c37e15d22f25a00c4822991b95a}
@@ -1260,22 +1167,19 @@
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{2075-2180}
-      \field{journaltitle}{Electronic Proceedings in Theoretical Computer Science}
-      \field{month}{9}
-      \field{title}{Comparison of Algorithms for Simple Stochastic Games}
-      \field{volume}{326}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Comparison of Algorithms for Simple Stochastic Games (Full Version)}
+      \field{volume}{abs/2008.09465}
       \field{year}{2020}
-      \field{pages}{131\bibrangedash 148}
-      \range{pages}{18}
-      \verb{doi}
-      \verb 10.4204/eptcs.326.9
+      \verb{eprint}
+      \verb 2008.09465
       \endverb
       \verb{urlraw}
-      \verb http://dx.doi.org/10.4204/EPTCS.326.9
+      \verb https://arxiv.org/abs/2008.09465
       \endverb
       \verb{url}
-      \verb http://dx.doi.org/10.4204/EPTCS.326.9
+      \verb https://arxiv.org/abs/2008.09465
       \endverb
     \endentry
     \entry{prismgames3}{inproceedings}{}
@@ -1329,80 +1233,6 @@
       \verb{doi}
       \verb 10.1007/978-3-030-53291-8\_25
       \endverb
-    \endentry
-    \entry{dice}{inbook}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=d6c321ee95d690d6a42850df470be5e0}{%
-           family={Knuth},
-           familyi={K\bibinitperiod},
-           given={D.},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=10d528329e817300da528b498ea7378a}{%
-           family={Yao},
-           familyi={Y\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Academic Press}%
-      }
-      \strng{namehash}{6ab1bec1b68a9d399c6c4ba3b9c8a7f2}
-      \strng{fullhash}{6ab1bec1b68a9d399c6c4ba3b9c8a7f2}
-      \strng{bibnamehash}{6ab1bec1b68a9d399c6c4ba3b9c8a7f2}
-      \strng{authorbibnamehash}{6ab1bec1b68a9d399c6c4ba3b9c8a7f2}
-      \strng{authornamehash}{6ab1bec1b68a9d399c6c4ba3b9c8a7f2}
-      \strng{authorfullhash}{6ab1bec1b68a9d399c6c4ba3b9c8a7f2}
-      \field{labelalpha}{KY76}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{chapter}{The complexity of nonuniform random number generation}
-      \field{title}{Algorithms and Complexity: New Directions and Recent Results}
-      \field{year}{1976}
-    \endentry
-    \entry{LCK95}{inproceedings}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=211e529e9f10ad1bfacff2284da10ea7}{%
-           family={Littman},
-           familyi={L\bibinitperiod},
-           given={Michael\bibnamedelima L.},
-           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2206f2c6c327af01902e88ec6bef588b}{%
-           family={Cassandra},
-           familyi={C\bibinitperiod},
-           given={Anthony\bibnamedelima R.},
-           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=72fdc7bf3120e1cff12e3ecf7e892b9a}{%
-           family={Kaelbling},
-           familyi={K\bibinitperiod},
-           given={Leslie\bibnamedelima Pack},
-           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Morgan Kaufmann}%
-      }
-      \strng{namehash}{5bfc60f3b40ed3e248ccb2fbaba17f8f}
-      \strng{fullhash}{5bfc60f3b40ed3e248ccb2fbaba17f8f}
-      \strng{bibnamehash}{5bfc60f3b40ed3e248ccb2fbaba17f8f}
-      \strng{authorbibnamehash}{5bfc60f3b40ed3e248ccb2fbaba17f8f}
-      \strng{authornamehash}{5bfc60f3b40ed3e248ccb2fbaba17f8f}
-      \strng{authorfullhash}{5bfc60f3b40ed3e248ccb2fbaba17f8f}
-      \field{labelalpha}{LCK95}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{{ICML}}
-      \field{title}{Learning Policies for Partially Observable Environments: Scaling Up}
-      \field{year}{1995}
-      \field{pages}{362\bibrangedash 370}
-      \range{pages}{9}
     \endentry
     \entry{widestPath}{article}{}
       \name{author}{4}{}{%

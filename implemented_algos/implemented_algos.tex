@@ -1,5 +1,5 @@
 \chapter{Implemented algorithm extensions} \label{ch:implementedAlgos}
-As part of the thesis, we have implemented the following extensions to Value Iteration and Strategy Iteration:
+As part of the thesis, we have implemented the following extensions to value iteration and strategy iteration:
 
 \subsubsection*{$\TOPAlg$} To solve the MDPs in $\TOPAlg$, we used strategy iteration. This yields two discrete-time Markov chains (DTMCs).
 We then solve the DTMCs by expressing them as linear programs and handing them to linear programming solvers.
@@ -9,7 +9,7 @@ Widest Path was introduced as an alternative to solving maximal end components f
 We reimplemented it in version 3 of PRISM.
 
 \subsubsection*{Linear programming for MDPs}
-Although linear programming is a well-known approach to solve MDPs, it is believed to perform worse than value iteration or strategy iteration
+Although linear programming is a well-known approach to solving MDPs, it is believed to perform worse than value iteration or strategy iteration
 and was not implemented in PRISM. We have implemented solving MDPs with linear programming as in \cite{Puterman}. 
-This allows for a combination of strategy iteration to fix one player's strategy, and linear programming to solve the induced MDP.
+This allows for a combination of strategy iteration to fix one player's strategy and linear programming to solve the induced MDP.
 %Together with the topological option from \cite{gandalf}, this yielded one of the most performant algorithms we present in this thesis.

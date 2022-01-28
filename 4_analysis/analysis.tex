@@ -53,46 +53,20 @@ The model features we track along with their names we use in the experimental se
 %     \end{adjustbox}
 %     \vspace{ - 05 mm}
 
-\iffalse
-$\mathbf{MEC-related:}$
-\begin{itemize}
-\item (NumMECs) Number of MECs
-\item (BiggestMEC, SmallestMEC) Size of biggest and smallest MEC*
-\item (AvgMEC, MedianMEC) Average MEC size and Median MEC size*
-\end{itemize}
-
-$\mathbf{SCC-related:}$
-\begin{itemize}
-\item (NumSCCs) Number of SCCs
-\item (BiggestSCC, SmallestSCC) Size of biggest and smallest SCC*
-\item (AvgSCC, MedianSCC) Average SCC-size and Median SCC-size*
-\item (MaxSCCDepth) Longest chain of SCCs from the initial-state SCC
-\item (NumSCCNonSingleton) Number of SCCs with cardinality bigger than 1
-\item (SmallestSCCNonSingleton) Smallest SCC with cardinality bigger than 1
-\item (AvgSCCNonSingleton) Average SCC size with cardinality bigger than 1*
-\end{itemize}
-
-$\mathbf{Path-related}:$
-\begin{itemize}
-    \item (NearestTarget) Shortest Path from initial state to the nearest target
-    \item (FurthestTarget) Shortest Path from initial state to the furthest target
-\end{itemize}
-\fi
-
 Features with a $\times$ symbol are measured absolutely but displayed relatively. 
-When referring to the relative value, we use $\%$ sign instead of the "Num"-prefix (e.g. Unknown\% instead of NumUnknown).
-Every relative feature that but NumProbActions is displayed relative to $|\states|$ (NumStates). NumProbActions is displayed relative to NumActions.
+When referring to the relative value, we use the $\%$ sign instead of the "Num"-prefix (e.g. Unknown\% instead of NumUnknown).
+Every relative feature but NumProbActions is displayed relative to $|\states|$ (NumStates). NumProbActions is displayed relative to NumActions.
 We found it easier to extract knowledge from relatively displayed features due to their independence of the model size. 
 
 \section*{Visualization}
 
-Tracking all these features requires tools to visualize and summarize the collected data, since otherwise the raw data is overwhelming.
+Tracking all these features requires tools to visualize and summarize the collected data since otherwise, the raw data is overwhelming.
 We have implemented a bare-bones toolset to facilitate the analysis. 
 
 \subsubsection*{Data visualization script - data loading}
 First, we load the tracked data and select the features we are interested in. We allow here to include filters to remove uninteresting data based on feature values.
 We also check for errors and wrong values in the data loading phase. To assert whether a value is correct, we need a reference value whose result we believe to be true.
-We usually use $\OVI$, $\TLPSI$ or $\WP$ as references since they tend to have the least timeouts and thus provide a good reference.
+We usually use $\TLPSI$ or $\WP$ as references since they tend to have the least timeouts and thus provide a good reference.
 
 \subsubsection*{Data visualization script - handling missing data}
 Next, we need to handle data that does not contain numerical values - for example, the algorithms that got timeouts on certain models.
@@ -105,9 +79,9 @@ If an algorithm fails to provide the correct value in time, we set its time and 
 These penalty values should be higher than any truly occurring value to easily calculate and visualize which algorithms performed best.
 For time, we usually use the time limit as penalty, and for iterations, we use 10 million iterations as penalty.
 
-The problem of introducing these penalty values is that they influence the data distribution.
+The problem with introducing these penalty values is that they influence the data distribution.
 For visualization, the graphs can end up skewed because most non-penalty data points are significantly smaller than the penalty, 
-and so it becomes harder to observe trends in graphs. In these cases we zoom in on the majority of the non-penalty data to be able to observe trends,
+and so it becomes harder to observe trends in graphs. In these cases, we zoom in on the majority of the non-penalty data to be able to observe trends
 but take note of the outlying values.
 Also, many visualization methods like heatmaps or statistical tests perform operations on the
 data. Thus, incorrect values can falsify the correlation between features. 

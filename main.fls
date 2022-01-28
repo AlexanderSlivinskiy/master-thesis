@@ -2606,11 +2606,6 @@ INPUT /home/sascha/master-thesis/figures/RandomRandom_AlgoPerformance.pdf
 INPUT /home/sascha/master-thesis/figures/RandomRandom_AlgoPerformance.pdf
 INPUT /home/sascha/master-thesis/figures/RandomRandom_AlgoPerformance.pdf
 INPUT /home/sascha/master-thesis/figures/RandomRandom_AlgoPerformance.pdf
-INPUT /home/sascha/master-thesis/figures/Big_AlgoPerformance.png
-INPUT /home/sascha/master-thesis/figures/Big_AlgoPerformance.png
-INPUT /home/sascha/master-thesis/figures/Big_AlgoPerformance.png
-INPUT /home/sascha/master-thesis/figures/Big_AlgoPerformance.png
-INPUT /home/sascha/master-thesis/figures/Big_AlgoPerformance.png
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
 INPUT /home/sascha/master-thesis/figures/WPvsBVIandOVIonAll.png
@@ -2688,6 +2683,11 @@ INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /home/sascha/master-thesis/figures/SISI_colorscatter.pdf
+INPUT /home/sascha/master-thesis/figures/SISI_colorscatter.pdf
+INPUT /home/sascha/master-thesis/figures/SISI_colorscatter.pdf
+INPUT /home/sascha/master-thesis/figures/SISI_colorscatter.pdf
+INPUT /home/sascha/master-thesis/figures/SISI_colorscatter.pdf
 INPUT /home/sascha/master-thesis/figures/colorScatter_SI_VI.pdf
 INPUT /home/sascha/master-thesis/figures/colorScatter_SI_VI.pdf
 INPUT /home/sascha/master-thesis/figures/colorScatter_SI_VI.pdf
