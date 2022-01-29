@@ -73,8 +73,8 @@ Here is the exhaustive list of parameters:
     \item branchingProb: If a random probability is generated below this threshold, the state-action pair leads into only one state with probability 1.
     \item maxBranchNum: How many positive transition probabilities may one action have at most?
     \item forceUnknown: A switch. If set to true, a new target and sink are introduced that effectively multiply the value of each state by 0.9.
-    This ensures that no additional targets are created during precomputation. 
-    We introduce the switch to ensure that the generated model is not solved mostly during precomputation.
+    This ensures that no additional targets are created during pre-computation. 
+    We introduce the switch to ensure that the generated model is not solved mostly during pre-computation.
     \item maximizerProb: What is the probability that a state belongs to the Maximizer?
     \item minSCCSize: What is the smallest size an SCC may have (only for RandomSCC guideline)?
     \item maxSCCSize: What is the largest size an SCC may have (only for RandomSCC guideline)?
