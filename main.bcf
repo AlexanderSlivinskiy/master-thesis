@@ -2414,15 +2414,16 @@
     <bcf:citekey order="66">gandalf</bcf:citekey>
     <bcf:citekey order="67">haddadmonmege</bcf:citekey>
     <bcf:citekey order="68">gandalf</bcf:citekey>
-    <bcf:citekey order="69">cav20</bcf:citekey>
-    <bcf:citekey order="70">gandalf</bcf:citekey>
+    <bcf:citekey order="69">haddadmonmege</bcf:citekey>
+    <bcf:citekey order="70">cav20</bcf:citekey>
     <bcf:citekey order="71">gandalf</bcf:citekey>
     <bcf:citekey order="72">gandalf</bcf:citekey>
-    <bcf:citekey order="73">haddadmonmege</bcf:citekey>
-    <bcf:citekey order="74">gandalf</bcf:citekey>
-    <bcf:citekey order="75">paperMaxi</bcf:citekey>
-    <bcf:citekey order="75">widestPath</bcf:citekey>
-    <bcf:citekey order="75">learningBased</bcf:citekey>
+    <bcf:citekey order="73">gandalf</bcf:citekey>
+    <bcf:citekey order="74">haddadmonmege</bcf:citekey>
+    <bcf:citekey order="75">gandalf</bcf:citekey>
+    <bcf:citekey order="76">paperMaxi</bcf:citekey>
+    <bcf:citekey order="76">widestPath</bcf:citekey>
+    <bcf:citekey order="76">learningBased</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

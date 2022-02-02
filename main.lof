@@ -43,39 +43,41 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Time required to solve for all large models as described in Subsection \ref {subsec:casestudies} (iv)}}}{41}{subfigure.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.7}{\ignorespaces $\mathbf {OVI}$ cannot instantly compute models}}{42}{figure.caption.36}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces A scatter plot comparing $\mathbf {WP}$ to $\mathbf {OVI}$ on all models sets including the 10 models where each model has a MEC with at least 9000 states. See \ref {plot:performanceScatter} for a reference on how to read the plot. The red dots visualize models where $\mathbf {OVI}$ failed a verification phase, while in the blue dots there was no failed verification phase. \relax }}{43}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Time $\mathbf {BVI}$ requires solving models where it only needs one iteration}}{43}{figure.caption.37}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces $\mathbf {OVI}$ cannot instantly compute models}}{43}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.9}{\ignorespaces $\mathbf {BVI}$ and $\mathbf {OVI}$ compared to their Gauss-Seidel optimizations on every model of datasets (i), (ii), and (iii) from Subsection \ref {subsec:casestudies}\relax }}{44}{figure.caption.39}%
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Time $\mathbf {BVI}$ requires solving models where it only needs one iteration}}{44}{figure.caption.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Time required to solve a model}}}{44}{subfigure.9.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Iterations required to solve a model}}}{44}{subfigure.9.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.10}{\ignorespaces $\mathbf {BVI}$ compared to its optimization where deflating happens only every 100 iterations on every model of datasets (i), (ii), and (iii) from Subsection \ref {subsec:casestudies}\relax }}{45}{figure.caption.41}%
+\contentsline {figure}{\numberline {7.10}{\ignorespaces $\mathbf {BVI}$ and $\mathbf {OVI}$ compared to their Gauss-Seidel optimizations on every model of datasets (i), (ii), and (iii) from Subsection \ref {subsec:casestudies}\relax }}{45}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Time required to solve a model}}}{45}{subfigure.10.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Iterations required to solve a model}}}{45}{subfigure.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.11}{\ignorespaces $\mathbf {BVI}$, $\mathbf {OVI}$ and $\mathbf {SI_{LP}}$ compared to their topological optimizations on every model of datasets (i), (ii), and (iii) from Subsection \ref {subsec:casestudies}\relax }}{46}{figure.caption.43}%
+\contentsline {figure}{\numberline {7.11}{\ignorespaces $\mathbf {BVI}$ compared to its optimization where deflating happens only every 100 iterations on every model of datasets (i), (ii), and (iii) from Subsection \ref {subsec:casestudies}\relax }}{46}{figure.caption.42}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Time required to solve a model}}}{46}{subfigure.11.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Iterations required to solve a model}}}{46}{subfigure.11.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.12}{\ignorespaces $\mathbf {BVI^{PT}}$ compared to $\mathbf {BVI}$ with and without the topological optimization}}{47}{figure.caption.45}%
+\contentsline {figure}{\numberline {7.12}{\ignorespaces $\mathbf {BVI}$, $\mathbf {OVI}$ and $\mathbf {SI_{LP}}$ compared to their topological optimizations on every model of datasets (i), (ii), and (iii) from Subsection \ref {subsec:casestudies}\relax }}{47}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Time $\mathbf {BVI^{PT}}$ requires to solve a model of the datasets (i), (ii), and (iii) in comparison to $\mathbf {BVI}$ and $\mathbf {BVI^T}$.}}}{47}{subfigure.12.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Time required to solve a model}}}{47}{subfigure.12.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Time $\mathbf {BVI^{PT}}$ requires to solve a model of the dataset (iv) in comparison to $\mathbf {BVI}$.}}}{47}{subfigure.12.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Iterations required to solve a model}}}{47}{subfigure.12.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.13}{\ignorespaces $\mathbf {SI_{VI}}$ and $\mathbf {SI_{SI}}$ compared to $\mathbf {BVI}$ based on the maximal number of actions per state}}{49}{figure.caption.49}%
+\contentsline {figure}{\numberline {7.13}{\ignorespaces $\mathbf {BVI^{PT}}$ compared to $\mathbf {BVI}$ with and without the topological optimization}}{48}{figure.caption.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering $\mathbf {SI_{SI}}$ compared to $\mathbf {BVI}$}}}{49}{subfigure.13.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Time $\mathbf {BVI^{PT}}$ requires to solve a model of the datasets (i), (ii), and (iii) in comparison to $\mathbf {BVI}$ and $\mathbf {BVI^T}$.}}}{48}{subfigure.13.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering $\mathbf {SI_{VI}}$ compared to $\mathbf {BVI}$}}}{49}{subfigure.13.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Time $\mathbf {BVI^{PT}}$ requires to solve a model of the dataset (iv) in comparison to $\mathbf {BVI}$.}}}{48}{subfigure.13.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.14}{\ignorespaces $\mathbf {SI_{VI}}$ and $\mathbf {SI_{SI}}$ compared to $\mathbf {BVI}$ based on the maximal number of actions per state}}{50}{figure.caption.50}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering $\mathbf {SI_{SI}}$ compared to $\mathbf {BVI}$}}}{50}{subfigure.14.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering $\mathbf {SI_{VI}}$ compared to $\mathbf {BVI}$}}}{50}{subfigure.14.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

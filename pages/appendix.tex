@@ -1,13 +1,14 @@
 \chapter{Appendix: Information about the models} \label{sec:appendix}
 
 \section*{Random model generation parameters} \label{sec:GenParams}
-In this section we present the parameters we have used to generate the 300 randomly generated models. 
-We have generated three sets of random models: Two for Algorithm \ref{alg:randomRandom} referred to as RandomA and RandomB with a distinct set of parameters, and one with the RandomSCC guideline.
+In this section, we present the parameters we have used to generate the 300 randomly generated models. 
+We have generated three sets of random models: Two for Algorithm \ref{alg:randomRandom} with a distinct set of parameters, referred to as random and RandomB, and one with the RandomSCC guideline.
 While we have also tried and used the RandomTree guideline, we did not include it in our benchmarks due to a lack of time.
 All randomly generated models can be found in the GitHub Repository \url{https://github.com/ga67vib/Algorithms-For-Stochastic-Games} in the folder \texttt{random-generated-models}.
-The difference between the RandomA and RandomB is that in one every state has 10 actions,
-and in the other one we decided for a lower number of actions. The feature distributions of RandomA are displayed in Figure \ref{fig:Random_FeatureDistribution}, 
-and the feature distribution of the set created with the RandomSCC guideline are displayed in Figure \ref{fig:RandomSCC_FeatureDistributions}.
+The difference between the RandomA and RandomB is that we chose the parameters for RandomA so that the dataset resembles the biases of the real case studies,
+while we chose the parameters for RandomB such that every model has many actions. 
+The feature distributions of RandomA are displayed in Figure \ref{fig:Random_FeatureDistribution}, 
+and the feature distributions of the set created with the RandomSCC guideline are displayed in Figure \ref{fig:RandomSCC_FeatureDistributions}.
 The parameters we have used to generate these models were the following:
 \begin{center}
 	\begin{tabular}{| c | c c c |} 
